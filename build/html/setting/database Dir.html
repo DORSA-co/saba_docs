@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="fa" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Database &mdash; مستندات Saba1.0</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/translations.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="فهرست" href="../genindex.html" />
+    <link rel="search" title="جستجو" href="../search.html" />
+    <link rel="next" title="Utils" href="utils%20Dir.html" />
+    <link rel="prev" title="Variance module" href="calibrationCal/Variance.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> Saba
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="جستجوی مستندات" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../Electrical.html">Electrical</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Mechanics.html">Mechanics</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../Software.html">Softwares</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../Main%20Software.html">Main Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../Train%20Software.html">Train Software</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../Setting%20Software.html">Setting Software</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#description">Description</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="../Setting%20Software.html#directories">Directories</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="app_logs%20Dir.html">App Logs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="backend%20Dir.html">Backend</a></li>
+<li class="toctree-l4"><a class="reference internal" href="calibrationCal%20Dir.html">Calibrational Cal</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">Database</a></li>
+<li class="toctree-l4"><a class="reference internal" href="utils%20Dir.html">Utils</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#files">Files</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../Others.html">Others</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Saba</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../Software.html">Softwares</a> &raquo;</li>
+          <li><a href="../Setting%20Software.html">Setting Software</a> &raquo;</li>
+      <li>Database</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/setting/database Dir.rst.txt" rel="nofollow"> نمایش متن منبع صفحه</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="database">
+<h1>Database<a class="headerlink" href="#database" title="Permalink to this heading"></a></h1>
+<p>Description</p>
+<blockquote>
+<div><p>کارکرد پی ال سی : به این صورت میباشد که در ابتدا سنسور تشخیص ورق که متصل میباشد فرمان ورود ورق را صادر میکند پس از ان با فاصله زمانی اندکی سیستم نور پردازی (پرژکتورها)و تریگ زدن به دوربین ها آغاز میشود . وظیفه دیگر پی ال سی مدیریت کردن دمای محفظه های بالا و پایین میباشد برای این امر دو سنسور دما تعبیه شده که در لحظه چک میشوند و در صورت نیاز فرمان روشن شدن کولر های هر بخش صادر میشود , در صورتی که دما بیش از حد باشد فرمان خاموش شدن دوربین ها صادر میشود .</p>
+</div></blockquote>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="calibrationCal/Variance.html" class="btn btn-neutral float-left" title="Variance module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> پیشین</a>
+        <a href="utils%20Dir.html" class="btn btn-neutral float-right" title="Utils" accesskey="n" rel="next">بعدی <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; حق نشر2022, milad.</p>
+  </div>
+
+  ساخته شده با <a href="https://www.sphinx-doc.org/">Sphinx</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">پوسته</a>
+    تهیّه شده با <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
