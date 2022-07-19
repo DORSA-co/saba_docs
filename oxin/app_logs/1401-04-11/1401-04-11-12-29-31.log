@@ -1,0 +1,47 @@
+INFO - 1401/04/11-12:29:31 - UI object for setting app created.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - UI object initialized and setting app loaded.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Creating API object.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Login UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Confirmaton UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Notficaion UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Login API object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Database object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Get available camera serials using camera-connecton API.
+------------------------------------------------------------------------------
+WARNING - 1401/04/11-12:29:31 - Some Cameras are not connected.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:31 - Timer for checking storage initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:39 - User logined with username: ali.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-12:29:51 - User logged-out with username: ali.
+------------------------------------------------------------------------------
+ERROR - 1401/04/11-12:30:31 - Failed to check storage statues/clear storage
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\setting_api.py", line 943, in check_storage_status
+    self.ui.curr_used_space_label.setText(drive_space_info['used_perc'])
+TypeError: 'PySide6.QtWidgets.QLabel.setText' called with wrong argument types:
+  PySide6.QtWidgets.QLabel.setText(float)
+Supported signatures:
+  PySide6.QtWidgets.QLabel.setText(str)

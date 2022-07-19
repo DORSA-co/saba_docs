@@ -1,0 +1,44 @@
+INFO - 1401/04/11-13:21:28 - UI object for setting app created.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - UI object initialized and setting app loaded.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Creating API object.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Login UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Confirmaton UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Notficaion UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Login API object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:28 - Database object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:29 - Get available camera serials using camera-connecton API.
+------------------------------------------------------------------------------
+WARNING - 1401/04/11-13:21:29 - Some Cameras are not connected.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:29 - Timer for checking storage initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/11-13:21:35 - User logined with username: ali.
+------------------------------------------------------------------------------
+ERROR - 1401/04/11-13:22:29 - Failed to check storage statues/clear storage
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\setting_api.py", line 973, in check_storage_status
+    self.ui.show_mesagges(self.ui.cam_live_drive_label_2, texts.MESSEGES['storage_ok'][self.ui.language], color=colors_pallete.successfull_green, clearable=False, level=0)
+TypeError: show_mesagges() got an unexpected keyword argument 'color'
+INFO - 1401/04/11-13:23:6 - Setting app closed.
+------------------------------------------------------------------------------

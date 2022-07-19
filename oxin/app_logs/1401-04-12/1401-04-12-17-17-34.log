@@ -1,0 +1,61 @@
+INFO - 1401/04/12-17:17:34 - UI object for setting app created.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - UI object initialized and setting app loaded.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Creating API object.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Login UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Confirmaton UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Notficaion UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Login API object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:34 - Database object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:35 - Get available camera serials using camera-connecton API.
+------------------------------------------------------------------------------
+WARNING - 1401/04/12-17:17:35 - Some Cameras are not connected.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:35 - Timer for checking storage initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:41 - User logined with username: ali.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:44 - Camera params are loaded from database camera-id: 1
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:53 - Connected to camera, serial: 23905933
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:17:58 - Disconnected from camera, serial: 23905933
+------------------------------------------------------------------------------
+INFO - 1401/04/12-17:18:1 - Camera settings applied to databse
+------------------------------------------------------------------------------
+ERROR - 1401/04/12-17:18:4 - Failed to connected to camera
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\backend\camera_connection.py", line 213, in start_grabbing
+    self.camera.TriggerSource.SetValue(self.trigger_source)
+  File "C:\Users\Dorsa-PC4\AppData\Local\Programs\Python\Python39\lib\site-packages\pypylon\genicam.py", line 2316, in SetValue
+    return _genicam.IEnumeration_SetValue(self, entry)
+_genicam.InvalidArgumentException: Feature 'TriggerSource' : cannot convert value 'Line 1', the value is invalid. : InvalidArgumentException thrown in node 'TriggerSource' while calling 'TriggerSource.FromString()' (file 'enumeration.cpp', line 134)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\backend\camera_funcs.py", line 335, in connect_disconnect_camera
+    cam_connection.start_grabbing()
+  File "d:\SettingApp_oxin\backend\camera_connection.py", line 237, in start_grabbing
+    print("An exception occurred.", e.GetDescription())
+AttributeError: 'InvalidArgumentException' object has no attribute 'GetDescription'

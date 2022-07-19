@@ -1,0 +1,40 @@
+INFO - 1401/04/13-15:55:35 - root : UI object for setting app created.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : UI object initialized and setting app loaded.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Creating API object.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Login UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Confirmaton UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Notficaion UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Login API object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:35 - root : Database object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/13-15:55:36 - root : Get available camera serials using camera-connecton API.
+------------------------------------------------------------------------------
+ERROR - 1401/04/13-15:55:36 - root : Failed to run camera-connecton API.
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\setting_api.py", line 111, in __init__
+    self.ui.logger.create_new_log(message=texts.WARNINGS['some_camera_not_connected']['en'], level=2)
+  File "d:\SettingApp_oxin\backend\logging_funcs.py", line 81, in create_new_log
+    self.logger.warning(msg='%s - %s : %s\n------------------------------------------------------------------------------' % (datetime, self.current_username. message))
+AttributeError: 'str' object has no attribute 'message'
+CRITICAL - 1401/04/13-15:55:36 - root : Setting app closed by force, there may an error/exception occured.
+------------------------------------------------------------------------------

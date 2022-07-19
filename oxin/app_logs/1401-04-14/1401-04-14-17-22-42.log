@@ -1,0 +1,56 @@
+INFO - 1401/04/14-17:22:42 - root : UI object for setting app created.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : UI object initialized and setting app loaded.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Creating API object.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Login UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Confirmaton UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Notficaion UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Login API object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:42 - root : Database object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:43 - root : Get available camera serials using camera-connecton API.
+------------------------------------------------------------------------------
+WARNING - 1401/04/14-17:22:43 - root : Some Cameras are not connected.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:43 - root : Timer for checking storage initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:44 - root : PLC ip recieved from database
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:45 - root : Start Connecting to PLC ip: opc.tcp://127.0.0.1:8081
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:45 - root : PLC params reciecved from database
+------------------------------------------------------------------------------
+INFO - 1401/04/14-17:22:45 - root : Connection to PLC established
+------------------------------------------------------------------------------
+ERROR - 1401/04/14-17:22:49 - root : Failed to set vaule on PLC, path:ns=2;s="TS1_Tempreture", value:100
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\setting_api.py", line 1521, in set_plc_value
+    self.my_plc.set_value(path, value)
+  File "d:\SettingApp_oxin\backend\plc_managment.py", line 54, in set_value
+    var.set_value(ua.Variant(int(value), ua.VariantType.Int64)) #set node value using explicit data type
+  File "C:\Users\Dorsa-PC4\AppData\Local\Programs\Python\Python39\lib\site-packages\opcua\common\node.py", line 217, in set_value
+    self.set_attribute(ua.AttributeIds.Value, datavalue)
+  File "C:\Users\Dorsa-PC4\AppData\Local\Programs\Python\Python39\lib\site-packages\opcua\common\node.py", line 263, in set_attribute
+    result[0].check()
+  File "C:\Users\Dorsa-PC4\AppData\Local\Programs\Python\Python39\lib\site-packages\opcua\ua\uatypes.py", line 218, in check
+    raise UaStatusCodeError(self.value)
+opcua.ua.uaerrors._auto.BadUserAccessDenied: "User does not have permission to perform the requested operation."(BadUserAccessDenied)

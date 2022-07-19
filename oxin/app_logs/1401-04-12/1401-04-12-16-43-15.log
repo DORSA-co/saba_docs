@@ -1,0 +1,55 @@
+INFO - 1401/04/12-16:43:15 - UI object for setting app created.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - UI object initialized and setting app loaded.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Creating API object.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Login UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Confirmaton UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Notficaion UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Login API object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:15 - Database object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:16 - Get available camera serials using camera-connecton API.
+------------------------------------------------------------------------------
+WARNING - 1401/04/12-16:43:16 - Some Cameras are not connected.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:16 - Timer for checking storage initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:22 - User logined with username: ali.
+------------------------------------------------------------------------------
+INFO - 1401/04/12-16:43:23 - Camera params are loaded from database camera-id: 1
+------------------------------------------------------------------------------
+ERROR - 1401/04/12-16:43:24 - Failed to connected to camera
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\backend\camera_connection.py", line 181, in start_grabbing
+    self.camera.GevSCPSPacketSize.SetValue(int(self.ps)+1000)
+  File "C:\Users\Dorsa-PC4\AppData\Local\Programs\Python\Python39\lib\site-packages\pypylon\genicam.py", line 2159, in SetValue
+    return _genicam.IInteger_SetValue(self, Value, Verify)
+_genicam.OutOfRangeException: The difference between Value = 1010 and Min = 220 must be dividable without rest by Inc = 4. : OutOfRangeException thrown in node 'GevSCPSPacketSize' while calling 'GevSCPSPacketSize.SetValue()' (file 'integert.h', line 79)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\backend\camera_funcs.py", line 334, in connect_disconnect_camera
+    cam_connection.start_grabbing()
+  File "d:\SettingApp_oxin\backend\camera_connection.py", line 235, in start_grabbing
+    print("An exception occurred.", e.GetDescription())
+AttributeError: 'OutOfRangeException' object has no attribute 'GetDescription'

@@ -1,0 +1,40 @@
+INFO - 1401/04/14-13:34:56 - root : UI object for setting app created.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : UI object initialized and setting app loaded.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Creating API object.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Login UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Confirmaton UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Notficaion UI object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Login API object initialized.
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Connected to MySQL Server version 8.0.29
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Connected to database [('saba_database',)]
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : MySQL connection is closed
+------------------------------------------------------------------------------
+INFO - 1401/04/14-13:34:56 - root : Database object initialized.
+------------------------------------------------------------------------------
+ERROR - 1401/04/14-13:34:56 - root : Failed to initialize/connect UI botttons events.
+------------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "d:\SettingApp_oxin\setting_api.py", line 80, in __init__
+    self.button_connector()
+  File "d:\SettingApp_oxin\setting_api.py", line 271, in button_connector
+    self.ui.check_down_motor_plc.clicked.connect(lambda: self.check_plc_parms(self.ui.check_down_motor_plc.objectName()))
+AttributeError: 'UI_main_window' object has no attribute 'check_down_motor_plc'
+CRITICAL - 1401/04/14-13:34:56 - root : Failed to setup initial objects for setting app.
+------------------------------------------------------------------------------
+CRITICAL - 1401/04/14-13:34:56 - root : Setting app closed by force, there may an error/exception occured.
+------------------------------------------------------------------------------
