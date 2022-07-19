@@ -20,7 +20,7 @@ from PySide6.QtCore import *
 from PySide6.QtUiTools import loadUiType
 from PySide6.QtWidgets import *
 
-import detect_lenguage
+#import detect_lenguage
 
 ui2, _ = loadUiType("confirm_btn.ui")
 

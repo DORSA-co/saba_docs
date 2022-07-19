@@ -1,24 +1,63 @@
 DEBUG=False
 
+
 class moveOnList:
-    
+    """
+    this function is used to create a list of elements, with option to go next or preivious on list and
+    get current objet/element
+
+    Args: None
+
+    Returns:
+        moveOnList class
+    """
 
     def __init__(self):
+        self.lists={} # dict of lists, there can be multiple lists added, each one with a name (key)
+        self.idxs={} # dict of current index, each for one list. its the current index for each list
 
-        self.lists={}
-        self.idxs={}
 
     def add(self, mylist, name):
+        """
+        this function is used to add a list or elements with name/key
+
+        Args:
+            mylist (_type_): _description_
+            name (_type_): name of list
+        
+        Returns: None
+        """
+
         self.lists[name] = mylist
-        self.idxs [name] = 0
+        self.idxs[name] = 0
 
     
-    def check(self,name):
+    def check(self, name):
+        """
+        this function is used to check if a key/name is in class
+
+        Args:
+            name (_type_): input name
+
+        Returns:
+            resault: boolean detetmining if the name if avilable
+        """
+
         if name in self.lists.keys():
             return True
         return False
 
-    def build_next_func(self, name):   
+
+    def build_next_func(self, name):
+        """
+        this function is used to get a next object fot moving nect on a list
+
+        Args:
+            name (_type_): name/key of list
+        
+        Returns: next_on_list oject
+        """
+
         def next_on_list():
             self.idxs[name]+=1
             self.idxs[name]=min(self.idxs[name],len(self.lists[name])-1)
@@ -28,7 +67,16 @@ class moveOnList:
         return next_on_list
 
 
-    def build_prev_func(self, name):  
+    def build_prev_func(self, name): 
+        """
+        this function is used to get a previous object fot moving nect on a list
+
+        Args:
+            name (_type_): name/key of list
+        
+        Returns: prev_on_list oject
+        """
+
         def prev_on_list():
             self.idxs[name]-=1
             self.idxs[name]=max(self.idxs[name],0)
@@ -60,20 +108,48 @@ class moveOnList:
             print("*"*50,self.idxs[name],len(self.lists[name]))
 
 
-
-
-
-
     def get_current(self,name):
+        """
+        this function is used to get curent element in a list
+
+        Args:
+            name (_type_): name/key of list
+
+        Returns:
+            current_element of list:
+        """
+
         mylist = self.lists[ name ] 
         idx = self.idxs[name]
         return mylist[idx]
 
+
     def get_list(self,name):
-        mylist = self.lists[ name ] 
+        """
+        this function is used to get a list using its name/key
+
+        Args:
+            name (_type_): name/key of list
+
+        Returns:
+            list: _description_
+        """
+
+        mylist = self.lists[name] 
         return mylist
 
+
     def get_count(self,name):
+        """
+        this function is used to get count of elements in a list
+
+        Args:
+            name (_type_): name/key of list
+
+        Returns:
+            len_list: _description_
+
+        """
         mylist = self.lists[ name ] 
         return len( mylist )
 

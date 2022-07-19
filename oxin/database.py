@@ -1,17 +1,22 @@
-
-
-import re
 from matplotlib.pyplot import flag
 import mysql.connector
 from mysql.connector import Error
 
-
-
-TABELS_NAME = {'coils_info':'images',
-               }
                
 
 class dataBase:
+    """
+    this class is used to connect and working with database
+
+    :param username: username to connect to database
+    :param    password: password to connect to databse
+    :param    host: host of the database
+    :param    database_name: name of the database to work with
+    :param    logger_obj: the logger object to take logs
+    
+    :returns:  None
+    """
+    
     def __init__(self, username, password, host, database_name, logger_obj=None):
         pass
         self.user_name=username
@@ -19,40 +24,73 @@ class dataBase:
         self.host=host
         self.data_base_name=database_name
         self.logger_obj = logger_obj
-        #
+
+        # check the connection to database
         self.check_connection()
         
     #--------------------------------------------------------------------------
     #--------------------------------------------------------------------------
     def get_log(self, message='nothing', level=1):
+        """
+        this function is used to get log from database tasks
+
+        Args:
+            message (str, optional): _description_. Defaults to 'nothing'.
+            level (int, optional): level of log. Defaults to 1.
+
+        """
         if self.logger_obj != None:
             self.logger_obj.create_new_log(message=message, level=level)
 
 
     def connect(self):
-            connection = mysql.connector.connect(host=self.host,
-                                                database=self.data_base_name,
-                                                user=self.user_name,
-                                                password=self.password)  
-            cursor = connection.cursor()
+        """
+        this function is used for connecting to database
 
-            return cursor,connection     
+        Inputs: None
+
+        Returns:
+            cursor: the object that is used to work with database by queries
+            connection: ?
+        """
+        
+        connection = mysql.connector.connect(host=self.host,
+                                            database=self.data_base_name,
+                                            user=self.user_name,
+                                            password=self.password)  
+        cursor = connection.cursor()
+
+        return cursor, connection     
+
 
     #--------------------------------------------------------------------------
     #--------------------------------------------------------------------------
     def check_connection(self):
+        """
+        this function is used to check if the connection to databse can be esablished
+
+        Inputs: None
+
+        Returns: a boolean value determining if the connecton is stablished or not
+        """
+
         flag=False
+
         try: 
-            cursor,connection=self.connect()
+            cursor, connection = self.connect() # connect to database
+            #
             flag=True
+            #
             if connection.is_connected():
-                db_Info = connection.get_server_info()
+                db_Info = connection.get_server_info() # get informations of database
                 # log
                 self.get_log(message='Connected to MySQL Server version %s' % (db_Info))
                 #
+
                 cursor = connection.cursor()
                 cursor.execute("select database();")
                 record = cursor.fetchall()
+
                 # log
                 self.get_log(message='Connected to database %s' % (record))
                 #
@@ -68,16 +106,29 @@ class dataBase:
             if flag and connection.is_connected():
                 cursor.close()
                 connection.close()
+
             # log
             self.get_log(message='MySQL connection is closed')
             #
 
     
-    def execute_quary(self,quary, cursor, connection,need_data=False, close=False):
+    def execute_quary(self, quary, cursor, connection, need_data=False, close=False):
+        """
+        this function is used to execute a query on database
+
+        Inputs:
+            quary: the input query to execute
+            cursor:
+            connection:
+            need_data: a bolean value
+            close:
+        
+        Returns: None
+        """
         
         try:
             if need_data:
-                cursor.execute(quary,data)
+                cursor.execute(quary, data)
 
             else:
                 cursor.execute(quary)
@@ -97,26 +148,41 @@ class dataBase:
 
     #--------------------------------------------------------------------------
     #--------------------------------------------------------------------------
-    def add_record(self,data,table_name,parametrs,len_parameters):
+    def add_record(self, data, table_name, parametrs, len_parameters):
+        """
+        this function is used to add a new record a specified table of database
 
-        s ='%s,'*len_parameters
+        Inputs:
+            data: data to be added to database
+            table_name: in string
+            parametrs: list of parameters (column names) of the database
+            len_parameters: number of parameters
+        
+        Returns: None
+        """
+
+        s = '%s,'*len_parameters
         s = s[:-1]
         s = '(' + s + ')'
         
 
         if self.check_connection:
+            # connect to database
             cursor,connection=self.connect()
 
+            # input query
             mySql_insert_query = """INSERT INTO {} {} 
                                 VALUES 
-                                {} """.format(table_name,parametrs,s)
+                                {} """.format(table_name, parametrs, s)
             
-            cursor.execute(mySql_insert_query,data)
+            # execute query with input data
+            cursor.execute(mySql_insert_query, data)
             # mySql_insert_query=(mySql_insert_query,data)
             # self.execute_quary(mySql_insert_query, cursor, connection, close=False,need_data=True )
             connection.commit()
             
             cursor.close()
+
             return True
 
         else:
@@ -126,8 +192,20 @@ class dataBase:
     #--------------------------------------------------------------------------
     #--------------------------------------------------------------------------
 
-    def update_record(self,table_name,col_name,value,id,id_value):
+    def update_record(self, table_name, col_name, value, id, id_value):
+        """
+        this function is used to update a parameter (column) in a table record, detrtmingn by record id
+
+        Inputs:
+            table_name: name of the table in database (in string)
+            col_name: column name of table to update (in string)
+            value: value will be assigned to column ((in string))
+            id: name of id column in table, its used to determine which record to update
+            id_value: value of the id column
         
+        Returns:
+            result: a boolean determining if the update on table is done or not
+        """
         
         if self.check_connection:
             
@@ -156,7 +234,19 @@ class dataBase:
 
 
 
-    def remove_record(self,col_name, id, table_name):
+    def remove_record(self, col_name, id, table_name):
+        """
+        this function is used to remove a record from table acourding to specified column value
+
+        Inputs:
+            col_name: name of the column to check for (in string)
+            id: value of the column (in string)
+            table_name: name of the table (in string)
+        
+        Returns:
+            results: a boolean determining if the record is removed or not
+        """
+        
         try:
             if self.check_connection:
                 cursor,connection=self.connect()
@@ -210,37 +300,61 @@ class dataBase:
     #--------------------------------------------------------------------------
     #--------------------------------------------------------------------------
 
-    def search(self,table_name,param_name, value, multi=False):
+    def search(self, table_name, param_name, value, multi=False):
+        """
+        this function is used to search in table accoarding to one or multiple specifiic parameter (column name)
+
+        Inputs:
+            table_name: in string
+            param_name: parameter (column) name in string, for multiple parameters, a list of strings
+            value: value of the parameter to be (in string), for multiple values, a list of strings
+            multi: a boolean value determining if the search is according to one parameter or multi parameters
+        
+        Returns:
+            result: a list containing the returned/searched row (record) in table, if failed to connect to database or nothing was found in table,
+            an empty list will be returned
+        """
+        
         try:
+            # check connection 
             if self.check_connection:
-                cursor,connection=self.connect()
+                cursor, connection = self.connect()
+
+                # single parameter
                 if not multi:
-                    sql_select_Query = "SELECT * FROM {} WHERE {} = '{}'".format(table_name,param_name,str(value))
+                    sql_select_Query = "SELECT * FROM {} WHERE {} = '{}'".format(table_name, param_name, str(value))
+
+                # mlti parameter
                 else:
                     if len(value) == 1:
                         sql_select_Query = "SELECT * FROM %s WHERE %s=('%s')" % (table_name, param_name, value[0])
                     else:
                         sql_select_Query = "SELECT * FROM %s WHERE %s=%s" % (table_name, param_name, tuple(value))
+
                 #
                 #print(sql_select_Query)
+                # execute query
                 cursor=self.execute_quary(sql_select_Query, cursor, connection)
+                records = cursor.fetchall() # get returned records
 
-                records = cursor.fetchall()
                 #print("Total number of rows in table: ", cursor.rowcount)
                 #print(len(records),records)
                 #----------------------------
                 
                 field_names = [col[0] for col in cursor.description]
                 res = []
+
                 for record in records:
                     record_dict = {}
                     for i in range( len(field_names) ):
                         record_dict[ field_names[i] ] = record[i]
+
                     res.append( record_dict )
                     
 
                 return res
 
+            # return empty list if failed to connect to database
             return []
 
         except:
@@ -283,7 +397,16 @@ class dataBase:
     #--------------------------------------------------------------------------
     #--------------------------------------------------------------------------
 
-    def get_all_content(self,table_name):
+    def get_all_content(self, table_name):
+        """
+        this function is used to get/return all contents of a table
+
+        Inputs:
+            table_name: in string
+
+        Returns:
+            table_content: list of records in table (in dict)
+        """
 
         if self.check_connection:
             cursor,connection=self.connect()
@@ -300,6 +423,7 @@ class dataBase:
 
             field_names = [col[0] for col in cursor.description]
             res = []
+
             for record in records:
                     record_dict = {}
                     for i in range( len(field_names) ):
@@ -307,9 +431,7 @@ class dataBase:
                     res.append( record_dict )
 
             return res
-
-
-            return records       
+    
 
 
 

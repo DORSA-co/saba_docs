@@ -1,6 +1,5 @@
 
-from faulthandler import disable
-
+# this file containes colors used in ui for notifications and messages and ...
 
 successfull_green = '#78AD40'
 failed_red = '#FF1111'

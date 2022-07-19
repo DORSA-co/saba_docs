@@ -1,5 +1,6 @@
+
 import sys
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore
 from PyQt5.QtWidgets import * 
 from PyQt5.QtGui import * 
 from PyQt5.QtGui import *
@@ -10,146 +11,112 @@ from PySide6.QtCore import *
 from PySide6.QtUiTools import loadUiType
 from PySide6.QtWidgets import *
 from PyQt5.QtGui import QPainter
-import numpy as np
-import threading
-import time
 from PyQt5.QtGui import QPainter
 import os
-import login_api
-import cv2
-from qt_material import apply_stylesheet
+from . import login_api
+
+from .backend import texts
+
+
 ui, _ = loadUiType("confirm_window.ui")
-
-
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
+
+
 class UI_main_window(QMainWindow, ui):
+    """
+    this class initializes a confirm/message window for user. it has two buttons, yes or no, to accept or deny the operation will be done
+
+    Inputs:
+        ui: login UI object
+        language: the main language for window and messages (in string)
+
+    Outputs: None
+    """
+    
     global widgets
     widgets = ui
 
-    def __init__(self):
+
+    def __init__(self, language='en'):
 
         super(UI_main_window, self).__init__()
 
 
         self.setupUi(self)
-        flags = Qt.WindowFlags(Qt.FramelessWindowHint)
+        flags = Qt.WindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint) # removing the window frame and attache it to top
         self.pos_ = self.pos()
+        self._old_pos = None
         self.setWindowFlags(flags)
-        #self.activate_()
-        
-
-
-
-        # APP NAME
-        # ///////////////////////////////////////////////////////////////
-        title = "SABA - logim"
-
+        # window title
+        title = "SABA - Confrim message"
         self.setWindowTitle(title)
 
-        
-        # SET LANGUAGE
-        #//////////////////////////////////////////////
-        # self.set_language()
-        self.language = 'en'
+        # set default app language to as confirm window language
+        self.language = language
+        #
+        # translate ui texts
+        if self.language == 'fa':
+            try:
+                self.yes_btn.setText(texts.Titles['Yes'][self.language])
+                self.no_btn.setText(texts.Titles['No'][self.language])
+            
+            except:
+                pass
+         
 
-        self._old_pos = None
+    # -----------------------------------------------------
+    # functions for mouse click, relaese and move
+    # def mousePressEvent(self, event):
+    #     if event.button() == QtCore.Qt.LeftButton:
+    #         self._old_pos = event.pos()
 
-        # self.password.setEchoMode(QLineEdit.Password)
-        #self.show_pass.clicked.connect(self.showPassword)
+    # def mouseReleaseEvent(self, event):
+    #     if event.button() == QtCore.Qt.LeftButton:
+    #         self._old_pos = None
 
-        #self.yes_btn.clicked.connect(self.showPassword)
-       
-
-    def showPassword(self, show):
-        echo=str(self.password.echoMode()).split(".", 4)[-1]
-
-        if echo == 'Password':
-            print('hi')
-            self.password.setEchoMode(QLineEdit.Normal)
-            icon = QIcon()
-            icon.addPixmap(QPixmap('images/show.png'))
-            # icon.addPixmap(QPixmap('disabled.png'), QIcon.Disabled)
-            # icon.addPixmap(QPixmap('clicking.png'), QIcon.Active)
-            # icon.addPixmap(QPixmap('on.png'), QIcon.Normal, QIcon.On)
-            self.show_pass.setIcon(icon)         
-        
-        else:
-            self.password.setEchoMode(QLineEdit.Password)
-            icon = QIcon()
-            icon.addPixmap(QPixmap('images/hidden.png'))    
-            self.show_pass.setIcon(icon)            
-
-        # self.password.setEchoMode(QLineEdit.Normal if show else QLineEdit.Password)
-
-        
-
-    def mousePressEvent(self, event):
-        if event.button() == QtCore.Qt.LeftButton:
-            self._old_pos = event.pos()
-
-    def mouseReleaseEvent(self, event):
-        if event.button() == QtCore.Qt.LeftButton:
-            self._old_pos = None
-
-    def mouseMoveEvent(self, event):
-        if not self._old_pos:
-            return
-        delta = event.pos() - self._old_pos
-        self.move(self.pos() + delta)
+    # def mouseMoveEvent(self, event):
+    #     if not self._old_pos:
+    #         return
+    #     delta = event.pos() - self._old_pos
+    #     self.move(self.pos() + delta)
 
 
-
-
-    #///////////////////// LANGUAGE
-    # def set_language(self):
-    #     print(detect_lenguage.language())
-    #     if detect_lenguage.language()=='Persian(فارسی)':
-    #         detect_lenguage.main_window(self)
-    
- 
-    # Label Dorsa
-    # ///////////////////////////////////////////////     
-    # def label_dorsa_open(self, enable):
-    #     if enable:
-    #         # GET WIDTH
-    #         width = self.label_dorsa.width()
-    #         maxExtend = 150
-    #         standard = 0
-
-    #         # SET MAX WIDTH
-    #         if width == 0:
-    #             #print('OPEN')
-    #             # self.toggleButton.setStyleSheet("background-image: url(:/icons/images/icons/t2.png);")
-    #             widthExtended = maxExtend
-    #             #print(widthExtended)
-    #         else:
-    #             # self.toggleButton.setStyleSheet("background-image: url(:/icons/images/icons/t1.png);")
-    #             #print('Close')
-    #             widthExtended = standard
-    #             #print(widthExtended)
-
-    #         # ANIMATION
-    #         self.animation = QPropertyAnimation(self.label_dorsa, b"minimumWidth")
-    #         self.animation.setDuration(1200)
-    #         self.animation.setStartValue(width)
-    #         self.animation.setEndValue(widthExtended)
-    #         self.animation.setEasingCurve(QEasingCurve.InOutQuart)
-    #         self.animation.start()
- 
-
- 
     def activate_(self):
+        """
+        this function connects the close button to its functionality
+
+        Inputs: None
+
+        Returns: None
+        """
+
         self.close_btn.clicked.connect(self.close_win)
 
 
 
     def close_win(self):
+        """
+        this function is used for closing login window
+
+        Inputs: None
+
+        Returns: None
+        """
+
         self.close()
         #sys.exit()
 
 
 
     def buttonClick(self):
+        """
+        this function is used to connect each button to its functionality, on button click
+
+        Inputs: None
+
+        Returns: None
+        """
+
         # GET BUTTON CLICKED
         btn = self.sender()
         btnName = btn.objectName()
@@ -158,24 +125,7 @@ class UI_main_window(QMainWindow, ui):
             self.toggleMenu(True)
  
 
-    def get_user_pass(self):
-        self.user_name_value=self.user_name.text()
-        self.password_value=self.password.text()
-
-        return self.user_name_value,self.password_value
-
-
-    def set_login_message(self,text,color):
-        self.login_message.setText(text)
-        self.login_message.setStyleSheet("color:#{}".format(color))
-
-
-
-
-
-
-
-
+    
 if __name__ == "__main__":
     app = QApplication()
     win = UI_main_window()

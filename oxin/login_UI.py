@@ -1,6 +1,6 @@
 
 import sys
-from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5 import QtCore
 from PyQt5.QtWidgets import * 
 from PyQt5.QtGui import * 
 from PyQt5.QtGui import *
@@ -13,145 +13,147 @@ from PySide6.QtWidgets import *
 from PySide6.QtGui import QImage as sQImage
 from PySide6.QtGui import QPixmap as sQPixmap
 from PyQt5.QtGui import QPainter
-import numpy as np
-import threading
-import time
 from PyQt5.QtGui import QPainter
 import os
-import login_api
-import cv2
-from qt_material import apply_stylesheet
+import threading
+
+from . import login_api
+from .backend import texts, colors_pallete
+
+
 ui, _ = loadUiType("login_setting.ui")
-
-
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
+
+
 class UI_main_window(QMainWindow, ui):
+    """
+    this class initializes a login window for user to login to app
+
+    Inputs:
+        ui: login UI object
+        language: the main language for window and messages (in string)
+
+    Outputs: None
+    """
+    
     global widgets
     widgets = ui
 
-    def __init__(self):
+    def __init__(self, language='en'):
 
         super(UI_main_window, self).__init__()
 
 
         self.setupUi(self)
-        flags = Qt.WindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint)
+        flags = Qt.WindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint) # remove the frame of the window, and make window stay on top
         self.pos_ = self.pos()
         self.setWindowFlags(flags)
-        self.activate_()
-        
-
-
-
-        # APP NAME
-        # ///////////////////////////////////////////////////////////////
-        title = "SABA - logim"
-
+        # app title
+        title = "SABA - login"
         self.setWindowTitle(title)
-
-        
-        # SET LANGUAGE
-        #//////////////////////////////////////////////
-        # self.set_language()
-        self.language = 'en'
-
         self._old_pos = None
 
-        # self.password.setEchoMode(QLineEdit.Password)
+        # close button connect
+        self.activate_()
+        
+        # SET LANGUAGE of the app
+        self.language = language
+
+        # flag to dont run another thread until one is available
+        self.show_mesagges_thread_lock = False
+
+        # translate titles in the login window
+        if self.language == 'fa':
+            try:
+                self.label.setText(texts.Titles['User Login'][self.language])
+                self.user_name.setPlaceholderText(texts.Titles['Username'][self.language])
+                self.password.setPlaceholderText(texts.Titles['Password'][self.language])
+                self.login_btn.setText(texts.Titles['Login'][self.language])
+            
+            except:
+                pass
+
+        # connect pawword show/hide button to its function
         self.show_pass.clicked.connect(self.showPassword)
        
 
     def showPassword(self, show):
-        echo=str(self.password.echoMode()).split(".", 4)[-1]
+        """
+        this functino is used for showing/hiding password text in password lineedit
+
+        Inputs: None
+
+        Returns: None
+        """
+        
+        echo = str(self.password.echoMode()).split(".", 4)[-1]
 
         if echo == 'Password':
             self.password.setEchoMode(QLineEdit.Normal)
-            # icon = QIcon()
-            # icon.addPixmap(QPixmap('images/show.png'))
-            # self.show_pass.setIcon(icon)
+            # change eye icon
             self.show_pass.setIcon(sQPixmap.fromImage(sQImage('images/show.png')))
         
+        # set password mode to password (hiding password text/showing boolets except text)
         else:
             self.password.setEchoMode(QLineEdit.Password)
-            # icon = QIcon()
-            # icon.addPixmap(QPixmap('images/hidden.png'))    
-            # self.show_pass.setIcon(icon)
+            # change eye icon
             self.show_pass.setIcon(sQPixmap.fromImage(sQImage('images/hidden.png')))      
 
-        # self.password.setEchoMode(QLineEdit.Normal if show else QLineEdit.Password)
 
-        
+    # -----------------------------------------------------
+    # functions for mouse click, relaese and move
+    # def mousePressEvent(self, event):
+    #     if event.button() == QtCore.Qt.LeftButton:
+    #         self._old_pos = event.pos()
 
-    def mousePressEvent(self, event):
-        if event.button() == QtCore.Qt.LeftButton:
-            self._old_pos = event.pos()
+    # def mouseReleaseEvent(self, event):
+    #     if event.button() == QtCore.Qt.LeftButton:
+    #         self._old_pos = None
 
-    def mouseReleaseEvent(self, event):
-        if event.button() == QtCore.Qt.LeftButton:
-            self._old_pos = None
-
-    def mouseMoveEvent(self, event):
-        if not self._old_pos:
-            return
-        delta = event.pos() - self._old_pos
-        self.move(self.pos() + delta)
-
+    # def mouseMoveEvent(self, event):
+    #     if not self._old_pos:
+    #         return
+    #     delta = event.pos() - self._old_pos
+    #     self.move(self.pos() + delta)
 
 
-
-    #///////////////////// LANGUAGE
-    # def set_language(self):
-    #     print(detect_lenguage.language())
-    #     if detect_lenguage.language()=='Persian(فارسی)':
-    #         detect_lenguage.main_window(self)
-    
- 
-    # Label Dorsa
-    # ///////////////////////////////////////////////     
-    # def label_dorsa_open(self, enable):
-    #     if enable:
-    #         # GET WIDTH
-    #         width = self.label_dorsa.width()
-    #         maxExtend = 150
-    #         standard = 0
-
-    #         # SET MAX WIDTH
-    #         if width == 0:
-    #             #print('OPEN')
-    #             # self.toggleButton.setStyleSheet("background-image: url(:/icons/images/icons/t2.png);")
-    #             widthExtended = maxExtend
-    #             #print(widthExtended)
-    #         else:
-    #             # self.toggleButton.setStyleSheet("background-image: url(:/icons/images/icons/t1.png);")
-    #             #print('Close')
-    #             widthExtended = standard
-    #             #print(widthExtended)
-
-    #         # ANIMATION
-    #         self.animation = QPropertyAnimation(self.label_dorsa, b"minimumWidth")
-    #         self.animation.setDuration(1200)
-    #         self.animation.setStartValue(width)
-    #         self.animation.setEndValue(widthExtended)
-    #         self.animation.setEasingCurve(QEasingCurve.InOutQuart)
-    #         self.animation.start()
- 
-
- 
     def activate_(self):
+        """
+        this function connects the close button to its functionality
+
+        Inputs: None
+
+        Returns: None
+        """
+        
         self.close_btn.clicked.connect(self.close_win)
 
 
 
     def close_win(self):
+        """
+        this function is used for closing login window, also on closing, the password and username fileds are cleared
+
+        Inputs: None
+
+        Returns: None
+        """
+        
         self.password.setText('')
         self.user_name.setText('')
         self.close()
         #sys.exit()
 
 
-
     def buttonClick(self):
-        # GET BUTTON CLICKED
+        """
+        this function is used to connect each button to its functionality, on button click
+
+        Inputs: None
+
+        Returns: None
+        """
+        
         btn = self.sender()
         btnName = btn.objectName()
 
@@ -160,19 +162,68 @@ class UI_main_window(QMainWindow, ui):
  
 
     def get_user_pass(self):
+        """
+        this function is used to get/return entered username and password from fields
+
+        Inputs: None
+
+        Returns:
+            username: in string
+            password: in string
+        """
+        
         self.user_name_value=self.user_name.text()
         self.password_value=self.password.text()
 
         return self.user_name_value,self.password_value
+    
 
+    def set_login_message(self, text='', level=0, clearable=True, prefix=True):
+        """
+        this function is used to show input message in input label, also there is a message level determining the color of label, and a timer to clear meesage after a while
 
-    def set_login_message(self,text,color):
-        self.login_message.setText(text)
-        self.login_message.setStyleSheet("color:#{}".format(color))
+        Inputs:
+            label_name: label element name to show the message in
+            text: input message to show (in string)
+            level: level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label
+            clearable: a boolean value determining whater to clear the message after timeout or not
+            prefix: a boolean value determinign wheater to show the message prefix or not
+        
+        Returns: None
+        """
+        
+        if text != '':
+            if level == 0:
+                self.login_message.setText(text)
+                self.login_message.setStyleSheet('background-color: %s ; color: white;' % (colors_pallete.successfull_green))
+            #
+            if level == 1:
+                if prefix:
+                    self.login_message.setText(text)
+                else:
+                    self.login_message.setText(text)
+                self.login_message.setStyleSheet('background-color: %s; color: white;' % (colors_pallete.warning_yellow))
+            #
+            if level >= 2:
+                if prefix:
+                    self.login_message.setText(text)
+                else:
+                    self.login_message.setText(text)
+                self.login_message.setStyleSheet('background-color: %s; color: white;' % (colors_pallete.failed_red))
 
+            #
+            if clearable and not self.show_mesagges_thread_lock:
+                self.show_mesagges_thread_lock = True
+                # timer to clear the message
+                self.thread = threading.Timer(2, self.set_login_message)
+                self.thread.start()
 
-
-
+        # clear the message after timeout
+        else:
+            self.login_message.setText('')
+            self.login_message.setStyleSheet('')
+            # unlock thread
+            self.show_mesagges_thread_lock = False
 
 
 

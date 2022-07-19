@@ -1,11 +1,21 @@
-from opcua import Client,ua
+from opcua import Client, ua
 import os
 import json
 
-from . import texts
+from .backend import texts
 
 
 class management():
+    """
+    this class is used to create and manage opc/plc object
+
+    Args:
+        ip: plc ip (in string)
+        ui_obj: main ui object
+    
+    Returns: PLC object
+    """
+
     def __init__(self, ip, ui_obj):
         self.ip=ip
         self.set_file_name('text_plc_parms')
@@ -14,6 +24,13 @@ class management():
     
 
     def connection(self):
+        """
+        this function is used to connect to plc
+
+        Returns:
+            resault: a boolean deermining if connected or not
+        """
+
         #print('Start Connecting to {}'.format(self.ip))
         self.ui_obj.logger.create_new_log(message=texts.MESSEGES['plc_start_connecting']['en'] + ' ip: ' + str(self.ip), level=1)
         self.client = Client(self.ip)
@@ -26,12 +43,32 @@ class management():
         except:
             #print('Connection Eror')
             return False
+
     
     def disconnect(self):
+        """
+        this functino is used to disconnect from plc
+
+        Args: None
+
+        Returns: None
+        """
+
         self.client.disconnect()
 
 
     def get_value(self, path):
+        """
+        this function is used to get value of a logic from plc using its path
+
+        Args:
+            path (_type_): plc logic path (in string)
+
+        Returns:
+            value: value stored in path, if failed to load, return '-'
+            data_value: if failed to load, return message error
+        """
+
         try:
             var = self.client.get_node(path)
             # print(var)
@@ -45,7 +82,17 @@ class management():
             return '-', texts.ERRORS['plc_path_error'][self.ui_obj.language]
 
 
-    def set_value(self,path,value):
+    def set_value(self, path, value):
+        """
+        this function is used to set/update value of a logic, using its path on plc
+
+        Args:
+            path (_type_): path of the logic (in string)
+            value (_type_): input value to update (digit or boolean)
+
+        Returns: None
+        """
+
         var = self.client.get_node(path)
         
         if value.isdigit():
@@ -66,35 +113,29 @@ class management():
             var.set_value(value)
         
 
-    def set_file_name(self,name):
+    def set_file_name(self, name):
+        """
+        this function is used to set json file name to store plc params
+
+        Arge: None
+
+        Returns: None
+        """
+
         self.text_plc_parms=name  
 
 
-    # def create_parms(self):
+    def write(self, value):
+        """
+        this function is used to write plc values on json file
 
-
-    def write(self,value):    
+        Args:
+            value (_type_): in dict
+        """
+        
         # print('write',path)
         path = os.path.join(self.text_plc_parms+'.json')
         # print('value',value)
         with open(str(path), 'w') as f:
             json.dump(value, f,indent=4, sort_keys=True)
 
-
-
-    # def write_plc_parms(self,parms):
-
-    #     str1 = ""
-    #     # traverse in the string 
-    #     for i in s:
-    #         str1 += i 
-    #     print(str1)
-
-    #     parms=
-
-    #     self.writ(parms)
-
-    # def writ(self,parms):
-    #     f = open(self.text_plc_parms,'r+')
-    #     f.write(parms)
-    #     f.close()
