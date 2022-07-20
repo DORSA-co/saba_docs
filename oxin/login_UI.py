@@ -21,7 +21,7 @@ from . import login_api
 from .backend import texts, colors_pallete
 
 
-ui, _ = loadUiType("login_setting.ui")
+ui, _ = loadUiType("oxin/login_setting.ui")
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
 
 
@@ -83,7 +83,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         echo = str(self.password.echoMode()).split(".", 4)[-1]
@@ -123,7 +123,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         self.close_btn.clicked.connect(self.close_win)
@@ -136,7 +136,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         self.password.setText('')
@@ -151,7 +151,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         btn = self.sender()
@@ -167,7 +167,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns:
+        :returns:
             username: in string
             password: in string
         """
@@ -189,7 +189,7 @@ class UI_main_window(QMainWindow, ui):
             clearable: a boolean value determining whater to clear the message after timeout or not
             prefix: a boolean value determinign wheater to show the message prefix or not
         
-        Returns: None
+        :returns: None
         """
         
         if text != '':

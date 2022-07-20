@@ -1,7 +1,7 @@
 from PySide6.QtGui import QPixmap as sQPixmap
 from PySide6.QtGui import QImage as sQImage
 
-from .backend import texts
+from . import texts
 
 
 # logged-out icon
@@ -21,7 +21,7 @@ def set_app_buttons_enable_or_disable(names, enable=True):
         names: ui element names (list of strings)
         enable: a boolean determining wheather to enable/disable the elements
     
-    Returns: None
+    :returns: None
     """
     
     for name in names:
@@ -38,7 +38,7 @@ def logout_user(ui_obj, confirm_ui_obj, login_api_obj):
         confirm_ui_obj:
         login_api_obj:
     
-    Returns: None
+    :returns: None
     """
     
     #
@@ -77,7 +77,7 @@ def authenticate_user(ui_obj, login_ui_obj, login_api_obj, api_obj):
         login_api_obj:
         api_obj: main API object
     
-    Returns: None
+    :returns: None
     """
     
     # authenticate user
@@ -124,7 +124,7 @@ def run_login_window(ui_obj, login_ui_obj, confirm_ui_obj):
         login_ui_obj:
         confirm_ui_obj:
     
-    Returns: None
+    :returns: None
     """
     
     # chcek whereas user is logged in or not

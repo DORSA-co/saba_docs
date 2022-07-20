@@ -8,7 +8,7 @@ class moveOnList:
 
     Args: None
 
-    Returns:
+    :returns:
         moveOnList class
     """
 
@@ -25,7 +25,7 @@ class moveOnList:
             mylist (_type_): _description_
             name (_type_): name of list
         
-        Returns: None
+        :returns: None
         """
 
         self.lists[name] = mylist
@@ -39,7 +39,7 @@ class moveOnList:
         Args:
             name (_type_): input name
 
-        Returns:
+        :returns:
             resault: boolean detetmining if the name if avilable
         """
 
@@ -55,7 +55,7 @@ class moveOnList:
         Args:
             name (_type_): name/key of list
         
-        Returns: next_on_list oject
+        :returns: next_on_list oject
         """
 
         def next_on_list():
@@ -74,7 +74,7 @@ class moveOnList:
         Args:
             name (_type_): name/key of list
         
-        Returns: prev_on_list oject
+        :returns: prev_on_list oject
         """
 
         def prev_on_list():
@@ -115,7 +115,7 @@ class moveOnList:
         Args:
             name (_type_): name/key of list
 
-        Returns:
+        :returns:
             current_element of list:
         """
 
@@ -131,7 +131,7 @@ class moveOnList:
         Args:
             name (_type_): name/key of list
 
-        Returns:
+        :returns:
             list: _description_
         """
 
@@ -146,7 +146,7 @@ class moveOnList:
         Args:
             name (_type_): name/key of list
 
-        Returns:
+        :returns:
             len_list: _description_
 
         """

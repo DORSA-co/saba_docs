@@ -2,7 +2,7 @@ from opcua import Client, ua
 import os
 import json
 
-from .backend import texts
+from . import texts
 
 
 class management():
@@ -13,7 +13,7 @@ class management():
         ip: plc ip (in string)
         ui_obj: main ui object
     
-    Returns: PLC object
+    :returns: PLC object
     """
 
     def __init__(self, ip, ui_obj):
@@ -27,7 +27,7 @@ class management():
         """
         this function is used to connect to plc
 
-        Returns:
+        :returns:
             resault: a boolean deermining if connected or not
         """
 
@@ -51,7 +51,7 @@ class management():
 
         Args: None
 
-        Returns: None
+        :returns: None
         """
 
         self.client.disconnect()
@@ -64,7 +64,7 @@ class management():
         Args:
             path (_type_): plc logic path (in string)
 
-        Returns:
+        :returns:
             value: value stored in path, if failed to load, return '-'
             data_value: if failed to load, return message error
         """
@@ -90,7 +90,7 @@ class management():
             path (_type_): path of the logic (in string)
             value (_type_): input value to update (digit or boolean)
 
-        Returns: None
+        :returns: None
         """
 
         var = self.client.get_node(path)
@@ -119,7 +119,7 @@ class management():
 
         Arge: None
 
-        Returns: None
+        :returns: None
         """
 
         self.text_plc_parms=name  

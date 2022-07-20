@@ -8,13 +8,14 @@ class dataBase:
     """
     this class is used to connect and working with database
 
-    :param username: username to connect to database
-    :param    password: password to connect to databse
-    :param    host: host of the database
-    :param    database_name: name of the database to work with
-    :param    logger_obj: the logger object to take logs
+    Inputs:
+        username: username to connect to database
+        password: password to connect to databse
+        host: host of the database
+        database_name: name of the database to work with
+        logger_obj: the logger object to take logs
     
-    :returns:  None
+    :returns: None
     """
     
     def __init__(self, username, password, host, database_name, logger_obj=None):
@@ -49,7 +50,7 @@ class dataBase:
 
         Inputs: None
 
-        Returns:
+        :returns:
             cursor: the object that is used to work with database by queries
             connection: ?
         """
@@ -71,7 +72,7 @@ class dataBase:
 
         Inputs: None
 
-        Returns: a boolean value determining if the connecton is stablished or not
+        :returns: a boolean value determining if the connecton is stablished or not
         """
 
         flag=False
@@ -123,7 +124,7 @@ class dataBase:
             need_data: a bolean value
             close:
         
-        Returns: None
+        :returns: None
         """
         
         try:
@@ -158,7 +159,7 @@ class dataBase:
             parametrs: list of parameters (column names) of the database
             len_parameters: number of parameters
         
-        Returns: None
+        :returns: None
         """
 
         s = '%s,'*len_parameters
@@ -203,7 +204,7 @@ class dataBase:
             id: name of id column in table, its used to determine which record to update
             id_value: value of the id column
         
-        Returns:
+        :returns:
             result: a boolean determining if the update on table is done or not
         """
         
@@ -243,7 +244,7 @@ class dataBase:
             id: value of the column (in string)
             table_name: name of the table (in string)
         
-        Returns:
+        :returns:
             results: a boolean determining if the record is removed or not
         """
         
@@ -310,7 +311,7 @@ class dataBase:
             value: value of the parameter to be (in string), for multiple values, a list of strings
             multi: a boolean value determining if the search is according to one parameter or multi parameters
         
-        Returns:
+        :returns:
             result: a list containing the returned/searched row (record) in table, if failed to connect to database or nothing was found in table,
             an empty list will be returned
         """
@@ -404,7 +405,7 @@ class dataBase:
         Inputs:
             table_name: in string
 
-        Returns:
+        :returns:
             table_content: list of records in table (in dict)
         """
 

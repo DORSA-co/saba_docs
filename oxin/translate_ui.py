@@ -11,7 +11,7 @@ def translate_ui(language='fa', ui_file_path_en='main_window.ui', ui_file_path_f
         ui_file_path_en: path of the default english ui file (in string)
         ui_file_path_fa: path of the output translated ui file to save (in string)
 
-    Returns: None
+    :returns: None
     """
 
     # persian lanuage

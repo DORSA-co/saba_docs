@@ -1,23 +1,3 @@
-
-"""
-########################################
----------------------------------------
-
-Made with Malek & Milad
-
-Features:
-
-    ● Create Unlimite Object of Cameras and Live Preview By serial number
-    ● Set Bandwitdh Of each Cameras
-    ● Set gain,exposure,width,height,offet_x,offset_y
-    ● Get tempreture of Cmeras
-    ● Set Trigger Mode on
-    ● There are Some diffrents between ace2(pro) and ace
-
----------------------------------------
-########################################
-"""
-
 from pickle import FALSE
 from pypylon import pylon
 import cv2
@@ -40,12 +20,12 @@ class Collector():
 
     def __init__(self, serial_number,gain = 0 , exposure = 70000, max_buffer = 20, trigger=True, delay_packet=100, packet_size=1500 ,
                 frame_transmission_delay=0 ,width=1000,height=1000,offet_x=0,offset_y=0, manual=False, list_devices_mode=False, trigger_source='Software'):
-        """Initializes the Collector
+        """
+        Initializes the Collector
 
-        Args:
-            gain (int, optional): The gain of images. Defaults to 0.
-            exposure (float, optional): The exposure of the images. Defaults to 3000.
-            max_buffer (int, optional): Image buffer for cameras. Defaults to 5.
+        :param gain: (int, optional) The gain of images. Defaults to 0.
+        :param exposure: (float, optional) The exposure of the images. Defaults to 3000.
+        :param max_buffer: (int, optional) Image buffer for cameras. Defaults to 5.
         """
         self.gain = gain
         self.exposure = exposure
@@ -375,8 +355,10 @@ class Collector():
             #print(self.camera.GetQueuedBufferCount(), 'T'*100)
 
 
-    def getPictures(self, time_out = 5000):
+    def getPictures(self, time_out = 50):
+        Flag=True
         try:
+
             
             if DEBUG:
                 print('TRIGE Done')
@@ -387,6 +369,8 @@ class Collector():
                     if self.camera.GetQueuedBufferCount() == 10:
                         print('ERRRRRRRRRRRRRRRRRRRRRRRRRROOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOORRRRRRRRRRRRRRRRRRRRRRRRR')
                 grabResult = self.camera.RetrieveResult(time_out, pylon.TimeoutHandling_ThrowException)
+
+                print('grab',grabResult)
                 
 
                 # print(self.camera.GetQueuedBufferCount(), 'f'*100)
@@ -408,21 +392,24 @@ class Collector():
                     self.cont_eror+=1
                     print('eror',self.cont_eror)
                     print("Error: ", grabResult.ErrorCode, grabResult.ErrorDescription)
+                    Flag=False
+
             else:
                     print('erpr')
                     img=np.zeros([1200,1920,3],dtype=np.uint8)
-        except:
-            print('eror')
-        
-        # print(self.camera.GetQueuedBufferCount(), 'f'*100)
-        # time.sleep(0.1)
-        # print(self.camera.GetQueuedBufferCount(), 'f'*100)
-        # self.img = img
-        try:
-            return img
-        except:
+                    Flag=False
 
-            return np.zeros([1200,1920,3],dtype=np.uint8)
+        except:
+            #print('Time out')
+            Flag=False
+
+        
+        if Flag:
+            #print('yes')
+            return True, img
+        else:
+            #print('no')
+            return False, np.zeros([1200,1920,3],dtype=np.uint8)
 
 
 
@@ -437,9 +424,10 @@ def get_threading(cameras):
         for cam in cameras:
             cam.trigg_exec()
         for cam in cameras:
-            img = cam.getPictures()
-            cv2.imshow('img', cv2.resize( img, None, fx=0.5, fy=0.5 ))
-            cv2.waitKey(10)
+            res, img = cam.getPictures()
+            if res:
+                cv2.imshow('img', cv2.resize( img, None, fx=0.5, fy=0.5 ))
+                cv2.waitKey(10)
 
         t = threading.Timer(0.330, thread_func )
         t.start()
@@ -454,8 +442,8 @@ if __name__ == '__main__':
     cameras = {}
     # for sn in ['40150887']:
         # collector = Collector( sn,exposure=3000 , gain=30, trigger=False, delay_packet=170000)
-    collector = Collector('23905933', exposure=1000, gain=0, trigger=True, delay_packet=100,\
-        packet_size=300, frame_transmission_delay=100, height=1200, width=1920,offet_x=0,offset_y=0, manual=True, list_devices_mode=False, trigger_source='Software')
+    collector = Collector('23683746', exposure=1000, gain=0, trigger=True, delay_packet=100,\
+        packet_size=300, frame_transmission_delay=100, height=1200, width=1920,offet_x=0,offset_y=0, manual=True, list_devices_mode=False, trigger_source='Line1')
 
     #print(collector.serialnumber())
     res, message = collector.start_grabbing()
@@ -466,12 +454,15 @@ if __name__ == '__main__':
     #cameras.getPictures()
 
 
-    while True and res:
+    while True:
         
     
-        img = collector.getPictures()
-        
-        cv2.imshow('img1', cv2.resize( img, None, fx=0.5, fy=0.5 ))
+        res, img = collector.getPictures()
+
+        # grab successfull
+        if res:
+            cv2.imshow('img1', cv2.resize( img, None, fx=0.5, fy=0.5 ))
+
         cv2.waitKey(10)
         
         if collector.trigger and collector.trigger_source=='Software':

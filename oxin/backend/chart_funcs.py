@@ -10,7 +10,7 @@ from PySide6.QtCharts import QHorizontalStackedBarSeries as sQHorizontalStackedB
 from PySide6.QtCharts import QBarCategoryAxis as sQBarCategoryAxis
 from PySide6.QtCore import QMargins as sQMargins
 
-from .backend import storage_funcs, colors_pallete
+from . import storage_funcs, colors_pallete
 
 
 # ----------------------------------------------------------------------------------------------------------
@@ -24,7 +24,7 @@ def create_drive_barchart_on_ui(ui_obj, frame_obj, chart_title='Chart'):
         frame_obj (_type_): ui frame name to create chart in
         chart_title (str, optional): _description_. Defaults to 'Chart'.
     
-    Returns: None
+    :returns: None
     """
 
     # create chart object
@@ -101,7 +101,7 @@ def update_drive_barchart(ui_obj, drives_info, storage_thrs, warn_storage_thrs):
         storage_thrs (_type_): an int determining thrshold of storage using in bas statues(for chart colors)
         warn_storage_thrs (_type_): an int determining thrshold of storage using in warning statues(for chart colors)
 
-    Returns: None
+    :returns: None
     """
 
     max_total = 0

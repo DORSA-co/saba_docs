@@ -1,79 +1,35 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>database_utils module &mdash; Saba 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="Saba 1.0 documentation" href="../index.html"/>
-        <link rel="up" title="Setting Software" href="../Setting%20Software.html"/>
-        <link rel="next" title="eror_window module" href="eror_window.html"/>
-        <link rel="prev" title="database module" href="database.html"/> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="eror_window module" href="eror_window.html" />
+    <link rel="prev" title="database module" href="database.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
-
-          
+        <div class="wy-side-nav-search" >
             <a href="../index.html" class="icon icon-home"> Saba
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,17 +37,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Electrical.html">Electrical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Mechanics.html">Mechanics</a></li>
@@ -102,7 +48,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#description">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#directories">Directories</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../Setting%20Software.html#files">Files</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="UI.html">UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="app_settings.html">app_settings module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="confirm_UI.html">confirm_UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="confirm_window.html">confirm_window module</a></li>
@@ -117,6 +62,7 @@
 <li class="toctree-l4"><a class="reference internal" href="resources_rc.html">resources_rc module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setting_UI.html">setting_UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setting_api.html">setting_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="translate_ui.html">translate_ui module</a></li>
 </ul>
 </li>
 </ul>
@@ -126,496 +72,571 @@
 <li class="toctree-l1"><a class="reference internal" href="../Others.html">Others</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Saba</a>
-        
       </nav>
 
-
-      
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../Software.html">Softwares</a> &raquo;</li>
-        
           <li><a href="../Setting%20Software.html">Setting Software</a> &raquo;</li>
-        
       <li>database_utils module</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="../_sources/setting/database_utils.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="module-oxin.database_utils">
-<span id="database-utils-module"></span><h1>database_utils module<a class="headerlink" href="#module-oxin.database_utils" title="Permalink to this heading">¶</a></h1>
+<span id="database-utils-module"></span><h1>database_utils module<a class="headerlink" href="#module-oxin.database_utils" title="Permalink to this heading"></a></h1>
 <dl class="py class">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.database_utils.</span></span><span class="sig-name descname"><span class="pre">dataBaseUtils</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.database_utils.</span></span><span class="sig-name descname"><span class="pre">dataBaseUtils</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logger_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>this class is used as an API to work with database</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>logger_obj: the logger object to take loggs</p>
 </dd>
-<dt>Returns:</dt><dd><p>database object</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>database object</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.add_defect">
-<span class="sig-name descname"><span class="pre">add_defect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.add_defect" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_defect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.add_defect" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to add new defect to database</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>parms (_type_): new defect infoes</p>
 </dd>
-<dt>Returns:</dt><dd><p>message: determinig if ok or not</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>message: determinig if ok or not</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.add_defect_group">
-<span class="sig-name descname"><span class="pre">add_defect_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.add_defect_group" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_defect_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.add_defect_group" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to add new defect-group to database</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>parms (_type_): new defect-group infoes</p>
 </dd>
-<dt>Returns:</dt><dd><p>message: determinig if ok or not</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>message: determinig if ok or not</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.add_user">
-<span class="sig-name descname"><span class="pre">add_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.add_user" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">add_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.add_user" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to add a new user to users table</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>parms (_type_): user infoes (in dict)</p>
 </dd>
-<dt>Returns:</dt><dd><dl class="simple">
-<dt>resault: a text message determining if the user is added</dt><dd><p>“True”:
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>resault: a text message determining if the user is added</dt><dd><p>”True”:
 ‘Databas Eror’:</p>
 </dd>
 </dl>
+</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.get_dataset_path">
-<span class="sig-name descname"><span class="pre">get_dataset_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.get_dataset_path" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">get_dataset_path</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.get_dataset_path" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.get_image_processing_parms">
+<span class="sig-name descname"><span class="pre">get_image_processing_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.get_image_processing_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set input image processing params for Miss.Abtahi algo to database</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>data (_type_): image processing params</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>image_procesing_params</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.load_cam_params">
-<span class="sig-name descname"><span class="pre">load_cam_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_cam_params" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_cam_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_cam_params" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load camear parameters from camera tables, using the camera id</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>input_camera_id: id of camera (in string)</p>
 </dd>
-<dt>Returns:</dt><dd><p>camera_params: a dict containing camera parameters</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>camera_params: a dict containing camera parameters</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.load_defect_groups">
-<span class="sig-name descname"><span class="pre">load_defect_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_defect_groups" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_defect_groups</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_defect_groups" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load defect-groups from table</p>
-<dl class="simple">
-<dt>Returns:</dt><dd><p>defect_groups: list of defect-groups (in dict)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect_groups: list of defect-groups (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.load_defects">
-<span class="sig-name descname"><span class="pre">load_defects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_defects" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_defects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_defects" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get all defects from defects table</p>
-<dl class="simple">
-<dt>Returns:</dt><dd><p>defects: list of defects (in dict)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defects: list of defects (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.load_general_setting_params">
-<span class="sig-name descname"><span class="pre">load_general_setting_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_mutitaskiing_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_general_setting_params" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_general_setting_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">is_mutitaskiing_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_general_setting_params" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get general-settings params from table</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>is_mutitaskiing_params (bool, optional): a boolean determining wheather to load multitasing params from multitasking table. Defaults to False.</p>
 </dd>
-<dt>Returns:</dt><dd><p>record: list of one dict</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>record: list of one dict</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.load_plc_ip">
-<span class="sig-name descname"><span class="pre">load_plc_ip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_plc_ip" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_plc_ip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_plc_ip" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load plc ip from table on dataabase</p>
-<dl class="simple">
-<dt>Returns:</dt><dd><p>record: plc ip (in string), if failed return False</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>record: plc ip (in string), if failed return False</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.load_plc_parms">
-<span class="sig-name descname"><span class="pre">load_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_plc_parms" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_plc_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load plc params from table</p>
 <p>Args: None</p>
-<dl class="simple">
-<dt>Returns:</dt><dd><p>plc_params: in dict, if failed to load from dataabse, return None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>plc_params: in dict, if failed to load from dataabse, return None</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.load_users">
-<span class="sig-name descname"><span class="pre">load_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_users" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">load_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.load_users" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load users list from database</p>
 <p>Inputs: None</p>
-<dl class="simple">
-<dt>Returns:</dt><dd><p>users_list: list of users (in dict)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>users_list: list of users (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.remove_defect_groups">
-<span class="sig-name descname"><span class="pre">remove_defect_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_defect_groups" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">remove_defect_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_defect_groups" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove defect groups from database by their ids</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>defect_ids: list of input defect-group-ids (in string)</p>
 </dd>
-<dt>Returns:</dt><dd><p>resault: a boolean determining if the removing is done</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resault: a boolean determining if the removing is done</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.remove_defects">
-<span class="sig-name descname"><span class="pre">remove_defects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_defects" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">remove_defects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_defects" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove one or multiple defects from database, using their ids</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>defect_ids: list if defect-ids (in string)</p>
 </dd>
-<dt>Returns:</dt><dd><p>results: a boolean determining if the removing is done</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>results: a boolean determining if the removing is done</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.remove_defects_by_group_id">
-<span class="sig-name descname"><span class="pre">remove_defects_by_group_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_defects_by_group_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">remove_defects_by_group_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_ids</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_defects_by_group_id" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove all defects with a specific defect-group-id</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>defect_ids: input defect-group-id (in string)</p>
 </dd>
-<dt>Returns:</dt><dd><p>resault: a boolean determining if removig defects is done</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resault: a boolean determining if removig defects is done</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.remove_users">
-<span class="sig-name descname"><span class="pre">remove_users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">users_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_users" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">remove_users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">users_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.remove_users" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove input users from database</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>users_name (_type_): list of user_names</p>
 </dd>
 </dl>
-<p>Returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_camera_by_ip">
-<span class="sig-name descname"><span class="pre">search_camera_by_ip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_camera_by_ip" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_camera_by_ip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_camera_by_ip" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search camera by its ip</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_camera_ip (_type_): in string</p>
 </dd>
-<dt>Returns:</dt><dd><p>record: dict f camera params of camera with input ip</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>record: dict f camera params of camera with input ip</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_camera_by_serial">
-<span class="sig-name descname"><span class="pre">search_camera_by_serial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_serial</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_camera_by_serial" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_camera_by_serial</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_serial</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_camera_by_serial" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search camera by its serial</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_camera_serial (_type_): in string</p>
 </dd>
-<dt>Returns:</dt><dd><p>record: dict f camera params of camera with input serila</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>record: dict f camera params of camera with input serila</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_by_color">
-<span class="sig-name descname"><span class="pre">search_defect_by_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_color" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_by_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_color" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search a defect in database by its color</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>input_color: string html code</p>
 </dd>
-<dt>Returns:</dt><dd><p>defect_list: a list with single defect (in dict)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect_list: a list with single defect (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_by_filter">
-<span class="sig-name descname"><span class="pre">search_defect_by_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_filter" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_by_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_filter" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search/filter defects by filter params</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>parms (_type_): value of columns to filter
 cols (_type_): columns to filter</p>
 </dd>
-<dt>Returns:</dt><dd><p>defect_info: list of filterd defects</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect_info: list of filterd defects</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_by_group_id">
-<span class="sig-name descname"><span class="pre">search_defect_by_group_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_group_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_by_group_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_group_id" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search defects with specific defect-group-id</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_defect_id (_type_): input defect-group-id</p>
 </dd>
-<dt>Returns:</dt><dd><p>defects_info: a list of defect_infoes (in dict)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defects_info: a list of defect_infoes (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_by_id">
-<span class="sig-name descname"><span class="pre">search_defect_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_id" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to serach a defect in database, according to its defect-id</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_defect_id (_type_): in string</p>
 </dd>
-<dt>Returns:</dt><dd><p>defect_info: a list with single record (in dict)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect_info: a list with single record (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_by_name">
-<span class="sig-name descname"><span class="pre">search_defect_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_name" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_name" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search a defect by its name in database</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>input_defect_name: in string</p>
 </dd>
-<dt>Returns:</dt><dd><p>defects_list: a list of one defect record (in dict)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defects_list: a list of one defect record (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_by_short_name">
-<span class="sig-name descname"><span class="pre">search_defect_by_short_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_short_name" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_by_short_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_by_short_name" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search a defect by its short-name in database</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>input_defect_name: in string</p>
 </dd>
-<dt>Returns:</dt><dd><p>defects_list: a list of one defect record (in dict)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defects_list: a list of one defect record (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_group_by_filter">
-<span class="sig-name descname"><span class="pre">search_defect_group_by_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_group_by_filter" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_group_by_filter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">parms</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cols</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_group_by_filter" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search/filter defect-groups by filter params</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>parms (_type_): value of columns to filter
 cols (_type_): columns to filter</p>
 </dd>
-<dt>Returns:</dt><dd><p>defect_info: list of filterd defect-groups</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect_info: list of filterd defect-groups</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_group_by_id">
-<span class="sig-name descname"><span class="pre">search_defect_group_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_group_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_group_by_id" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_group_by_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_group_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_group_by_id" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search a defect-group in database with its id</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>input_defect_group_id: in string</p>
 </dd>
-<dt>Returns:</dt><dd><p>defect_group: list of returned defect groups (since the ids are unique, its a list of one record in dict format)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect_group: list of returned defect groups (since the ids are unique, its a list of one record in dict format)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_defect_group_by_name">
-<span class="sig-name descname"><span class="pre">search_defect_group_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_group_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_group_by_name" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_defect_group_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_group_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_defect_group_by_name" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search a defect-group in table by its name</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_defect_group_name (_type_): _description_</p>
 </dd>
-<dt>Returns:</dt><dd><p>record: list of defects with this name (list of dicts)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>record: list of defects with this name (list of dicts)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_user">
-<span class="sig-name descname"><span class="pre">search_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_user_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_user" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_user_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_user" title="Permalink to this definition"></a></dt>
 <dd><p>this funcion is used to search if any user is available in users table with input username,
 if username is vailable, user info are returened,
 else an empty list is returned</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>input_user_name: input username to search (in string)</p>
 </dd>
-<dt>Returns:</dt><dd><dl class="simple">
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
 <dt>user_info: a dict containing user info:</dt><dd><p>{user_name: username in string, password: password in string}</p>
 </dd>
 </dl>
+</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.search_user_by_user_name">
-<span class="sig-name descname"><span class="pre">search_user_by_user_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_user_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_user_by_user_name" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">search_user_by_user_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_user_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.search_user_by_user_name" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search a user by its usrnam</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_user_name (_type_): in string</p>
 </dd>
-<dt>Returns:</dt><dd><p>record: user_info (in dict)</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>record: user_info (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.set_image_processing_parms">
-<span class="sig-name descname"><span class="pre">set_image_processing_parms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.set_image_processing_parms" title="Permalink to this definition">¶</a></dt>
-<dd><p>this function is used to set input image processing params for Miss.Abtahi algo to database</p>
+<span class="sig-name descname"><span class="pre">set_image_processing_parms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.set_image_processing_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get input image processing params for Miss.Abtahi algo to database</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>data (_type_): image processing params</p>
 </dd>
 </dl>
-<p>Returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.update_cam_params">
-<span class="sig-name descname"><span class="pre">update_cam_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_camera_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_cam_params" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update_cam_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_camera_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_cam_params" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update camera params of input camera id on table</p>
 <dl class="simple">
 <dt>Inputs:</dt><dd><p>input_camera_id: id of crrent camera (in string)
 input_camera_params: camera parameters (in dict)</p>
 </dd>
-<dt>Returns:</dt><dd><p>result: a bolean value determining if the settings are updated on database or not</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>result: a bolean value determining if the settings are updated on database or not</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.update_defect">
-<span class="sig-name descname"><span class="pre">update_defect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_defect" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update_defect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_defect" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update a defect on table</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_defect_params (_type_): in dict</p>
 </dd>
-<dt>Returns:</dt><dd><p>resaults: in boolean to deternmine if update is ok</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resaults: in boolean to deternmine if update is ok</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.update_defect_group">
-<span class="sig-name descname"><span class="pre">update_defect_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_defect_group" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update_defect_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_defect_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_defect_group" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update a defect-group on table</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_defect_params (_type_): in dict</p>
 </dd>
-<dt>Returns:</dt><dd><p>resaults: in boolean to deternmine if update is ok</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resaults: in boolean to deternmine if update is ok</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.update_general_setting_params">
-<span class="sig-name descname"><span class="pre">update_general_setting_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_setting_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_mutitaskiing_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_general_setting_params" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update_general_setting_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_setting_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_mutitaskiing_params</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_general_setting_params" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update general-setting params on table</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>input_setting_params (_type_): _description_
 is_mutitaskiing_params (bool, optional): a boolean to determine if params are belong to multitask params. Defaults to False.</p>
 </dd>
-<dt>Returns:</dt><dd><p>resault: a boolean determining if the update is done</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resault: a boolean determining if the update is done</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.update_plc_ip">
-<span class="sig-name descname"><span class="pre">update_plc_ip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_plc_ip" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update_plc_ip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_plc_ip" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update plc ip on table</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>ip (_type_): plc ip (in string)</p>
 </dd>
-<dt>Returns:</dt><dd><p>resalt: a boolean determining wheather database updated</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resalt: a boolean determining wheather database updated</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database_utils.dataBaseUtils.update_plc_parms">
-<span class="sig-name descname"><span class="pre">update_plc_parms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plc_parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_plc_parms" title="Permalink to this definition">¶</a></dt>
+<span class="sig-name descname"><span class="pre">update_plc_parms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">plc_parms</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database_utils.dataBaseUtils.update_plc_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update plc params on database</p>
 <dl class="simple">
 <dt>Args:</dt><dd><p>plc_parms (_type_): in dict</p>
 </dd>
-<dt>Returns:</dt><dd><p>resault: a boolean determining wheather update is done</p>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resault: a boolean determining wheather update is done</p>
 </dd>
 </dl>
 </dd></dl>
@@ -626,76 +647,33 @@ is_mutitaskiing_params (bool, optional): a boolean to determine if params are be
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="eror_window.html" class="btn btn-neutral float-right" title="eror_window module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="database.html" class="btn btn-neutral" title="database module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="database.html" class="btn btn-neutral float-left" title="database module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="eror_window.html" class="btn btn-neutral float-right" title="eror_window module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, milad.
-
-    </p>
+    <p>&#169; Copyright 2022, milad.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/documentation_options.js"></script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

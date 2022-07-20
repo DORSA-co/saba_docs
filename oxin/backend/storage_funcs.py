@@ -5,7 +5,7 @@ import subprocess
 import string
 from PySide6.QtGui import QStandardItem as sQStandardItem
 
-from .backend import mainsetting_funcs, texts, storage_funcs
+from . import mainsetting_funcs, texts, storage_funcs
 
 
 # stirage check interval key in startup json dict
@@ -22,7 +22,7 @@ def get_storage_status(disk_path):
     Args:
         disk_path (_type_): drive path (in string)
 
-    Returns:
+    :returns:
         drive_info: in dict
     """
     total, used, free = shutil.disk_usage(disk_path)
@@ -46,7 +46,7 @@ def get_drivename(driveletter):
     Args:
         driveletter (_type_): in string
 
-    Returns:
+    :returns:
         drive_name: in string
     """
 
@@ -60,7 +60,7 @@ def get_available_drives():
 
     Args: None
 
-    Returns:
+    :returns:
         available_drives: in list
     """
 
@@ -99,7 +99,7 @@ def set_camera_live_drive_parameters_to_db(db_obj, drive_infos):
         db_obj (_type_): database object
         drive_infos (_type_): in dict
 
-    Returns:
+    :returns:
         resault: boolean deermining whather set to database is ok
     """
 
@@ -117,7 +117,7 @@ def get_camera_live_drive_parameters_from_db(db_obj):
     Args:
         db_obj (_type_): database object
 
-    Returns:
+    :returns:
         drive_infoes: app general parameters (in dict)
     """
     # get params from db
@@ -133,7 +133,7 @@ def get_camera_live_drive_parameters_from_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns:
+    :returns:
         resaule: a boolean determining if the parameters are validated or not
     """
     # get drive params from ui
@@ -166,7 +166,7 @@ def get_files_in_path(dir_path, reverse=False):
         dir_path (_type_): _description_
         reverse (bool, optional): a boolean to reverse sorting to new to old. Defaults to False.
 
-    Returns:
+    :returns:
         file_paths: list of file pathes
     """
 
@@ -188,7 +188,7 @@ def remove_old_files_in_directory(api_obj, ui_obj, drive_path, dir_path, start_r
         stop_ratio (_type_): drive usage threshold to stop removing files
         reverse (bool, optional): boolean to reverse sorting files in directory. Defaults to False.
 
-    Returns: None
+    :returns: None
     """
 
     if stop_ratio < 1:
@@ -256,13 +256,17 @@ def show_storage_status(ui_obj, db_obj):
         ui_obj (_type_): main ui object
         db_obj (_type_): database object
     
-    Returns: None
+    :returns: None
     """
 
     try:
 
         # get current drive for saving camera lives from db
         drive_info = get_camera_live_drive_parameters_from_db(db_obj=db_obj)
+        if drive_info['live_drive_max_used_ratio'] > 1:
+            drive_info['live_drive_max_used_ratio']/=100
+        if drive_info['live_drive_remove_stop_ratio'] > 1:
+            drive_info['live_drive_remove_stop_ratio']/=100
 
         # update current drive
         if drive_info['camera_live_drive'] == 'NULL':

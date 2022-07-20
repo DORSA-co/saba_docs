@@ -12,11 +12,11 @@ Contetns:
 .. toctree::
    :maxdepth: 1
    
+   backend/add_default_database_records
    backend/camera_funcs
    backend/camera_connection
    backend/chart_funcs
    backend/colors_pallete
-   backend/confirm_window_messages
    backend/date_funcs
    backend/defect_management_funcs
    backend/logging_funcs

@@ -4,7 +4,7 @@ from PySide6.QtGui import QImage as sQImage
 from PySide6.QtGui import QStandardItem as sQStandardItem
 from PySide6.QtGui import QPixmap as sQPixmap
 
-from .backend import camera_connection, colors_pallete, texts
+from . import camera_connection, colors_pallete, texts
 
 
 # number of cameras
@@ -24,10 +24,16 @@ grid_thickness = 1
 NO_SERIAL = 'No Serial'
 TRIGGER_SOURCE = ['Off', 'Software', 'Line1']
 
+global ZOOM_SCALE
+ZOOM_SCALE = 200
+ZOOM_MIN = 200
+ZOOM_MAX = 1000
+ZOOM_STEP = 100
+
 # camer calibration  elements names in ui
 calibration_params = ['calib_rotate_spinbox', 'calib_shiftw_spinbox', 'calib_radio_corsshair', 'calib_radio_grid', 'calib_shifth_spinbox'\
                         ,'calib_take_image', 'pixelvalue_next_btn', 'pixelvalue_prev_btn', 'calib_minarea_spinbox', 'calib_maxarea_spinbox', 'calib_maxarea_spinbox'\
-                        , 'calib_thrs_spinbox']
+                        , 'calib_thrs_spinbox', 'calibration_zoomin', 'calibration_zoomout', 'zoomin_label', 'zoomout_label']
 
 #---------------------------------------------------------------------------------------------------------------------------
 
@@ -37,11 +43,8 @@ def get_camera_id(camera_name_label):
     """
     this function is used to get camera id, using camera name label in ui camera settings page
 
-    Inputs:
-        camera_name_label: in string
-    
-    Returns:
-        camera_id: in string
+    :param camera_name_label: in string
+    :returns: camera_id: in string
     """
     
     try:
@@ -57,11 +60,8 @@ def get_camera_params_from_ui(ui_obj):
     """
     this function is used to get camera parameters from ui (camera settings page)
 
-    Inputs:
-        ui_obj: main ui object
-
-    Returns:
-        camera_params
+    :param ui_obj: main ui object
+    :returns: camera_params
     """
     
     camera_params = {}
@@ -89,14 +89,12 @@ def set_camera_params_to_ui(ui_obj, db_obj, camera_params, camera_id, available_
     """
     this function is used to set input camera params to ui (camera settings page)
 
-    Inputs:
-        ui_obj: main ui object
-        db_obj: main database object
-        camera_params: input camera parameters (in dict)
-        camera_id: input camera id (in string)
-        available_serials: available camera serials (list of strings)
-    
-    Returns: None
+    :param ui_obj: main ui object
+    :param db_obj: main database object
+    :param camera_params: input camera parameters (in dict)
+    :param camera_id: input camera id (in string)
+    :param available_serials: available camera serials (list of strings)
+    :returns: None
     """
     
     ui_obj.gain_spinbox.setValue(camera_params['gain_value'])
@@ -122,11 +120,9 @@ def set_camera_serial_to_ui(ui_obj, assigned_serial):
     """
     this function takes as input a camera serial and update the serial combobox current value
 
-    Inputs:
-        ui_obj: main ui object
-        assigned_serial: camera serial (in string)
-
-    Returns: None
+    :param ui_obj: main ui object
+    :param assigned_serial: camera serial (in string)
+    :returns: None
 
     """
     # no serial is asigned to current camera
@@ -145,13 +141,11 @@ def assign_existing_serials_to_ui(ui_obj, db_obj, camera_id, available_serials):
     it takes as input available camera serials list, and current camera id, and those serial that not assigned to any camera, and the current camera serial
     are added to serial combobox on ui
 
-    Inputs:
-        ui_obj: main ui object
-        db_obj: database object
-        camera_id: current camera id
-        available_serials: list of available camera serals (list of strings)
-    
-    returns: None
+    :param ui_obj: main ui object
+    :param db_obj: database object
+    :param camera_id: current camera id
+    :param available_serials: list of available camera serals (list of strings)
+    :returns: None
     """
     
     # clear all items in combo
@@ -176,14 +170,12 @@ def set_camera_params_to_db(db_obj, camera_id, camera_params, checkbox_values):
     """
     this function is used to update camera params on database, given camera id(s)
 
-    Inputs:
-        db_obj: database object
-        camera_id: current camera id (in string)
-        camera_params: dict of camera params
-        checkbox_values: value of camera select checkboxes determing wheareas apply setting to current camera only or to multiple cameras
+    :param db_obj: database object
+    :param camera_id: current camera id (in string)
+    :param camera_params: dict of camera params
+    :param checkbox_values: value of camera select checkboxes determing wheareas apply setting to current camera only or to multiple cameras
     
-    Returns:
-        result: a boolean value determining if the settings are applied to database or not
+    :returns: result: a boolean value determining if the settings are applied to database or not
     """
     
     # apply settings to single current camera
@@ -222,12 +214,10 @@ def get_camera_params_from_db(db_obj, camera_id):
     """
     this function is used to get camera params from database, using camera id
 
-    Inputs:
-        db_obj: database object
-        camera_id: id of the camera (in string)
+    :param db_obj: database object
+    :param camera_id: id of the camera (in string)
     
-    Returns:
-        camera_params: a dict containing camera parameters
+    :returns: camera_params: a dict containing camera parameters
     """
     
     if camera_id != '0':
@@ -243,15 +233,13 @@ def validate_camera_ip(ui_obj, db_obj, camera_id, camera_params): # must change 
     """
     this function is used to validate camera ip to be valid and not used by oter cameras
 
-    Inputs:
-        ui_obj: main ui object
-        db_obj: database object
-        camera_id: current camera ip
-        camera_params: camera parameters (dict)
+    :param ui_obj: main ui object
+    :param db_obj: database object
+    :param camera_id: current camera ip
+    :param camera_params: camera parameters (dict)
 
-    Returns:
-        result: a boolean determining ip validation is ok or not
-        message: the error message of ip validation not ok
+    :returns: result: a boolean determining ip validation is ok or not
+    :returns: message: the error message of ip validation not ok
     """
     
     # validating ip address to be in correct form
@@ -272,12 +260,10 @@ def ip_validation(ui_obj, ip_address):
     """
     this function is used to validate ip to be in right format
 
-    Inputs:
-        ui_obj: main ui object
-        ip_address: input ip address (in string)
+    :param ui_obj: main ui object
+    :param ip_address: input ip address (in string)
     
-    Rrturns:
-        message: a text message determining if the ip validation is ok or not,
+    :returns: message: a text message determining if the ip validation is ok or not,
             'True' for validation ok
     """
     
@@ -305,11 +291,9 @@ def get_camera_checkbox_values(ui_obj):
     this function returns a value determining wheareas to apply camera settings/params to only current camera, or multiple cameras
     in ui, there are two checkboxes for bottom and top cameras. enabling each of them means to apply current settings to all of the cameras on top/bottom
 
-    Inputs:
-        ui_obj: main ui object
+    :param ui_obj: main ui object
     
-    Returns:
-        a number in range [0, 3], determining wheareas to apply camera settings/params to only current camera, or multiple cameras
+    :returns: a number in range [0, 3], determining wheareas to apply camera settings/params to only current camera, or multiple cameras
             0: apply to current camera only
             1: apply to top cameras
             2: apply to bottom cameras
@@ -336,11 +320,8 @@ def get_camera_calibration_params_from_ui(ui_obj):
     """
     this function returns the camera sot calibration params from ui
 
-    Inputs:
-        ui_obj: main ui object
-    
-    Returns:
-        camera_calibration_params: in dict
+    :param ui_obj: main ui object
+    :returns: camera_calibration_params: in dict
     """
     
     camera_calibration_params = {}
@@ -362,11 +343,9 @@ def set_camera_calibration_params_to_ui(ui_obj, camera_calibration_params):
     """
     this functino is used to set camera calibration params returned from dataabse, to ui
 
-    Args:
-        ui_obj (_type_): main ui object
-        camera_calibration_params (_type_): in dict
-    
-    Returns: None
+    :param ui_obj: (_type_) main ui object
+    :param camera_calibration_params: (_type_) in dict
+    :returns: None
     """
 
     ui_obj.calib_rotate_spinbox.setValue(camera_calibration_params['rotation_value'])
@@ -379,13 +358,11 @@ def set_camera_calibration_params_to_db(db_obj, camera_id, camera_calibration_pa
     """
     this function is used to set camera calibration params to database
 
-    Args:
-        db_obj (_type_): database object
-        camera_id (_type_): _description_
-        camera_calibration_params (_type_): in dict
+    :param db_obj: (_type_) database object
+    :param camera_id: (_type_) _description_
+    :param camera_calibration_params: (_type_) in dict
 
-    Returns:
-        resault: boolean determining update ok
+    :returns: resault: boolean determining update ok
     """
 
     res = db_obj.update_cam_params(str(int(camera_id)), camera_calibration_params)
@@ -397,12 +374,10 @@ def get_camera_calibration_params_from_db(db_obj, camera_id):
     """
     this function is used to get camera calibration params from database, given camera id
 
-    Args:
-        db_obj (_type_): database object
-        camera_id (_type_): _description_
+    :param db_obj: (_type_) database object
+    :param camera_id: (_type_) _description_
 
-    Returns:
-        camera_calibration_params: in dict
+    :returns: camera_calibration_params: in dict
     """
 
     camera_calibration_params = db_obj.load_cam_params(str(int(camera_id)))
@@ -414,13 +389,11 @@ def shift_calibration_image(image, shifth, shiftw):
     """
     this function is used to shift image along y or x (vertical or horizintal)
 
-    Inputs:
-        image: input image
-        shifth: value to shift image horiintaly
-        shiftw: value to shift image vertically
+    :param image: input image
+    :param shifth: value to shift image horiintaly
+    :param shiftw: value to shift image vertically
     
-    Returns:
-        shifted_image:
+    :returns: shifted_image:
     """
     
     row, col = image.shape[:2]
@@ -434,12 +407,9 @@ def rotate_calibration_image(image, angle):
     """
     this function is used to rotate image along center by input angle
 
-    Inputs:
-        image: input image
-        angle: input angle to rotate image (in degree)
-    
-    Returns:
-        rotated_image:
+    :param image: input image
+    :param angle: input angle to rotate image (in degree)
+    :returns: rotated_image:
     """
     
     row, col = image.shape[:2]
@@ -455,12 +425,10 @@ def draw_grid(image, crosshair=True):
     """
     this function is used to draw align grids on input image
 
-    Args:
-        image (_type_): _description_
-        crosshair (bool, optional): a boolean determining wheather draw cross-hair or grid. Defaults to True.
+    :param image: (_type_) _description_
+    :param crosshair: (bool, optional) a boolean determining wheather draw cross-hair or grid. Defaults to True.
 
-    Returns:
-        image: image with grid
+    :returns: image: image with grid
     """
     row, col = image.shape[:2]
     rows, cols = crosshair_shape if crosshair else grid_shape
@@ -482,14 +450,11 @@ def apply_soft_calibrate_on_image(ui_obj, image, camera_calibration_params, pxca
     """
     this function is used to apply soft calibration params to camera image
 
-    Inputs:
-        ui_obj: main ui object
-        image: input camera image
-        camera_calibration_params: input camera calibration params (as a dict)
-        pxcalibration:  a boolean determining wheater in pixel calibration step or not
-
-    Returns:
-        image: result image that is soft calibrated
+    :param ui_obj: main ui object
+    :param image: input camera image
+    :param camera_calibration_params: input camera calibration params (as a dict)
+    :param pxcalibration: a boolean determining wheater in pixel calibration step or not
+    :returns: image: result image that is soft calibrated
     """
     
     # rotating and calibrating image
@@ -513,11 +478,8 @@ def convert_cv2_to_qt_image(image):
     """
     this function is used to converte a cv2 image to qt format image
 
-    Args:
-        image (_type_): image in cv2 format
-
-    Returns:
-        qt_image: image in qt format
+    :param image: (_type_) image in cv2 format
+    :returns: qt_image: image in qt format
     """
 
     # convert cv2 image to Qt format image
@@ -537,8 +499,7 @@ def get_available_cameras_list_serial_numbers():
     """
     this function is used to get available camera serials that are connected to network
 
-    Returns:
-        serial_list: list of available camera serials (in string)
+    :returns: serial_list: list of available camera serials (in string)
     """
     # camera collector object
     collector = camera_connection.Collector(serial_number='0', list_devices_mode=True)
@@ -556,11 +517,10 @@ def update_available_camera_serials_on_db(db_obj, available_serials):
     it takes as input available camera serial, and checks the database,
     for each camera, if serial in database not in available cameras, assign 0 as its serial
 
-    Args:
-        db_obj (_type_): database object
-        available_serials (_type_): list of available camera serials (in string)
+    :param db_obj: (_type_) database object
+    :param available_serials: (_type_) list of available camera serials (in string)
 
-    Returns: None
+    :returns: None
     """
 
     for camera_id in all_camera_ids:
@@ -577,20 +537,17 @@ def connect_disconnect_camera(ui_obj, db_pbj, serial_number, connect=True, curre
     in connect mode, a connection to camera with input serial number is returned,
     while in dissconnect mode, the input camera connection is closed
 
-    Inputs:
-        ui_obj: main ui object
-        db_pbj: database object
-        serial_number: camera serial number (in string)
-        connect: a boolean determning wheter to create a new connection to camer, or disconnect from current camera
-        current_cam_connection: current camera connection object
-        calibration: a boolean determining if camera connection is for camera calibration page
+    :param ui_obj: main ui object
+    :param db_pbj: database object
+    :param serial_number: camera serial number (in string)
+    :param connect: a boolean determning wheter to create a new connection to camer, or disconnect from current camera
+    :param current_cam_connection: current camera connection object
+    :param calibration: a boolean determining if camera connection is for camera calibration page
     
-    Returns:
-        on conect:
-            camera_connection: the stablished camera connection, if faled, return None
-            message: a meesage determinig the error occured while connecting to camera
-
-        on desconnect: None
+    :returns: on conect:
+                camera_connection: the stablished camera connection, if faled, return None
+                message: a meesage determinig the error occured while connecting to camera
+    :returns: on desconnect: None
     """
     
     # connect
@@ -658,12 +615,12 @@ def connect_disconnect_camera(ui_obj, db_pbj, serial_number, connect=True, curre
             if not calibration:
                 set_camera_picture_to_ui(ui_image_label=ui_obj.camera_setting_picture_label, image=cv2.imread('./images/no_image.png'))
             else:
-                set_camera_picture_to_ui(ui_image_label=ui_obj.calib_camera_image, image=cv2.imread('./images/no_image.png'))
+                set_camera_picture_to_ui(ui_image_label=ui_obj.calib_camera_image, image=cv2.imread('./images/no_image.png'), with_zoom=True, zoom_min=True)
         except:
             if not calibration:
                 set_camera_picture_to_ui(ui_image_label=ui_obj.camera_setting_picture_label, image=np.zeros((500,500,3)).astype(np.uint8))
             else:
-                set_camera_picture_to_ui(ui_image_label=ui_obj.calib_camera_image, image=np.zeros((500,500,3)).astype(np.uint8))
+                set_camera_picture_to_ui(ui_image_label=ui_obj.calib_camera_image, image=np.zeros((500,500,3)).astype(np.uint8), with_zoom=True, zoom_min=True)
 
 
 
@@ -672,33 +629,76 @@ def get_picture_from_camera(camera_connection):
     """
     this function is used to get picture from camera, using its camera connection
 
-    Args:
-        camera_connection (_type_): _description_
-
-    Returns:
+    :param camera_connection: (_type_) _description_
+    :returns:
         live_image: image
     """
 
     # get live frame
-    live_image = camera_connection.getPictures()
-    return live_image
+    res, live_image = camera_connection.getPictures()
+    return res, live_image
 
 
 # set camera picture to ui
-def set_camera_picture_to_ui(ui_image_label, image):
+def set_camera_picture_to_ui(ui_image_label, image, with_zoom=False, zoom_min=False):
     """
     this function is used to set an image to ui label
 
-    Args:
-        ui_image_label (_type_): ui lable name
-        image (_type_): input image
+    :param ui_image_label: (_type_) ui lable name
+    :param image: (_type_) input image
+    :param with_zoom: (_type_) boolean determining wheather to zoom image
 
-    Returns: None
+    :returns: None
     """
+
     # converting cv2 image to Qt format
     converted_image = convert_cv2_to_qt_image(image=image)
+
+    pixmap_image = sQPixmap.fromImage(converted_image)
+    # zoom in/out
+    if with_zoom:
+        pixmap_image = pixmap_image.scaledToHeight(ZOOM_SCALE if not zoom_min else ZOOM_MIN)
+
     # set image to UI
-    ui_image_label.setPixmap(sQPixmap.fromImage(converted_image))
+    ui_image_label.setPixmap(pixmap_image)
+
+
+def zoom_in_calibration_image(ui_obj):
+    """
+    this function is used to zoom in calibration image on button click
+
+    :param ui_obj: (_type_) main ui object
+    :returns: None
+    """
+
+    global ZOOM_SCALE
+    if ZOOM_SCALE >= ZOOM_MAX:
+        return
+    ZOOM_SCALE += ZOOM_STEP
+
+    try:
+        set_camera_picture_to_ui(ui_image_label=ui_obj.calib_camera_image, image=ui_obj.calibration_image, with_zoom=True)
+    except:
+        ZOOM_SCALE -= ZOOM_STEP
+
+
+def zoom_out_calibration_image(ui_obj):
+    """
+    this function is used to zoom out calibration image on button click
+
+    :param ui_obj: (_type_) main ui object
+    :returns: None
+    """
+
+    global ZOOM_SCALE
+    if ZOOM_SCALE <= ZOOM_MIN:
+        return
+    ZOOM_SCALE -= ZOOM_STEP
+    
+    try:
+        set_camera_picture_to_ui(ui_image_label=ui_obj.calib_camera_image, image=ui_obj.calibration_image, with_zoom=True)
+    except:
+        ZOOM_SCALE += ZOOM_STEP
 
 
 # update UI parametrs on camera connect or disconnect
@@ -708,13 +708,12 @@ def update_ui_on_camera_connect_disconnect(ui_obj, api_obj, connect=True, calibr
     on every camera connect, camera take picture button must be enable, while camera connect button must be changed to disconnect
     on camera disconnect, camera take picture button must set to disable, while camera connect button must be changed to connect
 
-    Inputs:
-        ui_obj: main ui object
-        api_obj: main api object
-        connect: a boolean determinnig if camera is connected or disconnected
-        calibration: a boolean determining if current page on ui is calibration page
+    :param ui_obj: main ui object
+    :param api_obj: main api object
+    :param connect: a boolean determinnig if camera is connected or disconnected
+    :param calibration: a boolean determining if current page on ui is calibration page
 
-    Returns: None
+    :returns: None
     """
     
     if connect:
@@ -766,13 +765,12 @@ def set_widjets_enable_or_disable(ui_obj, api_obj, names, enable=True):
     """
     this function is used to get ui element names in a list, and enable/disable them
 
-    Inputs:
-        ui_obj: main ui object
-        api_obj: main api object
-        names: ui element names (list of strings)
-        enable: a boolean determinnig whereas enable or disable ui elements
+    :param ui_obj: main ui object
+    :param api_obj: main api object
+    :param names: ui element names (list of strings)
+    :param enable: a boolean determinnig whereas enable or disable ui elements
     
-    Returns: None
+    :returns: None
     """
     
     for name in names:
@@ -786,10 +784,9 @@ def show_cameras_summary(ui_obj):
     """
     this function is used to set/update cameras summary params on ui dashboard page
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
     
-    Returns: None
+    :returns: None
     """
 
     try:
@@ -817,10 +814,9 @@ def show_calibration_summary(ui_obj, db_obj):
     """
     this function is used to set/update calibration summary params on ui dashboard page
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
     
-    Returns: None
+    :returns: None
     """
 
     try:
@@ -842,6 +838,14 @@ def show_calibration_summary(ui_obj, db_obj):
         
         else:
             ui_obj.show_mesagges(ui_obj.dash_width_gauge, text=texts.ERRORS['all_cameras_not_calibrated'][ui_obj.language], level=2, clearable=False, prefix=False)
+        
+
+        # determine image processing calibration applied, check if params not zero
+        image_procesing_params = db_obj.get_image_processing_parms()
+        if int(image_procesing_params['defect']==0) and int(image_procesing_params['noise']==0) and int(image_procesing_params['noise_flag']==0):
+            ui_obj.show_mesagges(ui_obj.dash_image_processing, text=texts.ERRORS['all_cameras_not_calibrated'][ui_obj.language], level=2, clearable=False, prefix=False)
+        else:
+            ui_obj.show_mesagges(ui_obj.dash_image_processing, text=texts.MESSEGES['all_cameras_calibrated'][ui_obj.language], level=0, clearable=False, prefix=False)
 
     
     except Exception as e:

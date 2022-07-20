@@ -2,7 +2,7 @@ from PySide6.QtWidgets import QHeaderView as sQHeaderView
 from PySide6.QtWidgets import QTableWidgetItem as sQTableWidgetItem
 from PySide6 import QtCore as sQtCore
 
-from .backend import texts, date_funcs
+from . import texts, date_funcs
 
 
 # users table number of rows and cols
@@ -22,7 +22,7 @@ def get_users_from_db(db_obj):
 
     Inputs: None
 
-    Returns:
+    :returns:
         users_list: list of users (in dict)
     """
     
@@ -39,7 +39,7 @@ def remove_users_from_db(db_obj, users_list):
         db_obj (_type_): database object
         users_list (_type_): list of user_names
 
-    Returns:
+    :returns:
         results: a boolean determining if the removing is ok
     """
 
@@ -56,7 +56,7 @@ def add_new_user_to_db(db_obj, new_user_info):
         db_obj (_type_): database object
         new_user_info (_type_): in dict
 
-    Returns:
+    :returns:
         resault: a boolean determining if the user is added to database
     """
     
@@ -73,7 +73,7 @@ def set_users_on_ui(ui_obj, users_list):
         ui_obj: main ui object
         users_list: list of users (in dict)
     
-    Returns: None
+    :returns: None
     """
     
     # definr table parameters
@@ -132,7 +132,7 @@ def get_selected_users(ui_obj, users_list):
         ui_obj (_type_): main ui object
         users_list (_type_): list of users (in dict)
 
-    Returns:
+    :returns:
         selected_users: list of selected users user_names
     """
 
@@ -156,7 +156,7 @@ def get_user_info_from_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns:
+    :returns:
         user_info: in dict
 
     """
@@ -187,7 +187,7 @@ def new_user_info_validation(ui_obj, db_obj, user_info, default_user=False):
         user_info (_type_): input user_info (in dict)
         default_user (bool, optional): a boolean to determine if input user info is for default admin user. Defaults to False.
 
-    Returns:
+    :returns:
         message: the text message of validating user_info
         message_level: an int value in range [0, 2] determioning the level of messege
     """

@@ -2,7 +2,7 @@ from matplotlib import backends
 import numpy as np
 import cv2
 from scipy.spatial import distance
-from .backend import camera_funcs, mainsetting_funcs, texts
+from . import camera_funcs, mainsetting_funcs, texts
 
 
 
@@ -14,7 +14,7 @@ def draw_contour(gray, cnts):
         gray (_type_): image in gray format
         cnts (_type_): contours
 
-    Returns:
+    :returns:
         image: image with drawed contours
     """
 
@@ -32,7 +32,7 @@ def draw_rect(gray, cnts, areas):
         cnts (_type_): contours
         areas (_type_): list of areas of rectangles (in mm)
 
-    Returns:
+    :returns:
         image: image with drawed contours
     """
 
@@ -60,7 +60,7 @@ class extract_info():
         accuracy: min rectangular accuracy for contours
         gray_thrs: gray threshhold for thresholding
     
-    Returns:
+    :returns:
         None
     """
 
@@ -80,7 +80,7 @@ class extract_info():
 
         Args: None
 
-        Returns:
+        :returns:
             mask: threshold mask of input image
         """
 
@@ -95,7 +95,7 @@ class extract_info():
         Args:
             mask (_type_): threshold mask
 
-        Returns:
+        :returns:
             img: image with drawed countours
             cnts: foundeed counturs
         """
@@ -112,7 +112,7 @@ class extract_info():
         Args:
             cnts (_type_): input contours
 
-        Returns:
+        :returns:
             img: image with drawed countours
             cnts: area filtered counturs
         """
@@ -130,7 +130,7 @@ class extract_info():
         Args:
             x (_type_): _description_
 
-        Returns:
+        :returns:
             _type_: _description_
         """
 
@@ -147,7 +147,7 @@ class extract_info():
         Args:
             cnts (_type_): input contours
 
-        Returns:
+        :returns:
             img: image with drawed countours
             cnts: rectangle accuracy filtered counturs
         """
@@ -164,7 +164,7 @@ class extract_info():
         Args:
             cnts (_type_): input contours
 
-        Returns:
+        :returns:
             img: image with drawed countours
             rects: list of 6 rectangle countours
         """
@@ -185,7 +185,7 @@ class extract_info():
             cnts (_type_): input contours
             rects (_type_): input 6 rectangle contours
 
-        Returns:
+        :returns:
             resault: determining if done
             infoes: array of rectangle pair centers and pixel values
             infoes_final: array of rectangle pair centers and pixel values
@@ -228,7 +228,7 @@ class extract_info():
         Args:
             inputs (_type_): _description_
 
-        Returns:
+        :returns:
             pixel_value_parameters: array of 3 parameters
         """
 
@@ -274,7 +274,7 @@ def apply_pxvalue_calibration(ui_obj, api_obj, db_obj, image, next=True):
         image: input calibration image
         next: a boolean value determninig wheater take to next step or previous step
     
-    Returns: None
+    :returns: None
     """   
     
     step = api_obj.pxcalibration_step # get the current step

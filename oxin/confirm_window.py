@@ -22,7 +22,7 @@ from PySide6.QtWidgets import *
 
 #import detect_lenguage
 
-ui2, _ = loadUiType("confirm_btn.ui")
+ui2, _ = loadUiType("oxin/confirm_window.ui")
 
 
 class UI_confirm_window(QMainWindow, ui2):

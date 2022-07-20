@@ -17,7 +17,7 @@ import os
 
 
 
-ui, _ = loadUiType("notif_window.ui")
+ui, _ = loadUiType("oxin/notif_window.ui")
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
 
 
@@ -39,7 +39,7 @@ def rearange_active_notifes():
 
     Inputs: None
 
-    Returns: None
+    :returns: None
     """
     
     global notifs_list
@@ -60,7 +60,7 @@ class notification_manager():
 
     Inputs: None
 
-    Returns: None
+    :returns: None
     """
     
     def __init__(self) :
@@ -130,7 +130,7 @@ class notification_manager():
 
         Input: None
 
-        Returns: None
+        :returns: None
         """
         
         global notifs_list
@@ -155,7 +155,7 @@ class UI_main_window(QMainWindow, ui):
     Inputs:
         order: order of the window (for arranging the notifications and determining their order)
 
-    Returns: None
+    :returns: None
     """
     
     global widgets
@@ -236,7 +236,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         self.close_btn.clicked.connect(self.close_win)
@@ -249,7 +249,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         self.close()
@@ -262,7 +262,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         self.progresstimer.stop()
@@ -276,7 +276,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         # GET BUTTON CLICKED
@@ -321,7 +321,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         frame_geo = self.frameGeometry()
@@ -353,7 +353,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         self.appear_animation = QPropertyAnimation(self, b'geometry')
@@ -362,7 +362,7 @@ class UI_main_window(QMainWindow, ui):
             self.appear_animation.setStartValue(QRect(self.start_point[0], self.start_point[1], self.frameGeometry().width(), self.frameGeometry().height()))
             self.appear_animation.setEndValue(QRect(self.start_point[0]-self.frameGeometry().width()-pos_offset, self.start_point[1], self.frameGeometry().width(), self.frameGeometry().height()))
         else:
-            print('h')
+            #print('h')
             self.appear_animation.setStartValue(QRect(self.start_point[0], self.curront_point[1], self.frameGeometry().width(), self.frameGeometry().height()))
             self.appear_animation.setEndValue(QRect(self.start_point[0]-self.frameGeometry().width()-pos_offset, self.curront_point[1], self.frameGeometry().width(), self.frameGeometry().height()))
         
@@ -379,7 +379,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         # update position
@@ -413,7 +413,7 @@ class UI_main_window(QMainWindow, ui):
         Inputs:
             reverse: a boolean value deermining if the movement is reversly (move to top) 
         
-        Returns: None
+        :returns: None
         """
         
         # update order of the notifacation, the order of notifs is increased from top to bottom of the scrren
@@ -442,7 +442,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         if self.order > 0 and not self.move_flag:
@@ -479,7 +479,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         if self.order >= 0 and not self.move_flag:

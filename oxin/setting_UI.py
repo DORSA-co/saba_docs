@@ -1,7 +1,8 @@
 import sys
 from PyQt5 import QtCore
 from PyQt5.QtWidgets import * 
-from PyQt5.QtGui import * 
+from PyQt5.QtGui import *
+import cv2 
 from pyqt5_plugins import *
 from PyQt5.QtGui import QPainter
 from PySide6.QtCharts import *
@@ -25,8 +26,8 @@ from . import translate_ui
 
 
 # ui file pathes
-ui_file_path_en = 'main_window.ui'
-ui_file_path_fa = 'main_window_fa.ui'
+ui_file_path_en = 'oxin/main_window.ui'
+ui_file_path_fa = 'oxin/main_window_fa.ui'
 # startup json file, containing some startup parameters for program
 app_startup_json_path = 'start_up.json'
 
@@ -80,6 +81,7 @@ class UI_main_window(QMainWindow, ui):
         flags = Qt.WindowFlags(Qt.FramelessWindowHint) # remove the windows frame of ui
         self.pos_ = self.pos()
         self.setWindowFlags(flags)
+        self.statusBar().setMaximumHeight(5)
         # app title
         title = "SABA - Settings App"
         self.setWindowTitle(title)
@@ -138,6 +140,10 @@ class UI_main_window(QMainWindow, ui):
         self.PLC_btns = ['check_thermometer_min_plc', 'check_thermometer_max_plc', 'check_cooler_uptime_plc',
                          'check_system_operating_plc', 'check_air_valve_plc', 'check_camera_limit_plc', 'check_camera_frate_plc', 'check_projector_limit_plc',
                          'check_detect_sensor_plc', 'check_limitswitch_top_plc', 'check_limitswitch_bottom_plc']
+        
+        # image processing calibration elements
+        self.image_processing_elements = [self.comboBox_block_size, self.verticalSlider_defect, self.verticalSlider_noise\
+                            , self.checkBox_noise, self.image_processing_save_btn, self.load_recent_images_previous, self.load_recent_images_next]
 
 
         # others
@@ -158,6 +164,7 @@ class UI_main_window(QMainWindow, ui):
 
         #
         self.logger.create_new_log(message='UI object initialized and setting app loaded.')
+        
         
         
     def mousePressEvent(self, event):
@@ -183,7 +190,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         self.app_close_flag = True
@@ -246,7 +253,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         self.logger.create_new_log(message='Setting app minimized to taskbar.')
@@ -259,7 +266,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         if self.isMaximized():
@@ -277,7 +284,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         width=self.leftMenuBg.width()
@@ -374,7 +381,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         width=label_name.width()
@@ -413,7 +420,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         # top left buttons
@@ -489,7 +496,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         # GET BUTTON CLICKED
@@ -599,8 +606,7 @@ class UI_main_window(QMainWindow, ui):
         """
         
         # sliders in calibration page (Miss.Abtahi algo)
-        self.verticalSlider_noise.valueChanged[int].connect(self.show_value)
-        self.verticalSlider_defect.valueChanged[int].connect(self.show_value)
+        pass
 
 
     def set_checkboxes(self):
@@ -628,10 +634,11 @@ class UI_main_window(QMainWindow, ui):
         Outputs: None
         """
 
-        if b.isChecked() == True:
-            b.setText('Enable')
-        else:
-            b.setText('Disable')
+        # if b.isChecked() == True:
+        #     b.setText('Enable')
+        # else:
+        #     b.setText('Disable')
+        pass
                     
             
     def show_value(self, value):
@@ -646,30 +653,27 @@ class UI_main_window(QMainWindow, ui):
         
         btn = self.sender()
         btnName = btn.objectName()
-        if btnName=='verticalSlider_noise':
-            self.remaining_noise.setText(str(value))
-        elif btnName=='verticalSlider_defect':
-            self.remaining_defect.setText(str(value))
+        
 
 
-    def combo_image_preccess(self,s):
+    def combo_image_preccess(self, s):
         # self.block_image_proccessi
-        self.remaining_p_value.setText(str(self.block_image_proccessing[s]))
         self.set_default_image_proccess(s)
 
 
     def set_default_image_proccess(self,value):
-        if value=='Small':
-            self.verticalSlider_defect.setValue(1.5)
-            self.verticalSlider_noise.setValue(42)
-        #
-        if value=='Medium':
-            self.verticalSlider_defect.setValue(3)
-            self.verticalSlider_noise.setValue(35)
-        #
-        if value=='Large':
-            self.verticalSlider_defect.setValue(2)
-            self.verticalSlider_noise.setValue(40)
+        # if value=='Small':
+        #     self.verticalSlider_defect.setValue(1.5)
+        #     self.verticalSlider_noise.setValue(42)
+        # #
+        # if value=='Medium':
+        #     self.verticalSlider_defect.setValue(3)
+        #     self.verticalSlider_noise.setValue(35)
+        # #
+        # if value=='Large':
+        #     self.verticalSlider_defect.setValue(2)
+        #     self.verticalSlider_noise.setValue(40)
+        pass
 
 
     def selected_camera(self, s):
@@ -705,7 +709,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns:
+        :returns:
             username: in string
             password: in string
         """
@@ -743,7 +747,7 @@ class UI_main_window(QMainWindow, ui):
             clearable: a boolean value determining whater to clear the message after timeout or not
             prefix: a boolean value determinign wheater to show the message prefix or not
         
-        Returns: None
+        :returns: None
         """
         
         if text != '':
@@ -808,14 +812,34 @@ class UI_main_window(QMainWindow, ui):
         combo=self.comboBox_block_size.currentText()
         defect=self.verticalSlider_defect.value()
         noise=self.verticalSlider_noise.value()
-        noise_flag=self.checkBox_noise.isChecked()
+        noise_flag = 1 if self.checkBox_noise.isChecked() else 0
         #
-        return {'block_size':combo,'defect':defect/10,'noise':noise,'noise_flag':noise_flag}
+        return {'block_size':combo, 'defect':defect, 'noise':noise, 'noise_flag':noise_flag}
+
+
+    def set_image_proccessing_parms_to_ui(self, image_processing_params):
+        """
+        this function is used to take and return entered image calibration parms of Miss.Abtahi algo from ui
+
+        Inputs: None
+
+        Outputs:
+            dict{block_size, defect, noise, noise_flag}
+        """
+
+        try:
+            self.comboBox_block_size.setCurrentText(image_processing_params['block_size'])
+            self.verticalSlider_defect.setValue(image_processing_params['defect'])
+            self.verticalSlider_noise.setValue(image_processing_params['noise'])
+            self.checkBox_noise.setChecked(True if int(image_processing_params['noise_flag'])==1 else False)
+        
+        except:
+            return
 
 
     def get_width_guage_parms(self):
         """
-        this function will returns the user slected camera in calibration page
+        this function will :returns: the user slected camera in calibration page
 
         Inputs: None
 
@@ -832,7 +856,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
         
         self.cameraname_label.setText('No Camera Selected')
@@ -864,7 +888,7 @@ class UI_main_window(QMainWindow, ui):
             msg: input message (in string)
             color: message/text color (in string, html code or color name)
         
-        Returns: None
+        :returns: None
         """
         
         label_name.setText(msg)
@@ -879,7 +903,7 @@ class UI_main_window(QMainWindow, ui):
         Inputs:
             label_name: name of label element
         
-        Returns: None
+        :returns: None
         """
         
         return label_name.text()
@@ -893,7 +917,7 @@ class UI_main_window(QMainWindow, ui):
             label_name: name of the label element
             img: input image to fit/set to label
         
-        Returns: None
+        :returns: None
         """
         
         h, w, ch = img.shape
@@ -937,7 +961,7 @@ class UI_main_window(QMainWindow, ui):
             maximum: a boolean value determning wheater the input height/size is maximumheight or not
                 if both minimum and maximum be False, the size will be applied as both minimumheight and maximumheight
         
-        Returns: None
+        :returns: None
         """
         
         if maximum:
@@ -953,11 +977,11 @@ class UI_main_window(QMainWindow, ui):
 
     def get_plc_ip(self):
         """
-        this function takes anf returns input PLC IP from ui
+        this function takes anf :returns: input PLC IP from ui
 
         Inputs: None
 
-        Returns:
+        :returns:
             PLC ip: (in string)
         """
         
@@ -971,7 +995,7 @@ class UI_main_window(QMainWindow, ui):
         Inputs:
             text: PLC ip (in string)
 
-        Returns: None
+        :returns: None
         """
 
         self.plc_ip_line.setText(text)
@@ -979,7 +1003,7 @@ class UI_main_window(QMainWindow, ui):
 
     def get_plc_parms(self):
         """
-        this function will take and returns the input PLC parameters and addreses from ui
+        this function will take and :returns: the input PLC parameters and addreses from ui
 
         Inputs: None
 
@@ -1048,7 +1072,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         # persian

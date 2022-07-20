@@ -18,7 +18,7 @@ from . import login_api
 from .backend import texts
 
 
-ui, _ = loadUiType("confirm_window.ui")
+ui, _ = loadUiType("oxin/confirm_window.ui")
 os.environ["QT_FONT_DPI"] = "96" # FIX Problem for High DPI and Scale above 100%
 
 
@@ -87,7 +87,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         self.close_btn.clicked.connect(self.close_win)
@@ -100,7 +100,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         self.close()
@@ -114,7 +114,7 @@ class UI_main_window(QMainWindow, ui):
 
         Inputs: None
 
-        Returns: None
+        :returns: None
         """
 
         # GET BUTTON CLICKED

@@ -1,4 +1,4 @@
-from backend import user_management_funcs, texts, date_funcs
+from . import user_management_funcs, texts, date_funcs
 
 
 # default username info
@@ -19,9 +19,8 @@ def create_default_records(ui_obj, api_obj):
     """
     this function is used to create default records in database, if not exist
 
-    Args:
-        ui_obj (_type_): main ui object
-        api_obj (_type_): main api object
+    :param ui_obj: (_type_) main ui object
+    :param api_obj: (_type_) main api object
     """
     # add default user
     ui_obj.logger.create_new_log(message=texts.MESSEGES['adding_defalt_user']['en'], level=1)

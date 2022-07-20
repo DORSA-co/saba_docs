@@ -22,7 +22,7 @@ from PySide6.QtCore import *
 from PySide6.QtUiTools import loadUiType
 from PySide6.QtWidgets import *
 
-ui2, _ = loadUiType("eror_window.ui")
+ui2, _ = loadUiType("oxin/eror_window.ui")
 
 
 class UI_eror_window(QMainWindow, ui2):

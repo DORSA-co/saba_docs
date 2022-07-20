@@ -49,7 +49,7 @@ class API:
 
         Inputs: None
 
-        Returns:
+        :returns:
             result: a boolean value detrmining if the authentication done or not
             user_info: a dict containing infoes of the user
                 {user_name: username in string, password: password in string}

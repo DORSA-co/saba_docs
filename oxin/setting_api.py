@@ -4,30 +4,26 @@ import threading
 from . import database_utils
 import cv2
 import os
-import json
+import sys
 
 from . import login_UI
 from . import confirm_UI
 from . import notif_UI
-from . import setting_UI
-from .backend import camera_funcs, chart_funcs, colors_pallete, mainsetting_funcs, storage_funcs, add_default_database_records
+from .backend import camera_funcs, chart_funcs, colors_pallete, mainsetting_funcs, storage_funcs
 from .backend import user_login_logout_funcs, user_management_funcs, pxvalue_calibration, defect_management_funcs, plc_managment, texts
 from .calibrationCal.SteelSurfaceInspection import SSI
 from .calibrationCal import load_recent_images
 from .utils.move_on_list import moveOnList
 
 
-
 class API:
     """
-        the API class has the main functionalities of oxin setting app, it takes as input the ui object, and other ui objects like login window,
-        alert window and notification windows are initialized in this class
+    the API class has the main functionalities of oxin setting app, it takes as input the ui object, and other ui objects like login window,
+    alert window and notification windows are initialized in this class
 
-        Inputs:
-            ui: the ui file of the app
-
-        Outputs: None
-        """
+    :param ui: the ui file of the app
+    ::returns: None
+    """
 
     def __init__(self, ui):
         #------------------------------------------------------------------------------------------------------------------------
@@ -191,7 +187,7 @@ class API:
                 with open(setting_UI.app_startup_json_path, 'w') as f:
                     json.dump(self.ui.start_up_settings, f , indent=4, sort_keys=True)
                 f.close()
-                
+
             except:
                 pass
 
@@ -223,9 +219,7 @@ class API:
         """
         this function is used to connect ui buttons to their functions
 
-        Inputs: None
-
-        Returns: None
+        ::returns: None
         """
 
         # close nutton
@@ -296,12 +290,12 @@ class API:
         self.ui.tableWidget_defectgroups.horizontalHeader().sectionClicked.connect(self.tabledefectgroups_onHeaderClicked)
 
         # Calibration Page
-        self.ui.load_recent_images.clicked.connect(self.control_list_image)
+        self.ui.load_recent_images.clicked.connect(self.select_image_procesing_directory)
         self.ui.load_recent_images_next.clicked.connect(self.next_image_precessing)
         self.ui.load_recent_images_previous.clicked.connect(self.previous_image_precessing)
-        self.ui.comboBox_block_size.currentTextChanged.connect(self.image_processing_calibration)
-        self.ui.verticalSlider_noise.valueChanged[int].connect(self.image_processing_calibration)
-        self.ui.verticalSlider_defect.valueChanged[int].connect(self.image_processing_calibration)
+        self.ui.comboBox_block_size.currentTextChanged.connect(lambda: self.image_processing_calibration(params_changed=True))
+        self.ui.verticalSlider_noise.valueChanged[int].connect(lambda: self.image_processing_calibration(params_changed=True))
+        self.ui.verticalSlider_defect.valueChanged[int].connect(lambda: self.image_processing_calibration(params_changed=True))
         self.ui.image_processing_save_btn.clicked.connect(partial(self.save_image_processing_parms))
         self.ui.calib_rotate_spinbox.valueChanged.connect(lambda: self.apply_calibration_on_image(self.ui.calibration_image))
         self.ui.calib_shifth_spinbox.valueChanged.connect(lambda: self.apply_calibration_on_image(self.ui.calibration_image))
@@ -354,9 +348,7 @@ class API:
         this function is used to do some tasks that are related to dashboard page.
         the taks are almost the dashboard parameters 
 
-        Inputs: None
-
-        Returns: None
+        ::returns: None
         """
 
         # camera summary
@@ -388,11 +380,9 @@ class API:
     def save_changed_camera_params(self, apply_to_multiple=False):
         """
         save input camera parameters entered on UI camera setting page to database
-
-        Inputs:
-            apply_to_multiple: a boolean determining wheter apply settings to multiple cameras or only current camera
         
-        Returns: None
+        :param apply_to_multiple: a boolean determining wheter apply settings to multiple cameras or only current camera        
+        ::returns: None
         """
         
         # get camera-id and camera params from ui
@@ -442,9 +432,7 @@ class API:
         parameters of that camera from database.
         at every camera selection, the previous camera will disconnected if it is connected
 
-        Inputs: None
-
-        Returns: None
+        ::returns: None
         """
         
         # disconnect any camera if connected:
@@ -482,10 +470,8 @@ class API:
         """
         this functon is used to connect/disconnect to camera
 
-        Inputs:
-            calibration: a boolean determining if the current page is calibration page
-
-        Returns: None
+        :param calibration: a boolean determining if the current page is calibration page
+        ::returns: None
         """
         
         # get camera parametrs on camera-settings page
@@ -552,11 +538,9 @@ class API:
     def show_camera_picture(self, calibration=False):
         """
         this function is used to start image grabbing from camera, and update image on ui
-
-        Inputs:
-            calibration: a boolean detrmining if current page is calibration or not
-
-        Returns: None
+        
+        :param calibration: a boolean detrmining if current page is calibration or not
+        ::returns: None
         """
         
         # update ui elements
@@ -626,9 +610,7 @@ class API:
         """
         this function is used to disconnect camera if any of camera parameters in camera seting page are changed, or stackwidjet current page change
 
-        Inputs: None
-
-        Returns: None
+        ::returns: None
         """
         
         if self.ui.camera_connect_flag:
@@ -655,11 +637,9 @@ class API:
     def apply_calibration_on_image(self, image):
         """
         this function is used to apply soft-calibration on image and then update results on ui
-
-        Args:
-            image (_type_): input calibration image from camera
         
-        Returns: None
+        :param image: (_type_) input calibration image from camera
+        ::returns: None
         """
         try:
             # no image is available
@@ -683,10 +663,8 @@ class API:
         """
         this function is used to update camera calibration params to database.
         the input params are returned from ui
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
         # get camera-id from the camera-name lable in the camera settings section
         camera_id = camera_funcs.get_camera_id(self.ui.comboBox_cam_select_calibration.currentText())
@@ -721,16 +699,15 @@ class API:
         """
         this functino is used to apply returned setting parameters in setting page, to app/database
         according to mode. we can select which parameters to apply/set
-
-        Args:
-            mode (str, optional): it is used to select which parameters to apply/set. Defaults to 'appearance'.
+        
+        :param mode: (str, optional): it is used to select which parameters to apply/set. Defaults to 'appearance'.
                 'appearance': apply appearance params like font, color or ...
                 'calibration': apply calibration params
                 'imageprocessing': apply image preprocessing parasms
                 'multitasking':
                 'defects':
         
-        Returns: None
+        ::returns: None
         """
         change_language_flag = False
         # get parameters from UI
@@ -791,11 +768,9 @@ class API:
     def load_appearance_params_on_start(self, mainsetting_page=False):
         """
         this function is used to load appearance params from database and apply to program on start-up or function call
-
-        Args:
-            mainsetting_page (bool, optional): a boolean determining wheather on mainsetting page or not. Defaults to False.
         
-        Returns: None
+        :param mainsetting_page: (bool, optional) a boolean determining wheather on mainsetting page or not. Defaults to False.
+        ::returns: None
         """
 
         # load from database
@@ -827,10 +802,8 @@ class API:
     def refresh_users_table(self):
         """
         this function is used to refresh users table on ui
-
-        Inputs: None
-
-        Returns: None
+        
+        ::returns: None
         """
         
         try:
@@ -848,10 +821,8 @@ class API:
     def remove_users(self):
         """
         this function is used to remove selected users in ui users table, from database
-
-        Inputs: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         # get selected users from UI
@@ -898,11 +869,9 @@ class API:
         this function is used to add new user to database.
         the user info is returned from ui, and used as input to add to database
 
-        Args:
-            default_user (dict, optional): if not empty, this dict is use as input to add to database. if empty, new user_infoes are get
+        :param default_user: (dict, optional) if not empty, this dict is use as input to add to database. if empty, new user_infoes are get
             from ui
-        
-        Returns: None
+        ::returns: None
         """
 
         # get new user-info from UI
@@ -959,10 +928,8 @@ class API:
         """
         this function is the event for confirm window yes button,
         accoarding to message of the confirm window, the function decides to take right action
-
-        Inputs: None
-
-        Returns: None
+        
+        ::returns: None
         """
         
         # user logout form
@@ -1020,10 +987,8 @@ class API:
     def things_to_do_on_stackwidject_change(self):
         """
         this function performs tasks needed to done on ui stackwidjet (page) change
-
-        Inputs: None
-
-        Returns: None
+       
+        ::returns: None
         """
 
         self.disconnect_camera_on_ui_change()
@@ -1034,10 +999,8 @@ class API:
     def on_close_operations(self):
         """
         this function is used to check/do some functions before closing the app
-
-        Inputs: None
-
-        Returns: None
+        
+        ::returns: None
         """
         
         # dissconnect plc if it is connected
@@ -1053,53 +1016,164 @@ class API:
 
 
     # Calibration Page detection alghorithm params
-    #------------------------------------------------------------------------------------------------------------------------     
-    def control_list_image(self):
-        input_img_path=self.db.get_dataset_path()
-        input_img_path=load_recent_images.load_recent_images(input_img_path, image_count=5)   # load random last coil 3 images in path database
-        self.move_on_list.add(input_img_path,'image_proccessing_path')
-        self.image_processing_calibration()
+    #------------------------------------------------------------------------------------------------------------------------ 
+    def select_image_procesing_directory(self):
+        """
+        this function is used to select image processing drectory contaiing images to fix image processing params with
+        
+        ::returns: None
+        """
+        
+
+        # check if live camera folder exists
+        drive_info = storage_funcs.get_camera_live_drive_parameters_from_db(db_obj=self.db)
+        dir_path = drive_info['camera_live_drive'] + '/' + drive_info['parent_path']
+
+        try:
+            if not os.path.exists(dir_path):
+                self.ui.show_mesagges(self, self.ui.message_calibration, text=texts.WARNINGS['camera_live_folder_not_exists'][self.ui.language], level=1)
+                return
+            
+            else:
+                # open dialog to select directory contatiing images
+                self.directorydialog = sQFileDialog(None, 'Select a directory containing images', dir_path)
+                self.directorydialog.setFileMode(sQFileDialog.Directory)
+                self.directorydialog.setOption(sQFileDialog.DontUseNativeDialog, True)
+                self.directorydialog.setOption(sQFileDialog.ShowDirsOnly, False)
+                selected = self.directorydialog.exec()
+
+                #
+                if selected:
+                    directory_path = self.directorydialog.selectedFiles()[0]
+                else:
+                    directory_path = ''
+
+                # check if any directory is selected
+                if directory_path == '':
+                    self.ui.show_mesagges(self.ui.message_calibration, text=texts.WARNINGS['no_directory_selected'][self.ui.language], level=1)
+                    return
+
+                # 
+                self.control_list_image(input_img_path=directory_path)
+                
+        except:
+            return
+            
+
+    def control_list_image(self, input_img_path):
+        """
+        this function is used to load image procesing directory contatiing images
+        
+        :type input_img_path: str
+        :param input_img_path: inpput image directory
+        ::returns: None
+        """
+
+        # get images pathes
+        input_img_path = load_recent_images.load_recent_images(input_img_path, image_count=10)   # load random last coil 3 images in path database
+    
+        # check if any image exists
+        if len(input_img_path) == 0:
+            # diactivate ui buttons
+            self.ui.set_button_enable_or_disable(self.ui.image_processing_elements, enable=False)
+            self.ui.show_mesagges(self.ui.message_calibration, texts.WARNINGS['no_picture_available_in_path'][self.ui.language], level=1)
+            try:
+                camera_funcs.set_camera_picture_to_ui(ui_image_label=self.ui.image_processing_image, image=cv2.imread('./images/no_image.png'))
+            except:
+                camera_funcs.set_camera_picture_to_ui(ui_image_label=self.ui.image_processing_image, image=np.zeros((500,500,3)).astype(np.uint8))
+
+        else:
+            self.ui.show_mesagges(self.ui.message_calibration, texts.MESSEGES['pictures_loaded_from_path'][self.ui.language], level=0)
+            # active ui buttons
+            self.ui.set_button_enable_or_disable(self.ui.image_processing_elements, enable=True)
+
+            # load image processing params from database to ui
+            try:
+                image_procesing_params = self.db.get_image_processing_parms()
+                self.ui.set_image_proccessing_parms_to_ui(image_procesing_params)
+                self.ui.logger.create_new_log(message=texts.MESSEGES['load_image_processsing_params_from_database']['en'], level=1)
+
+            except Exception as e:
+                self.ui.logger.create_new_log(message=texts.ERRORS['load_image_processsing_params_from_database_failed']['en'], level=5)
+
+            # crate image list object
+            self.move_on_list.add(input_img_path, 'image_proccessing_path')
+            # run image processing algo
+            self.image_processing_calibration()
 
     
     def next_image_precessing(self):
+        """
+        this function is used to load next image for image processing calibration
+        
+        ::returns: None
+        """
+
         try:
             self.move_on_list.next_on_list('image_proccessing_path')
             self.image_processing_calibration()
+
         except:
             pass
 
 
     def previous_image_precessing(self):
+        """
+        this function is used to load prev image for image processing calibration
+        
+        ::returns: None
+        """
+
         try:
             self.move_on_list.next_on_list('image_proccessing_path')
             self.image_processing_calibration()
+
         except:
             pass
 
     
-    def image_processing_calibration(self):
-        try:
-            parms=self.ui.get_image_proccessing_parms()
-            path=self.move_on_list.get_current('image_proccessing_path')
-            self.ui.set_label(self.ui.image_processing_image_path,path)
-            output_img = SSI(path, parms['block_size'], parms['defect'], parms['noise'], parms['noise_flag'])
-            self.ui.set_image_label(self.ui.image_processing_image,output_img)
+    def image_processing_calibration(self, params_changed=False):
+        """
+        this function is used to apply image processing algo on input image
+        
+        :param params_changed: (bool, optional) a boolean to detemine if algo params changed. Defaults to False.
+        
+        ::returns: None
+        """
 
-        except :
-            self.ui.show_mesagges(self.ui.message_calibration, texts.WARNINGS['no_picture_loaded'][self.ui.language], level=1)
+        try:
+            # get params from ui
+            parms=self.ui.get_image_proccessing_parms()
+            # get current image
+            path=self.move_on_list.get_current('image_proccessing_path')
+            # run algo
+            output_img = SSI(path, parms['block_size'], parms['defect'], parms['noise'], parms['noise_flag'])
+            # show output image on ui
+            self.ui.set_image_label(self.ui.image_processing_image, output_img)
+
+        except:
+            if not params_changed:
+                self.ui.show_mesagges(self.ui.message_calibration, texts.ERRORS['image_processing_algo_failed'][self.ui.language], level=2)
 
 
     def save_image_processing_parms(self):
         """
         this function is used to save image processing params from Miss.Abtahi algo to database
-
-        Arge: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
-        parms=self.ui.get_image_proccessing_parms()
-        self.db.set_image_processing_parms(parms)
+        parms = self.ui.get_image_proccessing_parms()
+        # set on database
+        res = self.db.set_image_processing_parms(parms)
+        if res:
+            self.ui.logger.create_new_log(message=texts.MESSEGES['update_image_processsing_params_on_database']['en'], level=1)
+            self.ui.show_mesagges(self.ui.message_calibration, texts.MESSEGES['update_image_processsing_params_on_database'][self.ui.language], level=0)
+
+        else:
+            self.ui.logger.create_new_log(message=texts.ERRORS['update_image_processsing_params_on_database_failed']['en'], level=1)
+            self.ui.show_mesagges(self.ui.message_calibration, texts.ERRORS['update_image_processsing_params_on_database_failed'][self.ui.language], level=2)
+
 
     #------------------------------------------------------------------------------------------------------------------------
     
@@ -1111,11 +1185,10 @@ class API:
         """
         this function is used to refresh defect/defect-group tables from database to ui tables
     
-        Inputs:
-            only_defects: a boolean determining only update defect table
-            only_defect_groups: a boolean determining only update defect-groups table
+        :param only_defects: a boolean determining only update defect table
+        :param only_defect_groups: a boolean determining only update defect-groups table
         
-        Returns: None
+        ::returns: None
         """
         
         # update defects table
@@ -1173,12 +1246,10 @@ class API:
         """
         this function is used to add a new defect returned from ui to database.
         it is also used to add/update edited defect on dataabse
-
-        Args:
-            default_defect (dict, optional): if not empty, it is used as new defect to add to database,
-            else the new defect info is returned from ui. Defaults to {}.
         
-        Returns: None
+        :param default_defect: (dict, optional) if not empty, it is used as new defect to add to database,
+            else the new defect info is returned from ui. Defaults to {}.
+        ::returns: None
         """
 
         line_edits = [self.ui.defect_name_lineedit, self.ui.defect_shortname_lineedit, self.ui.defect_id_lineedit]
@@ -1191,6 +1262,7 @@ class API:
             else:
                 new_defect_info = default_defect
 
+            
             if len(new_defect_info) == 0:
                 self.ui.logger.create_new_log(message=texts.ERRORS['ui_get_new_defect_info_failed']['en'], level=5)
                 self.notif_manager.create_new_notif(massage=texts.ERRORS['ui_get_new_defect_info_failed'][self.ui.language], win_color=self.win_color, font_size=self.font_size, font_style=self.font_style, level=2)
@@ -1279,11 +1351,9 @@ class API:
     def remove_defects(self, defect_group=False):
         """
         this function is used to remove selected defects/defect groups from database
-
-        Args:
-            defect_group (bool, optional): a boolean determining wheather to remove defect_groups or not. Defaults to False.
         
-        Returns: None
+        :param defect_group: (bool, optional) a boolean determining wheather to remove defect_groups or not. Defaults to False.
+        ::returns: None
         """
 
         # remove defects
@@ -1401,11 +1471,9 @@ class API:
     def edit_defects(self, defect_group=False):
         """
         this function is used to edit selected defect/defect-group and change its parameters
-
-        Args:
-            defect_group (bool, optional): a boolean determining whather to edit defect-group. Defaults to False.
         
-        Returns: None
+        :param defect_group: (bool, optional) a boolean determining whather to edit defect-group. Defaults to False.
+        ::returns: None
         """
 
         # edit defect
@@ -1500,10 +1568,9 @@ class API:
     def show_related_defects(self):
         """
         this function is used to show related defects to a selected defect-group
-
-        Args: None
-
-        Returns: None
+        
+        
+        ::returns: None
         """
 
         # get defects-groups from database
@@ -1571,9 +1638,9 @@ class API:
     def filter_defects(self, defect_group=False):
         """
         this function is used to filter/search in defect table
-
-        Args:
-            defect_group (bool, optional): a boolean determining whather to search in defect-groups. Defaults to False.
+        
+        :param defect_group: (bool, optional) a boolean determining whather to search in defect-groups. Defaults to False.
+        ::returns: None
         """
 
         # search/filter defects
@@ -1604,11 +1671,9 @@ class API:
     def tabledefects_onHeaderClicked(self, logicalIndex):
         """
         this function is used to sort items accoading to one column, if clicked on that column
-
-        Args:
-            logicalIndex (_type_): _description_
-
-        Returns: None
+        
+        :param logicalIndex: (_type_) _description_
+        ::returns: None
         """
         if logicalIndex != 6:
             self.ui.tableWidget_defects.sortItems(logicalIndex, sQtCore.Qt.AscendingOrder)
@@ -1618,11 +1683,9 @@ class API:
     def tabledefectgroups_onHeaderClicked(self, logicalIndex):
         """
         this function is used to sort items accoading to one column, if clicked on that column
-
-        Args:
-            logicalIndex (_type_): _description_
-
-        Returns: None
+        
+        :param logicalIndex: (_type_) _description_
+        ::returns: None
         """
 
         self.ui.tableWidget_defectgroups.sortItems(logicalIndex, sQtCore.Qt.AscendingOrder)
@@ -1636,12 +1699,11 @@ class API:
     def add_defect_group(self, default_defectgroup={}):
         """
         this function is used to add a defect group returned from ui/user to database. 
-
-        Args:
-            default_defectgroup (dict, optional): if not empty, it is used as input to add to database
+        
+        :param default_defectgroup: (dict, optional) if not empty, it is used as input to add to database
             if not, the info returned from ui is used. Defaults to {}.
         
-        Returns: None
+        ::returns: None
         """
 
         line_edits = [self.ui.defect_group_name_lineedit, self.ui.defect_group_id_lineedit]
@@ -1736,12 +1798,10 @@ class API:
     def run_storage_check_timer(self, storage_check_interval=60, stop=False):
         """
         this function is used to initailize and run timer for checking storage statues
-
-        Args:
-            storage_check_interval (int, optional): check interval (in seconds). Defaults to 60.
-            stop (bool, optional): a boolean determining to stop the timer. Defaults to False.
-
-        Returns: None
+        
+        :param storage_check_interval: (int, optional) check interval (in seconds). Defaults to 60.
+        :param stop: (bool, optional) a boolean determining to stop the timer. Defaults to False.
+        ::returns: None
         """
 
         # stop timer if exists
@@ -1779,9 +1839,8 @@ class API:
     def refresh_storege_page(self, only_chart=False):
         """
         this function is used to refresh storage page
-
-        Args:
-            only_chart (bool, optional): if true, only the storage chart is updated. Defaults to False.
+        
+        :param only_chart: (bool, optional) if true, only the storage chart is updated. Defaults to False.
         """
         if not only_chart:
             storage_funcs.update_camera_live_drive_combo(ui_obj=self.ui, available_drives=None)
@@ -1807,10 +1866,8 @@ class API:
     def update_camera_live_storage_parms(self):
         """
         this function is used to update/set defalt storage params returned from ui, to database
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         # get drive params from ui
@@ -1866,10 +1923,8 @@ class API:
     def check_storage_status(self):
         """
         this function is used to check storage statues
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         # get current drive infoes
@@ -1968,10 +2023,8 @@ class API:
     def force_clear_camera_live_storage(self):
         """
         this function is used to makes True the flag for force clearing storage
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         self.force_clear = True
@@ -1983,10 +2036,8 @@ class API:
     def connect_plc(self):
         """
         this function is used to connect to plc
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         # get plc ip
@@ -2034,9 +2085,8 @@ class API:
     def disconnect_plc(self, on_close=False):
         """
         this function is used to disconnect from plc 
-
-        Args:
-            on_close (bool, optional): a boolean deermining if function is called on app close. Defaults to False.
+        
+        :param on_close: (bool, optional) a boolean deermining if function is called on app close. Defaults to False.
         """
 
         try:
@@ -2066,9 +2116,8 @@ class API:
     def check_all_plc_parms(self):
         """
         this function is used to check all plc logic pathes values
-
-        Returns:
-            values: a dict of plc values
+        
+        ::returns: values: a dict of plc values
         """
         values={}
 
@@ -2083,12 +2132,9 @@ class API:
     def check_plc_parms(self, name):
         """
         this function is used to check/get value of a path on plc
-
-        Args:
-            name (_type_): check botton name of the path
-
-        Returns:
-            value: value stored in path
+        
+        :param name: (_type_) check botton name of the path
+        ::returns: value: value stored in path
         """
         # path_list={'check_limit_1_btn':self.ui.line_limit1_plc,'check_limit_2_btn':self.ui.line_limit2_plc,\
         #     'check_top_motor_btn':self.ui.line_top_motor_plc,'check_down_motor_btn':self.ui.line_down_motor_plc,\
@@ -2118,11 +2164,8 @@ class API:
     def load_plc_parms(self):
         """
         this function is used to load plc params from database, and set to ui plc page
-
-        Args: None
-
-        Returns:
-            resault: a boolean determining if params loaded from database
+        
+        ::returns: resault: a boolean determining if params loaded from database
         """
 
         parms=self.db.load_plc_parms()
@@ -2161,10 +2204,8 @@ class API:
     def update_path_plc(self):
         """
         this function is used to get value of a path on plc, everytime pathes-combobox has changed
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         try:
@@ -2179,10 +2220,8 @@ class API:
     def save_plc_parms(self):
         """
         this function is used to save plc params to database
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         plc_parms = self.ui.get_plc_parms()
@@ -2205,10 +2244,8 @@ class API:
     def set_plc_value(self):
         """
         this function is used to update/set a path calue on plc
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         # print('set')
@@ -2230,10 +2267,8 @@ class API:
     def save_plc_ip(self):
         """
         this function is used to get plc ip from ui and update on database
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         ip = self.ui.get_plc_ip()
@@ -2253,10 +2288,8 @@ class API:
     def set_plc_ip_to_ui(self):
         """
         this function is used to get plc ip from database and set to ui
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         ip = self.db.load_plc_ip()
@@ -2275,10 +2308,8 @@ class API:
     def update_plc_dashboard_parms(self):
         """
         this function is used to update plc summary satues on dashboard
-
-        Args: None
-
-        Returns: None
+        
+        ::returns: None
         """
 
         try:
@@ -2297,6 +2328,12 @@ class API:
     
 
     def write_parms(self):
+        """
+        ============================description===========================
+
+        ::returns: None
+        """
+
         parms_dict = self.check_all_plc_parms()
         # self.notif_manager.create_new_notif(massage='Write Changes PLC', win_color=self.win_color, font_size=self.font_size, font_style=self.font_style)  # For big Change in plc we show a notif
         try:

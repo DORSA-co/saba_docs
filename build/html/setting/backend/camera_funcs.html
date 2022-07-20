@@ -1,79 +1,35 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>camera_funcs module &mdash; Saba 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="Saba 1.0 documentation" href="../../index.html"/>
-        <link rel="up" title="Backend" href="../backend%20Dir.html"/>
-        <link rel="next" title="camera_connection module" href="camera_connection.html"/>
-        <link rel="prev" title="Backend" href="../backend%20Dir.html"/> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="camera_connection module" href="camera_connection.html" />
+    <link rel="prev" title="add_defult_database_records module" href="add_default_database_records.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
-
-          
+        <div class="wy-side-nav-search" >
             <a href="../../index.html" class="icon icon-home"> Saba
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,17 +37,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Electrical.html">Electrical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Mechanics.html">Mechanics</a></li>
@@ -116,149 +62,584 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Others.html">Others</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Saba</a>
-        
       </nav>
 
-
-      
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../Software.html">Softwares</a> &raquo;</li>
-        
           <li><a href="../../Setting%20Software.html">Setting Software</a> &raquo;</li>
-        
           <li><a href="../backend%20Dir.html">Backend</a> &raquo;</li>
-        
       <li>camera_funcs module</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="../../_sources/setting/backend/camera_funcs.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <section id="camera-funcs-module">
-<h1>camera_funcs module<a class="headerlink" href="#camera-funcs-module" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="module-oxin.backend.camera_funcs">
+<span id="camera-funcs-module"></span><h1>camera_funcs module<a class="headerlink" href="#module-oxin.backend.camera_funcs" title="Permalink to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.apply_soft_calibrate_on_image">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">apply_soft_calibrate_on_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_calibration_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pxcalibration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.apply_soft_calibrate_on_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to apply soft calibration params to camera image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>image</strong> – input camera image</p></li>
+<li><p><strong>camera_calibration_params</strong> – input camera calibration params (as a dict)</p></li>
+<li><p><strong>pxcalibration</strong> – a boolean determining wheater in pixel calibration step or not</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>image: result image that is soft calibrated</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.assign_existing_serials_to_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">assign_existing_serials_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">available_serials</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.assign_existing_serials_to_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is called on every camera selection on camera settngs page,
+it takes as input available camera serials list, and current camera id, and those serial that not assigned to any camera, and the current camera serial
+are added to serial combobox on ui</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>db_obj</strong> – database object</p></li>
+<li><p><strong>camera_id</strong> – current camera id</p></li>
+<li><p><strong>available_serials</strong> – list of available camera serals (list of strings)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.connect_disconnect_camera">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">connect_disconnect_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_pbj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">serial_number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_cam_connection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calibration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.connect_disconnect_camera" title="Permalink to this definition"></a></dt>
+<dd><p>this functions is used to connect/disconnect from camera.
+in connect mode, a connection to camera with input serial number is returned,
+while in dissconnect mode, the input camera connection is closed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>db_pbj</strong> – database object</p></li>
+<li><p><strong>serial_number</strong> – camera serial number (in string)</p></li>
+<li><p><strong>connect</strong> – a boolean determning wheter to create a new connection to camer, or disconnect from current camera</p></li>
+<li><p><strong>current_cam_connection</strong> – current camera connection object</p></li>
+<li><p><strong>calibration</strong> – a boolean determining if camera connection is for camera calibration page</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>on conect:
+camera_connection: the stablished camera connection, if faled, return None
+message: a meesage determinig the error occured while connecting to camera</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>on desconnect: None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.convert_cv2_to_qt_image">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">convert_cv2_to_qt_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.convert_cv2_to_qt_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to converte a cv2 image to qt format image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>image</strong> – (_type_) image in cv2 format</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>qt_image: image in qt format</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.draw_grid">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">draw_grid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">crosshair</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.draw_grid" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to draw align grids on input image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> – (_type_) _description_</p></li>
+<li><p><strong>crosshair</strong> – (bool, optional) a boolean determining wheather draw cross-hair or grid. Defaults to True.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>image: image with grid</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_available_cameras_list_serial_numbers">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_available_cameras_list_serial_numbers</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_available_cameras_list_serial_numbers" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get available camera serials that are connected to network</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>serial_list: list of available camera serials (in string)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_camera_calibration_params_from_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_calibration_params_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_camera_calibration_params_from_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get camera calibration params from database, given camera id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>camera_id</strong> – (_type_) _description_</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>camera_calibration_params: in dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_camera_calibration_params_from_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_calibration_params_from_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_camera_calibration_params_from_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function returns the camera sot calibration params from ui</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>camera_calibration_params: in dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_camera_checkbox_values">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_checkbox_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_camera_checkbox_values" title="Permalink to this definition"></a></dt>
+<dd><p>this function returns a value determining wheareas to apply camera settings/params to only current camera, or multiple cameras
+in ui, there are two checkboxes for bottom and top cameras. enabling each of them means to apply current settings to all of the cameras on top/bottom</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>a number in range [0, 3], determining wheareas to apply camera settings/params to only current camera, or multiple cameras
+0: apply to current camera only
+1: apply to top cameras
+2: apply to bottom cameras
+3: apply to all cameras</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_camera_id">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_id</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_name_label</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_camera_id" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get camera id, using camera name label in ui camera settings page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>camera_name_label</strong> – in string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>camera_id: in string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_camera_params_from_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_params_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_camera_params_from_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get camera params from database, using camera id</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – database object</p></li>
+<li><p><strong>camera_id</strong> – id of the camera (in string)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>camera_params: a dict containing camera parameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_camera_params_from_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_params_from_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_camera_params_from_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get camera parameters from ui (camera settings page)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>camera_params</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.get_picture_from_camera">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">get_picture_from_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_connection</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.get_picture_from_camera" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get picture from camera, using its camera connection</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>camera_connection</strong> – (_type_) _description_</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>live_image: image</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.ip_validation">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">ip_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ip_address</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.ip_validation" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to validate ip to be in right format</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>ip_address</strong> – input ip address (in string)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>message: a text message determining if the ip validation is ok or not,
+‘True’ for validation ok</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.rotate_calibration_image">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">rotate_calibration_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">angle</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.rotate_calibration_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to rotate image along center by input angle</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> – input image</p></li>
+<li><p><strong>angle</strong> – input angle to rotate image (in degree)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>rotated_image:</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.set_camera_calibration_params_to_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">set_camera_calibration_params_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_calibration_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.set_camera_calibration_params_to_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set camera calibration params to database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>camera_id</strong> – (_type_) _description_</p></li>
+<li><p><strong>camera_calibration_params</strong> – (_type_) in dict</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resault: boolean determining update ok</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.set_camera_calibration_params_to_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">set_camera_calibration_params_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_calibration_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.set_camera_calibration_params_to_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this functino is used to set camera calibration params returned from dataabse, to ui</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>camera_calibration_params</strong> – (_type_) in dict</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.set_camera_params_to_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">set_camera_params_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">checkbox_values</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.set_camera_params_to_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update camera params on database, given camera id(s)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – database object</p></li>
+<li><p><strong>camera_id</strong> – current camera id (in string)</p></li>
+<li><p><strong>camera_params</strong> – dict of camera params</p></li>
+<li><p><strong>checkbox_values</strong> – value of camera select checkboxes determing wheareas apply setting to current camera only or to multiple cameras</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result: a boolean value determining if the settings are applied to database or not</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.set_camera_params_to_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">set_camera_params_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">available_serials</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.set_camera_params_to_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set input camera params to ui (camera settings page)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>db_obj</strong> – main database object</p></li>
+<li><p><strong>camera_params</strong> – input camera parameters (in dict)</p></li>
+<li><p><strong>camera_id</strong> – input camera id (in string)</p></li>
+<li><p><strong>available_serials</strong> – available camera serials (list of strings)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.set_camera_picture_to_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">set_camera_picture_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_image_label</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">with_zoom</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">zoom_min</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.set_camera_picture_to_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set an image to ui label</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_image_label</strong> – (_type_) ui lable name</p></li>
+<li><p><strong>image</strong> – (_type_) input image</p></li>
+<li><p><strong>with_zoom</strong> – (_type_) boolean determining wheather to zoom image</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.set_camera_serial_to_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">set_camera_serial_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">assigned_serial</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.set_camera_serial_to_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function takes as input a camera serial and update the serial combobox current value</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>assigned_serial</strong> – camera serial (in string)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.set_widjets_enable_or_disable">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">set_widjets_enable_or_disable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.set_widjets_enable_or_disable" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get ui element names in a list, and enable/disable them</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>api_obj</strong> – main api object</p></li>
+<li><p><strong>names</strong> – ui element names (list of strings)</p></li>
+<li><p><strong>enable</strong> – a boolean determinnig whereas enable or disable ui elements</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.shift_calibration_image">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">shift_calibration_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shifth</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shiftw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.shift_calibration_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to shift image along y or x (vertical or horizintal)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>image</strong> – input image</p></li>
+<li><p><strong>shifth</strong> – value to shift image horiintaly</p></li>
+<li><p><strong>shiftw</strong> – value to shift image vertically</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>shifted_image:</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.show_calibration_summary">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">show_calibration_summary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.show_calibration_summary" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set/update calibration summary params on ui dashboard page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – (_type_) main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.show_cameras_summary">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">show_cameras_summary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.show_cameras_summary" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set/update cameras summary params on ui dashboard page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – (_type_) main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.update_available_camera_serials_on_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">update_available_camera_serials_on_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">available_serials</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.update_available_camera_serials_on_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update available camera serials on database,
+it takes as input available camera serial, and checks the database,
+for each camera, if serial in database not in available cameras, assign 0 as its serial</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>available_serials</strong> – (_type_) list of available camera serials (in string)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.update_ui_on_camera_connect_disconnect">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">update_ui_on_camera_connect_disconnect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">calibration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.update_ui_on_camera_connect_disconnect" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update ui buttons on camera setting and calibration pages, on camera connect/dissconnect
+on every camera connect, camera take picture button must be enable, while camera connect button must be changed to disconnect
+on camera disconnect, camera take picture button must set to disable, while camera connect button must be changed to connect</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>api_obj</strong> – main api object</p></li>
+<li><p><strong>connect</strong> – a boolean determinnig if camera is connected or disconnected</p></li>
+<li><p><strong>calibration</strong> – a boolean determining if current page on ui is calibration page</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.validate_camera_ip">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">validate_camera_ip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">camera_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.validate_camera_ip" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to validate camera ip to be valid and not used by oter cameras</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>db_obj</strong> – database object</p></li>
+<li><p><strong>camera_id</strong> – current camera ip</p></li>
+<li><p><strong>camera_params</strong> – camera parameters (dict)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result: a boolean determining ip validation is ok or not</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>message: the error message of ip validation not ok</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.zoom_in_calibration_image">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">zoom_in_calibration_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.zoom_in_calibration_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to zoom in calibration image on button click</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – (_type_) main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.camera_funcs.zoom_out_calibration_image">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.camera_funcs.</span></span><span class="sig-name descname"><span class="pre">zoom_out_calibration_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.camera_funcs.zoom_out_calibration_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to zoom out calibration image on button click</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – (_type_) main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="camera_connection.html" class="btn btn-neutral float-right" title="camera_connection module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="../backend%20Dir.html" class="btn btn-neutral" title="Backend" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="add_default_database_records.html" class="btn btn-neutral float-left" title="add_defult_database_records module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="camera_connection.html" class="btn btn-neutral float-right" title="camera_connection module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, milad.
-
-    </p>
+    <p>&#169; Copyright 2022, milad.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../',
-            VERSION:'1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../../_static/documentation_options.js"></script>
-      <script type="text/javascript" src="../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script type="text/javascript" src="../../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -210,6 +210,15 @@ ERRORS={
         'drive_not_selected': {'fa':'انتخاب نشده',
             'en':'Not Selected'},
 
+        'load_image_processsing_params_from_database_failed': {'fa':'خطای دریافت پارامترهای پردازشی تصویر از دیتابیس',
+            'en':'Failed to load image processing params from database'},
+
+        'update_image_processsing_params_on_database_failed': {'fa':'خطای آپدیت پارامترهای پردازشی تصویر در دیتابیس',
+            'en':'Failed to update image processing params on database'},
+
+        'image_processing_algo_failed': {'fa':'خطای اعمال الگوریتم پردازش تصویر',
+            'en':'Failed to apply image processing algorithm'},
+
         
 
 }
@@ -307,8 +316,14 @@ WARNINGS={
         'camera_no_picture': {'fa':'هنوز تصویری از دوربین دریافت نشده است',
             'en':'No picture is taken yet'},
 
-        'no_picture_loaded': {'fa':'هنوز تصویری بارگزاری نشده است',
-            'en':'No picture is loaded yet'},
+        'no_picture_available_in_path': {'fa':'در فولدر انتخاب شده تصویری وجود ندارد',
+            'en':'No picture is available in selected path'},
+
+        'camera_live_folder_not_exists': {'fa':'هنوز درایو پیشفرض انتخاب نشده است',
+            'en':'Default drive is not selected yet'},
+
+        'no_directory_selected': {'fa':'هنوز فولدری انتخاب نشده است',
+            'en':'No directory is selected'},
 
         'app_warning': {'fa':'نرم افزار سبا - پیغام',
             'en':'SABA - Settings App Message'},
@@ -360,6 +375,9 @@ WARNINGS={
 
         'defects_summary_failed': {'fa':'خطای دریافت اطلاعات کلی عیوب',
             'en':'Failed to get defects summary'},
+
+        'users_summary_failed': {'fa':'خطای دریافت اطلاعات کلی کاربران',
+            'en':'Failed to get users summary'},
 
         'users_summary_failed': {'fa':'خطای دریافت اطلاعات کلی کاربران',
             'en':'Failed to get users summary'},
@@ -535,6 +553,15 @@ MESSEGES = {
         'all_cameras_calibrated': {'fa':'کالیبره شده',
             'en':'All calibrated'},
 
+        'pictures_loaded_from_path': {'fa':'تصاویر از فولدر بارگزاری شدند',
+            'en':'Picture loaded from selected path'},
+
+        'load_image_processsing_params_from_database': {'fa':'پارامترهای پردازشی تصویر از دیتابیس لود شدند',
+            'en':'Image processing params loaded from database'},
+
+        'update_image_processsing_params_on_database': {'fa':'پارامترهای پردازشی تصویر در دیتابیس آپدیت شدند',
+            'en':'Image processing params updated on database'},
+
 
 
                  
@@ -637,6 +664,33 @@ Titles = {
         'Select Top Cameras': {'fa':'انتخاب دوربین های بالا'},
         'Select Bottom Cameras': {'fa':'انتخاب دوربین های پایین'},
 
+        'Image Processing Calibration': {'fa':'کالیبراسیون الگوریتم پردازش تصویر'},
+        'Images Directory': {'fa':'دایرکتوری عکس ها'},
+        'Choose Directory': {'fa':'انتخاب دایرکتوری'},
+        'Block Size': {'fa':'سایز بلوک'},
+        'Defect Threshold': {'fa':'آستانه عیب'},
+        'Noise Threshold': {'fa':'آستانه نویز'},
+        'Enable': {'fa':'فعال'},
+        'Disable': {'fa':'غیر فعال'},
+        'Save Parameters': {'fa':'ذخیره پارامترها'},
+        'Width Guage Calibration': {'fa':'کالیبراسیون عرض سنج'},
+        'Camera Number': {'fa':'شماره دوربین'},
+        'Camera Calibration': {'fa':'کالیبراسیون دوربین'},
+        'Rotation': {'fa':'چرخش'},
+        'Horizintal Shift': {'fa':'شیفت افقی'},
+        'Vertical Shift': {'fa':'شیفت عمودی'},
+        'Pixel-Value Calibration': {'fa':'کالیبراسیون ارزش پیکسلی'},
+        'Minimum Area': {'fa':'مساحت کمینه'},
+        'Maximum Area': {'fa':'مساحت بیشینه'},
+        'Gray Threshold': {'fa':'آستانه روشنایی'},
+        'Previous': {'fa':'قبلی'},
+        'Next': {'fa':'بعدی'},
+        'Calibrated Parameters': {'fa':'مقادیر کالیبره شده ارزش پیکسلی'},
+        'Show Crosshair': {'fa':'نمایش خط متقاطع'},
+        'Show Grid': {'fa':'نمایش شبکه متقاطع'},
+        'Zoom-In': {'fa':'بزرگنمایی'},
+        'Zoom-Out': {'fa':'کوچکنمایی'},
+
         'Appearance Parameters': {'fa':'پارامترهای دیداری'},
         'Style': {'fa':'استایل'},
         'Color': {'fa':'رنگ'},
@@ -654,6 +708,8 @@ Titles = {
         'Num Camera Process': {'fa':'تعداد پروسس های دوربین'},
         'Num Writing Threads': {'fa':'تعداد تردهای ذخیره سازی'},
         'Camera Refresh-Rate (ms)': {'fa':'نرخ نوسازی تصویر (میلی ثانیه)'},
+        'Image Processing': {'fa':'پردازش تصویر'},
+        'Threading and Multiprocessing Settings': {'fa':'تنظیمات چند پروسسی'},
 
         'Defects List': {'fa':'لیست عیوب'},
         'Defect-Groups List': {'fa':'لیست گروه های عیب'},

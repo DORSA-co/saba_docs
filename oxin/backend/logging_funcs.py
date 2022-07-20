@@ -2,7 +2,7 @@ from distutils.debug import DEBUG
 import logging
 import os
 
-from .backend import date_funcs
+from . import date_funcs
 
 
 class app_logger():
@@ -16,7 +16,7 @@ class app_logger():
             log_mainfolderpath: main folder path to create logs (in string)
             console_log: a boolean value to wheter show or not show logs in console (in boolean)
         
-        Returns: logger object        
+        :returns: logger object        
         """
 
         # Create a custom logger
@@ -113,7 +113,7 @@ class app_logger():
                 4: critical error
                 5: excepion error
         
-        Returns: None
+        :returns: None
         """
         
         # get date and tme
@@ -153,7 +153,7 @@ class app_logger():
         Inputs:
             current_username: current username logged-in the app (in string)
         
-        Returns: None
+        :returns: None
         """
         
         self.current_username = current_username if current_username!=None else 'root'

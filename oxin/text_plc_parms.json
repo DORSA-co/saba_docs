@@ -1,12 +1,12 @@
 {
     "check_air_valve_plc": "-",
-    "check_camera_frate_plc": 326,
+    "check_camera_frate_plc": "-",
     "check_camera_limit_plc": "-",
     "check_cooler_uptime_plc": "-",
     "check_detect_sensor_plc": "-",
     "check_limitswitch_bottom_plc": "-",
-    "check_limitswitch_top_plc": 326,
-    "check_projector_limit_plc": "-",
+    "check_limitswitch_top_plc": 48,
+    "check_projector_limit_plc": 48,
     "check_system_operating_plc": "-",
     "check_thermometer_max_plc": "-",
     "check_thermometer_min_plc": "-"

@@ -1,79 +1,35 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>notif_UI module &mdash; Saba 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="Saba 1.0 documentation" href="../index.html"/>
-        <link rel="up" title="Setting Software" href="../Setting%20Software.html"/>
-        <link rel="next" title="recources_rc module" href="recources_rc.html"/>
-        <link rel="prev" title="login_api module" href="login_api.html"/> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="recources_rc module" href="recources_rc.html" />
+    <link rel="prev" title="login_api module" href="login_api.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
-
-          
+        <div class="wy-side-nav-search" >
             <a href="../index.html" class="icon icon-home"> Saba
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,17 +37,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Electrical.html">Electrical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Mechanics.html">Mechanics</a></li>
@@ -102,7 +48,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#description">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#directories">Directories</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../Setting%20Software.html#files">Files</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="UI.html">UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="app_settings.html">app_settings module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="confirm_UI.html">confirm_UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="confirm_window.html">confirm_window module</a></li>
@@ -117,6 +62,7 @@
 <li class="toctree-l4"><a class="reference internal" href="resources_rc.html">resources_rc module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setting_UI.html">setting_UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setting_api.html">setting_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="translate_ui.html">translate_ui module</a></li>
 </ul>
 </li>
 </ul>
@@ -126,147 +72,286 @@
 <li class="toctree-l1"><a class="reference internal" href="../Others.html">Others</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Saba</a>
-        
       </nav>
 
-
-      
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../Software.html">Softwares</a> &raquo;</li>
-        
           <li><a href="../Setting%20Software.html">Setting Software</a> &raquo;</li>
-        
       <li>notif_UI module</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="../_sources/setting/notif_UI.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <section id="notif-ui-module">
-<h1>notif_UI module<a class="headerlink" href="#notif-ui-module" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="module-oxin.notif_UI">
+<span id="notif-ui-module"></span><h1>notif_UI module<a class="headerlink" href="#module-oxin.notif_UI" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.notif_UI.</span></span><span class="sig-name descname"><span class="pre">UI_main_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">order</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMainWindow</span></code>, <code class="xref py py-class docutils literal notranslate"><span class="pre">Ui_confirm_window</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.activate_">
+<span class="sig-name descname"><span class="pre">activate_</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.activate_" title="Permalink to this definition"></a></dt>
+<dd><p>this function connects the close button to its functionality</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.buttonClick">
+<span class="sig-name descname"><span class="pre">buttonClick</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.buttonClick" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to connect ui buttons to their functions</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.check_appear_done">
+<span class="sig-name descname"><span class="pre">check_appear_done</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.check_appear_done" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.close_win">
+<span class="sig-name descname"><span class="pre">close_win</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.close_win" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used for closing login window</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.close_win_2">
+<span class="sig-name descname"><span class="pre">close_win_2</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.close_win_2" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used for closing login window, also stoping progressbar and apear timers and start disapear timers</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.progressbar">
+<span class="sig-name descname"><span class="pre">progressbar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.progressbar" title="Permalink to this definition"></a></dt>
+<dd><p>this function us used to update the progressbar value, by a timer.
+progressbar determines the remained time to finish and close the notfication</p>
+<p>Inputs: None</p>
+<p>Outputs: None</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.staticMetaObject">
+<span class="sig-name descname"><span class="pre">staticMetaObject</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;PySide6.QtCore.QMetaObject</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#oxin.notif_UI.UI_main_window.staticMetaObject" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.unlock_move_flag">
+<span class="sig-name descname"><span class="pre">unlock_move_flag</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.unlock_move_flag" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.update_current_position">
+<span class="sig-name descname"><span class="pre">update_current_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.update_current_position" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.win_appear">
+<span class="sig-name descname"><span class="pre">win_appear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_current_pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.win_appear" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to appear/show the notification window with an sliding animation,
+notification window will be appeared from top left of the screen in sliding way</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.win_disappear">
+<span class="sig-name descname"><span class="pre">win_disappear</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">use_current_pos</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.win_disappear" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to disappear/hide the notification window with an sliding animation,
+notification window will be disappeared from top left of the screen in sliding way</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.win_move_down">
+<span class="sig-name descname"><span class="pre">win_move_down</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.win_move_down" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to move the notification down vertically, on any new notification is created</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.win_move_down_run_timer">
+<span class="sig-name descname"><span class="pre">win_move_down_run_timer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.win_move_down_run_timer" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to move notification verticaly, if a new notification is created or a previous notification is closed
+on defalt, it is used to move down the notifications, but it can be used to move up the notifications by the reverse flag</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>reverse: a boolean value deermining if the movement is reversly (move to top)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.win_move_top">
+<span class="sig-name descname"><span class="pre">win_move_top</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.win_move_top" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to move the notification up vertically, if any top notification is closed</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.UI_main_window.win_startpoint">
+<span class="sig-name descname"><span class="pre">win_startpoint</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.UI_main_window.win_startpoint" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to detemine the startpoint of the notification window (showing from top right of the screen)</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="oxin.notif_UI.notification_manager">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.notif_UI.</span></span><span class="sig-name descname"><span class="pre">notification_manager</span></span><a class="headerlink" href="#oxin.notif_UI.notification_manager" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>this class is used to create and handle pop-up notifications of the app, it has functions to create new notification,
+and manage actived notificaions</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.notification_manager.check_active_notifs">
+<span class="sig-name descname"><span class="pre">check_active_notifs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.notification_manager.check_active_notifs" title="Permalink to this definition"></a></dt>
+<dd><p>on every notification creation, this function is called to check the states of previous notifications, and if the last notification is
+deactived/finished, it most be removed from the actived notifications list</p>
+<p>Input: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.notif_UI.notification_manager.create_new_notif">
+<span class="sig-name descname"><span class="pre">create_new_notif</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">massage</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">win_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.notification_manager.create_new_notif" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to create a new pop-up notification, by taking as input the notification message and some other params</p>
+<dl>
+<dt>Inputs:</dt><dd><p>message: the notification message (in string)
+win_color: color of the window (same as the main app default color)
+font_size: font size of the messsage (same as the main app default)
+font_style: font style of the messsage (same as the main app default)
+level: the level of the message, in range of [0, 2], determinnig statues and importance of the message:</p>
+<blockquote>
+<div><p>0: good statues, only notification
+1: warning message
+2: error message</p>
+</div></blockquote>
+</dd>
+</dl>
+<p>Returens: None</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.notif_UI.rearange_active_notifes">
+<span class="sig-prename descclassname"><span class="pre">oxin.notif_UI.</span></span><span class="sig-name descname"><span class="pre">rearange_active_notifes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.notif_UI.rearange_active_notifes" title="Permalink to this definition"></a></dt>
+<dd><p>on every call of this function, all notifications in notification list are checked, and if a notifiacton is deactived (finished),
+the other actived notifications rearranged and moved to take right position</p>
+<p>Inputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="recources_rc.html" class="btn btn-neutral float-right" title="recources_rc module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="login_api.html" class="btn btn-neutral" title="login_api module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="login_api.html" class="btn btn-neutral float-left" title="login_api module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="recources_rc.html" class="btn btn-neutral float-right" title="recources_rc module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, milad.
-
-    </p>
+    <p>&#169; Copyright 2022, milad.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/documentation_options.js"></script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -1,79 +1,35 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>setting_api module &mdash; Saba 1.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  
-    <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../genindex.html"/>
-        <link rel="search" title="Search" href="../search.html"/>
-    <link rel="top" title="Saba 1.0 documentation" href="../index.html"/>
-        <link rel="up" title="Setting Software" href="../Setting%20Software.html"/>
-        <link rel="next" title="Others" href="../Others.html"/>
-        <link rel="prev" title="setting_UI module" href="setting_UI.html"/> 
-
-  
-  <script src="../_static/js/modernizr.min.js"></script>
-
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="translate_ui module" href="translate_ui.html" />
+    <link rel="prev" title="setting_UI module" href="setting_UI.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
-
-          
+        <div class="wy-side-nav-search" >
             <a href="../index.html" class="icon icon-home"> Saba
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,17 +37,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../Electrical.html">Electrical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../Mechanics.html">Mechanics</a></li>
@@ -102,7 +48,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#description">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../Setting%20Software.html#directories">Directories</a></li>
 <li class="toctree-l3 current"><a class="reference internal" href="../Setting%20Software.html#files">Files</a><ul class="current">
-<li class="toctree-l4"><a class="reference internal" href="UI.html">UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="app_settings.html">app_settings module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="confirm_UI.html">confirm_UI module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="confirm_window.html">confirm_window module</a></li>
@@ -117,6 +62,7 @@
 <li class="toctree-l4"><a class="reference internal" href="resources_rc.html">resources_rc module</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setting_UI.html">setting_UI module</a></li>
 <li class="toctree-l4 current"><a class="current reference internal" href="#">setting_api module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="translate_ui.html">translate_ui module</a></li>
 </ul>
 </li>
 </ul>
@@ -126,147 +72,547 @@
 <li class="toctree-l1"><a class="reference internal" href="../Others.html">Others</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../index.html">Saba</a>
-        
       </nav>
 
-
-      
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../Software.html">Softwares</a> &raquo;</li>
-        
           <li><a href="../Setting%20Software.html">Setting Software</a> &raquo;</li>
-        
       <li>setting_api module</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="../_sources/setting/setting_api.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <section id="setting-api-module">
-<h1>setting_api module<a class="headerlink" href="#setting-api-module" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="module-oxin.setting_api">
+<span id="setting-api-module"></span><h1>setting_api module<a class="headerlink" href="#module-oxin.setting_api" title="Permalink to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="oxin.setting_api.API">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.setting_api.</span></span><span class="sig-name descname"><span class="pre">API</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>the API class has the main functionalities of oxin setting app, it takes as input the ui object, and other ui objects like login window,
+alert window and notification windows are initialized in this class</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui</strong> – the ui file of the app</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.add_defect">
+<span class="sig-name descname"><span class="pre">add_defect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default_defect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.add_defect" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to add a new defect returned from ui to database.
+it is also used to add/update edited defect on dataabse</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>default_defect</strong> – (dict, optional) if not empty, it is used as new defect to add to database,
+else the new defect info is returned from ui. Defaults to {}.</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.add_defect_group">
+<span class="sig-name descname"><span class="pre">add_defect_group</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default_defectgroup</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.add_defect_group" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to add a defect group returned from ui/user to database.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>default_defectgroup</strong> – (dict, optional) if not empty, it is used as input to add to database
+if not, the info returned from ui is used. Defaults to {}.</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.add_user">
+<span class="sig-name descname"><span class="pre">add_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.add_user" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to add new user to database.
+the user info is returned from ui, and used as input to add to database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>default_user</strong> – (dict, optional) if not empty, this dict is use as input to add to database. if empty, new user_infoes are get
+from ui</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.apply_calibration_on_image">
+<span class="sig-name descname"><span class="pre">apply_calibration_on_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.apply_calibration_on_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to apply soft-calibration on image and then update results on ui</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>image</strong> – (_type_) input calibration image from camera</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.apply_changed_appearance_params">
+<span class="sig-name descname"><span class="pre">apply_changed_appearance_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'appearance'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.apply_changed_appearance_params" title="Permalink to this definition"></a></dt>
+<dd><p>this functino is used to apply returned setting parameters in setting page, to app/database
+according to mode. we can select which parameters to apply/set</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>mode</strong> – (str, optional): it is used to select which parameters to apply/set. Defaults to ‘appearance’.
+‘appearance’: apply appearance params like font, color or …
+‘calibration’: apply calibration params
+‘imageprocessing’: apply image preprocessing parasms
+‘multitasking’:
+‘defects’:</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.button_connector">
+<span class="sig-name descname"><span class="pre">button_connector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.button_connector" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to connect ui buttons to their functions</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.check_all_plc_parms">
+<span class="sig-name descname"><span class="pre">check_all_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.check_all_plc_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to check all plc logic pathes values</p>
+<p>::returns: values: a dict of plc values</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.check_plc_parms">
+<span class="sig-name descname"><span class="pre">check_plc_parms</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.check_plc_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to check/get value of a path on plc</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>name</strong> – (_type_) check botton name of the path</p>
+</dd>
+</dl>
+<p>::returns: value: value stored in path</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.check_storage_status">
+<span class="sig-name descname"><span class="pre">check_storage_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.check_storage_status" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to check storage statues</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.confirm_yes">
+<span class="sig-name descname"><span class="pre">confirm_yes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.confirm_yes" title="Permalink to this definition"></a></dt>
+<dd><p>this function is the event for confirm window yes button,
+accoarding to message of the confirm window, the function decides to take right action</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.connect_dissconnect_to_camera">
+<span class="sig-name descname"><span class="pre">connect_dissconnect_to_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">calibration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.connect_dissconnect_to_camera" title="Permalink to this definition"></a></dt>
+<dd><p>this functon is used to connect/disconnect to camera</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>calibration</strong> – a boolean determining if the current page is calibration page</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.connect_plc">
+<span class="sig-name descname"><span class="pre">connect_plc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.connect_plc" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to connect to plc</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.control_list_image">
+<span class="sig-name descname"><span class="pre">control_list_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_img_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.control_list_image" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to load image procesing directory contatiing images</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>input_img_path</strong> (<em>str</em>) – inpput image directory</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.disconnect_camera_on_ui_change">
+<span class="sig-name descname"><span class="pre">disconnect_camera_on_ui_change</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.disconnect_camera_on_ui_change" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to disconnect camera if any of camera parameters in camera seting page are changed, or stackwidjet current page change</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.disconnect_plc">
+<span class="sig-name descname"><span class="pre">disconnect_plc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">on_close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.disconnect_plc" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to disconnect from plc</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>on_close</strong> – (bool, optional) a boolean deermining if function is called on app close. Defaults to False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.edit_defects">
+<span class="sig-name descname"><span class="pre">edit_defects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.edit_defects" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to edit selected defect/defect-group and change its parameters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>defect_group</strong> – (bool, optional) a boolean determining whather to edit defect-group. Defaults to False.</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.filter_defects">
+<span class="sig-name descname"><span class="pre">filter_defects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.filter_defects" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to filter/search in defect table</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>defect_group</strong> – (bool, optional) a boolean determining whather to search in defect-groups. Defaults to False.</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.force_clear_camera_live_storage">
+<span class="sig-name descname"><span class="pre">force_clear_camera_live_storage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.force_clear_camera_live_storage" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to makes True the flag for force clearing storage</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.image_processing_calibration">
+<span class="sig-name descname"><span class="pre">image_processing_calibration</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params_changed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.image_processing_calibration" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to apply image processing algo on input image</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>params_changed</strong> – (bool, optional) a boolean to detemine if algo params changed. Defaults to False.</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.load_appearance_params_on_start">
+<span class="sig-name descname"><span class="pre">load_appearance_params_on_start</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mainsetting_page</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.load_appearance_params_on_start" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to load appearance params from database and apply to program on start-up or function call</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>mainsetting_page</strong> – (bool, optional) a boolean determining wheather on mainsetting page or not. Defaults to False.</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.load_camera_params_from_db_to_UI">
+<span class="sig-name descname"><span class="pre">load_camera_params_from_db_to_UI</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.load_camera_params_from_db_to_UI" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used every time a camera is selected in camera settings page, and tries to load camera settings and
+parameters of that camera from database.
+at every camera selection, the previous camera will disconnected if it is connected</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.load_plc_parms">
+<span class="sig-name descname"><span class="pre">load_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.load_plc_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to load plc params from database, and set to ui plc page</p>
+<p>::returns: resault: a boolean determining if params loaded from database</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.next_image_precessing">
+<span class="sig-name descname"><span class="pre">next_image_precessing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.next_image_precessing" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to load next image for image processing calibration</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.on_close_operations">
+<span class="sig-name descname"><span class="pre">on_close_operations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.on_close_operations" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to check/do some functions before closing the app</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.previous_image_precessing">
+<span class="sig-name descname"><span class="pre">previous_image_precessing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.previous_image_precessing" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to load prev image for image processing calibration</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.refresh_dashboard_page">
+<span class="sig-name descname"><span class="pre">refresh_dashboard_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.refresh_dashboard_page" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to do some tasks that are related to dashboard page.
+the taks are almost the dashboard parameters</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.refresh_defects_table">
+<span class="sig-name descname"><span class="pre">refresh_defects_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">only_defects</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">only_defect_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.refresh_defects_table" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to refresh defect/defect-group tables from database to ui tables</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>only_defects</strong> – a boolean determining only update defect table</p></li>
+<li><p><strong>only_defect_groups</strong> – a boolean determining only update defect-groups table</p></li>
+</ul>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.refresh_storege_page">
+<span class="sig-name descname"><span class="pre">refresh_storege_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">only_chart</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.refresh_storege_page" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to refresh storage page</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>only_chart</strong> – (bool, optional) if true, only the storage chart is updated. Defaults to False.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.refresh_users_table">
+<span class="sig-name descname"><span class="pre">refresh_users_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.refresh_users_table" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to refresh users table on ui</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.remove_defects">
+<span class="sig-name descname"><span class="pre">remove_defects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.remove_defects" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to remove selected defects/defect groups from database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>defect_group</strong> – (bool, optional) a boolean determining wheather to remove defect_groups or not. Defaults to False.</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.remove_users">
+<span class="sig-name descname"><span class="pre">remove_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.remove_users" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to remove selected users in ui users table, from database</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.run_storage_check_timer">
+<span class="sig-name descname"><span class="pre">run_storage_check_timer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">storage_check_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">60</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.run_storage_check_timer" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to initailize and run timer for checking storage statues</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>storage_check_interval</strong> – (int, optional) check interval (in seconds). Defaults to 60.</p></li>
+<li><p><strong>stop</strong> – (bool, optional) a boolean determining to stop the timer. Defaults to False.</p></li>
+</ul>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.save_changed_calibration_params">
+<span class="sig-name descname"><span class="pre">save_changed_calibration_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_changed_calibration_params" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update camera calibration params to database.
+the input params are returned from ui</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.save_changed_camera_params">
+<span class="sig-name descname"><span class="pre">save_changed_camera_params</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">apply_to_multiple</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_changed_camera_params" title="Permalink to this definition"></a></dt>
+<dd><p>save input camera parameters entered on UI camera setting page to database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>apply_to_multiple</strong> – a boolean determining wheter apply settings to multiple cameras or only current camera</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.save_image_processing_parms">
+<span class="sig-name descname"><span class="pre">save_image_processing_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_image_processing_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to save image processing params from Miss.Abtahi algo to database</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.save_plc_ip">
+<span class="sig-name descname"><span class="pre">save_plc_ip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_plc_ip" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get plc ip from ui and update on database</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.save_plc_parms">
+<span class="sig-name descname"><span class="pre">save_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_plc_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to save plc params to database</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.select_image_procesing_directory">
+<span class="sig-name descname"><span class="pre">select_image_procesing_directory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.select_image_procesing_directory" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to select image processing drectory contaiing images to fix image processing params with</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.set_plc_ip_to_ui">
+<span class="sig-name descname"><span class="pre">set_plc_ip_to_ui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.set_plc_ip_to_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get plc ip from database and set to ui</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.set_plc_value">
+<span class="sig-name descname"><span class="pre">set_plc_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.set_plc_value" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update/set a path calue on plc</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.show_camera_picture">
+<span class="sig-name descname"><span class="pre">show_camera_picture</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">calibration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.show_camera_picture" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to start image grabbing from camera, and update image on ui</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>calibration</strong> – a boolean detrmining if current page is calibration or not</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.show_related_defects">
+<span class="sig-name descname"><span class="pre">show_related_defects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.show_related_defects" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to show related defects to a selected defect-group</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.tabledefectgroups_onHeaderClicked">
+<span class="sig-name descname"><span class="pre">tabledefectgroups_onHeaderClicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logicalIndex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.tabledefectgroups_onHeaderClicked" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to sort items accoading to one column, if clicked on that column</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>logicalIndex</strong> – (_type_) _description_</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.tabledefects_onHeaderClicked">
+<span class="sig-name descname"><span class="pre">tabledefects_onHeaderClicked</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">logicalIndex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.tabledefects_onHeaderClicked" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to sort items accoading to one column, if clicked on that column</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>logicalIndex</strong> – (_type_) _description_</p>
+</dd>
+</dl>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.things_to_do_on_stackwidject_change">
+<span class="sig-name descname"><span class="pre">things_to_do_on_stackwidject_change</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.things_to_do_on_stackwidject_change" title="Permalink to this definition"></a></dt>
+<dd><p>this function performs tasks needed to done on ui stackwidjet (page) change</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.update_camera_live_storage_parms">
+<span class="sig-name descname"><span class="pre">update_camera_live_storage_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.update_camera_live_storage_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update/set defalt storage params returned from ui, to database</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.update_path_plc">
+<span class="sig-name descname"><span class="pre">update_path_plc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.update_path_plc" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get value of a path on plc, everytime pathes-combobox has changed</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.update_plc_dashboard_parms">
+<span class="sig-name descname"><span class="pre">update_plc_dashboard_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.update_plc_dashboard_parms" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update plc summary satues on dashboard</p>
+<p>::returns: None</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_api.API.write_parms">
+<span class="sig-name descname"><span class="pre">write_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.write_parms" title="Permalink to this definition"></a></dt>
+<dd><p>============================description===========================</p>
+<p>::returns: None</p>
+</dd></dl>
+
+</dd></dl>
+
 </section>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="../Others.html" class="btn btn-neutral float-right" title="Others" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="setting_UI.html" class="btn btn-neutral" title="setting_UI module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="setting_UI.html" class="btn btn-neutral float-left" title="setting_UI module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="translate_ui.html" class="btn btn-neutral float-right" title="translate_ui module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, milad.
-
-    </p>
+    <p>&#169; Copyright 2022, milad.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../',
-            VERSION:'1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../_static/documentation_options.js"></script>
-      <script type="text/javascript" src="../_static/jquery.js"></script>
-      <script type="text/javascript" src="../_static/underscore.js"></script>
-      <script type="text/javascript" src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script type="text/javascript" src="../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

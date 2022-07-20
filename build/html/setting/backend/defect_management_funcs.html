@@ -1,79 +1,35 @@
-
-
 <!DOCTYPE html>
-<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>defect_management_funcs module &mdash; Saba 1.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
   
-
-  
-  
-  
-  
-
-  
-
-  
-  
-    
-
-  
-
-  
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-  
-    <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
-  
-
-  
-        <link rel="index" title="Index"
-              href="../../genindex.html"/>
-        <link rel="search" title="Search" href="../../search.html"/>
-    <link rel="top" title="Saba 1.0 documentation" href="../../index.html"/>
-        <link rel="up" title="Backend" href="../backend%20Dir.html"/>
-        <link rel="next" title="logging_funcs module" href="logging_funcs.html"/>
-        <link rel="prev" title="date_funcs module" href="date_funcs.html"/> 
-
-  
-  <script src="../../_static/js/modernizr.min.js"></script>
-
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="logging_funcs module" href="logging_funcs.html" />
+    <link rel="prev" title="date_funcs module" href="date_funcs.html" /> 
 </head>
 
-<body class="wy-body-for-nav" role="document">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
-          
-
-          
+        <div class="wy-side-nav-search" >
             <a href="../../index.html" class="icon icon-home"> Saba
-          
-
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -81,17 +37,7 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../../Electrical.html">Electrical</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../Mechanics.html">Mechanics</a></li>
@@ -116,149 +62,422 @@
 <li class="toctree-l1"><a class="reference internal" href="../../Others.html">Others</a></li>
 </ul>
 
-            
-          
         </div>
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="../../index.html">Saba</a>
-        
       </nav>
 
-
-      
       <div class="wy-nav-content">
         <div class="rst-content">
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="../../index.html">Docs</a> &raquo;</li>
-        
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
           <li><a href="../../Software.html">Softwares</a> &raquo;</li>
-        
           <li><a href="../../Setting%20Software.html">Setting Software</a> &raquo;</li>
-        
           <li><a href="../backend%20Dir.html">Backend</a> &raquo;</li>
-        
       <li>defect_management_funcs module</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="../../_sources/setting/backend/defect_management_funcs.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <section id="defect-management-funcs-module">
-<h1>defect_management_funcs module<a class="headerlink" href="#defect-management-funcs-module" title="Permalink to this heading">¶</a></h1>
+             
+  <section id="module-oxin.backend.defect_management_funcs">
+<span id="defect-management-funcs-module"></span><h1>defect_management_funcs module<a class="headerlink" href="#module-oxin.backend.defect_management_funcs" title="Permalink to this heading"></a></h1>
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.add_new_defect_to_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">add_new_defect_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_defect_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.add_new_defect_to_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to add a new defect/defect-group to database</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db_obj (_type_): database object
+new_defect_info (_type_): new defect/defect-group info
+defect_group (bool, optional): a boolean determining wheather to add defect-group. Defaults to False.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>resault: a message determining if the add to dabase is done</dt><dd><p>”True”: adding ok</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.assign_existing_defect_colors_to_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">assign_existing_defect_colors_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'None'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.assign_existing_defect_colors_to_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set/update existing defect colors to ui combobox.
+for a color, if the color dont used for any defects, or be the white, it will be added to combo</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>ui_obj: main ui object
+db_obj: database object
+current: None, or the id of a defect</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.change_defect_group_id_to_name">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">change_defect_group_id_to_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">single</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.change_defect_group_id_to_name" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to translate defect-group-ids to defect-group-names or reverse</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>defects_list: list of defect_infoes (list of dict)
+reverse: a boolean determinig wheather to reverse translate or not
+single: a boolean determining if the input is only one defect record or not</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>translated_defects_list: the same defects_list with defect-group-ids translated</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.generate_defect_colors">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">generate_defect_colors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.generate_defect_colors" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to generate defect colors by number as needed</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db_obj (_type_): database object</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_defect_info_from_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_defect_info_from_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_defect_info_from_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get defect/defect-group info from ui
+it can be used to get new defect/defect-group info from ui, or get info from filter/search forms</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
+db_obj (_type_): database object
+defect_group (bool, optional): a boolean detrtmines wheather to get defect-group info from ui. Defaults to False.
+is_filter (bool, optional): a boolena determining wheather to get info from filter form in ui. Defaults to False.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect/defect-group info: in dict</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_defects_from_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_defects_from_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get and return defects/defect-groups list from database</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>defect_groups: a boolean determining wheather to get defect-groups list or defects list</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>if defect_groups==False:</dt><dd><p>defects_list: list of dicts</p>
+</dd>
+<dt>if defect_groups==True:</dt><dd><p>defect_groups_list: list of defect groups</p>
+</dd>
+</dl>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_filtered_defects_from_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_filtered_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_filtered_defects_from_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get filtered defects/defect-groups from database</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db_obj (_type_): database object
+filter_params (_type_):
+defect_groups (bool, optional): a boolean determining whaeather to search for defect-groups. Defaults to False.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>message: a text message</dt><dd><p>’all’: no filter
+‘filtered’: return filterd resualts</p>
+</dd>
+</dl>
+<p>defects/defect-groups list:</p>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_selected_defect_groups">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_selected_defect_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_selected_defect_groups" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get selected defect-groups from ui defect-groups table</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
+defect_groups_list (_type_): list of defect groups rteturned from darabse</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>selected_defect_groups: list of selected defect-group ids</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_selected_defects">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_selected_defects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_selected_defects" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to get selected defects from ui defects table</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
+defects_list (_type_): defects list returned from databse</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>selected_defects: list of selected defects ids</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.load_defects_from_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">load_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.load_defects_from_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to load defects/defect-groups from database.
+the function can be used to get defects, get defect-groups, or get those defects with specified defect-group-id</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db_obj (_type_): database object
+defect_id (_type_): defect ids list
+defect_group (bool, optional): a boolean determining wheather to load defect-groups. Defaults to False.
+defect_group_id (bool, optional): a boolean to determine wheather to load defects with a specified defect-group-id (send as defect_id). Defaults to False.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defect_info: list of defects (in dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.new_defect_info_validation">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">new_defect_info_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_edit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.new_defect_info_validation" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to validate new defect/defect-group params to have right format and be unique</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
+db_obj (_type_): database object
+defect_info (_type_): _description_
+on_edit (bool, optional): a boolean to determine if input defect to validate is in edit mode. Defaults to False.
+defect_group (bool, optional): a boolean to determine wheather to validate a defect-group. Defaults to False.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p><dl class="simple">
+<dt>message: validation message</dt><dd><p>’True’: validation ok</p>
+</dd>
+</dl>
+<p>level: the level of message (in int)</p>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.remove_defects_from_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">remove_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.remove_defects_from_db" title="Permalink to this definition"></a></dt>
+<dd><p>this is used to remove defect or defect groups from database.
+we can determine whethere to remove one or multiple defect groups by id, single or multiple defect by id, or all defects with a specified defect-id</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>db_obj: database object
+defects_list: list of ids to remove, for removing defects with specified defect group-id, defect-group-id is the input
+defect_group: a boolean for determining to remove a defect-group or defects
+defect_group_id: a boolean determining wheather to remove all defects with input defect group id</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resault: a boolean detrtmining if removing from database is done or not</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_group_info_on_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_group_info_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_group_info_on_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set input defect info to ui (for edit defect)</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
+defect_group_info (_type_): dict of selected defedct-groups infoes</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_groups_on_combo">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_groups_on_combo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_groups_on_combo" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update defect-groups combobox according to available defect-groups</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>defect_groups_list: list of defect-groups (in dict)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_groups_on_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_groups_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_groups_on_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set defect-groups list on ui defect-groups table</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>defect_groups_list: list of defect-groups (in dict)</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_info_on_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_info_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_info_on_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set input defect info to ui (for edit defect)</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
+db_obj (_type_): database object
+defect_info (_type_): dict of selected defedct infoes</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defects_on_ui">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defects_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'None'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defects_on_ui" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to set input defects list to defects table on ui</p>
+<dl class="simple">
+<dt>Inputs:</dt><dd><p>ui_obj: main ui object
+defects_list: list of defects (in dict)
+defect_group_name: if not None and have value (in string), those defect s with same defect-group-name will be highlithed</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.show_defects_summary_info">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">show_defects_summary_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.show_defects_summary_info" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to show summera info from defects/defect-groups on dashboard page</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
+db_obj (_type_): database object</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.update_combo_color">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">update_combo_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.update_combo_color" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update color combobox</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.update_defects_to_db">
+<span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">update_defects_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.update_defects_to_db" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to update a defect/defect-group on database</p>
+<dl class="simple">
+<dt>Args:</dt><dd><p>db_obj (_type_): databasae object
+defects_list (_type_): defect/defect-groups list
+defect_group (bool, optional): a boolean determining wheather to update defect-group. Defaults to False.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resault: a boolean to detrtmine if update on database is ok</p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="logging_funcs.html" class="btn btn-neutral float-right" title="logging_funcs module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="date_funcs.html" class="btn btn-neutral" title="date_funcs module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="date_funcs.html" class="btn btn-neutral float-left" title="date_funcs module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="logging_funcs.html" class="btn btn-neutral float-right" title="logging_funcs module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &copy; Copyright 2022, milad.
-
-    </p>
+    <p>&#169; Copyright 2022, milad.</p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'../../',
-            VERSION:'1.0',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="../../_static/documentation_options.js"></script>
-      <script type="text/javascript" src="../../_static/jquery.js"></script>
-      <script type="text/javascript" src="../../_static/underscore.js"></script>
-      <script type="text/javascript" src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
-      <script type="text/javascript" src="../../_static/doctools.js"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="../../_static/js/theme.js"></script>
-  
-
-  
-  
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

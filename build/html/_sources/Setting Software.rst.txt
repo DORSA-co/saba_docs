@@ -25,7 +25,6 @@ Files
 .. toctree::
    :maxdepth: 1
 
-   setting/UI
    setting/app_settings
    setting/confirm_UI
    setting/confirm_window
@@ -40,3 +39,4 @@ Files
    setting/resources_rc
    setting/setting_UI
    setting/setting_api
+   setting/translate_ui

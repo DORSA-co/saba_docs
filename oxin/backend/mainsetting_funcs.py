@@ -28,7 +28,7 @@ def assign_appearance_existing_params_to_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
     
-    Returns: None
+    :returns: None
     """
 
     # font-size
@@ -68,7 +68,7 @@ def set_appearance_params_to_ui(ui_obj, appearance_params, multitask_params=None
         appearance_params (_type_): in dict
         multitask_params (_type_, optional): if not none, set multtalsk params. Defaults to None.
     
-    Returns: None
+    :returns: None
     """
 
     ui_obj.setting_fontsize_comboBox.setCurrentText(str(appearance_params['font_size']))
@@ -105,7 +105,7 @@ def get_appearance_params_from_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns:
+    :returns:
         appearance params: in dict
     """
     appearance_params = {}
@@ -128,7 +128,7 @@ def apply_appearance_params_to_program(ui_obj, confirm_ui_obj, login_ui_object, 
         confirm_ui_obj (_type_): _description_
         appearance_params (_type_): in dict
 
-    Returns:
+    :returns:
         appearance_params['window_color']: color of the app
         appearance_params['font_size']: font-size of the app
         appearance_params['font_style']: font-style of the app
@@ -165,7 +165,7 @@ def update_combo_color(ui_obj):
     Args:
         ui_obj (_type_): main ui object
     
-    Returns: None
+    :returns: None
     """
 
     current_color = ui_obj.setting_color_comboBox.currentText()
@@ -179,7 +179,7 @@ def update_combo_fontstyle(ui_obj):
     Args:
         ui_obj (_type_): main ui object
     
-    Returns: None
+    :returns: None
     """
 
     current_fontstyle = ui_obj.setting_fontstyle_comboBox.currentText()
@@ -193,7 +193,7 @@ def update_combo_fontsize(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns: None
+    :returns: None
     """
 
     current_fontsize = ui_obj.setting_fontsize_comboBox.currentText()
@@ -210,7 +210,7 @@ def get_calibration_params_from_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns:
+    :returns:
         calibration_params: in dict
     """
 
@@ -232,7 +232,7 @@ def get_image_procesing_params_from_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns:
+    :returns:
         image_procesing_params: in dict
     """
 
@@ -254,7 +254,7 @@ def get_defects_params_from_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns:
+    :returns:
         defects_params: in dict
     """
 
@@ -273,7 +273,7 @@ def get_multitasking_params_from_ui(ui_obj):
     Args:
         ui_obj (_type_): main ui object
 
-    Returns:
+    :returns:
         multitasking_params: in dict
     """
 
@@ -298,14 +298,14 @@ def get_mainsetting_params_from_db(db_obj, mode='all'):
     Args:
         db_obj (_type_): database object
         mode (str, optional): select mode to return specific parameters from database. Defaults to 'all'.
-            'all': returns
+            'all': :returns:
                 all_params, multitasking params
             'px_calibration'
                 rect_areas, rect_acc
 
-    Returns:
+    :returns:
         depending on mode
-            'all': returns
+            'all': :returns:
                 all_params, multitasking params
             'px_calibration'
                 rect_areas, rect_acc
@@ -335,7 +335,7 @@ def set_mainsetting_params_to_db(db_obj, apperance_params, is_multitask_params=F
         apperance_params (_type_): params, could be appearance, calibration, image-preprocessing and ...
         is_multitask_params (bool, optional): a boolean determining wheather the input params are belonge to multitasking or not. Defaults to False.
 
-    Returns:
+    :returns:
         resault: resualts of updating on database
     """
 
