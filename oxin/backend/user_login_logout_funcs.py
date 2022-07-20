@@ -17,9 +17,8 @@ def set_app_buttons_enable_or_disable(names, enable=True):
     """
     this function is used to enable/disable ui elements, by taking input elements as list of names
 
-    Inputs:
-        names: ui element names (list of strings)
-        enable: a boolean determining wheather to enable/disable the elements
+    :param names: ui element names (list of strings)
+    :param enable: a boolean determining wheather to enable/disable the elements
     
     :returns: None
     """
@@ -33,10 +32,9 @@ def logout_user(ui_obj, confirm_ui_obj, login_api_obj):
     """
     this function is used to logout user from the app, and disable/lock ui after logout
 
-    Inputs:
-        ui_obj: main ui object
-        confirm_ui_obj:
-        login_api_obj:
+    :param ui_obj: main ui object
+    :param confirm_ui_obj:
+    :param login_api_obj:
     
     :returns: None
     """
@@ -71,11 +69,10 @@ def authenticate_user(ui_obj, login_ui_obj, login_api_obj, api_obj):
     this function is used to authenticate the user,
     it takes the autintication results from login API, and if user be autenticated, enables/unlocks ui for user to work with
 
-    Inputs:
-        ui_obj: main ui object
-        login_ui_obj:
-        login_api_obj:
-        api_obj: main API object
+    :param ui_obj: main ui object
+    :param login_ui_obj:
+    :param login_api_obj:
+    :param api_obj: main API object
     
     :returns: None
     """
@@ -119,10 +116,9 @@ def run_login_window(ui_obj, login_ui_obj, confirm_ui_obj):
     """
     this function is used to run/show login window for user login
 
-    Inputs:
-        ui_obj: the main ui object
-        login_ui_obj:
-        confirm_ui_obj:
+    :param ui_obj: the main ui object
+    :param login_ui_obj:
+    :param confirm_ui_obj:
     
     :returns: None
     """

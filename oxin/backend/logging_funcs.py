@@ -11,10 +11,9 @@ class app_logger():
         This class initializes a logger object that will be used for logging all things happening in the program. The logs are written in a log file, and can be shown
         in the console too. The logs are saved daya by day, and on every app start/close
 
-        Inputs:
-            name: logger object name (in string)
-            log_mainfolderpath: main folder path to create logs (in string)
-            console_log: a boolean value to wheter show or not show logs in console (in boolean)
+        :param name: logger object name (in string)
+        :param log_mainfolderpath: main folder path to create logs (in string)
+        :param console_log: a boolean value to wheter show or not show logs in console (in boolean)
         
         :returns: logger object        
         """
@@ -72,9 +71,7 @@ class app_logger():
         """
         this function creates the main folder to store log files
 
-        Inputs: None
-
-        Outputs: None
+        :returns: None
         
         """
 
@@ -88,9 +85,7 @@ class app_logger():
         """
         this function creates day by day folders in the main folder, to sotring the log files of each day
 
-        Inputs: None
-
-        Outputs: None
+        :returns: None
         """
 
         # create if not exist
@@ -103,9 +98,8 @@ class app_logger():
         """
         this function creates a log with input message and log level
 
-        Inputs:
-            message: the log message (in string)
-            level: the log level (in int), an int value between [0, 5] specifing the log level)
+        :param message: the log message (in string)
+        :param level: the log level (in int), an int value between [0, 5] specifing the log level)
                 0: debug
                 1: info
                 2: warning
@@ -150,8 +144,7 @@ class app_logger():
         """
         this function sets the input username as the current user of the app and logging
 
-        Inputs:
-            current_username: current username logged-in the app (in string)
+        :param current_username: current username logged-in the app (in string)
         
         :returns: None
         """

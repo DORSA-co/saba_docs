@@ -20,10 +20,7 @@ def get_users_from_db(db_obj):
     """
     this function is used to get users list from database
 
-    Inputs: None
-
-    :returns:
-        users_list: list of users (in dict)
+    :returns: users_list: list of users (in dict)
     """
     
     users_list = db_obj.load_users()
@@ -35,12 +32,10 @@ def remove_users_from_db(db_obj, users_list):
     """
     this function is used to remove input users from database
 
-    Args:
-        db_obj (_type_): database object
-        users_list (_type_): list of user_names
+    :param db_obj: (_type_) database object
+    :param users_list: (_type_) list of user_names
 
-    :returns:
-        results: a boolean determining if the removing is ok
+    :returns: results: a boolean determining if the removing is ok
     """
 
     res = db_obj.remove_users(users_list)
@@ -52,12 +47,10 @@ def add_new_user_to_db(db_obj, new_user_info):
     """
     this function is used to add a new user to database
 
-    Args:
-        db_obj (_type_): database object
-        new_user_info (_type_): in dict
+    :param db_obj: (_type_) database object
+    :param new_user_info: (_type_) in dict
 
-    :returns:
-        resault: a boolean determining if the user is added to database
+    :returns: resault: a boolean determining if the user is added to database
     """
     
     res = db_obj.add_user(new_user_info)
@@ -69,9 +62,8 @@ def set_users_on_ui(ui_obj, users_list):
     """
     this function is used to set input users list to ui users table
 
-    Inputs:
-        ui_obj: main ui object
-        users_list: list of users (in dict)
+    :param ui_obj: main ui object
+    :param users_list: list of users (in dict)
     
     :returns: None
     """
@@ -107,9 +99,8 @@ def show_users_summary_info(ui_obj, db_obj):
     """
     this function is used to show user infoes summary on dashboard
 
-    Args:
-        ui_obj (_type_): main ui object
-        db_obj (_type_): database object
+    :param ui_obj: (_type_) main ui object
+    :param db_obj: (_type_) database object
     """
 
     try:
@@ -128,9 +119,8 @@ def get_selected_users(ui_obj, users_list):
     """
     this function is used to get selected users from users table in ui
 
-    Args:
-        ui_obj (_type_): main ui object
-        users_list (_type_): list of users (in dict)
+    :param ui_obj: (_type_) main ui object
+    :param users_list: (_type_) list of users (in dict)
 
     :returns:
         selected_users: list of selected users user_names
@@ -153,11 +143,9 @@ def get_user_info_from_ui(ui_obj):
     """
     this funcion is used to get user info from ui add user fileds
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_): main ui object
 
-    :returns:
-        user_info: in dict
+    :returns: user_info: in dict
 
     """
     try:
@@ -181,15 +169,13 @@ def new_user_info_validation(ui_obj, db_obj, user_info, default_user=False):
     """
     this function is used to validate new user info, to be in right format and be unique
 
-    Args:
-        ui_obj (_type_): main ui object
-        db_obj (_type_): database object
-        user_info (_type_): input user_info (in dict)
-        default_user (bool, optional): a boolean to determine if input user info is for default admin user. Defaults to False.
+    :param ui_obj: (_type_) main ui object
+    :param db_obj: (_type_) database object
+    :param user_info: (_type_) input user_info (in dict)
+    :param default_user: (bool, optional) a boolean to determine if input user info is for default admin user. Defaults to False.
 
-    :returns:
-        message: the text message of validating user_info
-        message_level: an int value in range [0, 2] determioning the level of messege
+    :returns: message: the text message of validating user_info
+    :returns: message_level: an int value in range [0, 2] determioning the level of messege
     """
 
     # check fields not empty

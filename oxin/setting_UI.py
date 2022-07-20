@@ -188,8 +188,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function closes the app
 
-        Inputs: None
-
         :returns: None
         """
         
@@ -206,11 +204,10 @@ class UI_main_window(QMainWindow, ui):
         this function closes the app in force situations (app errors or excetions), also a log will be written determining the cause
         for closing the app, and an alert window will be appeared to warn the app closing
 
-        Inputs:
-            message: message to log on app close (in string)
-            change_language: a boolean determines if the app close is for changing the app language
+        :param message: message to log on app close (in string)
+        :param change_language: a boolean determines if the app close is for changing the app language
         
-        Retuens: None
+        :returnes: None
         """
         
         self.app_close_flag = True
@@ -251,8 +248,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function minimizes the app to taskbar
 
-        Inputs: None
-
         :returns: None
         """
         
@@ -263,8 +258,6 @@ class UI_main_window(QMainWindow, ui):
     def maxmize_minimize(self):
         """
         this function chages the window size of app
-
-        Inputs: None
 
         :returns: None
         """
@@ -281,8 +274,6 @@ class UI_main_window(QMainWindow, ui):
     def leftmenu(self):
         """
         this function s used to show/hide the left side bar with an sliding effect
-
-        Inputs: None
 
         :returns: None
         """
@@ -379,8 +370,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to shiw/hide an element (frame) with an sliding effect
 
-        Inputs: None
-
         :returns: None
         """
 
@@ -417,8 +406,6 @@ class UI_main_window(QMainWindow, ui):
     def activate_(self):
         """
         This function will activate ui operating buttons and connect theme to their functions
-
-        Inputs: None
 
         :returns: None
         """
@@ -493,8 +480,6 @@ class UI_main_window(QMainWindow, ui):
     def buttonClick(self):
         """
         this funcion will connect each button in ui to its function
-
-        Inputs: None
 
         :returns: None
         """
@@ -571,9 +556,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to set the content of comboboxes in ui
 
-        Inputs: None
-
-        Outputs: None
+        :returns: None
         """
         
         # user rules combo box in user management page
@@ -600,9 +583,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to connect siders in ui to their functions
 
-        Inputs: None
-
-        Outputs: None
+        :returns: None
         """
         
         # sliders in calibration page (Miss.Abtahi algo)
@@ -613,9 +594,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to connect checkboxes in ui to their functions
 
-        Inputs: None
-
-        Outputs: None
+        :returns: None
         """
         
         # checkboxes in calibration page (Miss.Abtahi algo)
@@ -628,10 +607,9 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to change checkbox text to enable/disable by checkbox state
 
-        Inputs:
-            b: checkbox element
+        :param b: checkbox element
 
-        Outputs: None
+        :returns: None
         """
 
         # if b.isChecked() == True:
@@ -645,10 +623,9 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to show slider value in an label/textbox
 
-        Inputs:
-            value: value of the slider (in int)
+        :param value: value of the slider (in int)
 
-        Outputs: None
+        :returns: None
         """
         
         btn = self.sender()
@@ -680,10 +657,9 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to change the camrea icon in calibration page
 
-        Inputs:
-            s: id of camera (in int)
+        :param s: id of camera (in int)
 
-        Outputs: None
+        :returns: None
         """
         
         # set default off icon for all cameras
@@ -707,11 +683,8 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to get and return entered username and password from login window
 
-        Inputs: None
-
-        :returns:
-            username: in string
-            password: in string
+        :returns: username: in string
+        :returns: password: in string
         """
         
         self.user_name_value=self.user_name.text()
@@ -724,11 +697,10 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to set login message on login window 
 
-        Inputs:
-            text: message to show (in string)
-            color: color of the message text (in string, html code without #, or color name)
+        :param text: message to show (in string)
+        :param color: color of the message text (in string, html code without #, or color name)
 
-        Outputs: None
+        :returns: None
         """
         
         self.login_message.setText(text)
@@ -740,12 +712,11 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to show input message in input label, also there is a message level determining the color of label, and a timer to clear meesage after a while
 
-        Inputs:
-            label_name: label element name to show the message in
-            text: input message to show (in string)
-            level: level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label
-            clearable: a boolean value determining whater to clear the message after timeout or not
-            prefix: a boolean value determinign wheater to show the message prefix or not
+        :param label_name: label element name to show the message in
+        :param text: input message to show (in string)
+        :param level: level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label
+        :param clearable: a boolean value determining whater to clear the message after timeout or not
+        :param prefix: a boolean value determinign wheater to show the message prefix or not
         
         :returns: None
         """
@@ -789,9 +760,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to clear the lineedit texts
 
-        Inputs: None
-
-        Rrturns: None
+        :returns: None
         """
         
         for i in range(len(line_edits)):
@@ -803,10 +772,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to take and return entered image calibration parms of Miss.Abtahi algo from ui
 
-        Inputs: None
-
-        Outputs:
-            dict{block_size, defect, noise, noise_flag}
+        :returns: dict{block_size, defect, noise, noise_flag}
         """
         
         combo=self.comboBox_block_size.currentText()
@@ -821,10 +787,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to take and return entered image calibration parms of Miss.Abtahi algo from ui
 
-        Inputs: None
-
-        Outputs:
-            dict{block_size, defect, noise, noise_flag}
+        :returns: dict{block_size, defect, noise, noise_flag}
         """
 
         try:
@@ -839,9 +802,7 @@ class UI_main_window(QMainWindow, ui):
 
     def get_width_guage_parms(self):
         """
-        this function will :returns: the user slected camera in calibration page
-
-        Inputs: None
+        this function will returns the user slected camera in calibration page
 
         Return: camrera id (in string)
         """
@@ -853,8 +814,6 @@ class UI_main_window(QMainWindow, ui):
     def disable_camera_settings(self):
         """
         this function will disable all camera params fileds in camera setting page, on camera disable/change or stackwidjet change
-
-        Inputs: None
 
         :returns: None
         """
@@ -870,9 +829,8 @@ class UI_main_window(QMainWindow, ui):
         """
         this function will enable or disble all the ui elements in the input list
 
-        Inputs:
-            names: ui elements (in list)
-            enable: a boolean value determining wheather to enable/diable the elements
+        :param names: ui elements (in list)
+        :param enable: a boolean value determining wheather to enable/diable the elements
         """
         
         for name in names:
@@ -883,10 +841,9 @@ class UI_main_window(QMainWindow, ui):
         """
         this funcion will set a text message to a label element, with text color
 
-        Inputs:
-            label_name: label element name
-            msg: input message (in string)
-            color: message/text color (in string, html code or color name)
+        :param label_name: label element name
+        :param msg: input message (in string)
+        :param color: message/text color (in string, html code or color name)
         
         :returns: None
         """
@@ -900,8 +857,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to take and return the text content of a label elemnt
 
-        Inputs:
-            label_name: name of label element
+        :param label_name: name of label element
         
         :returns: None
         """
@@ -913,9 +869,8 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to set/fit an image to a label element
 
-        Inputs:
-            label_name: name of the label element
-            img: input image to fit/set to label
+        :param label_name: name of the label element
+        :param img: input image to fit/set to label
         
         :returns: None
         """
@@ -931,11 +886,10 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to change the current camera icon in camera settings page
 
-        Inputs:
-            camera_id: id of the cameras (in string)
-            active: a boolean value determinging wheater the camera is selected or deselected
+        :param camera_id: id of the cameras (in string)
+        :param active: a boolean value determinging wheater the camera is selected or deselected
 
-        Outputs: None
+        :returns: None
         """
         
         image_active_id = 'images/cambtm_actived.png' if int(camera_id)>12 else 'images/camtop_actived.png' 
@@ -954,11 +908,10 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to set maximum or minimum height for an element (frame)in ui 
 
-        Inputs:
-            frame_name: name of frame element
-            size: height/size of elemen
-            minimum: a boolean value determning wheater the input height/size is minimumheight or not
-            maximum: a boolean value determning wheater the input height/size is maximumheight or not
+        :param frame_name: name of frame element
+        :param size: height/size of elemen
+        :param minimum: a boolean value determning wheater the input height/size is minimumheight or not
+        :param maximum: a boolean value determning wheater the input height/size is maximumheight or not
                 if both minimum and maximum be False, the size will be applied as both minimumheight and maximumheight
         
         :returns: None
@@ -977,12 +930,9 @@ class UI_main_window(QMainWindow, ui):
 
     def get_plc_ip(self):
         """
-        this function takes anf :returns: input PLC IP from ui
+        this function takes anf returns input PLC IP from ui
 
-        Inputs: None
-
-        :returns:
-            PLC ip: (in string)
+        :returns: PLC ip: (in string)
         """
         
         return self.plc_ip_line.text()
@@ -992,8 +942,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function will set input PLC IP from database to ui field
 
-        Inputs:
-            text: PLC ip (in string)
+        :param text: PLC ip (in string)
 
         :returns: None
         """
@@ -1005,10 +954,7 @@ class UI_main_window(QMainWindow, ui):
         """
         this function will take and :returns: the input PLC parameters and addreses from ui
 
-        Inputs: None
-
-        Outputs:
-            dict: {limitswitch_top_plc, limitswitch_bottom_plc, thermometer_min_plc, thermometer_max_plc,
+        :returns: dict: {limitswitch_top_plc, limitswitch_bottom_plc, thermometer_min_plc, thermometer_max_plc,
                     cooler_uptime_plc, system_operating_plc, air_valve_plc, camera_limit_plc':[camera_limit_path, -1, -1],
                     camera_frate_plc, projector_limit_plc, detect_sensor_plc
         """
@@ -1070,8 +1016,6 @@ class UI_main_window(QMainWindow, ui):
         """
         This function translate ui to selected language in settings page
 
-        Inputs: None
-
         :returns: None
         """
 
@@ -1128,11 +1072,9 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to translate table headers or generally, all texts in and list, to ui default language
 
-        Inputs:
-            header_list: a list of texts that will be translated
+        :param header_list: a list of texts that will be translated
 
-        Outputs:
-            header_list: translated list of texts
+        :returns: header_list: translated list of texts
         """
         
         if self.language != 'en':

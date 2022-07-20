@@ -37,8 +37,6 @@ def rearange_active_notifes():
     on every call of this function, all notifications in notification list are checked, and if a notifiacton is deactived (finished),
     the other actived notifications rearranged and moved to take right position
 
-    Inputs: None
-
     :returns: None
     """
     
@@ -58,8 +56,6 @@ class notification_manager():
     this class is used to create and handle pop-up notifications of the app, it has functions to create new notification,
     and manage actived notificaions
 
-    Inputs: None
-
     :returns: None
     """
     
@@ -71,17 +67,16 @@ class notification_manager():
         """
         this function is used to create a new pop-up notification, by taking as input the notification message and some other params
 
-        Inputs:
-            message: the notification message (in string)
-            win_color: color of the window (same as the main app default color)
-            font_size: font size of the messsage (same as the main app default)
-            font_style: font style of the messsage (same as the main app default)
-            level: the level of the message, in range of [0, 2], determinnig statues and importance of the message:
+        :param message: the notification message (in string)
+        :param win_color: color of the window (same as the main app default color)
+        :param font_size: font size of the messsage (same as the main app default)
+        :param font_style: font style of the messsage (same as the main app default)
+        :param level: the level of the message, in range of [0, 2], determinnig statues and importance of the message:
                 0: good statues, only notification
                 1: warning message
                 2: error message
         
-        Returens: None
+        :returns: None
         """
 
         
@@ -128,8 +123,6 @@ class notification_manager():
         on every notification creation, this function is called to check the states of previous notifications, and if the last notification is
         deactived/finished, it most be removed from the actived notifications list
 
-        Input: None
-
         :returns: None
         """
         
@@ -152,8 +145,7 @@ class UI_main_window(QMainWindow, ui):
     """
     this class is used to create a new notification window object
 
-    Inputs:
-        order: order of the window (for arranging the notifications and determining their order)
+    :param order: order of the window (for arranging the notifications and determining their order)
 
     :returns: None
     """
@@ -234,8 +226,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function connects the close button to its functionality
 
-        Inputs: None
-
         :returns: None
         """
 
@@ -246,8 +236,6 @@ class UI_main_window(QMainWindow, ui):
     def close_win(self):
         """
         this function is used for closing login window
-
-        Inputs: None
 
         :returns: None
         """
@@ -260,8 +248,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used for closing login window, also stoping progressbar and apear timers and start disapear timers
 
-        Inputs: None
-
         :returns: None
         """
 
@@ -273,8 +259,6 @@ class UI_main_window(QMainWindow, ui):
     def buttonClick(self):
         """
         this function is used to connect ui buttons to their functions
-
-        Inputs: None
 
         :returns: None
         """
@@ -299,9 +283,7 @@ class UI_main_window(QMainWindow, ui):
         this function us used to update the progressbar value, by a timer.
         progressbar determines the remained time to finish and close the notfication
 
-        Inputs: None
-
-        Outputs: None
+        :returns: None
         """
         
         # setting for loop to set value of progress bar
@@ -318,8 +300,6 @@ class UI_main_window(QMainWindow, ui):
     def win_startpoint(self):
         """
         this function is used to detemine the startpoint of the notification window (showing from top right of the screen)
-
-        Inputs: None
 
         :returns: None
         """
@@ -351,8 +331,6 @@ class UI_main_window(QMainWindow, ui):
         this function is used to appear/show the notification window with an sliding animation,
         notification window will be appeared from top left of the screen in sliding way
 
-        Inputs: None
-
         :returns: None
         """
 
@@ -376,8 +354,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to disappear/hide the notification window with an sliding animation,
         notification window will be disappeared from top left of the screen in sliding way
-
-        Inputs: None
 
         :returns: None
         """
@@ -410,8 +386,7 @@ class UI_main_window(QMainWindow, ui):
         this function is used to move notification verticaly, if a new notification is created or a previous notification is closed
         on defalt, it is used to move down the notifications, but it can be used to move up the notifications by the reverse flag
 
-        Inputs:
-            reverse: a boolean value deermining if the movement is reversly (move to top) 
+        :param reverse: a boolean value deermining if the movement is reversly (move to top) 
         
         :returns: None
         """
@@ -439,8 +414,6 @@ class UI_main_window(QMainWindow, ui):
     def win_move_down(self):
         """
         this function is used to move the notification down vertically, on any new notification is created
-
-        Inputs: None
 
         :returns: None
         """
@@ -476,8 +449,6 @@ class UI_main_window(QMainWindow, ui):
     def win_move_top(self):
         """
         this function is used to move the notification up vertically, if any top notification is closed
-
-        Inputs: None
 
         :returns: None
         """

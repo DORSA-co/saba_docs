@@ -6,10 +6,7 @@ class moveOnList:
     this function is used to create a list of elements, with option to go next or preivious on list and
     get current objet/element
 
-    Args: None
-
-    :returns:
-        moveOnList class
+    :returns: moveOnList class
     """
 
     def __init__(self):
@@ -21,9 +18,8 @@ class moveOnList:
         """
         this function is used to add a list or elements with name/key
 
-        Args:
-            mylist (_type_): _description_
-            name (_type_): name of list
+        :param mylist: (_type_) _description_
+        :param name: (_type_) name of list
         
         :returns: None
         """
@@ -36,11 +32,9 @@ class moveOnList:
         """
         this function is used to check if a key/name is in class
 
-        Args:
-            name (_type_): input name
+        :param name: (_type_): input name
 
-        :returns:
-            resault: boolean detetmining if the name if avilable
+        :returns: resault: boolean detetmining if the name if avilable
         """
 
         if name in self.lists.keys():
@@ -52,8 +46,7 @@ class moveOnList:
         """
         this function is used to get a next object fot moving nect on a list
 
-        Args:
-            name (_type_): name/key of list
+        :param name: (_type_) name/key of list
         
         :returns: next_on_list oject
         """
@@ -71,8 +64,7 @@ class moveOnList:
         """
         this function is used to get a previous object fot moving nect on a list
 
-        Args:
-            name (_type_): name/key of list
+        :param name: (_type_) name/key of list
         
         :returns: prev_on_list oject
         """
@@ -112,11 +104,9 @@ class moveOnList:
         """
         this function is used to get curent element in a list
 
-        Args:
-            name (_type_): name/key of list
+        :param name: (_type_) name/key of list
 
-        :returns:
-            current_element of list:
+        :returns: current_element of list:
         """
 
         mylist = self.lists[ name ] 
@@ -128,11 +118,9 @@ class moveOnList:
         """
         this function is used to get a list using its name/key
 
-        Args:
-            name (_type_): name/key of list
+        :param name: (_type_) name/key of list
 
-        :returns:
-            list: _description_
+        :returns: list: _description_
         """
 
         mylist = self.lists[name] 
@@ -143,11 +131,9 @@ class moveOnList:
         """
         this function is used to get count of elements in a list
 
-        Args:
-            name (_type_): name/key of list
+        :param name: (_type_) name/key of list
 
-        :returns:
-            len_list: _description_
+        :returns: len_list: _description_
 
         """
         mylist = self.lists[ name ] 

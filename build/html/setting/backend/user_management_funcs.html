@@ -95,14 +95,15 @@
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.add_new_user_to_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">add_new_user_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_user_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.add_new_user_to_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to add a new user to database</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object
-new_user_info (_type_): in dict</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>resault: a boolean determining if the user is added to database</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>new_user_info</strong> – (_type_) in dict</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resault: a boolean determining if the user is added to database</p>
 </dd>
 </dl>
 </dd></dl>
@@ -111,14 +112,15 @@ new_user_info (_type_): in dict</p>
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.get_selected_users">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_selected_users</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">users_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.get_selected_users" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get selected users from users table in ui</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-users_list (_type_): list of users (in dict)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>selected_users: list of selected users user_names</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>users_list</strong> – (_type_) list of users (in dict)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>selected_users: list of selected users user_names</p>
 </dd>
 </dl>
 </dd></dl>
@@ -127,13 +129,12 @@ users_list (_type_): list of users (in dict)</p>
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.get_user_info_from_ui">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_user_info_from_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.get_user_info_from_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this funcion is used to get user info from ui add user fileds</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>user_info: in dict</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – (_type_): main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>user_info: in dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -142,7 +143,6 @@ users_list (_type_): list of users (in dict)</p>
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.get_users_from_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_users_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.get_users_from_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get users list from database</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>users_list: list of users (in dict)</p>
@@ -154,17 +154,20 @@ users_list (_type_): list of users (in dict)</p>
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.new_user_info_validation">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">new_user_info_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">default_user</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.new_user_info_validation" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to validate new user info, to be in right format and be unique</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-db_obj (_type_): database object
-user_info (_type_): input user_info (in dict)
-default_user (bool, optional): a boolean to determine if input user info is for default admin user. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>user_info</strong> – (_type_) input user_info (in dict)</p></li>
+<li><p><strong>default_user</strong> – (bool, optional) a boolean to determine if input user info is for default admin user. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>message: the text message of validating user_info</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>message: the text message of validating user_info
-message_level: an int value in range [0, 2] determioning the level of messege</p>
+<dd class="field-odd"><p>message_level: an int value in range [0, 2] determioning the level of messege</p>
 </dd>
 </dl>
 </dd></dl>
@@ -173,14 +176,15 @@ message_level: an int value in range [0, 2] determioning the level of messege</p
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.remove_users_from_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">remove_users_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">users_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.remove_users_from_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove input users from database</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object
-users_list (_type_): list of user_names</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>results: a boolean determining if the removing is ok</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>users_list</strong> – (_type_) list of user_names</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>results: a boolean determining if the removing is ok</p>
 </dd>
 </dl>
 </dd></dl>
@@ -189,14 +193,15 @@ users_list (_type_): list of user_names</p>
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.set_users_on_ui">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_users_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">users_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.set_users_on_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set input users list to ui users table</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui_obj: main ui object
-users_list: list of users (in dict)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>users_list</strong> – list of users (in dict)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -205,9 +210,12 @@ users_list: list of users (in dict)</p>
 <dt class="sig sig-object py" id="oxin.backend.user_management_funcs.show_users_summary_info">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_management_funcs.</span></span><span class="sig-name descname"><span class="pre">show_users_summary_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_management_funcs.show_users_summary_info" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to show user infoes summary on dashboard</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-db_obj (_type_): database object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>

@@ -29,11 +29,10 @@ class UI_main_window(QMainWindow, ui):
     """
     this class initializes a login window for user to login to app
 
-    Inputs:
-        ui: login UI object
-        language: the main language for window and messages (in string)
+    :param ui: login UI object
+    :param language: the main language for window and messages (in string)
 
-    Outputs: None
+    :returns: None
     """
     
     global widgets
@@ -81,8 +80,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this functino is used for showing/hiding password text in password lineedit
 
-        Inputs: None
-
         :returns: None
         """
         
@@ -121,8 +118,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function connects the close button to its functionality
 
-        Inputs: None
-
         :returns: None
         """
         
@@ -133,8 +128,6 @@ class UI_main_window(QMainWindow, ui):
     def close_win(self):
         """
         this function is used for closing login window, also on closing, the password and username fileds are cleared
-
-        Inputs: None
 
         :returns: None
         """
@@ -148,8 +141,6 @@ class UI_main_window(QMainWindow, ui):
     def buttonClick(self):
         """
         this function is used to connect each button to its functionality, on button click
-
-        Inputs: None
 
         :returns: None
         """
@@ -165,11 +156,8 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to get/return entered username and password from fields
 
-        Inputs: None
-
-        :returns:
-            username: in string
-            password: in string
+        :returns: username: in string
+        :returns: password: in string
         """
         
         self.user_name_value=self.user_name.text()
@@ -182,12 +170,11 @@ class UI_main_window(QMainWindow, ui):
         """
         this function is used to show input message in input label, also there is a message level determining the color of label, and a timer to clear meesage after a while
 
-        Inputs:
-            label_name: label element name to show the message in
-            text: input message to show (in string)
-            level: level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label
-            clearable: a boolean value determining whater to clear the message after timeout or not
-            prefix: a boolean value determinign wheater to show the message prefix or not
+        :param label_name: label element name to show the message in
+        :param text: input message to show (in string)
+        :param level: level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label
+        :param clearable: a boolean value determining whater to clear the message after timeout or not
+        :param prefix: a boolean value determinign wheater to show the message prefix or not
         
         :returns: None
         """

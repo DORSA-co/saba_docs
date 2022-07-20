@@ -105,13 +105,18 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.login_api.</span></span><span class="sig-name descname"><span class="pre">API</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_api.API" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>this class is used as the API for login window, to take login infoes from user and authenticate the user</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui: login ui object
-logger_obj: logger object to take logs of user authenticating and logging in
-language: the langage to show notifacations of the login</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui</strong> – login ui object</p></li>
+<li><p><strong>logger_obj</strong> – logger object to take logs of user authenticating and logging in</p></li>
+<li><p><strong>language</strong> – the langage to show notifacations of the login</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p>Outputs: None</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.login_api.API.button_connector">
 <span class="sig-name descname"><span class="pre">button_connector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_api.API.button_connector" title="Permalink to this definition"></a></dt>
@@ -122,15 +127,13 @@ language: the langage to show notifacations of the login</p>
 <dt class="sig sig-object py" id="oxin.login_api.API.login">
 <span class="sig-name descname"><span class="pre">login</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_api.API.login" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to authenticate an login the user to app</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><p>result: a boolean value detrmining if the authentication done or not
-user_info: a dict containing infoes of the user</p>
-<blockquote>
-<div><p>{user_name: username in string, password: password in string}</p>
-</div></blockquote>
-</p>
+<dd class="field-odd"><p>result: a boolean value detrmining if the authentication done or not</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>user_info: a dict containing infoes of the user
+{user_name: username in string, password: password in string}</p>
 </dd>
 </dl>
 </dd></dl>

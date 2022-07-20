@@ -10,12 +10,10 @@ def draw_contour(gray, cnts):
     """
     this function is used to draw nput contours on image
 
-    Args:
-        gray (_type_): image in gray format
-        cnts (_type_): contours
+    :param gray: (_type_) image in gray format
+    :param cnts: (_type_) contours
 
-    :returns:
-        image: image with drawed contours
+    :returns: image: image with drawed contours
     """
 
     img = cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR)
@@ -27,13 +25,11 @@ def draw_rect(gray, cnts, areas):
     """
     this function is used to draw input recangle contours on image
 
-    Args:
-        gray (_type_): image in gray format
-        cnts (_type_): contours
-        areas (_type_): list of areas of rectangles (in mm)
+    :param gray: (_type_) image in gray format
+    :param cnts: (_type_) contours
+    :param areas: (_type_) list of areas of rectangles (in mm)
 
-    :returns:
-        image: image with drawed contours
+    :returns: image: image with drawed contours
     """
 
     img = cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR)
@@ -52,16 +48,14 @@ class extract_info():
     """
     this class is used to get pixel-value of camera, using the Dorsa calibrator plate with 6 rectangles (3 pairs)
 
-    Args:
-        gray: input image in gray format
-        areas_mm: list of areas of rectangles (in mm), containing 6 area value, first 3 for large rects, and last 3 for small rects
-        min_area: min area of contours (in pixel)
-        max_area: max area of contours (in pixel)
-        accuracy: min rectangular accuracy for contours
-        gray_thrs: gray threshhold for thresholding
+    :param gray: input image in gray format
+    :param areas_mm: list of areas of rectangles (in mm), containing 6 area value, first 3 for large rects, and last 3 for small rects
+    :param min_area: min area of contours (in pixel)
+    :param max_area: max area of contours (in pixel)
+    :param accuracy: min rectangular accuracy for contours
+    :param gray_thrs: gray threshhold for thresholding
     
-    :returns:
-        None
+    :returns: None
     """
 
     def __init__(self, gray, areas_mm , min_area=2000, max_area=50000 , accuracy=0.9, gray_thrs=100):
@@ -78,10 +72,7 @@ class extract_info():
         """
         get thresholded/mask from input image
 
-        Args: None
-
-        :returns:
-            mask: threshold mask of input image
+        :returns: mask: threshold mask of input image
         """
 
         _, mask = cv2.threshold(self.gray, self.gray_thrs, 255, cv2.THRESH_BINARY)
@@ -92,12 +83,10 @@ class extract_info():
         """
         find countours of threshold mask
 
-        Args:
-            mask (_type_): threshold mask
+        :param mask: (_type_) threshold mask
 
-        :returns:
-            img: image with drawed countours
-            cnts: foundeed counturs
+        :returns: img: image with drawed countours
+        :returns: cnts: foundeed counturs
         """
 
         cnts,_ = cv2.findContours(mask, cv2.RETR_LIST, cv2.CHAIN_APPROX_SIMPLE)
@@ -109,12 +98,10 @@ class extract_info():
         """
         this function is used to filter founded contours by min and max area
 
-        Args:
-            cnts (_type_): input contours
+        :param cnts: (_type_) input contours
 
-        :returns:
-            img: image with drawed countours
-            cnts: area filtered counturs
+        :returns: img: image with drawed countours
+        :returns: cnts: area filtered counturs
         """
 
         filter_area = lambda x: self.min_area< cv2.contourArea(x) < self.max_area
@@ -127,11 +114,9 @@ class extract_info():
         """
         this function is used to filter a countour by its accuracy to be rectangular
 
-        Args:
-            x (_type_): _description_
+        :param x: (_type_) _description_
 
-        :returns:
-            _type_: _description_
+        :returns: _type_: _description_
         """
 
         _,(w,h),_ = cv2.minAreaRect(x)
@@ -144,12 +129,10 @@ class extract_info():
         """
         this function is used to filter countours by their accuracy to be rectangular
 
-        Args:
-            cnts (_type_): input contours
+        :param cnts: (_type_) input contours
 
-        :returns:
-            img: image with drawed countours
-            cnts: rectangle accuracy filtered counturs
+        :returns: img: image with drawed countours
+        :returns: cnts: rectangle accuracy filtered counturs
         """
 
         cnts = list( filter( self.filter_acc, cnts))
@@ -161,12 +144,10 @@ class extract_info():
         """
         this function is used to draw rectangular contours on image
 
-        Args:
-            cnts (_type_): input contours
+        :param cnts: (_type_) input contours
 
-        :returns:
-            img: image with drawed countours
-            rects: list of 6 rectangle countours
+        :returns: img: image with drawed countours
+        :returns: rects: list of 6 rectangle countours
         """
 
         cnts.sort(key = lambda x:cv2.contourArea(x), reverse=True)
@@ -181,14 +162,12 @@ class extract_info():
         """
         this function is used to get pixel-values for each of rrectangle pairs
 
-        Args:
-            cnts (_type_): input contours
-            rects (_type_): input 6 rectangle contours
+        :param cnts: (_type_) input contours
+        :param rects: (_type_) input 6 rectangle contours
 
-        :returns:
-            resault: determining if done
-            infoes: array of rectangle pair centers and pixel values
-            infoes_final: array of rectangle pair centers and pixel values
+        :returns: resault: determining if done
+        :returns: infoes: array of rectangle pair centers and pixel values
+        :returns: infoes_final: array of rectangle pair centers and pixel values
         """
 
         # check if all 6 rects are detected
@@ -225,11 +204,9 @@ class extract_info():
         """
         this function is used to solve equation for finding pixel value parameters
 
-        Args:
-            inputs (_type_): _description_
+        :param inputs: (_type_) _description_
 
-        :returns:
-            pixel_value_parameters: array of 3 parameters
+        :returns: pixel_value_parameters: array of 3 parameters
         """
 
         inputs = np.array(inputs)
@@ -267,12 +244,11 @@ def apply_pxvalue_calibration(ui_obj, api_obj, db_obj, image, next=True):
     in every call of this function, one step (next/prev) is done and the results are updated on ui.
     this way, we can change between steps and tune parameters to get pixel value results
 
-    Inputs:
-        ui_obj: main ui object
-        api_obj: main api object
-        db_obj: database object
-        image: input calibration image
-        next: a boolean value determninig wheater take to next step or previous step
+    :param ui_obj: main ui object
+    :param api_obj: main api object
+    :param db_obj: database object
+    :param image: input calibration image
+    :param next: a boolean value determninig wheater take to next step or previous step
     
     :returns: None
     """   

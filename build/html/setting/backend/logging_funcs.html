@@ -99,38 +99,43 @@
 <dt class="sig sig-object py" id="oxin.backend.logging_funcs.app_logger.create_dailyfolder">
 <span class="sig-name descname"><span class="pre">create_dailyfolder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.logging_funcs.app_logger.create_dailyfolder" title="Permalink to this definition"></a></dt>
 <dd><p>this function creates day by day folders in the main folder, to sotring the log files of each day</p>
-<p>Inputs: None</p>
-<p>Outputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.backend.logging_funcs.app_logger.create_mainfolder">
 <span class="sig-name descname"><span class="pre">create_mainfolder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.logging_funcs.app_logger.create_mainfolder" title="Permalink to this definition"></a></dt>
 <dd><p>this function creates the main folder to store log files</p>
-<p>Inputs: None</p>
-<p>Outputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.backend.logging_funcs.app_logger.create_new_log">
 <span class="sig-name descname"><span class="pre">create_new_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'nothing'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.logging_funcs.app_logger.create_new_log" title="Permalink to this definition"></a></dt>
 <dd><p>this function creates a log with input message and log level</p>
-<dl>
-<dt>Inputs:</dt><dd><p>message: the log message (in string)
-level: the log level (in int), an int value between [0, 5] specifing the log level)</p>
-<blockquote>
-<div><p>0: debug
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> – the log message (in string)</p></li>
+<li><p><strong>level</strong> – the log level (in int), an int value between [0, 5] specifing the log level)
+0: debug
 1: info
 2: warning
 3: error
 4: critical error
-5: excepion error</p>
-</div></blockquote>
+5: excepion error</p></li>
+</ul>
 </dd>
-</dl>
-<dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -139,13 +144,12 @@ level: the log level (in int), an int value between [0, 5] specifing the log lev
 <dt class="sig sig-object py" id="oxin.backend.logging_funcs.app_logger.set_current_user">
 <span class="sig-name descname"><span class="pre">set_current_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">current_username</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.logging_funcs.app_logger.set_current_user" title="Permalink to this definition"></a></dt>
 <dd><p>this function sets the input username as the current user of the app and logging</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>current_username: current username logged-in the app (in string)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>current_username</strong> – current username logged-in the app (in string)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>

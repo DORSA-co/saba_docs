@@ -96,16 +96,17 @@
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_login_logout_funcs.</span></span><span class="sig-name descname"><span class="pre">authenticate_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">login_ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">login_api_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">api_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_login_logout_funcs.authenticate_user" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to authenticate the user,
 it takes the autintication results from login API, and if user be autenticated, enables/unlocks ui for user to work with</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui_obj: main ui object
-login_ui_obj:
-login_api_obj:
-api_obj: main API object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>login_ui_obj</strong> – </p></li>
+<li><p><strong>login_api_obj</strong> – </p></li>
+<li><p><strong>api_obj</strong> – main API object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -114,15 +115,16 @@ api_obj: main API object</p>
 <dt class="sig sig-object py" id="oxin.backend.user_login_logout_funcs.logout_user">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_login_logout_funcs.</span></span><span class="sig-name descname"><span class="pre">logout_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">confirm_ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">login_api_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_login_logout_funcs.logout_user" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to logout user from the app, and disable/lock ui after logout</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui_obj: main ui object
-confirm_ui_obj:
-login_api_obj:</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>confirm_ui_obj</strong> – </p></li>
+<li><p><strong>login_api_obj</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -131,15 +133,16 @@ login_api_obj:</p>
 <dt class="sig sig-object py" id="oxin.backend.user_login_logout_funcs.run_login_window">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_login_logout_funcs.</span></span><span class="sig-name descname"><span class="pre">run_login_window</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">login_ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">confirm_ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_login_logout_funcs.run_login_window" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to run/show login window for user login</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui_obj: the main ui object
-login_ui_obj:
-confirm_ui_obj:</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – the main ui object</p></li>
+<li><p><strong>login_ui_obj</strong> – </p></li>
+<li><p><strong>confirm_ui_obj</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -148,14 +151,15 @@ confirm_ui_obj:</p>
 <dt class="sig sig-object py" id="oxin.backend.user_login_logout_funcs.set_app_buttons_enable_or_disable">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.user_login_logout_funcs.</span></span><span class="sig-name descname"><span class="pre">set_app_buttons_enable_or_disable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.user_login_logout_funcs.set_app_buttons_enable_or_disable" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to enable/disable ui elements, by taking input elements as list of names</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>names: ui element names (list of strings)
-enable: a boolean determining wheather to enable/disable the elements</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>names</strong> – ui element names (list of strings)</p></li>
+<li><p><strong>enable</strong> – a boolean determining wheather to enable/disable the elements</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>

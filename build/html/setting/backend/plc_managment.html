@@ -96,14 +96,15 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.backend.plc_managment.</span></span><span class="sig-name descname"><span class="pre">management</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ip</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.plc_managment.management" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>this class is used to create and manage opc/plc object</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ip: plc ip (in string)
-ui_obj: main ui object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>PLC object</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ip</strong> – plc ip (in string)</p></li>
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>PLC object</p>
 </dd>
 </dl>
 <dl class="py method">
@@ -121,7 +122,6 @@ ui_obj: main ui object</p>
 <dt class="sig sig-object py" id="oxin.backend.plc_managment.management.disconnect">
 <span class="sig-name descname"><span class="pre">disconnect</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.plc_managment.management.disconnect" title="Permalink to this definition"></a></dt>
 <dd><p>this functino is used to disconnect from plc</p>
-<p>Args: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -133,14 +133,15 @@ ui_obj: main ui object</p>
 <dt class="sig sig-object py" id="oxin.backend.plc_managment.management.get_value">
 <span class="sig-name descname"><span class="pre">get_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.plc_managment.management.get_value" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get value of a logic from plc using its path</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>path (_type_): plc logic path (in string)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> – (_type_) plc logic path (in string)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>value: value stored in path, if failed to load, return ‘-’</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>value: value stored in path, if failed to load, return ‘-’
-data_value: if failed to load, return message error</p>
+<dd class="field-odd"><p>data_value: if failed to load, return message error</p>
 </dd>
 </dl>
 </dd></dl>
@@ -149,7 +150,6 @@ data_value: if failed to load, return message error</p>
 <dt class="sig sig-object py" id="oxin.backend.plc_managment.management.set_file_name">
 <span class="sig-name descname"><span class="pre">set_file_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.plc_managment.management.set_file_name" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set json file name to store plc params</p>
-<p>Arge: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -161,14 +161,15 @@ data_value: if failed to load, return message error</p>
 <dt class="sig sig-object py" id="oxin.backend.plc_managment.management.set_value">
 <span class="sig-name descname"><span class="pre">set_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.plc_managment.management.set_value" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set/update value of a logic, using its path on plc</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>path (_type_): path of the logic (in string)
-value (_type_): input value to update (digit or boolean)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>path</strong> – (_type_) path of the logic (in string)</p></li>
+<li><p><strong>value</strong> – (_type_) input value to update (digit or boolean)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -177,8 +178,9 @@ value (_type_): input value to update (digit or boolean)</p>
 <dt class="sig sig-object py" id="oxin.backend.plc_managment.management.write">
 <span class="sig-name descname"><span class="pre">write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.plc_managment.management.write" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to write plc values on json file</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>value (_type_): in dict</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – (_type_) in dict</p>
 </dd>
 </dl>
 </dd></dl>

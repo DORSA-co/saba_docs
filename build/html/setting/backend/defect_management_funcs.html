@@ -95,19 +95,16 @@
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.add_new_defect_to_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">add_new_defect_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_defect_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.add_new_defect_to_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to add a new defect/defect-group to database</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object
-new_defect_info (_type_): new defect/defect-group info
-defect_group (bool, optional): a boolean determining wheather to add defect-group. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><dl class="simple">
-<dt>resault: a message determining if the add to dabase is done</dt><dd><p>”True”: adding ok</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>new_defect_info</strong> – (_type_) new defect/defect-group info</p></li>
+<li><p><strong>defect_group</strong> – (bool, optional) a boolean determining wheather to add defect-group. Defaults to False.</p></li>
+</ul>
 </dd>
-</dl>
-</p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resault: a message determining if the add to dabase is done “True”: adding ok</p>
 </dd>
 </dl>
 </dd></dl>
@@ -117,15 +114,16 @@ defect_group (bool, optional): a boolean determining wheather to add defect-grou
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">assign_existing_defect_colors_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'None'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.assign_existing_defect_colors_to_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set/update existing defect colors to ui combobox.
 for a color, if the color dont used for any defects, or be the white, it will be added to combo</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui_obj: main ui object
-db_obj: database object
-current: None, or the id of a defect</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>db_obj</strong> – database object</p></li>
+<li><p><strong>current</strong> – None, or the id of a defect</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -134,15 +132,16 @@ current: None, or the id of a defect</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.change_defect_group_id_to_name">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">change_defect_group_id_to_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">single</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.change_defect_group_id_to_name" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to translate defect-group-ids to defect-group-names or reverse</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>defects_list: list of defect_infoes (list of dict)
-reverse: a boolean determinig wheather to reverse translate or not
-single: a boolean determining if the input is only one defect record or not</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>translated_defects_list: the same defects_list with defect-group-ids translated</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>defects_list</strong> – list of defect_infoes (list of dict)</p></li>
+<li><p><strong>reverse</strong> – a boolean determinig wheather to reverse translate or not</p></li>
+<li><p><strong>single</strong> – a boolean determining if the input is only one defect record or not</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>translated_defects_list: the same defects_list with defect-group-ids translated</p>
 </dd>
 </dl>
 </dd></dl>
@@ -151,13 +150,12 @@ single: a boolean determining if the input is only one defect record or not</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.generate_defect_colors">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">generate_defect_colors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.generate_defect_colors" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to generate defect colors by number as needed</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>db_obj</strong> – (_type_) database object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -167,16 +165,17 @@ single: a boolean determining if the input is only one defect record or not</p>
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_defect_info_from_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">is_filter</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_defect_info_from_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get defect/defect-group info from ui
 it can be used to get new defect/defect-group info from ui, or get info from filter/search forms</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-db_obj (_type_): database object
-defect_group (bool, optional): a boolean detrtmines wheather to get defect-group info from ui. Defaults to False.
-is_filter (bool, optional): a boolena determining wheather to get info from filter form in ui. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>defect/defect-group info: in dict</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>defect_group</strong> – (bool, optional) a boolean detrtmines wheather to get defect-group info from ui. Defaults to False.</p></li>
+<li><p><strong>is_filter</strong> – (bool, optional) a boolena determining wheather to get info from filter form in ui. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>defect/defect-group info: in dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -185,19 +184,17 @@ is_filter (bool, optional): a boolena determining wheather to get info from filt
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_defects_from_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_defects_from_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get and return defects/defect-groups list from database</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>defect_groups: a boolean determining wheather to get defect-groups list or defects list</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>defect_groups</strong> – a boolean determining wheather to get defect-groups list or defects list</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>if defect_groups==False:
+defects_list: list of dicts</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><dl class="simple">
-<dt>if defect_groups==False:</dt><dd><p>defects_list: list of dicts</p>
-</dd>
-<dt>if defect_groups==True:</dt><dd><p>defect_groups_list: list of defect groups</p>
-</dd>
-</dl>
-</p>
+<dd class="field-odd"><p>if defect_groups==True:
+defect_groups_list: list of defect groups</p>
 </dd>
 </dl>
 </dd></dl>
@@ -206,21 +203,21 @@ is_filter (bool, optional): a boolena determining wheather to get info from filt
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_filtered_defects_from_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_filtered_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">filter_params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_filtered_defects_from_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get filtered defects/defect-groups from database</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object
-filter_params (_type_):
-defect_groups (bool, optional): a boolean determining whaeather to search for defect-groups. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><dl class="simple">
-<dt>message: a text message</dt><dd><p>’all’: no filter
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>filter_params</strong> – (_type_)</p></li>
+<li><p><strong>defect_groups</strong> – (bool, optional) a boolean determining whaeather to search for defect-groups. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>message: a text message
+‘all’: no filter
 ‘filtered’: return filterd resualts</p>
 </dd>
-</dl>
-<p>defects/defect-groups list:</p>
-</p>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>defects/defect-groups list:</p>
 </dd>
 </dl>
 </dd></dl>
@@ -229,14 +226,15 @@ defect_groups (bool, optional): a boolean determining whaeather to search for de
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_selected_defect_groups">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_selected_defect_groups</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_selected_defect_groups" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get selected defect-groups from ui defect-groups table</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-defect_groups_list (_type_): list of defect groups rteturned from darabse</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>selected_defect_groups: list of selected defect-group ids</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>defect_groups_list</strong> – (_type_) list of defect groups rteturned from darabse</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>selected_defect_groups: list of selected defect-group ids</p>
 </dd>
 </dl>
 </dd></dl>
@@ -245,14 +243,15 @@ defect_groups_list (_type_): list of defect groups rteturned from darabse</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.get_selected_defects">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">get_selected_defects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.get_selected_defects" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get selected defects from ui defects table</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-defects_list (_type_): defects list returned from databse</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>selected_defects: list of selected defects ids</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>defects_list</strong> – (_type_) defects list returned from databse</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>selected_defects: list of selected defects ids</p>
 </dd>
 </dl>
 </dd></dl>
@@ -262,16 +261,17 @@ defects_list (_type_): defects list returned from databse</p>
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">load_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.load_defects_from_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load defects/defect-groups from database.
 the function can be used to get defects, get defect-groups, or get those defects with specified defect-group-id</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object
-defect_id (_type_): defect ids list
-defect_group (bool, optional): a boolean determining wheather to load defect-groups. Defaults to False.
-defect_group_id (bool, optional): a boolean to determine wheather to load defects with a specified defect-group-id (send as defect_id). Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>defect_info: list of defects (in dict)</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>defect_id</strong> – (_type_) defect ids list</p></li>
+<li><p><strong>defect_group</strong> – (bool, optional) a boolean determining wheather to load defect-groups. Defaults to False.</p></li>
+<li><p><strong>defect_group_id</strong> – (bool, optional) a boolean to determine wheather to load defects with a specified defect-group-id (send as defect_id). Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>defect_info: list of defects (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
@@ -280,22 +280,21 @@ defect_group_id (bool, optional): a boolean to determine wheather to load defect
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.new_defect_info_validation">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">new_defect_info_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_info</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">on_edit</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.new_defect_info_validation" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to validate new defect/defect-group params to have right format and be unique</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-db_obj (_type_): database object
-defect_info (_type_): _description_
-on_edit (bool, optional): a boolean to determine if input defect to validate is in edit mode. Defaults to False.
-defect_group (bool, optional): a boolean to determine wheather to validate a defect-group. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p><dl class="simple">
-<dt>message: validation message</dt><dd><p>’True’: validation ok</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>defect_info</strong> – (_type_) _description_</p></li>
+<li><p><strong>on_edit</strong> – (bool, optional) a boolean to determine if input defect to validate is in edit mode. Defaults to False.</p></li>
+<li><p><strong>defect_group</strong> – (bool, optional) a boolean to determine wheather to validate a defect-group. Defaults to False.</p></li>
+</ul>
 </dd>
-</dl>
-<p>level: the level of message (in int)</p>
-</p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>message: validation message(‘True’: validation ok)</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>level: the level of message (in int)</p>
 </dd>
 </dl>
 </dd></dl>
@@ -305,16 +304,17 @@ defect_group (bool, optional): a boolean to determine wheather to validate a def
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">remove_defects_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.remove_defects_from_db" title="Permalink to this definition"></a></dt>
 <dd><p>this is used to remove defect or defect groups from database.
 we can determine whethere to remove one or multiple defect groups by id, single or multiple defect by id, or all defects with a specified defect-id</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>db_obj: database object
-defects_list: list of ids to remove, for removing defects with specified defect group-id, defect-group-id is the input
-defect_group: a boolean for determining to remove a defect-group or defects
-defect_group_id: a boolean determining wheather to remove all defects with input defect group id</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>resault: a boolean detrtmining if removing from database is done or not</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – database object</p></li>
+<li><p><strong>defects_list</strong> – list of ids to remove, for removing defects with specified defect group-id, defect-group-id is the input</p></li>
+<li><p><strong>defect_group</strong> – a boolean for determining to remove a defect-group or defects</p></li>
+<li><p><strong>defect_group_id</strong> – a boolean determining wheather to remove all defects with input defect group id</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resault: a boolean detrtmining if removing from database is done or not</p>
 </dd>
 </dl>
 </dd></dl>
@@ -323,14 +323,15 @@ defect_group_id: a boolean determining wheather to remove all defects with input
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_group_info_on_ui">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_group_info_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_group_info_on_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set input defect info to ui (for edit defect)</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-defect_group_info (_type_): dict of selected defedct-groups infoes</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>defect_group_info</strong> – (_type_) dict of selected defedct-groups infoes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -339,13 +340,12 @@ defect_group_info (_type_): dict of selected defedct-groups infoes</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_groups_on_combo">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_groups_on_combo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_groups_on_combo" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update defect-groups combobox according to available defect-groups</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>defect_groups_list: list of defect-groups (in dict)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>defect_groups_list</strong> – list of defect-groups (in dict)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -354,13 +354,12 @@ defect_group_info (_type_): dict of selected defedct-groups infoes</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_groups_on_ui">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_groups_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_groups_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_groups_on_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set defect-groups list on ui defect-groups table</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>defect_groups_list: list of defect-groups (in dict)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>defect_groups_list</strong> – list of defect-groups (in dict)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -369,15 +368,16 @@ defect_group_info (_type_): dict of selected defedct-groups infoes</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defect_info_on_ui">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defect_info_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_info</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defect_info_on_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set input defect info to ui (for edit defect)</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-db_obj (_type_): database object
-defect_info (_type_): dict of selected defedct infoes</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>defect_info</strong> – (_type_) dict of selected defedct infoes</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -386,15 +386,16 @@ defect_info (_type_): dict of selected defedct infoes</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.set_defects_on_ui">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">set_defects_on_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'None'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.set_defects_on_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set input defects list to defects table on ui</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui_obj: main ui object
-defects_list: list of defects (in dict)
-defect_group_name: if not None and have value (in string), those defect s with same defect-group-name will be highlithed</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>defects_list</strong> – list of defects (in dict)</p></li>
+<li><p><strong>defect_group_name</strong> – if not None and have value (in string), those defect s with same defect-group-name will be highlithed</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -403,14 +404,15 @@ defect_group_name: if not None and have value (in string), those defect s with s
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.show_defects_summary_info">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">show_defects_summary_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.show_defects_summary_info" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to show summera info from defects/defect-groups on dashboard page</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-db_obj (_type_): database object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -419,13 +421,12 @@ db_obj (_type_): database object</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.update_combo_color">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">update_combo_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.update_combo_color" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update color combobox</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – (_type_) main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -434,15 +435,16 @@ db_obj (_type_): database object</p>
 <dt class="sig sig-object py" id="oxin.backend.defect_management_funcs.update_defects_to_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.defect_management_funcs.</span></span><span class="sig-name descname"><span class="pre">update_defects_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defects_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">defect_group</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.defect_management_funcs.update_defects_to_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update a defect/defect-group on database</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): databasae object
-defects_list (_type_): defect/defect-groups list
-defect_group (bool, optional): a boolean determining wheather to update defect-group. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>resault: a boolean to detrtmine if update on database is ok</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) databasae object</p></li>
+<li><p><strong>defects_list</strong> – (_type_) defect/defect-groups list</p></li>
+<li><p><strong>defect_group</strong> – (bool, optional) a boolean determining wheather to update defect-group. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resault: a boolean to detrtmine if update on database is ok</p>
 </dd>
 </dl>
 </dd></dl>

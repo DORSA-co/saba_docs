@@ -8,12 +8,11 @@ class dataBase:
     """
     this class is used to connect and working with database
 
-    Inputs:
-        username: username to connect to database
-        password: password to connect to databse
-        host: host of the database
-        database_name: name of the database to work with
-        logger_obj: the logger object to take logs
+    :param username: username to connect to database
+    :param password: password to connect to databse
+    :param host: host of the database
+    :param database_name: name of the database to work with
+    :param logger_obj: the logger object to take logs
     
     :returns: None
     """
@@ -35,10 +34,10 @@ class dataBase:
         """
         this function is used to get log from database tasks
 
-        Args:
-            message (str, optional): _description_. Defaults to 'nothing'.
-            level (int, optional): level of log. Defaults to 1.
+        :param message: (str, optional) _description_. Defaults to 'nothing'.
+        :param level: (int, optional) level of log. Defaults to 1.
 
+        :returns: None
         """
         if self.logger_obj != None:
             self.logger_obj.create_new_log(message=message, level=level)
@@ -48,11 +47,8 @@ class dataBase:
         """
         this function is used for connecting to database
 
-        Inputs: None
-
-        :returns:
-            cursor: the object that is used to work with database by queries
-            connection: ?
+        :returns: cursor: the object that is used to work with database by queries
+        :returns: connection: ?
         """
         
         connection = mysql.connector.connect(host=self.host,
@@ -69,8 +65,6 @@ class dataBase:
     def check_connection(self):
         """
         this function is used to check if the connection to databse can be esablished
-
-        Inputs: None
 
         :returns: a boolean value determining if the connecton is stablished or not
         """
@@ -117,12 +111,11 @@ class dataBase:
         """
         this function is used to execute a query on database
 
-        Inputs:
-            quary: the input query to execute
-            cursor:
-            connection:
-            need_data: a bolean value
-            close:
+        :param quary: the input query to execute
+        :param cursor:
+        :param connection:
+        :param need_data: a bolean value
+        :param close:
         
         :returns: None
         """
@@ -153,11 +146,10 @@ class dataBase:
         """
         this function is used to add a new record a specified table of database
 
-        Inputs:
-            data: data to be added to database
-            table_name: in string
-            parametrs: list of parameters (column names) of the database
-            len_parameters: number of parameters
+        :param data: data to be added to database
+        :param table_name: in string
+        :param parametrs: list of parameters (column names) of the database
+        :param len_parameters: number of parameters
         
         :returns: None
         """
@@ -197,15 +189,13 @@ class dataBase:
         """
         this function is used to update a parameter (column) in a table record, detrtmingn by record id
 
-        Inputs:
-            table_name: name of the table in database (in string)
-            col_name: column name of table to update (in string)
-            value: value will be assigned to column ((in string))
-            id: name of id column in table, its used to determine which record to update
-            id_value: value of the id column
+        :param table_name: name of the table in database (in string)
+        :param col_name: column name of table to update (in string)
+        :param value: value will be assigned to column ((in string))
+        :param id: name of id column in table, its used to determine which record to update
+        :param id_value: value of the id column
         
-        :returns:
-            result: a boolean determining if the update on table is done or not
+        :returns: result: a boolean determining if the update on table is done or not
         """
         
         if self.check_connection:
@@ -239,13 +229,11 @@ class dataBase:
         """
         this function is used to remove a record from table acourding to specified column value
 
-        Inputs:
-            col_name: name of the column to check for (in string)
-            id: value of the column (in string)
-            table_name: name of the table (in string)
+        :param col_name: name of the column to check for (in string)
+        :param id: value of the column (in string)
+        :param table_name: name of the table (in string)
         
-        :returns:
-            results: a boolean determining if the record is removed or not
+        :returns: results: a boolean determining if the record is removed or not
         """
         
         try:
@@ -305,15 +293,12 @@ class dataBase:
         """
         this function is used to search in table accoarding to one or multiple specifiic parameter (column name)
 
-        Inputs:
-            table_name: in string
-            param_name: parameter (column) name in string, for multiple parameters, a list of strings
-            value: value of the parameter to be (in string), for multiple values, a list of strings
-            multi: a boolean value determining if the search is according to one parameter or multi parameters
+        :param table_name: in string
+        :param param_name: parameter (column) name in string, for multiple parameters, a list of strings
+        :param value: value of the parameter to be (in string), for multiple values, a list of strings
+        :param multi: a boolean value determining if the search is according to one parameter or multi parameters
         
-        :returns:
-            result: a list containing the returned/searched row (record) in table, if failed to connect to database or nothing was found in table,
-            an empty list will be returned
+        :returns: result: a list containing the returned/searched row (record) in table, if failed to connect to database or nothing was found in table, an empty list will be returned
         """
         
         try:
@@ -402,11 +387,9 @@ class dataBase:
         """
         this function is used to get/return all contents of a table
 
-        Inputs:
-            table_name: in string
+        :param table_name: in string
 
-        :returns:
-            table_content: list of records in table (in dict)
+        :returns: table_content: list of records in table (in dict)
         """
 
         if self.check_connection:

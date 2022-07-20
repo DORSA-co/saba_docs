@@ -5,11 +5,9 @@ class dataBaseUtils():
     """
     this class is used as an API to work with database
 
-    Inputs:
-        logger_obj: the logger object to take loggs
+    :param logger_obj: the logger object to take loggs
 
-    :returns:
-        database object
+    :returns: database object
     """
     
     def __init__(self, logger_obj=None) :
@@ -47,11 +45,9 @@ class dataBaseUtils():
         if username is vailable, user info are returened,
         else an empty list is returned
 
-        Inputs:
-            input_user_name: input username to search (in string)
+        :param input_user_name: input username to search (in string)
         
-        :returns:
-            user_info: a dict containing user info:
+        :returns: user_info: a dict containing user info:
                 {user_name: username in string, password: password in string}
         """
         
@@ -68,11 +64,9 @@ class dataBaseUtils():
         """
         this function is used to search camera by its ip
 
-        Args:
-            input_camera_ip (_type_): in string
+        :param input_camera_ip: (_type_) in string
 
-        :returns:
-            record: dict f camera params of camera with input ip
+        :returns: record: dict f camera params of camera with input ip
         """
 
         try:
@@ -88,11 +82,9 @@ class dataBaseUtils():
         """
         this function is used to search camera by its serial
 
-        Args:
-            input_camera_serial (_type_): in string
+        :param input_camera_serial: (_type_) in string
 
-        :returns:
-            record: dict f camera params of camera with input serila
+        :returns: record: dict f camera params of camera with input serila
         """
 
         try:
@@ -108,11 +100,9 @@ class dataBaseUtils():
         """
         this function is used to load camear parameters from camera tables, using the camera id
 
-        Inputs:
-            input_camera_id: id of camera (in string)
+        :param input_camera_id: id of camera (in string)
         
-        :returns:
-            camera_params: a dict containing camera parameters
+        :returns: camera_params: a dict containing camera parameters
         """
         
         try:
@@ -127,12 +117,10 @@ class dataBaseUtils():
         """
         this function is used to update camera params of input camera id on table
 
-        Inputs:
-            input_camera_id: id of crrent camera (in string)
-            input_camera_params: camera parameters (in dict)
+        :param input_camera_id: id of crrent camera (in string)
+        :param input_camera_params: camera parameters (in dict)
 
-        :returns:
-            result: a bolean value determining if the settings are updated on database or not
+        :returns: result: a bolean value determining if the settings are updated on database or not
         """
         
         try:
@@ -150,12 +138,10 @@ class dataBaseUtils():
         """
         this function is used to update general-setting params on table
 
-        Args:
-            input_setting_params (_type_): _description_
-            is_mutitaskiing_params (bool, optional): a boolean to determine if params are belong to multitask params. Defaults to False.
+        :param input_setting_params: (_type_) _description_
+        :param is_mutitaskiing_params: (bool, optional) a boolean to determine if params are belong to multitask params. Defaults to False.
 
-        :returns:
-            resault: a boolean determining if the update is done
+        :returns: resault: a boolean determining if the update is done
         """
         try:
             for param in input_setting_params.keys():
@@ -174,11 +160,9 @@ class dataBaseUtils():
         """
         this function is used to get general-settings params from table
 
-        Args:
-            is_mutitaskiing_params (bool, optional): a boolean determining wheather to load multitasing params from multitasking table. Defaults to False.
+        :param is_mutitaskiing_params: (bool, optional) a boolean determining wheather to load multitasing params from multitasking table. Defaults to False.
 
-        :returns:
-            record: list of one dict
+        :returns: record: list of one dict
         """
 
         try:
@@ -198,10 +182,7 @@ class dataBaseUtils():
         """
         this function is used to load users list from database
 
-        Inputs: None
-
-        :returns:
-            users_list: list of users (in dict)
+        :returns: users_list: list of users (in dict)
         """
         
         try:
@@ -218,8 +199,7 @@ class dataBaseUtils():
         """
         this function is used to remove input users from database
 
-        Args:
-            users_name (_type_): list of user_names
+        :param users_name: (_type_) list of user_names
         
         :returns: None
         """
@@ -234,11 +214,9 @@ class dataBaseUtils():
         """
         this function is used to add a new user to users table
 
-        Args:
-            parms (_type_): user infoes (in dict)
+        :param parms: (_type_) user infoes (in dict)
 
-        :returns:
-            resault: a text message determining if the user is added
+        :returns: resault: a text message determining if the user is added
                 "True":
                 'Databas Eror':
         """
@@ -257,11 +235,9 @@ class dataBaseUtils():
         """
         this function is used to search a user by its usrnam
 
-        Args:
-            input_user_name (_type_): in string
+        :param input_user_name: (_type_) in string
 
-        :returns:
-            record: user_info (in dict)
+        :returns: record: user_info (in dict)
         """
         try:
             record = self.db.search( self.table_user , self.user_id, input_user_name)[0]
@@ -276,8 +252,7 @@ class dataBaseUtils():
         """
         this function is used to set input image processing params for Miss.Abtahi algo to database
 
-        Args:
-            data (_type_): image processing params
+        :param data: (_type_) image processing params
         
         :returns: image_procesing_params
         """
@@ -295,8 +270,7 @@ class dataBaseUtils():
         """
         this function is used to get input image processing params for Miss.Abtahi algo to database
 
-        Args:
-            data (_type_): image processing params
+        :param data: (_type_) image processing params
         
         :returns: None
         """
@@ -315,8 +289,7 @@ class dataBaseUtils():
         """
         this function is used to get all defects from defects table
 
-        :returns:
-            defects: list of defects (in dict)
+        :returns: defects: list of defects (in dict)
         """
 
         try:
@@ -331,11 +304,9 @@ class dataBaseUtils():
         """
         this function is used to serach a defect in database, according to its defect-id
 
-        Args:
-            input_defect_id (_type_): in string
+        :param input_defect_id: (_type_) in string
 
-        :returns:
-            defect_info: a list with single record (in dict)
+        :returns: defect_info: a list with single record (in dict)
         """
         try:
             record = self.db.search( self.table_defects , self.defect_id, input_defect_id)[0]
@@ -350,11 +321,9 @@ class dataBaseUtils():
         """
         this function is used to search defects with specific defect-group-id
 
-        Args:
-            input_defect_id (_type_): input defect-group-id
+        :param input_defect_id: (_type_) input defect-group-id
 
-        :returns:
-            defects_info: a list of defect_infoes (in dict)
+        :returns: defects_info: a list of defect_infoes (in dict)
         """
         try:
             record = self.db.search( self.table_defects , 'groupp', input_defect_id)[0]
@@ -369,11 +338,9 @@ class dataBaseUtils():
         """
         this function is used to search a defect by its name in database
 
-        Inputs:
-            input_defect_name: in string
+        :param input_defect_name: in string
         
-        :returns:
-            defects_list: a list of one defect record (in dict)
+        :returns: defects_list: a list of one defect record (in dict)
         """
         
         try:
@@ -389,11 +356,9 @@ class dataBaseUtils():
         """
         this function is used to search a defect in database by its color
 
-        Inputs:
-            input_color: string html code
+        :param input_color: string html code
         
-        :returns:
-            defect_list: a list with single defect (in dict)
+        :returns: defect_list: a list with single defect (in dict)
         """
         
         try:
@@ -408,11 +373,9 @@ class dataBaseUtils():
         """
         this function is used to search a defect by its short-name in database
 
-        Inputs:
-            input_defect_name: in string
+        :param input_defect_name: in string
         
-        :returns:
-            defects_list: a list of one defect record (in dict)
+        :returns: defects_list: a list of one defect record (in dict)
         """
 
         try:
@@ -427,12 +390,10 @@ class dataBaseUtils():
         """
         this function is used to search/filter defects by filter params
 
-        Args:
-            parms (_type_): value of columns to filter
-            cols (_type_): columns to filter
+        :param parms: (_type_) value of columns to filter
+        :param cols: (_type_) columns to filter
 
-        :returns:
-            defect_info: list of filterd defects
+        :returns: defect_info: list of filterd defects
         """
 
         try:
@@ -448,11 +409,9 @@ class dataBaseUtils():
         """
         this function is used to add new defect to database
 
-        Args:
-            parms (_type_): new defect infoes
+        :param parms: (_type_) new defect infoes
 
-        :returns:
-            message: determinig if ok or not
+        :returns: message: determinig if ok or not
         """
 
         data=(parms[self.defect_name],parms[self.defect_shortname],parms[self.defect_id],parms['is_defect'],parms['groupp'],parms['level'],parms['color'],parms['date'])
@@ -471,11 +430,9 @@ class dataBaseUtils():
         """
         this function is used to remove one or multiple defects from database, using their ids
 
-        Inputs:
-            defect_ids: list if defect-ids (in string)
+        :param defect_ids: list if defect-ids (in string)
         
-        :returns:
-            results: a boolean determining if the removing is done
+        :returns: results: a boolean determining if the removing is done
         """
         
         # 
@@ -489,11 +446,9 @@ class dataBaseUtils():
         """
         this function is used to remove all defects with a specific defect-group-id
 
-        Inputs:
-            defect_ids: input defect-group-id (in string)
+        :param defect_ids: input defect-group-id (in string)
 
-        :returns:
-            resault: a boolean determining if removig defects is done
+        :returns: resault: a boolean determining if removig defects is done
         """
 
         for i in range(len(defect_ids)):
@@ -506,11 +461,9 @@ class dataBaseUtils():
         """
         this function is used to update a defect on table
 
-        Args:
-            input_defect_params (_type_): in dict
+        :param input_defect_params: (_type_) in dict
 
-        :returns:
-            resaults: in boolean to deternmine if update is ok
+        :returns: resaults: in boolean to deternmine if update is ok
         """
         
         try:
@@ -526,8 +479,7 @@ class dataBaseUtils():
         """
         this function is used to load defect-groups from table
 
-        :returns:
-            defect_groups: list of defect-groups (in dict)
+        :returns: defect_groups: list of defect-groups (in dict)
         """
 
         try:
@@ -542,11 +494,9 @@ class dataBaseUtils():
         """
         this function is used to search a defect-group in database with its id
 
-        Inputs:
-            input_defect_group_id: in string
+        :param input_defect_group_id: in string
         
-        :returns:
-            defect_group: list of returned defect groups (since the ids are unique, its a list of one record in dict format)
+        :returns: defect_group: list of returned defect groups (since the ids are unique, its a list of one record in dict format)
         """
         
         try:
@@ -562,11 +512,9 @@ class dataBaseUtils():
         """
         this function is used to search a defect-group in table by its name
 
-        Args:
-            input_defect_group_name (_type_): _description_
+        :param input_defect_group_name: (_type_) _description_
 
-        :returns:
-            record: list of defects with this name (list of dicts)
+        :returns: record: list of defects with this name (list of dicts)
         """
 
         try:
@@ -582,12 +530,10 @@ class dataBaseUtils():
         """
         this function is used to search/filter defect-groups by filter params
 
-        Args:
-            parms (_type_): value of columns to filter
-            cols (_type_): columns to filter
+        :param parms: (_type_) value of columns to filter
+        :param cols: (_type_) columns to filter
 
-        :returns:
-            defect_info: list of filterd defect-groups
+        :returns: defect_info: list of filterd defect-groups
         """
 
         try:
@@ -603,11 +549,9 @@ class dataBaseUtils():
         """
         this function is used to add new defect-group to database
 
-        Args:
-            parms (_type_): new defect-group infoes
+        :param parms: (_type_) new defect-group infoes
 
-        :returns:
-            message: determinig if ok or not
+        :returns: message: determinig if ok or not
         """
 
         data=(parms['defect_group_name'],parms[self.defect_group_id], parms['is_defect'],parms['date_created'])
@@ -626,11 +570,9 @@ class dataBaseUtils():
         """
         this function is used to update a defect-group on table
 
-        Args:
-            input_defect_params (_type_): in dict
+        :param input_defect_params: (_type_) in dict
 
-        :returns:
-            resaults: in boolean to deternmine if update is ok
+        :returns: resaults: in boolean to deternmine if update is ok
         """
 
         try:
@@ -646,11 +588,9 @@ class dataBaseUtils():
         """
         this function is used to remove defect groups from database by their ids
 
-        Inputs:
-            defect_ids: list of input defect-group-ids (in string)
+        :param defect_ids: list of input defect-group-ids (in string)
         
-        :returns:
-            resault: a boolean determining if the removing is done
+        :returns: resault: a boolean determining if the removing is done
         """
 
         for i in range(len(defect_ids)):
@@ -669,10 +609,7 @@ class dataBaseUtils():
         """
         this function is used to load plc params from table
 
-        Args: None
-
-        :returns:
-            plc_params: in dict, if failed to load from dataabse, return None
+        :returns: plc_params: in dict, if failed to load from dataabse, return None
         """
         try:
             parms=self.db.get_all_content(self.plc)
@@ -687,11 +624,9 @@ class dataBaseUtils():
         """
         this function is used to update plc params on database
 
-        Args:
-            plc_parms (_type_): in dict
+        :param plc_parms: (_type_) in dict
 
-        :returns:
-            resault: a boolean determining wheather update is done
+        :returns: resault: a boolean determining wheather update is done
         """
 
         try:
@@ -724,11 +659,9 @@ class dataBaseUtils():
         """
         this function is used to update plc ip on table
 
-        Args:
-            ip (_type_): plc ip (in string)
+        :param ip: (_type_) plc ip (in string)
 
-        :returns:
-            resalt: a boolean determining wheather database updated
+        :returns: resalt: a boolean determining wheather database updated
         """
 
         try:
@@ -743,8 +676,7 @@ class dataBaseUtils():
         """
         this function is used to load plc ip from table on dataabase
 
-        :returns:
-            record: plc ip (in string), if failed return False
+        :returns: record: plc ip (in string), if failed return False
         """
         try:
             record = self.db.search( self.setting_tabel , 'id', 0 )[0]

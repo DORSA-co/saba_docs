@@ -108,7 +108,6 @@
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.activate_">
 <span class="sig-name descname"><span class="pre">activate_</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.activate_" title="Permalink to this definition"></a></dt>
 <dd><p>This function will activate ui operating buttons and connect theme to their functions</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -120,7 +119,6 @@
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.animation_move">
 <span class="sig-name descname"><span class="pre">animation_move</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lenght</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.animation_move" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to shiw/hide an element (frame) with an sliding effect</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -132,7 +130,6 @@
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.buttonClick">
 <span class="sig-name descname"><span class="pre">buttonClick</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.buttonClick" title="Permalink to this definition"></a></dt>
 <dd><p>this funcion will connect each button in ui to its function</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -144,31 +141,42 @@
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.change_camera_btn_icon">
 <span class="sig-name descname"><span class="pre">change_camera_btn_icon</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">camera_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">active</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.change_camera_btn_icon" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to change the current camera icon in camera settings page</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>camera_id: id of the cameras (in string)
-active: a boolean value determinging wheater the camera is selected or deselected</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>camera_id</strong> – id of the cameras (in string)</p></li>
+<li><p><strong>active</strong> – a boolean value determinging wheater the camera is selected or deselected</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p>Outputs: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.check_box_state">
 <span class="sig-name descname"><span class="pre">check_box_state</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">b</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.check_box_state" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to change checkbox text to enable/disable by checkbox state</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>b: checkbox element</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>b</strong> – checkbox element</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p>Outputs: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.clear_line_edits">
 <span class="sig-name descname"><span class="pre">clear_line_edits</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_edits</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.clear_line_edits" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to clear the lineedit texts</p>
-<p>Inputs: None</p>
-<p>Rrturns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -176,19 +184,23 @@ active: a boolean value determinging wheater the camera is selected or deselecte
 <span class="sig-name descname"><span class="pre">close_app_force</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'An</span> <span class="pre">Error</span> <span class="pre">occured</span> <span class="pre">while</span> <span class="pre">runnung</span> <span class="pre">the</span> <span class="pre">app'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change_language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.close_app_force" title="Permalink to this definition"></a></dt>
 <dd><p>this function closes the app in force situations (app errors or excetions), also a log will be written determining the cause
 for closing the app, and an alert window will be appeared to warn the app closing</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>message: message to log on app close (in string)
-change_language: a boolean determines if the app close is for changing the app language</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> – message to log on app close (in string)</p></li>
+<li><p><strong>change_language</strong> – a boolean determines if the app close is for changing the app language</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returnes</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p>Retuens: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.close_win">
 <span class="sig-name descname"><span class="pre">close_win</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.close_win" title="Permalink to this definition"></a></dt>
 <dd><p>this function closes the app</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -205,7 +217,6 @@ change_language: a boolean determines if the app close is for changing the app l
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.disable_camera_settings">
 <span class="sig-name descname"><span class="pre">disable_camera_settings</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.disable_camera_settings" title="Permalink to this definition"></a></dt>
 <dd><p>this function will disable all camera params fileds in camera setting page, on camera disable/change or stackwidjet change</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -217,9 +228,9 @@ change_language: a boolean determines if the app close is for changing the app l
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.get_image_proccessing_parms">
 <span class="sig-name descname"><span class="pre">get_image_proccessing_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.get_image_proccessing_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to take and return entered image calibration parms of Miss.Abtahi algo from ui</p>
-<p>Inputs: None</p>
-<dl class="simple">
-<dt>Outputs:</dt><dd><p>dict{block_size, defect, noise, noise_flag}</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dict{block_size, defect, noise, noise_flag}</p>
 </dd>
 </dl>
 </dd></dl>
@@ -228,13 +239,12 @@ change_language: a boolean determines if the app close is for changing the app l
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.get_label">
 <span class="sig-name descname"><span class="pre">get_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.get_label" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to take and return the text content of a label elemnt</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>label_name: name of label element</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>label_name</strong> – name of label element</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -242,8 +252,7 @@ change_language: a boolean determines if the app close is for changing the app l
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.get_plc_ip">
 <span class="sig-name descname"><span class="pre">get_plc_ip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.get_plc_ip" title="Permalink to this definition"></a></dt>
-<dd><p>this function takes anf :returns: input PLC IP from ui</p>
-<p>Inputs: None</p>
+<dd><p>this function takes anf returns input PLC IP from ui</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>PLC ip: (in string)</p>
@@ -255,13 +264,11 @@ change_language: a boolean determines if the app close is for changing the app l
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.get_plc_parms">
 <span class="sig-name descname"><span class="pre">get_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.get_plc_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function will take and :returns: the input PLC parameters and addreses from ui</p>
-<p>Inputs: None</p>
-<dl class="simple">
-<dt>Outputs:</dt><dd><dl class="simple">
-<dt>dict: {limitswitch_top_plc, limitswitch_bottom_plc, thermometer_min_plc, thermometer_max_plc,</dt><dd><p>cooler_uptime_plc, system_operating_plc, air_valve_plc, camera_limit_plc’:[camera_limit_path, -1, -1],
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dict: {limitswitch_top_plc, limitswitch_bottom_plc, thermometer_min_plc, thermometer_max_plc,
+cooler_uptime_plc, system_operating_plc, air_valve_plc, camera_limit_plc’:[camera_limit_path, -1, -1],
 camera_frate_plc, projector_limit_plc, detect_sensor_plc</p>
-</dd>
-</dl>
 </dd>
 </dl>
 </dd></dl>
@@ -270,11 +277,12 @@ camera_frate_plc, projector_limit_plc, detect_sensor_plc</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.get_user_pass">
 <span class="sig-name descname"><span class="pre">get_user_pass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.get_user_pass" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get and return entered username and password from login window</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>username: in string
-password: in string</p>
+<dd class="field-odd"><p>username: in string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>password: in string</p>
 </dd>
 </dl>
 </dd></dl>
@@ -282,8 +290,7 @@ password: in string</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.get_width_guage_parms">
 <span class="sig-name descname"><span class="pre">get_width_guage_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.get_width_guage_parms" title="Permalink to this definition"></a></dt>
-<dd><p>this function will :returns: the user slected camera in calibration page</p>
-<p>Inputs: None</p>
+<dd><p>this function will returns the user slected camera in calibration page</p>
 <p>Return: camrera id (in string)</p>
 </dd></dl>
 
@@ -291,7 +298,6 @@ password: in string</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.leftmenu">
 <span class="sig-name descname"><span class="pre">leftmenu</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.leftmenu" title="Permalink to this definition"></a></dt>
 <dd><p>this function s used to show/hide the left side bar with an sliding effect</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -303,7 +309,6 @@ password: in string</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.maxmize_minimize">
 <span class="sig-name descname"><span class="pre">maxmize_minimize</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.maxmize_minimize" title="Permalink to this definition"></a></dt>
 <dd><p>this function chages the window size of app</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -315,7 +320,6 @@ password: in string</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.minimize_win">
 <span class="sig-name descname"><span class="pre">minimize_win</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.minimize_win" title="Permalink to this definition"></a></dt>
 <dd><p>this function minimizes the app to taskbar</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -342,20 +346,26 @@ password: in string</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.selected_camera">
 <span class="sig-name descname"><span class="pre">selected_camera</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.selected_camera" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to change the camrea icon in calibration page</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>s: id of camera (in int)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>s</strong> – id of camera (in int)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p>Outputs: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_button_enable_or_disable">
 <span class="sig-name descname"><span class="pre">set_button_enable_or_disable</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">names</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">enable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_button_enable_or_disable" title="Permalink to this definition"></a></dt>
 <dd><p>this function will enable or disble all the ui elements in the input list</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>names: ui elements (in list)
-enable: a boolean value determining wheather to enable/diable the elements</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>names</strong> – ui elements (in list)</p></li>
+<li><p><strong>enable</strong> – a boolean value determining wheather to enable/diable the elements</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>
@@ -364,16 +374,22 @@ enable: a boolean value determining wheather to enable/diable the elements</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_checkboxes">
 <span class="sig-name descname"><span class="pre">set_checkboxes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_checkboxes" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to connect checkboxes in ui to their functions</p>
-<p>Inputs: None</p>
-<p>Outputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_combo_boxes">
 <span class="sig-name descname"><span class="pre">set_combo_boxes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_combo_boxes" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set the content of comboboxes in ui</p>
-<p>Inputs: None</p>
-<p>Outputs: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -385,14 +401,15 @@ enable: a boolean value determining wheather to enable/diable the elements</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_image_label">
 <span class="sig-name descname"><span class="pre">set_image_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_image_label" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set/fit an image to a label element</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>label_name: name of the label element
-img: input image to fit/set to label</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label_name</strong> – name of the label element</p></li>
+<li><p><strong>img</strong> – input image to fit/set to label</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -401,9 +418,9 @@ img: input image to fit/set to label</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_image_proccessing_parms_to_ui">
 <span class="sig-name descname"><span class="pre">set_image_proccessing_parms_to_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">image_processing_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_image_proccessing_parms_to_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to take and return entered image calibration parms of Miss.Abtahi algo from ui</p>
-<p>Inputs: None</p>
-<dl class="simple">
-<dt>Outputs:</dt><dd><p>dict{block_size, defect, noise, noise_flag}</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>dict{block_size, defect, noise, noise_flag}</p>
 </dd>
 </dl>
 </dd></dl>
@@ -412,15 +429,16 @@ img: input image to fit/set to label</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_label">
 <span class="sig-name descname"><span class="pre">set_label</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">msg</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'black'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_label" title="Permalink to this definition"></a></dt>
 <dd><p>this funcion will set a text message to a label element, with text color</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>label_name: label element name
-msg: input message (in string)
-color: message/text color (in string, html code or color name)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label_name</strong> – label element name</p></li>
+<li><p><strong>msg</strong> – input message (in string)</p></li>
+<li><p><strong>color</strong> – message/text color (in string, html code or color name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -429,25 +447,29 @@ color: message/text color (in string, html code or color name)</p>
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_login_message">
 <span class="sig-name descname"><span class="pre">set_login_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_login_message" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set login message on login window</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>text: message to show (in string)
-color: color of the message text (in string, html code without #, or color name)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – message to show (in string)</p></li>
+<li><p><strong>color</strong> – color of the message text (in string, html code without #, or color name)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p>Outputs: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_plc_ip">
 <span class="sig-name descname"><span class="pre">set_plc_ip</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_plc_ip" title="Permalink to this definition"></a></dt>
 <dd><p>this function will set input PLC IP from database to ui field</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>text: PLC ip (in string)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>text</strong> – PLC ip (in string)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -456,19 +478,18 @@ color: color of the message text (in string, html code without #, or color name)
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_size">
 <span class="sig-name descname"><span class="pre">set_size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">frame_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_size" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set maximum or minimum height for an element (frame)in ui</p>
-<dl>
-<dt>Inputs:</dt><dd><p>frame_name: name of frame element
-size: height/size of elemen
-minimum: a boolean value determning wheater the input height/size is minimumheight or not
-maximum: a boolean value determning wheater the input height/size is maximumheight or not</p>
-<blockquote>
-<div><p>if both minimum and maximum be False, the size will be applied as both minimumheight and maximumheight</p>
-</div></blockquote>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>frame_name</strong> – name of frame element</p></li>
+<li><p><strong>size</strong> – height/size of elemen</p></li>
+<li><p><strong>minimum</strong> – a boolean value determning wheater the input height/size is minimumheight or not</p></li>
+<li><p><strong>maximum</strong> – a boolean value determning wheater the input height/size is maximumheight or not
+if both minimum and maximum be False, the size will be applied as both minimumheight and maximumheight</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -477,22 +498,6 @@ maximum: a boolean value determning wheater the input height/size is maximumheig
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.set_sliders">
 <span class="sig-name descname"><span class="pre">set_sliders</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.set_sliders" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to connect siders in ui to their functions</p>
-<p>Inputs: None</p>
-<p>Outputs: None</p>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.show_mesagges">
-<span class="sig-name descname"><span class="pre">show_mesagges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.show_mesagges" title="Permalink to this definition"></a></dt>
-<dd><p>this function is used to show input message in input label, also there is a message level determining the color of label, and a timer to clear meesage after a while</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>label_name: label element name to show the message in
-text: input message to show (in string)
-level: level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label
-clearable: a boolean value determining whater to clear the message after timeout or not
-prefix: a boolean value determinign wheater to show the message prefix or not</p>
-</dd>
-</dl>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -501,14 +506,37 @@ prefix: a boolean value determinign wheater to show the message prefix or not</p
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.show_mesagges">
+<span class="sig-name descname"><span class="pre">show_mesagges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">label_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.show_mesagges" title="Permalink to this definition"></a></dt>
+<dd><p>this function is used to show input message in input label, also there is a message level determining the color of label, and a timer to clear meesage after a while</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label_name</strong> – label element name to show the message in</p></li>
+<li><p><strong>text</strong> – input message to show (in string)</p></li>
+<li><p><strong>level</strong> – level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label</p></li>
+<li><p><strong>clearable</strong> – a boolean value determining whater to clear the message after timeout or not</p></li>
+<li><p><strong>prefix</strong> – a boolean value determinign wheater to show the message prefix or not</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.show_value">
 <span class="sig-name descname"><span class="pre">show_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.show_value" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to show slider value in an label/textbox</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>value: value of the slider (in int)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>value</strong> – value of the slider (in int)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
-<p>Outputs: None</p>
 </dd></dl>
 
 <dl class="py attribute">
@@ -520,10 +548,12 @@ prefix: a boolean value determinign wheater to show the message prefix or not</p
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.translate_headers_list">
 <span class="sig-name descname"><span class="pre">translate_headers_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">header_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.translate_headers_list" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to translate table headers or generally, all texts in and list, to ui default language</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>header_list: a list of texts that will be translated</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>header_list</strong> – a list of texts that will be translated</p>
 </dd>
-<dt>Outputs:</dt><dd><p>header_list: translated list of texts</p>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>header_list: translated list of texts</p>
 </dd>
 </dl>
 </dd></dl>
@@ -532,7 +562,6 @@ prefix: a boolean value determinign wheater to show the message prefix or not</p
 <dt class="sig sig-object py" id="oxin.setting_UI.UI_main_window.translate_ui">
 <span class="sig-name descname"><span class="pre">translate_ui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_UI.UI_main_window.translate_ui" title="Permalink to this definition"></a></dt>
 <dd><p>This function translate ui to selected language in settings page</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>

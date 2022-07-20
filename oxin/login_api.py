@@ -11,12 +11,11 @@ class API:
     """
     this class is used as the API for login window, to take login infoes from user and authenticate the user
 
-    Inputs:
-        ui: login ui object
-        logger_obj: logger object to take logs of user authenticating and logging in
-        language: the langage to show notifacations of the login
+    :param ui: login ui object
+    :param logger_obj: logger object to take logs of user authenticating and logging in
+    :param language: the langage to show notifacations of the login
 
-    Outputs: None
+    :returns: None
     """
     
     def __init__(self, ui, logger_obj=None, language='en'):
@@ -47,11 +46,8 @@ class API:
         """
         this function is used to authenticate an login the user to app
 
-        Inputs: None
-
-        :returns:
-            result: a boolean value detrmining if the authentication done or not
-            user_info: a dict containing infoes of the user
+        :returns: result: a boolean value detrmining if the authentication done or not
+        :returns: user_info: a dict containing infoes of the user
                 {user_name: username in string, password: password in string}
         """
         

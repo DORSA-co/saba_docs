@@ -25,8 +25,7 @@ def assign_appearance_existing_params_to_ui(ui_obj):
     """
     this function is used to assign default apearance params to ui (combobox contents in main-setting page)
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
     
     :returns: None
     """
@@ -63,10 +62,9 @@ def set_appearance_params_to_ui(ui_obj, appearance_params, multitask_params=None
     """
     this function is used to set input apearance params to ui setting page elements
 
-    Args:
-        ui_obj (_type_): main ui object
-        appearance_params (_type_): in dict
-        multitask_params (_type_, optional): if not none, set multtalsk params. Defaults to None.
+    :param ui_obj: (_type_) main ui object
+    :param appearance_params: (_type_) in dict
+    :param multitask_params: (_type_, optional) if not none, set multtalsk params. Defaults to None.
     
     :returns: None
     """
@@ -102,11 +100,9 @@ def get_appearance_params_from_ui(ui_obj):
     """
     this function is used to get app appearance params from ui seting page
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
 
-    :returns:
-        appearance params: in dict
+    :returns: appearance params: in dict
     """
     appearance_params = {}
     appearance_params['font_size'] = ui_obj.setting_fontsize_comboBox.currentText()
@@ -123,15 +119,13 @@ def apply_appearance_params_to_program(ui_obj, confirm_ui_obj, login_ui_object, 
     """
     this function is used to apply apearnace params in setting page to app
 
-    Args:
-        ui_obj (_type_): main ui object
-        confirm_ui_obj (_type_): _description_
-        appearance_params (_type_): in dict
+    :param ui_obj: (_type_) main ui object
+    :param confirm_ui_obj: (_type_) _description_
+    :param appearance_params: (_type_) in dict
 
-    :returns:
-        appearance_params['window_color']: color of the app
-        appearance_params['font_size']: font-size of the app
-        appearance_params['font_style']: font-style of the app
+    :returns: appearance_params['window_color']: color of the app
+    :returns: appearance_params['font_size']: font-size of the app
+    :returns: appearance_params['font_style']: font-style of the app
     """
     # apply to UI
     ui_obj.setStyleSheet('font: %spt %s;' % (appearance_params['font_size'], appearance_params['font_style'])) # font-size and font-style
@@ -162,8 +156,7 @@ def update_combo_color(ui_obj):
     """
     this function is used to update setting page color combobox background color by current color
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
     
     :returns: None
     """
@@ -176,8 +169,7 @@ def update_combo_fontstyle(ui_obj):
     """
     this function is used to update setting page fontstyle-combobox font acoading to current app fontstyle
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
     
     :returns: None
     """
@@ -190,8 +182,7 @@ def update_combo_fontsize(ui_obj):
     """
     this function is used to update setting page fontsize-combobox font according to current app fontsize
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
 
     :returns: None
     """
@@ -207,11 +198,9 @@ def get_calibration_params_from_ui(ui_obj):
     """
     this function is used to get calibration params from main-setting page
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
 
-    :returns:
-        calibration_params: in dict
+    :returns: calibration_params: in dict
     """
 
     calibration_params = {}
@@ -229,11 +218,9 @@ def get_image_procesing_params_from_ui(ui_obj):
     """
     this function is used to get image-preprocessing params from main-setting page
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
 
-    :returns:
-        image_procesing_params: in dict
+    :returns: image_procesing_params: in dict
     """
 
     image_procesing_params = {}
@@ -251,11 +238,9 @@ def get_defects_params_from_ui(ui_obj):
     """
     this function is used to get defect params from main-setting page
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_): main ui object
 
-    :returns:
-        defects_params: in dict
+    :returns: defects_params: in dict
     """
 
     defects_params = {}
@@ -270,11 +255,9 @@ def get_multitasking_params_from_ui(ui_obj):
     """
     this function is used to get multitasking params from main-setting page
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
 
-    :returns:
-        multitasking_params: in dict
+    :returns: multitasking_params: in dict
     """
 
     multitasking_params = {}
@@ -295,20 +278,12 @@ def get_mainsetting_params_from_db(db_obj, mode='all'):
     """
     this function is used to get mainsetting params from database
 
-    Args:
-        db_obj (_type_): database object
-        mode (str, optional): select mode to return specific parameters from database. Defaults to 'all'.
-            'all': :returns:
-                all_params, multitasking params
-            'px_calibration'
-                rect_areas, rect_acc
+    :param db_obj: (_type_) database object
+    :param mode: (str, optional) select mode to return specific parameters from database. Defaults to 'all'.
 
-    :returns:
-        depending on mode
-            'all': :returns:
-                all_params, multitasking params
-            'px_calibration'
-                rect_areas, rect_acc
+    :returns: depending on mode
+            'all': all_params, multitasking params
+            'px_calibration': rect_areas, rect_acc
     """
 
     params = db_obj.load_general_setting_params()
@@ -330,13 +305,11 @@ def set_mainsetting_params_to_db(db_obj, apperance_params, is_multitask_params=F
     """
     this function is used to update/set mainsetting params to database
 
-    Args:
-        db_obj (_type_): daabase object
-        apperance_params (_type_): params, could be appearance, calibration, image-preprocessing and ...
-        is_multitask_params (bool, optional): a boolean determining wheather the input params are belonge to multitasking or not. Defaults to False.
+    :param db_obj: (_type_) daabase object
+    :param apperance_params: (_type_) params, could be appearance, calibration, image-preprocessing and ...
+    :param is_multitask_params: (bool, optional) a boolean determining wheather the input params are belonge to multitasking or not. Defaults to False.
 
-    :returns:
-        resault: resualts of updating on database
+    :returns: resault: resualts of updating on database
     """
 
     if is_multitask_params:

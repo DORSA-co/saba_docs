@@ -19,11 +19,9 @@ def get_storage_status(disk_path):
     """
     this function is used to get storage statues of one drive
 
-    Args:
-        disk_path (_type_): drive path (in string)
+    :param disk_path: (_type_) drive path (in string)
 
-    :returns:
-        drive_info: in dict
+    :returns: drive_info: in dict
     """
     total, used, free = shutil.disk_usage(disk_path)
     # Get the current working directory
@@ -43,11 +41,9 @@ def get_drivename(driveletter):
     """
     this function is used to get drive name using its letter
 
-    Args:
-        driveletter (_type_): in string
+    :param driveletter: (_type_) in string
 
-    :returns:
-        drive_name: in string
+    :returns: drive_name: in string
     """
 
     return subprocess.check_output(["cmd","/c vol " + driveletter]).decode().split("\r\n")[0].split(" ").pop()
@@ -58,10 +54,7 @@ def get_available_drives():
     """
     this function is used to get system available drives list
 
-    Args: None
-
-    :returns:
-        available_drives: in list
+    :returns: available_drives: in list
     """
 
     available_drives = ['%s:' % d for d in string.ascii_uppercase if os.path.exists('%s:' % d)]
@@ -73,9 +66,8 @@ def update_camera_live_drive_combo(ui_obj, available_drives):
     """
     this function is used to update existing drives combobox on storage setting age
 
-    Args:
-        ui_obj (_type_): main ui object
-        available_drives (_type_): list of available drives
+    :param ui_obj: (_type_) main ui object
+    :param available_drives: (_type_) list of available drives
     """
 
     available_drives = get_available_drives()
@@ -95,12 +87,10 @@ def set_camera_live_drive_parameters_to_db(db_obj, drive_infos):
     """
     this function is used to set/update drive setting params on database
 
-    Args:
-        db_obj (_type_): database object
-        drive_infos (_type_): in dict
+    :param db_obj: (_type_) database object
+    :param drive_infos: (_type_) in dict
 
-    :returns:
-        resault: boolean deermining whather set to database is ok
+    :returns: resault: boolean deermining whather set to database is ok
     """
 
     # update on db
@@ -114,11 +104,9 @@ def get_camera_live_drive_parameters_from_db(db_obj):
     """
     this function is used to get camera live drive parameters from database
 
-    Args:
-        db_obj (_type_): database object
+    :param db_obj: (_type_) database object
 
-    :returns:
-        drive_infoes: app general parameters (in dict)
+    :returns: drive_infoes: app general parameters (in dict)
     """
     # get params from db
     drive_infos = db_obj.load_general_setting_params()
@@ -130,11 +118,9 @@ def get_camera_live_drive_parameters_from_ui(ui_obj):
     """
     this function is used to get defeault storage setting params from ui
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
 
-    :returns:
-        resaule: a boolean determining if the parameters are validated or not
+    :returns: resaule: a boolean determining if the parameters are validated or not
     """
     # get drive params from ui
     drive_infos = {}
@@ -162,12 +148,10 @@ def get_files_in_path(dir_path, reverse=False):
     """
     this function is used to get all files in a path, sorted by date (old to new)
 
-    Args:
-        dir_path (_type_): _description_
-        reverse (bool, optional): a boolean to reverse sorting to new to old. Defaults to False.
+    :param dir_path: (_type_) _description_
+    :param reverse: (bool, optional) a boolean to reverse sorting to new to old. Defaults to False.
 
-    :returns:
-        file_paths: list of file pathes
+    :returns: file_paths: list of file pathes
     """
 
     file_paths = sorted(Path(dir_path).iterdir(), key=os.path.getmtime, reverse=reverse)
@@ -179,14 +163,13 @@ def remove_old_files_in_directory(api_obj, ui_obj, drive_path, dir_path, start_r
     """
     this function is used to remove old files in a directory
 
-    Args:
-        api_obj (_type_): _description_
-        ui_obj (_type_): main ui object
-        drive_path (_type_): _description_
-        dir_path (_type_): directory of the folder in drive
-        start_ratio (_type_): _description_
-        stop_ratio (_type_): drive usage threshold to stop removing files
-        reverse (bool, optional): boolean to reverse sorting files in directory. Defaults to False.
+    :param api_obj: (_type_) _description_
+    :param ui_obj: (_type_) main ui object
+    :param drive_path: (_type_) _description_
+    :param dir_path: (_type_) directory of the folder in drive
+    :param start_ratio: (_type_) _description_
+    :param stop_ratio: (_type_) drive usage threshold to stop removing files
+    :param reverse: (bool, optional) boolean to reverse sorting files in directory. Defaults to False.
 
     :returns: None
     """
@@ -252,9 +235,8 @@ def show_storage_status(ui_obj, db_obj):
     """
     this functionis used tp update storage info summary on dashboard
 
-    Args:
-        ui_obj (_type_): main ui object
-        db_obj (_type_): database object
+    :param ui_obj: (_type_) main ui object
+    :param db_obj: (_type_) database object
     
     :returns: None
     """

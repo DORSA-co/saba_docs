@@ -105,33 +105,35 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.database.</span></span><span class="sig-name descname"><span class="pre">dataBase</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">username</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">password</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">host</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">database_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logger_obj</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>this class is used to connect and working with database</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>username: username to connect to database
-password: password to connect to databse
-host: host of the database
-database_name: name of the database to work with
-logger_obj: the logger object to take logs</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>username</strong> – username to connect to database</p></li>
+<li><p><strong>password</strong> – password to connect to databse</p></li>
+<li><p><strong>host</strong> – host of the database</p></li>
+<li><p><strong>database_name</strong> – name of the database to work with</p></li>
+<li><p><strong>logger_obj</strong> – the logger object to take logs</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.database.dataBase.add_record">
 <span class="sig-name descname"><span class="pre">add_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">parametrs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">len_parameters</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.add_record" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to add a new record a specified table of database</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>data: data to be added to database
-table_name: in string
-parametrs: list of parameters (column names) of the database
-len_parameters: number of parameters</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> – data to be added to database</p></li>
+<li><p><strong>table_name</strong> – in string</p></li>
+<li><p><strong>parametrs</strong> – list of parameters (column names) of the database</p></li>
+<li><p><strong>len_parameters</strong> – number of parameters</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -140,7 +142,6 @@ len_parameters: number of parameters</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.check_connection">
 <span class="sig-name descname"><span class="pre">check_connection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.check_connection" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to check if the connection to databse can be esablished</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>a boolean value determining if the connecton is stablished or not</p>
@@ -152,11 +153,12 @@ len_parameters: number of parameters</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.connect">
 <span class="sig-name descname"><span class="pre">connect</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.connect" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used for connecting to database</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>cursor: the object that is used to work with database by queries
-connection: ?</p>
+<dd class="field-odd"><p>cursor: the object that is used to work with database by queries</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>connection: ?</p>
 </dd>
 </dl>
 </dd></dl>
@@ -170,17 +172,18 @@ connection: ?</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.execute_quary">
 <span class="sig-name descname"><span class="pre">execute_quary</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">quary</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cursor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">connection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">need_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.execute_quary" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to execute a query on database</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>quary: the input query to execute
-cursor:
-connection:
-need_data: a bolean value
-close:</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>quary</strong> – the input query to execute</p></li>
+<li><p><strong>cursor</strong> – </p></li>
+<li><p><strong>connection</strong> – </p></li>
+<li><p><strong>need_data</strong> – a bolean value</p></li>
+<li><p><strong>close</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -189,13 +192,12 @@ close:</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.get_all_content">
 <span class="sig-name descname"><span class="pre">get_all_content</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.get_all_content" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get/return all contents of a table</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>table_name: in string</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>table_content: list of records in table (in dict)</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>table_name</strong> – in string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>table_content: list of records in table (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
@@ -209,9 +211,15 @@ close:</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.get_log">
 <span class="sig-name descname"><span class="pre">get_log</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">message</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'nothing'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.get_log" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get log from database tasks</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>message (str, optional): _description_. Defaults to ‘nothing’.
-level (int, optional): level of log. Defaults to 1.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>message</strong> – (str, optional) _description_. Defaults to ‘nothing’.</p></li>
+<li><p><strong>level</strong> – (int, optional) level of log. Defaults to 1.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -220,15 +228,16 @@ level (int, optional): level of log. Defaults to 1.</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.remove_record">
 <span class="sig-name descname"><span class="pre">remove_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.remove_record" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove a record from table acourding to specified column value</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>col_name: name of the column to check for (in string)
-id: value of the column (in string)
-table_name: name of the table (in string)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>results: a boolean determining if the record is removed or not</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>col_name</strong> – name of the column to check for (in string)</p></li>
+<li><p><strong>id</strong> – value of the column (in string)</p></li>
+<li><p><strong>table_name</strong> – name of the table (in string)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>results: a boolean determining if the record is removed or not</p>
 </dd>
 </dl>
 </dd></dl>
@@ -242,17 +251,17 @@ table_name: name of the table (in string)</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.search">
 <span class="sig-name descname"><span class="pre">search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">param_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">multi</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.search" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to search in table accoarding to one or multiple specifiic parameter (column name)</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>table_name: in string
-param_name: parameter (column) name in string, for multiple parameters, a list of strings
-value: value of the parameter to be (in string), for multiple values, a list of strings
-multi: a boolean value determining if the search is according to one parameter or multi parameters</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>result: a list containing the returned/searched row (record) in table, if failed to connect to database or nothing was found in table,
-an empty list will be returned</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_name</strong> – in string</p></li>
+<li><p><strong>param_name</strong> – parameter (column) name in string, for multiple parameters, a list of strings</p></li>
+<li><p><strong>value</strong> – value of the parameter to be (in string), for multiple values, a list of strings</p></li>
+<li><p><strong>multi</strong> – a boolean value determining if the search is according to one parameter or multi parameters</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result: a list containing the returned/searched row (record) in table, if failed to connect to database or nothing was found in table, an empty list will be returned</p>
 </dd>
 </dl>
 </dd></dl>
@@ -261,17 +270,18 @@ an empty list will be returned</p>
 <dt class="sig sig-object py" id="oxin.database.dataBase.update_record">
 <span class="sig-name descname"><span class="pre">update_record</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">id_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.database.dataBase.update_record" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update a parameter (column) in a table record, detrtmingn by record id</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>table_name: name of the table in database (in string)
-col_name: column name of table to update (in string)
-value: value will be assigned to column ((in string))
-id: name of id column in table, its used to determine which record to update
-id_value: value of the id column</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>result: a boolean determining if the update on table is done or not</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_name</strong> – name of the table in database (in string)</p></li>
+<li><p><strong>col_name</strong> – column name of table to update (in string)</p></li>
+<li><p><strong>value</strong> – value will be assigned to column ((in string))</p></li>
+<li><p><strong>id</strong> – name of id column in table, its used to determine which record to update</p></li>
+<li><p><strong>id_value</strong> – value of the id column</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>result: a boolean determining if the update on table is done or not</p>
 </dd>
 </dl>
 </dd></dl>

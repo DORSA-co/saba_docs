@@ -110,8 +110,10 @@ alert window and notification windows are initialized in this class</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>ui</strong> – the ui file of the app</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.add_defect">
 <span class="sig-name descname"><span class="pre">add_defect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default_defect</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.add_defect" title="Permalink to this definition"></a></dt>
@@ -122,8 +124,10 @@ it is also used to add/update edited defect on dataabse</p>
 <dd class="field-odd"><p><strong>default_defect</strong> – (dict, optional) if not empty, it is used as new defect to add to database,
 else the new defect info is returned from ui. Defaults to {}.</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -135,8 +139,10 @@ else the new defect info is returned from ui. Defaults to {}.</p>
 <dd class="field-odd"><p><strong>default_defectgroup</strong> – (dict, optional) if not empty, it is used as input to add to database
 if not, the info returned from ui is used. Defaults to {}.</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -149,8 +155,10 @@ the user info is returned from ui, and used as input to add to database</p>
 <dd class="field-odd"><p><strong>default_user</strong> – (dict, optional) if not empty, this dict is use as input to add to database. if empty, new user_infoes are get
 from ui</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -161,8 +169,10 @@ from ui</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>image</strong> – (_type_) input calibration image from camera</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -179,22 +189,32 @@ according to mode. we can select which parameters to apply/set</p>
 ‘multitasking’:
 ‘defects’:</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.button_connector">
 <span class="sig-name descname"><span class="pre">button_connector</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.button_connector" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to connect ui buttons to their functions</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.check_all_plc_parms">
 <span class="sig-name descname"><span class="pre">check_all_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.check_all_plc_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to check all plc logic pathes values</p>
-<p>::returns: values: a dict of plc values</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>values: a dict of plc values</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -205,15 +225,21 @@ according to mode. we can select which parameters to apply/set</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>name</strong> – (_type_) check botton name of the path</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>value: value stored in path</p>
+</dd>
 </dl>
-<p>::returns: value: value stored in path</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.check_storage_status">
 <span class="sig-name descname"><span class="pre">check_storage_status</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.check_storage_status" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to check storage statues</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -221,7 +247,11 @@ according to mode. we can select which parameters to apply/set</p>
 <span class="sig-name descname"><span class="pre">confirm_yes</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.confirm_yes" title="Permalink to this definition"></a></dt>
 <dd><p>this function is the event for confirm window yes button,
 accoarding to message of the confirm window, the function decides to take right action</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -232,15 +262,21 @@ accoarding to message of the confirm window, the function decides to take right 
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>calibration</strong> – a boolean determining if the current page is calibration page</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.connect_plc">
 <span class="sig-name descname"><span class="pre">connect_plc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.connect_plc" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to connect to plc</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -251,15 +287,21 @@ accoarding to message of the confirm window, the function decides to take right 
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>input_img_path</strong> (<em>str</em>) – inpput image directory</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.disconnect_camera_on_ui_change">
 <span class="sig-name descname"><span class="pre">disconnect_camera_on_ui_change</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.disconnect_camera_on_ui_change" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to disconnect camera if any of camera parameters in camera seting page are changed, or stackwidjet current page change</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -281,8 +323,10 @@ accoarding to message of the confirm window, the function decides to take right 
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>defect_group</strong> – (bool, optional) a boolean determining whather to edit defect-group. Defaults to False.</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -293,15 +337,21 @@ accoarding to message of the confirm window, the function decides to take right 
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>defect_group</strong> – (bool, optional) a boolean determining whather to search in defect-groups. Defaults to False.</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.force_clear_camera_live_storage">
 <span class="sig-name descname"><span class="pre">force_clear_camera_live_storage</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.force_clear_camera_live_storage" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to makes True the flag for force clearing storage</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -312,8 +362,10 @@ accoarding to message of the confirm window, the function decides to take right 
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>params_changed</strong> – (bool, optional) a boolean to detemine if algo params changed. Defaults to False.</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -324,8 +376,10 @@ accoarding to message of the confirm window, the function decides to take right 
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>mainsetting_page</strong> – (bool, optional) a boolean determining wheather on mainsetting page or not. Defaults to False.</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -334,35 +388,55 @@ accoarding to message of the confirm window, the function decides to take right 
 <dd><p>this function is used every time a camera is selected in camera settings page, and tries to load camera settings and
 parameters of that camera from database.
 at every camera selection, the previous camera will disconnected if it is connected</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.load_plc_parms">
 <span class="sig-name descname"><span class="pre">load_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.load_plc_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load plc params from database, and set to ui plc page</p>
-<p>::returns: resault: a boolean determining if params loaded from database</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>resault: a boolean determining if params loaded from database</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.next_image_precessing">
 <span class="sig-name descname"><span class="pre">next_image_precessing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.next_image_precessing" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load next image for image processing calibration</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.on_close_operations">
 <span class="sig-name descname"><span class="pre">on_close_operations</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.on_close_operations" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to check/do some functions before closing the app</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.previous_image_precessing">
 <span class="sig-name descname"><span class="pre">previous_image_precessing</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.previous_image_precessing" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to load prev image for image processing calibration</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -370,7 +444,11 @@ at every camera selection, the previous camera will disconnected if it is connec
 <span class="sig-name descname"><span class="pre">refresh_dashboard_page</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.refresh_dashboard_page" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to do some tasks that are related to dashboard page.
 the taks are almost the dashboard parameters</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -384,8 +462,10 @@ the taks are almost the dashboard parameters</p>
 <li><p><strong>only_defect_groups</strong> – a boolean determining only update defect-groups table</p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -403,7 +483,11 @@ the taks are almost the dashboard parameters</p>
 <dt class="sig sig-object py" id="oxin.setting_api.API.refresh_users_table">
 <span class="sig-name descname"><span class="pre">refresh_users_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.refresh_users_table" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to refresh users table on ui</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -414,15 +498,21 @@ the taks are almost the dashboard parameters</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>defect_group</strong> – (bool, optional) a boolean determining wheather to remove defect_groups or not. Defaults to False.</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.remove_users">
 <span class="sig-name descname"><span class="pre">remove_users</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.remove_users" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove selected users in ui users table, from database</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -436,8 +526,10 @@ the taks are almost the dashboard parameters</p>
 <li><p><strong>stop</strong> – (bool, optional) a boolean determining to stop the timer. Defaults to False.</p></li>
 </ul>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -445,7 +537,11 @@ the taks are almost the dashboard parameters</p>
 <span class="sig-name descname"><span class="pre">save_changed_calibration_params</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_changed_calibration_params" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update camera calibration params to database.
 the input params are returned from ui</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -456,50 +552,76 @@ the input params are returned from ui</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>apply_to_multiple</strong> – a boolean determining wheter apply settings to multiple cameras or only current camera</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.save_image_processing_parms">
 <span class="sig-name descname"><span class="pre">save_image_processing_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_image_processing_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to save image processing params from Miss.Abtahi algo to database</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.save_plc_ip">
 <span class="sig-name descname"><span class="pre">save_plc_ip</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_plc_ip" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get plc ip from ui and update on database</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.save_plc_parms">
 <span class="sig-name descname"><span class="pre">save_plc_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.save_plc_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to save plc params to database</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.select_image_procesing_directory">
 <span class="sig-name descname"><span class="pre">select_image_procesing_directory</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.select_image_procesing_directory" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to select image processing drectory contaiing images to fix image processing params with</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.set_plc_ip_to_ui">
 <span class="sig-name descname"><span class="pre">set_plc_ip_to_ui</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.set_plc_ip_to_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get plc ip from database and set to ui</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.set_plc_value">
 <span class="sig-name descname"><span class="pre">set_plc_value</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.set_plc_value" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update/set a path calue on plc</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -510,15 +632,21 @@ the input params are returned from ui</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>calibration</strong> – a boolean detrmining if current page is calibration or not</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.show_related_defects">
 <span class="sig-name descname"><span class="pre">show_related_defects</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.show_related_defects" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to show related defects to a selected defect-group</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
@@ -529,8 +657,10 @@ the input params are returned from ui</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>logicalIndex</strong> – (_type_) _description_</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
@@ -541,43 +671,65 @@ the input params are returned from ui</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>logicalIndex</strong> – (_type_) _description_</p>
 </dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
+</dd>
 </dl>
-<p>::returns: None</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.things_to_do_on_stackwidject_change">
 <span class="sig-name descname"><span class="pre">things_to_do_on_stackwidject_change</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.things_to_do_on_stackwidject_change" title="Permalink to this definition"></a></dt>
 <dd><p>this function performs tasks needed to done on ui stackwidjet (page) change</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.update_camera_live_storage_parms">
 <span class="sig-name descname"><span class="pre">update_camera_live_storage_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.update_camera_live_storage_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update/set defalt storage params returned from ui, to database</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.update_path_plc">
 <span class="sig-name descname"><span class="pre">update_path_plc</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.update_path_plc" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get value of a path on plc, everytime pathes-combobox has changed</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.update_plc_dashboard_parms">
 <span class="sig-name descname"><span class="pre">update_plc_dashboard_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.update_plc_dashboard_parms" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update plc summary satues on dashboard</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.setting_api.API.write_parms">
 <span class="sig-name descname"><span class="pre">write_parms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.setting_api.API.write_parms" title="Permalink to this definition"></a></dt>
 <dd><p>============================description===========================</p>
-<p>::returns: None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>None</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>

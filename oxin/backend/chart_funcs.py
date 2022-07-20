@@ -19,10 +19,9 @@ def create_drive_barchart_on_ui(ui_obj, frame_obj, chart_title='Chart'):
     """
     this function is used to create bar-chart on storage managment page
 
-    Args:
-        ui_obj (_type_): main ui object
-        frame_obj (_type_): ui frame name to create chart in
-        chart_title (str, optional): _description_. Defaults to 'Chart'.
+    :param ui_obj: (_type_) main ui object
+    :param frame_obj: (_type_) ui frame name to create chart in
+    :param chart_title: (str, optional) _description_. Defaults to 'Chart'.
     
     :returns: None
     """
@@ -95,11 +94,10 @@ def update_drive_barchart(ui_obj, drives_info, storage_thrs, warn_storage_thrs):
     """
     this function is used to update drive satues barchart on storage management page
 
-    Args:
-        ui_obj (_type_): main ui object
-        drives_info (_type_): statues of the drive (in dict)
-        storage_thrs (_type_): an int determining thrshold of storage using in bas statues(for chart colors)
-        warn_storage_thrs (_type_): an int determining thrshold of storage using in warning statues(for chart colors)
+    :param ui_obj: (_type_) main ui object
+    :param drives_info: (_type_) statues of the drive (in dict)
+    :param storage_thrs: (_type_) an int determining thrshold of storage using in bas statues(for chart colors)
+    :param warn_storage_thrs: (_type_) an int determining thrshold of storage using in warning statues(for chart colors)
 
     :returns: None
     """

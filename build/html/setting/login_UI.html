@@ -108,7 +108,6 @@
 <dt class="sig sig-object py" id="oxin.login_UI.UI_main_window.activate_">
 <span class="sig-name descname"><span class="pre">activate_</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_UI.UI_main_window.activate_" title="Permalink to this definition"></a></dt>
 <dd><p>this function connects the close button to its functionality</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -120,7 +119,6 @@
 <dt class="sig sig-object py" id="oxin.login_UI.UI_main_window.buttonClick">
 <span class="sig-name descname"><span class="pre">buttonClick</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_UI.UI_main_window.buttonClick" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to connect each button to its functionality, on button click</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -132,7 +130,6 @@
 <dt class="sig sig-object py" id="oxin.login_UI.UI_main_window.close_win">
 <span class="sig-name descname"><span class="pre">close_win</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_UI.UI_main_window.close_win" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used for closing login window, also on closing, the password and username fileds are cleared</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>
@@ -144,11 +141,12 @@
 <dt class="sig sig-object py" id="oxin.login_UI.UI_main_window.get_user_pass">
 <span class="sig-name descname"><span class="pre">get_user_pass</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_UI.UI_main_window.get_user_pass" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get/return entered username and password from fields</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>username: in string
-password: in string</p>
+<dd class="field-odd"><p>username: in string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>password: in string</p>
 </dd>
 </dl>
 </dd></dl>
@@ -157,17 +155,18 @@ password: in string</p>
 <dt class="sig sig-object py" id="oxin.login_UI.UI_main_window.set_login_message">
 <span class="sig-name descname"><span class="pre">set_login_message</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">clearable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prefix</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_UI.UI_main_window.set_login_message" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to show input message in input label, also there is a message level determining the color of label, and a timer to clear meesage after a while</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>label_name: label element name to show the message in
-text: input message to show (in string)
-level: level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label
-clearable: a boolean value determining whater to clear the message after timeout or not
-prefix: a boolean value determinign wheater to show the message prefix or not</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>label_name</strong> – label element name to show the message in</p></li>
+<li><p><strong>text</strong> – input message to show (in string)</p></li>
+<li><p><strong>level</strong> – level of the message (in int), its a value betweem [0, 2] determining the bakground color of message label</p></li>
+<li><p><strong>clearable</strong> – a boolean value determining whater to clear the message after timeout or not</p></li>
+<li><p><strong>prefix</strong> – a boolean value determinign wheater to show the message prefix or not</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -176,7 +175,6 @@ prefix: a boolean value determinign wheater to show the message prefix or not</p
 <dt class="sig sig-object py" id="oxin.login_UI.UI_main_window.showPassword">
 <span class="sig-name descname"><span class="pre">showPassword</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">show</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.login_UI.UI_main_window.showPassword" title="Permalink to this definition"></a></dt>
 <dd><p>this functino is used for showing/hiding password text in password lineedit</p>
-<p>Inputs: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>None</p>

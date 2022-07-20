@@ -76,14 +76,12 @@ def get_time(folder_path=False):
 
 def get_datetime(persian=True, folder_path=True):
     """
-    this function :returns: both curent date and time in wheater persian or miladi format
+    this function returns both curent date and time in wheater persian or miladi format
 
-    Inputs:
-        persian: a bolean value determining the foramt of date (in persian or miladi)
-        folder_path: a boolean value determiningn if the date will be used as a folder name or not
+    :param persian: a bolean value determining the foramt of date (in persian or miladi)
+    :param folder_path: a boolean value determiningn if the date will be used as a folder name or not
     
-    :returns:
-        date and time: current date and time (in string)
+    :returns: date and time: current date and time (in string)
     """
     
     date = get_date(persian=persian, folder_path=folder_path)

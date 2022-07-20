@@ -22,7 +22,7 @@ class API:
     alert window and notification windows are initialized in this class
 
     :param ui: the ui file of the app
-    ::returns: None
+    :returns: None
     """
 
     def __init__(self, ui):
@@ -219,7 +219,7 @@ class API:
         """
         this function is used to connect ui buttons to their functions
 
-        ::returns: None
+        :returns: None
         """
 
         # close nutton
@@ -348,7 +348,7 @@ class API:
         this function is used to do some tasks that are related to dashboard page.
         the taks are almost the dashboard parameters 
 
-        ::returns: None
+        :returns: None
         """
 
         # camera summary
@@ -382,7 +382,7 @@ class API:
         save input camera parameters entered on UI camera setting page to database
         
         :param apply_to_multiple: a boolean determining wheter apply settings to multiple cameras or only current camera        
-        ::returns: None
+        :returns: None
         """
         
         # get camera-id and camera params from ui
@@ -432,7 +432,7 @@ class API:
         parameters of that camera from database.
         at every camera selection, the previous camera will disconnected if it is connected
 
-        ::returns: None
+        :returns: None
         """
         
         # disconnect any camera if connected:
@@ -471,7 +471,7 @@ class API:
         this functon is used to connect/disconnect to camera
 
         :param calibration: a boolean determining if the current page is calibration page
-        ::returns: None
+        :returns: None
         """
         
         # get camera parametrs on camera-settings page
@@ -540,7 +540,7 @@ class API:
         this function is used to start image grabbing from camera, and update image on ui
         
         :param calibration: a boolean detrmining if current page is calibration or not
-        ::returns: None
+        :returns: None
         """
         
         # update ui elements
@@ -610,7 +610,7 @@ class API:
         """
         this function is used to disconnect camera if any of camera parameters in camera seting page are changed, or stackwidjet current page change
 
-        ::returns: None
+        :returns: None
         """
         
         if self.ui.camera_connect_flag:
@@ -639,7 +639,7 @@ class API:
         this function is used to apply soft-calibration on image and then update results on ui
         
         :param image: (_type_) input calibration image from camera
-        ::returns: None
+        :returns: None
         """
         try:
             # no image is available
@@ -664,7 +664,7 @@ class API:
         this function is used to update camera calibration params to database.
         the input params are returned from ui
         
-        ::returns: None
+        :returns: None
         """
         # get camera-id from the camera-name lable in the camera settings section
         camera_id = camera_funcs.get_camera_id(self.ui.comboBox_cam_select_calibration.currentText())
@@ -707,7 +707,7 @@ class API:
                 'multitasking':
                 'defects':
         
-        ::returns: None
+        :returns: None
         """
         change_language_flag = False
         # get parameters from UI
@@ -770,7 +770,7 @@ class API:
         this function is used to load appearance params from database and apply to program on start-up or function call
         
         :param mainsetting_page: (bool, optional) a boolean determining wheather on mainsetting page or not. Defaults to False.
-        ::returns: None
+        :returns: None
         """
 
         # load from database
@@ -803,7 +803,7 @@ class API:
         """
         this function is used to refresh users table on ui
         
-        ::returns: None
+        :returns: None
         """
         
         try:
@@ -822,7 +822,7 @@ class API:
         """
         this function is used to remove selected users in ui users table, from database
         
-        ::returns: None
+        :returns: None
         """
 
         # get selected users from UI
@@ -871,7 +871,7 @@ class API:
 
         :param default_user: (dict, optional) if not empty, this dict is use as input to add to database. if empty, new user_infoes are get
             from ui
-        ::returns: None
+        :returns: None
         """
 
         # get new user-info from UI
@@ -929,7 +929,7 @@ class API:
         this function is the event for confirm window yes button,
         accoarding to message of the confirm window, the function decides to take right action
         
-        ::returns: None
+        :returns: None
         """
         
         # user logout form
@@ -988,7 +988,7 @@ class API:
         """
         this function performs tasks needed to done on ui stackwidjet (page) change
        
-        ::returns: None
+        :returns: None
         """
 
         self.disconnect_camera_on_ui_change()
@@ -1000,7 +1000,7 @@ class API:
         """
         this function is used to check/do some functions before closing the app
         
-        ::returns: None
+        :returns: None
         """
         
         # dissconnect plc if it is connected
@@ -1021,7 +1021,7 @@ class API:
         """
         this function is used to select image processing drectory contaiing images to fix image processing params with
         
-        ::returns: None
+        :returns: None
         """
         
 
@@ -1066,7 +1066,7 @@ class API:
         
         :type input_img_path: str
         :param input_img_path: inpput image directory
-        ::returns: None
+        :returns: None
         """
 
         # get images pathes
@@ -1106,7 +1106,7 @@ class API:
         """
         this function is used to load next image for image processing calibration
         
-        ::returns: None
+        :returns: None
         """
 
         try:
@@ -1121,7 +1121,7 @@ class API:
         """
         this function is used to load prev image for image processing calibration
         
-        ::returns: None
+        :returns: None
         """
 
         try:
@@ -1138,7 +1138,7 @@ class API:
         
         :param params_changed: (bool, optional) a boolean to detemine if algo params changed. Defaults to False.
         
-        ::returns: None
+        :returns: None
         """
 
         try:
@@ -1160,7 +1160,7 @@ class API:
         """
         this function is used to save image processing params from Miss.Abtahi algo to database
         
-        ::returns: None
+        :returns: None
         """
 
         parms = self.ui.get_image_proccessing_parms()
@@ -1188,7 +1188,7 @@ class API:
         :param only_defects: a boolean determining only update defect table
         :param only_defect_groups: a boolean determining only update defect-groups table
         
-        ::returns: None
+        :returns: None
         """
         
         # update defects table
@@ -1249,7 +1249,7 @@ class API:
         
         :param default_defect: (dict, optional) if not empty, it is used as new defect to add to database,
             else the new defect info is returned from ui. Defaults to {}.
-        ::returns: None
+        :returns: None
         """
 
         line_edits = [self.ui.defect_name_lineedit, self.ui.defect_shortname_lineedit, self.ui.defect_id_lineedit]
@@ -1353,7 +1353,7 @@ class API:
         this function is used to remove selected defects/defect groups from database
         
         :param defect_group: (bool, optional) a boolean determining wheather to remove defect_groups or not. Defaults to False.
-        ::returns: None
+        :returns: None
         """
 
         # remove defects
@@ -1473,7 +1473,7 @@ class API:
         this function is used to edit selected defect/defect-group and change its parameters
         
         :param defect_group: (bool, optional) a boolean determining whather to edit defect-group. Defaults to False.
-        ::returns: None
+        :returns: None
         """
 
         # edit defect
@@ -1570,7 +1570,7 @@ class API:
         this function is used to show related defects to a selected defect-group
         
         
-        ::returns: None
+        :returns: None
         """
 
         # get defects-groups from database
@@ -1640,7 +1640,7 @@ class API:
         this function is used to filter/search in defect table
         
         :param defect_group: (bool, optional) a boolean determining whather to search in defect-groups. Defaults to False.
-        ::returns: None
+        :returns: None
         """
 
         # search/filter defects
@@ -1673,7 +1673,7 @@ class API:
         this function is used to sort items accoading to one column, if clicked on that column
         
         :param logicalIndex: (_type_) _description_
-        ::returns: None
+        :returns: None
         """
         if logicalIndex != 6:
             self.ui.tableWidget_defects.sortItems(logicalIndex, sQtCore.Qt.AscendingOrder)
@@ -1685,7 +1685,7 @@ class API:
         this function is used to sort items accoading to one column, if clicked on that column
         
         :param logicalIndex: (_type_) _description_
-        ::returns: None
+        :returns: None
         """
 
         self.ui.tableWidget_defectgroups.sortItems(logicalIndex, sQtCore.Qt.AscendingOrder)
@@ -1703,7 +1703,7 @@ class API:
         :param default_defectgroup: (dict, optional) if not empty, it is used as input to add to database
             if not, the info returned from ui is used. Defaults to {}.
         
-        ::returns: None
+        :returns: None
         """
 
         line_edits = [self.ui.defect_group_name_lineedit, self.ui.defect_group_id_lineedit]
@@ -1801,7 +1801,7 @@ class API:
         
         :param storage_check_interval: (int, optional) check interval (in seconds). Defaults to 60.
         :param stop: (bool, optional) a boolean determining to stop the timer. Defaults to False.
-        ::returns: None
+        :returns: None
         """
 
         # stop timer if exists
@@ -1867,7 +1867,7 @@ class API:
         """
         this function is used to update/set defalt storage params returned from ui, to database
         
-        ::returns: None
+        :returns: None
         """
 
         # get drive params from ui
@@ -1924,7 +1924,7 @@ class API:
         """
         this function is used to check storage statues
         
-        ::returns: None
+        :returns: None
         """
 
         # get current drive infoes
@@ -2024,7 +2024,7 @@ class API:
         """
         this function is used to makes True the flag for force clearing storage
         
-        ::returns: None
+        :returns: None
         """
 
         self.force_clear = True
@@ -2037,7 +2037,7 @@ class API:
         """
         this function is used to connect to plc
         
-        ::returns: None
+        :returns: None
         """
 
         # get plc ip
@@ -2117,7 +2117,7 @@ class API:
         """
         this function is used to check all plc logic pathes values
         
-        ::returns: values: a dict of plc values
+        :returns: values: a dict of plc values
         """
         values={}
 
@@ -2134,7 +2134,7 @@ class API:
         this function is used to check/get value of a path on plc
         
         :param name: (_type_) check botton name of the path
-        ::returns: value: value stored in path
+        :returns: value: value stored in path
         """
         # path_list={'check_limit_1_btn':self.ui.line_limit1_plc,'check_limit_2_btn':self.ui.line_limit2_plc,\
         #     'check_top_motor_btn':self.ui.line_top_motor_plc,'check_down_motor_btn':self.ui.line_down_motor_plc,\
@@ -2165,7 +2165,7 @@ class API:
         """
         this function is used to load plc params from database, and set to ui plc page
         
-        ::returns: resault: a boolean determining if params loaded from database
+        :returns: resault: a boolean determining if params loaded from database
         """
 
         parms=self.db.load_plc_parms()
@@ -2205,7 +2205,7 @@ class API:
         """
         this function is used to get value of a path on plc, everytime pathes-combobox has changed
         
-        ::returns: None
+        :returns: None
         """
 
         try:
@@ -2221,7 +2221,7 @@ class API:
         """
         this function is used to save plc params to database
         
-        ::returns: None
+        :returns: None
         """
 
         plc_parms = self.ui.get_plc_parms()
@@ -2245,7 +2245,7 @@ class API:
         """
         this function is used to update/set a path calue on plc
         
-        ::returns: None
+        :returns: None
         """
 
         # print('set')
@@ -2268,7 +2268,7 @@ class API:
         """
         this function is used to get plc ip from ui and update on database
         
-        ::returns: None
+        :returns: None
         """
 
         ip = self.ui.get_plc_ip()
@@ -2289,7 +2289,7 @@ class API:
         """
         this function is used to get plc ip from database and set to ui
         
-        ::returns: None
+        :returns: None
         """
 
         ip = self.db.load_plc_ip()
@@ -2309,7 +2309,7 @@ class API:
         """
         this function is used to update plc summary satues on dashboard
         
-        ::returns: None
+        :returns: None
         """
 
         try:
@@ -2331,7 +2331,7 @@ class API:
         """
         ============================description===========================
 
-        ::returns: None
+        :returns: None
         """
 
         parms_dict = self.check_all_plc_parms()

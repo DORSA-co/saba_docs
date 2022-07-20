@@ -29,8 +29,7 @@ def update_combo_color(ui_obj):
     """
     this function is used to update color combobox
 
-    Args:
-        ui_obj (_type_): main ui object
+    :param ui_obj: (_type_) main ui object
     
     :returns: None
     """
@@ -45,14 +44,11 @@ def get_defects_from_db(db_obj, defect_groups=False):
     """
     this function is used to get and return defects/defect-groups list from database
 
-    Inputs:
-        defect_groups: a boolean determining wheather to get defect-groups list or defects list
-    
-    :returns:
-        if defect_groups==False:
-            defects_list: list of dicts
-        if defect_groups==True:
-            defect_groups_list: list of defect groups
+    :param defect_groups: a boolean determining wheather to get defect-groups list or defects list
+    :returns: if defect_groups==False:
+                defects_list: list of dicts
+    :returns: if defect_groups==True:
+                defect_groups_list: list of defect groups
     """
     
     if not defect_groups:
@@ -68,16 +64,14 @@ def get_filtered_defects_from_db(db_obj, filter_params, defect_groups=False):
     """
     this function is used to get filtered defects/defect-groups from database
 
-    Args:
-        db_obj (_type_): database object
-        filter_params (_type_):
-        defect_groups (bool, optional): a boolean determining wha\eather to search for defect-groups. Defaults to False.
+    :param db_obj: (_type_) database object
+    :param filter_params: (_type_)
+    :param defect_groups: (bool, optional) a boolean determining wha\eather to search for defect-groups. Defaults to False.
 
-    :returns:
-        message: a text message
-            'all': no filter
-            'filtered': return filterd resualts
-        defects/defect-groups list:
+    :returns: message: a text message
+                'all': no filter
+                'filtered': return filterd resualts
+    :returns: defects/defect-groups list:
     """
 
     # input parameters and column names in database
@@ -138,13 +132,11 @@ def change_defect_group_id_to_name(db_obj, defects_list, reverse=False, single=F
     """
     this function is used to translate defect-group-ids to defect-group-names or reverse
 
-    Inputs:
-        defects_list: list of defect_infoes (list of dict)
-        reverse: a boolean determinig wheather to reverse translate or not
-        single: a boolean determining if the input is only one defect record or not
+    :param defects_list: list of defect_infoes (list of dict)
+    :param reverse: a boolean determinig wheather to reverse translate or not
+    :param single: a boolean determining if the input is only one defect record or not
     
-    :returns:
-        translated_defects_list: the same defects_list with defect-group-ids translated
+    :returns: translated_defects_list: the same defects_list with defect-group-ids translated
     """
     
     # 
@@ -184,14 +176,12 @@ def remove_defects_from_db(db_obj, defects_list, defect_group=False, defect_grou
     this is used to remove defect or defect groups from database.
     we can determine whethere to remove one or multiple defect groups by id, single or multiple defect by id, or all defects with a specified defect-id
 
-    Inputs:
-        db_obj: database object
-        defects_list: list of ids to remove, for removing defects with specified defect group-id, defect-group-id is the input
-        defect_group: a boolean for determining to remove a defect-group or defects
-        defect_group_id: a boolean determining wheather to remove all defects with input defect group id
+    :param db_obj: database object
+    :param defects_list: list of ids to remove, for removing defects with specified defect group-id, defect-group-id is the input
+    :param defect_group: a boolean for determining to remove a defect-group or defects
+    :param defect_group_id: a boolean determining wheather to remove all defects with input defect group id
 
-    :returns:
-        resault: a boolean detrtmining if removing from database is done or not
+    :returns: resault: a boolean detrtmining if removing from database is done or not
     """
     
     # removing defects
@@ -217,13 +207,11 @@ def update_defects_to_db(db_obj, defects_list, defect_group=False):
     """
     this function is used to update a defect/defect-group on database
 
-    Args:
-        db_obj (_type_): databasae object
-        defects_list (_type_): defect/defect-groups list
-        defect_group (bool, optional): a boolean determining wheather to update defect-group. Defaults to False.
+    :param db_obj: (_type_) databasae object
+    :param defects_list: (_type_) defect/defect-groups list
+    :param defect_group: (bool, optional) a boolean determining wheather to update defect-group. Defaults to False.
 
-    :returns:
-        resault: a boolean to detrtmine if update on database is ok
+    :returns: resault: a boolean to detrtmine if update on database is ok
     """
 
     if not defect_group:
@@ -242,14 +230,12 @@ def load_defects_from_db(db_obj, defect_id, defect_group=False, defect_group_id=
     this function is used to load defects/defect-groups from database.
     the function can be used to get defects, get defect-groups, or get those defects with specified defect-group-id
 
-    Args:
-        db_obj (_type_): database object
-        defect_id (_type_): defect ids list
-        defect_group (bool, optional): a boolean determining wheather to load defect-groups. Defaults to False.
-        defect_group_id (bool, optional): a boolean to determine wheather to load defects with a specified defect-group-id (send as defect_id). Defaults to False.
+    :param db_obj: (_type_) database object
+    :param defect_id: (_type_) defect ids list
+    :param defect_group: (bool, optional) a boolean determining wheather to load defect-groups. Defaults to False.
+    :param defect_group_id: (bool, optional) a boolean to determine wheather to load defects with a specified defect-group-id (send as defect_id). Defaults to False.
 
-    :returns:
-        defect_info: list of defects (in dict)
+    :returns: defect_info: list of defects (in dict)
     """
 
     # load defects
@@ -275,10 +261,9 @@ def set_defect_info_on_ui(ui_obj, db_obj, defect_info):
     """
     this function is used to set input defect info to ui (for edit defect)
 
-    Args:
-        ui_obj (_type_): main ui object
-        db_obj (_type_): database object
-        defect_info (_type_): dict of selected defedct infoes
+    :param ui_obj: (_type_) main ui object
+    :param db_obj: (_type_) database object
+    :param defect_info: (_type_) dict of selected defedct infoes
     
     :returns: None
     """
@@ -313,9 +298,8 @@ def set_defect_group_info_on_ui(ui_obj, defect_group_info):
     """
     this function is used to set input defect info to ui (for edit defect)
 
-    Args:
-        ui_obj (_type_): main ui object
-        defect_group_info (_type_): dict of selected defedct-groups infoes
+    :param ui_obj: (_type_) main ui object
+    :param defect_group_info: (_type_) dict of selected defedct-groups infoes
     
     :returns: None
     """
@@ -337,14 +321,11 @@ def add_new_defect_to_db(db_obj, new_defect_info, defect_group=False):
     """
     this function is used to add a new defect/defect-group to database
 
-    Args:
-        db_obj (_type_): database object
-        new_defect_info (_type_): new defect/defect-group info
-        defect_group (bool, optional): a boolean determining wheather to add defect-group. Defaults to False.
+    :param db_obj: (_type_) database object
+    :param new_defect_info: (_type_) new defect/defect-group info
+    :param defect_group: (bool, optional) a boolean determining wheather to add defect-group. Defaults to False.
 
-    :returns:
-        resault: a message determining if the add to dabase is done
-            "True": adding ok
+    :returns: resault: a message determining if the add to dabase is done "True": adding ok
     """
 
     if not defect_group:
@@ -362,10 +343,9 @@ def set_defects_on_ui(ui_obj, defects_list, defect_group_name='None'):
     """
     this function is used to set input defects list to defects table on ui
 
-    Inputs:
-        ui_obj: main ui object
-        defects_list: list of defects (in dict)
-        defect_group_name: if not None and have value (in string), those defect s with same defect-group-name will be highlithed
+    :param ui_obj: main ui object
+    :param defects_list: list of defects (in dict)
+    :param defect_group_name: if not None and have value (in string), those defect s with same defect-group-name will be highlithed
     
     :returns: None
     """
@@ -444,8 +424,7 @@ def set_defect_groups_on_combo(ui_obj, defect_groups_list):
     """
     this function is used to update defect-groups combobox according to available defect-groups
 
-    Inputs:
-        defect_groups_list: list of defect-groups (in dict)
+    :param defect_groups_list: list of defect-groups (in dict)
     
     :returns: None
     """
@@ -469,10 +448,9 @@ def assign_existing_defect_colors_to_ui(ui_obj, db_obj, current='None'):
     this function is used to set/update existing defect colors to ui combobox.
     for a color, if the color dont used for any defects, or be the white, it will be added to combo
 
-    Inputs:
-        ui_obj: main ui object
-        db_obj: database object
-        current: None, or the id of a defect
+    :param ui_obj: main ui object
+    :param db_obj: database object
+    :param current: None, or the id of a defect
     
     :returns: None
     """
@@ -517,8 +495,7 @@ def set_defect_groups_on_ui(ui_obj, defect_groups_list):
     """
     this function is used to set defect-groups list on ui defect-groups table
 
-    Inputs:
-        defect_groups_list: list of defect-groups (in dict)
+    :param defect_groups_list: list of defect-groups (in dict)
     
     :returns: None
     """
@@ -566,12 +543,10 @@ def get_selected_defects(ui_obj, defects_list):
     """
     this function is used to get selected defects from ui defects table
 
-    Args:
-        ui_obj (_type_): main ui object
-        defects_list (_type_): defects list returned from databse
+    :param ui_obj: (_type_) main ui object
+    :param defects_list: (_type_) defects list returned from databse
 
-    :returns:
-        selected_defects: list of selected defects ids
+    :returns: selected_defects: list of selected defects ids
     """
 
     list = []
@@ -591,12 +566,10 @@ def get_selected_defect_groups(ui_obj, defect_groups_list):
     """
     this function is used to get selected defect-groups from ui defect-groups table
 
-    Args:
-        ui_obj (_type_): main ui object
-        defect_groups_list (_type_): list of defect groups rteturned from darabse
+    :param ui_obj: (_type_) main ui object
+    :param defect_groups_list: (_type_) list of defect groups rteturned from darabse
 
-    :returns:
-        selected_defect_groups: list of selected defect-group ids
+    :returns: selected_defect_groups: list of selected defect-group ids
     """
     list = []
     for i in range(ui_obj.tableWidget_defectgroups.rowCount()):    
@@ -616,14 +589,12 @@ def get_defect_info_from_ui(ui_obj, db_obj, defect_group=False, is_filter=False)
     this function is used to get defect/defect-group info from ui
     it can be used to get new defect/defect-group info from ui, or get info from filter/search forms
 
-    Args:
-        ui_obj (_type_): main ui object
-        db_obj (_type_): database object
-        defect_group (bool, optional): a boolean detrtmines wheather to get defect-group info from ui. Defaults to False.
-        is_filter (bool, optional): a boolena determining wheather to get info from filter form in ui. Defaults to False.
+    :param ui_obj: (_type_) main ui object
+    :param db_obj: (_type_) database object
+    :param defect_group: (bool, optional) a boolean detrtmines wheather to get defect-group info from ui. Defaults to False.
+    :param is_filter: (bool, optional) a boolena determining wheather to get info from filter form in ui. Defaults to False.
 
-    :returns:
-        defect/defect-group info: in dict
+    :returns: defect/defect-group info: in dict
     """
     try:
         # get new info, not from filter form
@@ -694,18 +665,14 @@ def new_defect_info_validation(ui_obj, db_obj, defect_info, on_edit=False, defec
     """
     this function is used to validate new defect/defect-group params to have right format and be unique
 
-    Args:
-        ui_obj (_type_): main ui object
-        db_obj (_type_): database object
-        defect_info (_type_): _description_
-        on_edit (bool, optional): a boolean to determine if input defect to validate is in edit mode. Defaults to False.
-        defect_group (bool, optional): a boolean to determine wheather to validate a defect-group. Defaults to False.
+    :param ui_obj: (_type_) main ui object
+    :param db_obj: (_type_) database object
+    :param defect_info: (_type_) _description_
+    :param on_edit: (bool, optional) a boolean to determine if input defect to validate is in edit mode. Defaults to False.
+    :param defect_group: (bool, optional) a boolean to determine wheather to validate a defect-group. Defaults to False.
 
-    :returns:
-        message: validation message
-            'True': validation ok
-
-        level: the level of message (in int)
+    :returns: message: validation message('True': validation ok)
+    :returns: level: the level of message (in int)
     """
 
     if not defect_group:
@@ -805,8 +772,7 @@ def generate_defect_colors(db_obj):
     """
     this function is used to generate defect colors by number as needed
 
-    Args:
-        db_obj (_type_): database object
+    :param db_obj: (_type_) database object
     
     :returns: None
     """
@@ -833,9 +799,8 @@ def show_defects_summary_info(ui_obj, db_obj):
     """
     this function is used to show summera info from defects/defect-groups on dashboard page
 
-    Args:
-        ui_obj (_type_): main ui object
-        db_obj (_type_): database object
+    :param ui_obj: (_type_) main ui object
+    :param db_obj: (_type_) database object
     
     :returns: None
     """

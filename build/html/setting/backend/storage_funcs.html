@@ -95,7 +95,6 @@
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.get_available_drives">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">get_available_drives</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.get_available_drives" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get system available drives list</p>
-<p>Args: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>available_drives: in list</p>
@@ -107,13 +106,12 @@
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.get_camera_live_drive_parameters_from_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_live_drive_parameters_from_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.get_camera_live_drive_parameters_from_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get camera live drive parameters from database</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>drive_infoes: app general parameters (in dict)</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>db_obj</strong> – (_type_) database object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>drive_infoes: app general parameters (in dict)</p>
 </dd>
 </dl>
 </dd></dl>
@@ -122,13 +120,12 @@
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.get_camera_live_drive_parameters_from_ui">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">get_camera_live_drive_parameters_from_ui</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.get_camera_live_drive_parameters_from_ui" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get defeault storage setting params from ui</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>resaule: a boolean determining if the parameters are validated or not</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>ui_obj</strong> – (_type_) main ui object</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resaule: a boolean determining if the parameters are validated or not</p>
 </dd>
 </dl>
 </dd></dl>
@@ -137,13 +134,12 @@
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.get_drivename">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">get_drivename</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">driveletter</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.get_drivename" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get drive name using its letter</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>driveletter (_type_): in string</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>drive_name: in string</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>driveletter</strong> – (_type_) in string</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>drive_name: in string</p>
 </dd>
 </dl>
 </dd></dl>
@@ -152,14 +148,15 @@
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.get_files_in_path">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">get_files_in_path</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dir_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.get_files_in_path" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get all files in a path, sorted by date (old to new)</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>dir_path (_type_): _description_
-reverse (bool, optional): a boolean to reverse sorting to new to old. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>file_paths: list of file pathes</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dir_path</strong> – (_type_) _description_</p></li>
+<li><p><strong>reverse</strong> – (bool, optional) a boolean to reverse sorting to new to old. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>file_paths: list of file pathes</p>
 </dd>
 </dl>
 </dd></dl>
@@ -168,13 +165,12 @@ reverse (bool, optional): a boolean to reverse sorting to new to old. Defaults t
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.get_storage_status">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">get_storage_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">disk_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.get_storage_status" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get storage statues of one drive</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>disk_path (_type_): drive path (in string)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>drive_info: in dict</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>disk_path</strong> – (_type_) drive path (in string)</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>drive_info: in dict</p>
 </dd>
 </dl>
 </dd></dl>
@@ -183,19 +179,20 @@ reverse (bool, optional): a boolean to reverse sorting to new to old. Defaults t
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.remove_old_files_in_directory">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">remove_old_files_in_directory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">api_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drive_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dir_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop_ratio</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reverse</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.remove_old_files_in_directory" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to remove old files in a directory</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>api_obj (_type_): _description_
-ui_obj (_type_): main ui object
-drive_path (_type_): _description_
-dir_path (_type_): directory of the folder in drive
-start_ratio (_type_): _description_
-stop_ratio (_type_): drive usage threshold to stop removing files
-reverse (bool, optional): boolean to reverse sorting files in directory. Defaults to False.</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>api_obj</strong> – (_type_) _description_</p></li>
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>drive_path</strong> – (_type_) _description_</p></li>
+<li><p><strong>dir_path</strong> – (_type_) directory of the folder in drive</p></li>
+<li><p><strong>start_ratio</strong> – (_type_) _description_</p></li>
+<li><p><strong>stop_ratio</strong> – (_type_) drive usage threshold to stop removing files</p></li>
+<li><p><strong>reverse</strong> – (bool, optional) boolean to reverse sorting files in directory. Defaults to False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -204,14 +201,15 @@ reverse (bool, optional): boolean to reverse sorting files in directory. Default
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.set_camera_live_drive_parameters_to_db">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">set_camera_live_drive_parameters_to_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drive_infos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.set_camera_live_drive_parameters_to_db" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to set/update drive setting params on database</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>db_obj (_type_): database object
-drive_infos (_type_): in dict</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>resault: boolean deermining whather set to database is ok</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+<li><p><strong>drive_infos</strong> – (_type_) in dict</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resault: boolean deermining whather set to database is ok</p>
 </dd>
 </dl>
 </dd></dl>
@@ -220,14 +218,15 @@ drive_infos (_type_): in dict</p>
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.show_storage_status">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">show_storage_status</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.show_storage_status" title="Permalink to this definition"></a></dt>
 <dd><p>this functionis used tp update storage info summary on dashboard</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-db_obj (_type_): database object</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>db_obj</strong> – (_type_) database object</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -236,9 +235,12 @@ db_obj (_type_): database object</p>
 <dt class="sig sig-object py" id="oxin.backend.storage_funcs.update_camera_live_drive_combo">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.storage_funcs.</span></span><span class="sig-name descname"><span class="pre">update_camera_live_drive_combo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ui_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">available_drives</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.storage_funcs.update_camera_live_drive_combo" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to update existing drives combobox on storage setting age</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>ui_obj (_type_): main ui object
-available_drives (_type_): list of available drives</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – (_type_) main ui object</p></li>
+<li><p><strong>available_drives</strong> – (_type_) list of available drives</p></li>
+</ul>
 </dd>
 </dl>
 </dd></dl>

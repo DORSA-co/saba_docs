@@ -98,17 +98,18 @@
 the pixel value calibration is done during some steps,
 in every call of this function, one step (next/prev) is done and the results are updated on ui.
 this way, we can change between steps and tune parameters to get pixel value results</p>
-<dl class="simple">
-<dt>Inputs:</dt><dd><p>ui_obj: main ui object
-api_obj: main api object
-db_obj: database object
-image: input calibration image
-next: a boolean value determninig wheater take to next step or previous step</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ui_obj</strong> – main ui object</p></li>
+<li><p><strong>api_obj</strong> – main api object</p></li>
+<li><p><strong>db_obj</strong> – database object</p></li>
+<li><p><strong>image</strong> – input calibration image</p></li>
+<li><p><strong>next</strong> – a boolean value determninig wheater take to next step or previous step</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 </dd></dl>
@@ -117,14 +118,15 @@ next: a boolean value determninig wheater take to next step or previous step</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.draw_contour">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.pxvalue_calibration.</span></span><span class="sig-name descname"><span class="pre">draw_contour</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cnts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.draw_contour" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to draw nput contours on image</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>gray (_type_): image in gray format
-cnts (_type_): contours</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>image: image with drawed contours</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gray</strong> – (_type_) image in gray format</p></li>
+<li><p><strong>cnts</strong> – (_type_) contours</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>image: image with drawed contours</p>
 </dd>
 </dl>
 </dd></dl>
@@ -133,15 +135,16 @@ cnts (_type_): contours</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.draw_rect">
 <span class="sig-prename descclassname"><span class="pre">oxin.backend.pxvalue_calibration.</span></span><span class="sig-name descname"><span class="pre">draw_rect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cnts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">areas</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.draw_rect" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to draw input recangle contours on image</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>gray (_type_): image in gray format
-cnts (_type_): contours
-areas (_type_): list of areas of rectangles (in mm)</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>image: image with drawed contours</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gray</strong> – (_type_) image in gray format</p></li>
+<li><p><strong>cnts</strong> – (_type_) contours</p></li>
+<li><p><strong>areas</strong> – (_type_) list of areas of rectangles (in mm)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>image: image with drawed contours</p>
 </dd>
 </dl>
 </dd></dl>
@@ -151,32 +154,34 @@ areas (_type_): list of areas of rectangles (in mm)</p>
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">oxin.backend.pxvalue_calibration.</span></span><span class="sig-name descname"><span class="pre">extract_info</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gray</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">areas_mm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_area</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">accuracy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.9</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">gray_thrs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">100</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>this class is used to get pixel-value of camera, using the Dorsa calibrator plate with 6 rectangles (3 pairs)</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>gray: input image in gray format
-areas_mm: list of areas of rectangles (in mm), containing 6 area value, first 3 for large rects, and last 3 for small rects
-min_area: min area of contours (in pixel)
-max_area: max area of contours (in pixel)
-accuracy: min rectangular accuracy for contours
-gray_thrs: gray threshhold for thresholding</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>None</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>gray</strong> – input image in gray format</p></li>
+<li><p><strong>areas_mm</strong> – list of areas of rectangles (in mm), containing 6 area value, first 3 for large rects, and last 3 for small rects</p></li>
+<li><p><strong>min_area</strong> – min area of contours (in pixel)</p></li>
+<li><p><strong>max_area</strong> – max area of contours (in pixel)</p></li>
+<li><p><strong>accuracy</strong> – min rectangular accuracy for contours</p></li>
+<li><p><strong>gray_thrs</strong> – gray threshhold for thresholding</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>None</p>
 </dd>
 </dl>
 <dl class="py method">
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.draw_rects">
 <span class="sig-name descname"><span class="pre">draw_rects</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cnts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.draw_rects" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to draw rectangular contours on image</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>cnts (_type_): input contours</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cnts</strong> – (_type_) input contours</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>img: image with drawed countours</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>img: image with drawed countours
-rects: list of 6 rectangle countours</p>
+<dd class="field-odd"><p>rects: list of 6 rectangle countours</p>
 </dd>
 </dl>
 </dd></dl>
@@ -185,13 +190,12 @@ rects: list of 6 rectangle countours</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.filter_acc">
 <span class="sig-name descname"><span class="pre">filter_acc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.filter_acc" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to filter a countour by its accuracy to be rectangular</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>x (_type_): _description_</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>_type_: _description_</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> – (_type_) _description_</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>_type_: _description_</p>
 </dd>
 </dl>
 </dd></dl>
@@ -200,14 +204,15 @@ rects: list of 6 rectangle countours</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.filter_contours_by_accuracy">
 <span class="sig-name descname"><span class="pre">filter_contours_by_accuracy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cnts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.filter_contours_by_accuracy" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to filter countours by their accuracy to be rectangular</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>cnts (_type_): input contours</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cnts</strong> – (_type_) input contours</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>img: image with drawed countours</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>img: image with drawed countours
-cnts: rectangle accuracy filtered counturs</p>
+<dd class="field-odd"><p>cnts: rectangle accuracy filtered counturs</p>
 </dd>
 </dl>
 </dd></dl>
@@ -216,14 +221,15 @@ cnts: rectangle accuracy filtered counturs</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.filter_contours_by_area">
 <span class="sig-name descname"><span class="pre">filter_contours_by_area</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cnts</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.filter_contours_by_area" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to filter founded contours by min and max area</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>cnts (_type_): input contours</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>cnts</strong> – (_type_) input contours</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>img: image with drawed countours</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>img: image with drawed countours
-cnts: area filtered counturs</p>
+<dd class="field-odd"><p>cnts: area filtered counturs</p>
 </dd>
 </dl>
 </dd></dl>
@@ -232,16 +238,21 @@ cnts: area filtered counturs</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.final_decision">
 <span class="sig-name descname"><span class="pre">final_decision</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">cnts</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rects</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.final_decision" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to get pixel-values for each of rrectangle pairs</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>cnts (_type_): input contours
-rects (_type_): input 6 rectangle contours</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>cnts</strong> – (_type_) input contours</p></li>
+<li><p><strong>rects</strong> – (_type_) input 6 rectangle contours</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>resault: determining if done</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>resault: determining if done
-infoes: array of rectangle pair centers and pixel values
-infoes_final: array of rectangle pair centers and pixel values</p>
+<dd class="field-odd"><p>infoes: array of rectangle pair centers and pixel values</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>infoes_final: array of rectangle pair centers and pixel values</p>
 </dd>
 </dl>
 </dd></dl>
@@ -250,14 +261,15 @@ infoes_final: array of rectangle pair centers and pixel values</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.find_contours">
 <span class="sig-name descname"><span class="pre">find_contours</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mask</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.find_contours" title="Permalink to this definition"></a></dt>
 <dd><p>find countours of threshold mask</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>mask (_type_): threshold mask</p>
-</dd>
-</dl>
 <dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>mask</strong> – (_type_) threshold mask</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>img: image with drawed countours</p>
+</dd>
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>img: image with drawed countours
-cnts: foundeed counturs</p>
+<dd class="field-odd"><p>cnts: foundeed counturs</p>
 </dd>
 </dl>
 </dd></dl>
@@ -266,13 +278,12 @@ cnts: foundeed counturs</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.solve_equation">
 <span class="sig-name descname"><span class="pre">solve_equation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">inputs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.solve_equation" title="Permalink to this definition"></a></dt>
 <dd><p>this function is used to solve equation for finding pixel value parameters</p>
-<dl class="simple">
-<dt>Args:</dt><dd><p>inputs (_type_): _description_</p>
-</dd>
-</dl>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>pixel_value_parameters: array of 3 parameters</p>
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>inputs</strong> – (_type_) _description_</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>pixel_value_parameters: array of 3 parameters</p>
 </dd>
 </dl>
 </dd></dl>
@@ -281,7 +292,6 @@ cnts: foundeed counturs</p>
 <dt class="sig sig-object py" id="oxin.backend.pxvalue_calibration.extract_info.thrs_map">
 <span class="sig-name descname"><span class="pre">thrs_map</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#oxin.backend.pxvalue_calibration.extract_info.thrs_map" title="Permalink to this definition"></a></dt>
 <dd><p>get thresholded/mask from input image</p>
-<p>Args: None</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>mask: threshold mask of input image</p>

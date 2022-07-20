@@ -26,11 +26,10 @@ class UI_main_window(QMainWindow, ui):
     """
     this class initializes a confirm/message window for user. it has two buttons, yes or no, to accept or deny the operation will be done
 
-    Inputs:
-        ui: login UI object
-        language: the main language for window and messages (in string)
+    :param ui: login UI object
+    :param language: the main language for window and messages (in string)
 
-    Outputs: None
+    :returns: None
     """
     
     global widgets
@@ -85,8 +84,6 @@ class UI_main_window(QMainWindow, ui):
         """
         this function connects the close button to its functionality
 
-        Inputs: None
-
         :returns: None
         """
 
@@ -97,8 +94,6 @@ class UI_main_window(QMainWindow, ui):
     def close_win(self):
         """
         this function is used for closing login window
-
-        Inputs: None
 
         :returns: None
         """
@@ -111,8 +106,6 @@ class UI_main_window(QMainWindow, ui):
     def buttonClick(self):
         """
         this function is used to connect each button to its functionality, on button click
-
-        Inputs: None
 
         :returns: None
         """

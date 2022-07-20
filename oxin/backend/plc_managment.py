@@ -9,9 +9,8 @@ class management():
     """
     this class is used to create and manage opc/plc object
 
-    Args:
-        ip: plc ip (in string)
-        ui_obj: main ui object
+    :param ip: plc ip (in string)
+    :param ui_obj: main ui object
     
     :returns: PLC object
     """
@@ -27,8 +26,7 @@ class management():
         """
         this function is used to connect to plc
 
-        :returns:
-            resault: a boolean deermining if connected or not
+        :returns: resault: a boolean deermining if connected or not
         """
 
         #print('Start Connecting to {}'.format(self.ip))
@@ -49,8 +47,6 @@ class management():
         """
         this functino is used to disconnect from plc
 
-        Args: None
-
         :returns: None
         """
 
@@ -61,12 +57,10 @@ class management():
         """
         this function is used to get value of a logic from plc using its path
 
-        Args:
-            path (_type_): plc logic path (in string)
+        :param path: (_type_) plc logic path (in string)
 
-        :returns:
-            value: value stored in path, if failed to load, return '-'
-            data_value: if failed to load, return message error
+        :returns: value: value stored in path, if failed to load, return '-'
+        :returns: data_value: if failed to load, return message error
         """
 
         try:
@@ -86,9 +80,8 @@ class management():
         """
         this function is used to set/update value of a logic, using its path on plc
 
-        Args:
-            path (_type_): path of the logic (in string)
-            value (_type_): input value to update (digit or boolean)
+        :param path: (_type_) path of the logic (in string)
+        :param value: (_type_) input value to update (digit or boolean)
 
         :returns: None
         """
@@ -117,8 +110,6 @@ class management():
         """
         this function is used to set json file name to store plc params
 
-        Arge: None
-
         :returns: None
         """
 
@@ -129,8 +120,7 @@ class management():
         """
         this function is used to write plc values on json file
 
-        Args:
-            value (_type_): in dict
+        :param value: (_type_) in dict
         """
         
         # print('write',path)

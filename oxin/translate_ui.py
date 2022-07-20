@@ -6,10 +6,9 @@ def translate_ui(language='fa', ui_file_path_en='main_window.ui', ui_file_path_f
     """
     This function takes as input the default english version ui file, and translate it to input language
 
-    Inputs:
-        language: input language to translate ui to (in string), default is fa (stands for farsi/persian)
-        ui_file_path_en: path of the default english ui file (in string)
-        ui_file_path_fa: path of the output translated ui file to save (in string)
+    :param language: input language to translate ui to (in string), default is fa (stands for farsi/persian)
+    :param ui_file_path_en: path of the default english ui file (in string)
+    :param ui_file_path_fa: path of the output translated ui file to save (in string)
 
     :returns: None
     """
