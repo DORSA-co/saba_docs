@@ -27,10 +27,10 @@ ui2, _ = loadUiType("oxin/eror_window.ui")
 
 class UI_eror_window(QMainWindow, ui2):
     global widgets
-    widgets_eror = ui2
-    image_glob=0
-    close_sign=0
     def __init__(self):
+        widgets_eror = ui2
+        image_glob=0
+        close_sign=0
         super(UI_eror_window, self).__init__()
         self.setupUi(self)
         # Remove default frame

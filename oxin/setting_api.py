@@ -2328,11 +2328,6 @@ class API:
     
 
     def write_parms(self):
-        """
-        ============================description===========================
-
-        :returns: None
-        """
 
         parms_dict = self.check_all_plc_parms()
         # self.notif_manager.create_new_notif(massage='Write Changes PLC', win_color=self.win_color, font_size=self.font_size, font_style=self.font_style)  # For big Change in plc we show a notif

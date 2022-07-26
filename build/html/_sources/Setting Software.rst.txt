@@ -34,9 +34,6 @@ Files
    setting/login_UI
    setting/login_api
    setting/notif_UI
-   setting/recources_rc
-   setting/resources
-   setting/resources_rc
    setting/setting_UI
    setting/setting_api
    setting/translate_ui

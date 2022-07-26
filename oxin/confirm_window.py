@@ -27,9 +27,9 @@ ui2, _ = loadUiType("oxin/confirm_window.ui")
 
 class UI_confirm_window(QMainWindow, ui2):
     global widgets
-    widgets_eror = ui2
-    sign=0
     def __init__(self):
+        widgets_eror = ui2
+        sign=0
         super(UI_confirm_window, self).__init__()
         self.setupUi(self)
         # Remove default frame
