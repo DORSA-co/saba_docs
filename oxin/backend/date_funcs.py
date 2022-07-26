@@ -6,12 +6,10 @@ def get_date(persian=True, folder_path=False):
     """
     this function retrns current date, wheter in persian or miladi.
 
-    Inputs:
-        persian: a bolean value determining the foramt of date (in persian or miladi)
-        folder_path: a boolean value determiningn if the date will be used as a folder name or not
+    :param persian: a bolean value determining the foramt of date (in persian or miladi)
+    :param folder_path: a boolean value determiningn if the date will be used as a folder name or not
     
-    :returns:
-        date: current date (in string)
+    :returns: current date (in string)
     """
 
     # persian date
@@ -57,11 +55,9 @@ def get_time(folder_path=False):
     """
     this functionn :returns: current time
 
-    Inputs: 
-        folder_path: a boolean value determiningn if the date will be used as a folder name or not
+    :param folder_path: a boolean value determiningn if the date will be used as a folder name or not
     
-    :returns:
-        time: current time (in string)
+    :returns: time: current time (in string)
     """
 
     time = datetime.datetime.now()
