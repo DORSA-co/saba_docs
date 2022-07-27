@@ -1,0 +1,94 @@
+\selectlanguage *{english}
+\contentsline {chapter}{\numberline {1}Electrical}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Plc}{3}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}About PLC}{3}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}connections}{3}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Instruction of PLC}{4}{subsection.1.1.3}%
+\selectlanguage *{persian}
+\selectlanguage *{english}
+\selectlanguage *{farsi}
+\contentsline {subsection}{\numberline {1.1.4}Dynamic System Connection}{4}{subsection.1.1.4}%
+\selectlanguage *{persian}
+\selectlanguage *{farsi}
+\selectlanguage *{english}
+\contentsline {subsection}{\numberline {1.1.5}Lighting system}{4}{subsection.1.1.5}%
+\selectlanguage *{persian}
+\selectlanguage *{english}
+\selectlanguage *{farsi}
+\contentsline {subsection}{\numberline {1.1.6}Imaging system}{4}{subsection.1.1.6}%
+\selectlanguage *{persian}
+\selectlanguage *{english}
+\selectlanguage *{farsi}
+\selectlanguage *{persian}
+\selectlanguage *{english}
+\selectlanguage *{farsi}
+\contentsline {section}{\numberline {1.2}Panels}{5}{section.1.2}%
+\contentsline {chapter}{\numberline {2}Mechanics}{7}{chapter.2}%
+\contentsline {chapter}{\numberline {3}Softwares}{9}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Main Software}{9}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Train Software}{9}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Setting Software}{9}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Description}{9}{subsection.3.3.1}%
+\selectlanguage *{persian}
+\selectlanguage *{english}
+\selectlanguage *{farsi}
+\contentsline {subsection}{\numberline {3.3.2}Directories}{9}{subsection.3.3.2}%
+\contentsline {subsubsection}{App Logs}{9}{subsubsection*.3}%
+\selectlanguage *{persian}
+\selectlanguage *{english}
+\selectlanguage *{farsi}
+\contentsline {subsubsection}{Backend}{10}{subsubsection*.4}%
+\contentsline {paragraph}{Description}{10}{paragraph*.5}%
+\selectlanguage *{persian}
+\selectlanguage *{english}
+\selectlanguage *{farsi}
+\contentsline {paragraph}{Contetns:}{10}{paragraph*.6}%
+\contentsline {subparagraph}{add\_defult\_database\_records module}{10}{subparagraph*.7}%
+\contentsline {subparagraph}{camera\_funcs module}{10}{subparagraph*.9}%
+\contentsline {subparagraph}{camera\_connection module}{17}{subparagraph*.40}%
+\contentsline {subparagraph}{chart\_funcs module}{18}{subparagraph*.53}%
+\contentsline {subparagraph}{colors\_pallete module}{18}{subparagraph*.56}%
+\contentsline {subparagraph}{Description}{18}{subparagraph*.57}%
+\contentsline {subparagraph}{date\_funcs module}{19}{subparagraph*.58}%
+\contentsline {subparagraph}{defect\_management\_funcs module}{19}{subparagraph*.62}%
+\contentsline {subparagraph}{logging\_funcs module}{25}{subparagraph*.83}%
+\contentsline {subparagraph}{mainsetting\_funcs module}{25}{subparagraph*.89}%
+\contentsline {subparagraph}{plc\_managment module}{28}{subparagraph*.103}%
+\contentsline {subparagraph}{pxvalue\_calibration module}{29}{subparagraph*.111}%
+\contentsline {subparagraph}{storage\_funcs module}{32}{subparagraph*.124}%
+\contentsline {subparagraph}{texts module}{34}{subparagraph*.135}%
+\contentsline {subparagraph}{Description}{34}{subparagraph*.136}%
+\contentsline {subparagraph}{user\_login\_logout\_funcs module}{34}{subparagraph*.137}%
+\contentsline {subparagraph}{user\_management\_funcs module}{35}{subparagraph*.142}%
+\contentsline {subsubsection}{Calibrational Cal}{37}{subsubsection*.151}%
+\contentsline {paragraph}{Description}{37}{paragraph*.152}%
+\contentsline {paragraph}{Contetns:}{37}{paragraph*.153}%
+\contentsline {subparagraph}{Division module}{37}{subparagraph*.154}%
+\contentsline {subparagraph}{load\_recent\_images module}{37}{subparagraph*.156}%
+\contentsline {subparagraph}{main module}{37}{subparagraph*.158}%
+\contentsline {subparagraph}{Noise module}{37}{subparagraph*.159}%
+\contentsline {subparagraph}{Preprocessing module}{37}{subparagraph*.161}%
+\contentsline {subparagraph}{SteelSurfaceInspection module}{38}{subparagraph*.166}%
+\contentsline {subparagraph}{Variance module}{38}{subparagraph*.170}%
+\contentsline {subsubsection}{Database}{38}{subsubsection*.174}%
+\contentsline {subsubsection}{Utils}{38}{subsubsection*.175}%
+\contentsline {paragraph}{Description}{38}{paragraph*.176}%
+\contentsline {paragraph}{Contetns:}{39}{paragraph*.177}%
+\contentsline {subparagraph}{move\_on\_list module}{39}{subparagraph*.178}%
+\contentsline {subsection}{\numberline {3.3.3}Files}{40}{subsection.3.3.3}%
+\contentsline {subsubsection}{app\_settings module}{40}{subsubsection*.189}%
+\contentsline {subsubsection}{confirm\_UI module}{40}{subsubsection*.191}%
+\contentsline {subsubsection}{confirm\_window module}{41}{subsubsection*.197}%
+\contentsline {subsubsection}{database module}{41}{subsubsection*.205}%
+\contentsline {subsubsection}{database\_utils module}{43}{subsubsection*.219}%
+\contentsline {subsubsection}{eror\_window module}{49}{subsubsection*.257}%
+\contentsline {subsubsection}{login\_UI module}{49}{subsubsection*.266}%
+\contentsline {subsubsection}{login\_api module}{50}{subsubsection*.275}%
+\contentsline {subsubsection}{notif\_UI module}{51}{subsubsection*.279}%
+\contentsline {subsubsection}{setting\_UI module}{53}{subsubsection*.300}%
+\contentsline {subsubsection}{setting\_api module}{58}{subsubsection*.341}%
+\contentsline {subsubsection}{translate\_ui module}{65}{subsubsection*.392}%
+\contentsline {chapter}{\numberline {4}Others}{67}{chapter.4}%
+\contentsline {chapter}{\numberline {5}Indices and tables}{69}{chapter.5}%
+\contentsline {chapter}{Python Module Index}{71}{section*.394}%
+\contentsline {chapter}{Index}{73}{section*.395}%
