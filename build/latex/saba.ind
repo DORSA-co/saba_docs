@@ -8,31 +8,31 @@
 
   \lettergroup{A}
   \item \spxentry{activate\_()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}, \hyperpage{40}
-  \item \spxentry{activate\_()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{41}
+  \item \spxentry{activate\_()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{40}
   \item \spxentry{activate\_()}\spxextra{oxin.eror\_window.UI\_eror\_window method}, \hyperpage{49}
   \item \spxentry{activate\_()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{49}
   \item \spxentry{activate\_()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
   \item \spxentry{activate\_()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{53}
-  \item \spxentry{add()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
+  \item \spxentry{add()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{38}
   \item \spxentry{add\_defect()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{43}
   \item \spxentry{add\_defect()}\spxextra{oxin.setting\_api.API method}, \hyperpage{58}
-  \item \spxentry{add\_defect\_group()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
-  \item \spxentry{add\_defect\_group()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
+  \item \spxentry{add\_defect\_group()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{43}
+  \item \spxentry{add\_defect\_group()}\spxextra{oxin.setting\_api.API method}, \hyperpage{58}
   \item \spxentry{add\_new\_defect\_to\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{19}
   \item \spxentry{add\_new\_user\_to\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{35}
   \item \spxentry{add\_record()}\spxextra{oxin.database.dataBase method}, \hyperpage{41}
-  \item \spxentry{add\_user()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
-  \item \spxentry{add\_user()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
+  \item \spxentry{add\_user()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{43}
+  \item \spxentry{add\_user()}\spxextra{oxin.setting\_api.API method}, \hyperpage{58}
   \item \spxentry{animation\_move()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{53}
   \item \spxentry{API}\spxextra{class in oxin.login\_api}, \hyperpage{50}
   \item \spxentry{API}\spxextra{class in oxin.setting\_api}, \hyperpage{58}
-  \item \spxentry{app\_logger}\spxextra{class in oxin.backend.logging\_funcs}, \hyperpage{25}
+  \item \spxentry{app\_logger}\spxextra{class in oxin.backend.logging\_funcs}, \hyperpage{24}
   \item \spxentry{apply\_appearance\_params\_to\_program()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{25}
   \item \spxentry{apply\_calibration\_on\_image()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
   \item \spxentry{apply\_changed\_appearance\_params()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
   \item \spxentry{apply\_pxvalue\_calibration()}\spxextra{in module oxin.backend.pxvalue\_calibration}, \hyperpage{29}
   \item \spxentry{apply\_soft\_calibrate\_on\_image()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{10}
-  \item \spxentry{assign\_appearance\_existing\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
+  \item \spxentry{assign\_appearance\_existing\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{25}
   \item \spxentry{assign\_existing\_defect\_colors\_to\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{19}
   \item \spxentry{assign\_existing\_serials\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{10}
   \item \spxentry{authenticate\_user()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}, \hyperpage{34}
@@ -40,9 +40,9 @@
   \indexspace
 
   \lettergroup{B}
-  \item \spxentry{build\_next\_func()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
+  \item \spxentry{build\_next\_func()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{38}
   \item \spxentry{build\_prev\_func()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
-  \item \spxentry{button\_connector()}\spxextra{oxin.login\_api.API method}, \hyperpage{51}
+  \item \spxentry{button\_connector()}\spxextra{oxin.login\_api.API method}, \hyperpage{50}
   \item \spxentry{button\_connector()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
   \item \spxentry{buttonClick()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}, \hyperpage{40}
   \item \spxentry{buttonClick()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{49}
@@ -58,14 +58,14 @@
   \item \spxentry{check\_active\_notifs()}\spxextra{oxin.notif\_UI.notification\_manager method}, \hyperpage{52}
   \item \spxentry{check\_all\_plc\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
   \item \spxentry{check\_appear\_done()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
-  \item \spxentry{check\_box\_state()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
+  \item \spxentry{check\_box\_state()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{53}
   \item \spxentry{check\_connection()}\spxextra{oxin.database.dataBase method}, \hyperpage{41}
   \item \spxentry{check\_plc\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
-  \item \spxentry{check\_storage\_status()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
+  \item \spxentry{check\_storage\_status()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
   \item \spxentry{clear\_line\_edits()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
   \item \spxentry{close\_app\_force()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
   \item \spxentry{close\_win()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}, \hyperpage{40}
-  \item \spxentry{close\_win()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{41}
+  \item \spxentry{close\_win()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{40}
   \item \spxentry{close\_win()}\spxextra{oxin.eror\_window.UI\_eror\_window method}, \hyperpage{49}
   \item \spxentry{close\_win()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{49}
   \item \spxentry{close\_win()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
@@ -73,7 +73,7 @@
   \item \spxentry{close\_win\_2()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
   \item \spxentry{Collector}\spxextra{class in oxin.backend.camera\_connection}, \hyperpage{17}
   \item \spxentry{combo\_image\_preccess()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
-  \item \spxentry{confirm\_yes()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
+  \item \spxentry{confirm\_yes()}\spxextra{oxin.setting\_api.API method}, \hyperpage{59}
   \item \spxentry{connect()}\spxextra{oxin.database.dataBase method}, \hyperpage{41}
   \item \spxentry{connect\_disconnect\_camera()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{11}
   \item \spxentry{connect\_dissconnect\_to\_camera()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
@@ -81,20 +81,20 @@
   \item \spxentry{connection()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{28}
   \item \spxentry{control\_list\_image()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
   \item \spxentry{convert\_cv2\_to\_qt\_image()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{11}
-  \item \spxentry{create\_dailyfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}, \hyperpage{25}
+  \item \spxentry{create\_dailyfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}, \hyperpage{24}
   \item \spxentry{create\_default\_records()}\spxextra{in module oxin.backend.add\_default\_database\_records}, \hyperpage{10}
   \item \spxentry{create\_drive\_barchart\_on\_ui()}\spxextra{in module oxin.backend.chart\_funcs}, \hyperpage{18}
-  \item \spxentry{create\_mainfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}, \hyperpage{25}
-  \item \spxentry{create\_new\_log()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}, \hyperpage{25}
-  \item \spxentry{create\_new\_notif()}\spxextra{oxin.notif\_UI.notification\_manager method}, \hyperpage{53}
-  \item \spxentry{CreateHeatmap()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{38}
+  \item \spxentry{create\_mainfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}, \hyperpage{24}
+  \item \spxentry{create\_new\_log()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}, \hyperpage{24}
+  \item \spxentry{create\_new\_notif()}\spxextra{oxin.notif\_UI.notification\_manager method}, \hyperpage{52}
+  \item \spxentry{CreateHeatmap()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{37}
 
   \indexspace
 
   \lettergroup{D}
   \item \spxentry{dataBase}\spxextra{class in oxin.database}, \hyperpage{41}
   \item \spxentry{dataBaseUtils}\spxextra{class in oxin.database\_utils}, \hyperpage{43}
-  \item \spxentry{delete()}\spxextra{oxin.database.dataBase method}, \hyperpage{42}
+  \item \spxentry{delete()}\spxextra{oxin.database.dataBase method}, \hyperpage{41}
   \item \spxentry{disable\_camera\_settings()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
   \item \spxentry{disconnect()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{28}
   \item \spxentry{disconnect\_camera\_on\_ui\_change()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
@@ -110,36 +110,36 @@
   \item \spxentry{EdgeDetection()}\spxextra{in module oxin.calibrationCal.Preprocessing}, \hyperpage{37}
   \item \spxentry{edit\_defects()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
   \item \spxentry{eror\_window()}\spxextra{oxin.backend.camera\_connection.Collector method}, \hyperpage{17}
-  \item \spxentry{execute\_quary()}\spxextra{oxin.database.dataBase method}, \hyperpage{42}
-  \item \spxentry{extract\_info}\spxextra{class in oxin.backend.pxvalue\_calibration}, \hyperpage{30}
+  \item \spxentry{execute\_quary()}\spxextra{oxin.database.dataBase method}, \hyperpage{41}
+  \item \spxentry{extract\_info}\spxextra{class in oxin.backend.pxvalue\_calibration}, \hyperpage{29}
 
   \indexspace
 
   \lettergroup{F}
   \item \spxentry{filter\_acc()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{30}
   \item \spxentry{filter\_contours\_by\_accuracy()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{30}
-  \item \spxentry{filter\_contours\_by\_area()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{31}
-  \item \spxentry{filter\_defects()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
+  \item \spxentry{filter\_contours\_by\_area()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{30}
+  \item \spxentry{filter\_defects()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
   \item \spxentry{final\_decision()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{31}
   \item \spxentry{find\_contours()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{31}
-  \item \spxentry{FindDefectiveBlocks()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{38}
-  \item \spxentry{force\_clear\_camera\_live\_storage()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
+  \item \spxentry{FindDefectiveBlocks()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{37}
+  \item \spxentry{force\_clear\_camera\_live\_storage()}\spxextra{oxin.setting\_api.API method}, \hyperpage{60}
 
   \indexspace
 
   \lettergroup{G}
   \item \spxentry{generate\_defect\_colors()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{20}
   \item \spxentry{get\_all\_content()}\spxextra{oxin.database.dataBase method}, \hyperpage{42}
-  \item \spxentry{get\_appearance\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
+  \item \spxentry{get\_appearance\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{25}
   \item \spxentry{get\_available\_cameras\_list\_serial\_numbers()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{12}
-  \item \spxentry{get\_available\_drives()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{32}
+  \item \spxentry{get\_available\_drives()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{31}
   \item \spxentry{get\_calibration\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
   \item \spxentry{get\_cam()}\spxextra{oxin.backend.camera\_connection.Collector method}, \hyperpage{17}
   \item \spxentry{get\_camera\_calibration\_params\_from\_db()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{12}
   \item \spxentry{get\_camera\_calibration\_params\_from\_ui()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{12}
   \item \spxentry{get\_camera\_checkbox\_values()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{12}
   \item \spxentry{get\_camera\_id()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{12}
-  \item \spxentry{get\_camera\_live\_drive\_parameters\_from\_db()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{32}
+  \item \spxentry{get\_camera\_live\_drive\_parameters\_from\_db()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{31}
   \item \spxentry{get\_camera\_live\_drive\_parameters\_from\_ui()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{32}
   \item \spxentry{get\_camera\_params\_from\_db()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{12}
   \item \spxentry{get\_camera\_params\_from\_ui()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{13}
@@ -147,10 +147,10 @@
   \item \spxentry{get\_count()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
   \item \spxentry{get\_current()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
   \item \spxentry{get\_dataset\_path()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
-  \item \spxentry{get\_date()}\spxextra{in module oxin.backend.date\_funcs}, \hyperpage{19}
+  \item \spxentry{get\_date()}\spxextra{in module oxin.backend.date\_funcs}, \hyperpage{18}
   \item \spxentry{get\_datetime()}\spxextra{in module oxin.backend.date\_funcs}, \hyperpage{19}
   \item \spxentry{get\_defect\_info\_from\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{20}
-  \item \spxentry{get\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{21}
+  \item \spxentry{get\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{20}
   \item \spxentry{get\_defects\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
   \item \spxentry{get\_drivename()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{32}
   \item \spxentry{get\_files\_in\_path()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{32}
@@ -158,14 +158,14 @@
   \item \spxentry{get\_image\_proccessing\_parms()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
   \item \spxentry{get\_image\_procesing\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
   \item \spxentry{get\_image\_processing\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
-  \item \spxentry{get\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
-  \item \spxentry{get\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{40}
+  \item \spxentry{get\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
+  \item \spxentry{get\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
   \item \spxentry{get\_log()}\spxextra{oxin.database.dataBase method}, \hyperpage{42}
   \item \spxentry{get\_mainsetting\_params\_from\_db()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
-  \item \spxentry{get\_multitasking\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{27}
+  \item \spxentry{get\_multitasking\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
   \item \spxentry{get\_picture\_from\_camera()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{13}
-  \item \spxentry{get\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
-  \item \spxentry{get\_plc\_parms()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
+  \item \spxentry{get\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
+  \item \spxentry{get\_plc\_parms()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{54}
   \item \spxentry{get\_selected\_defect\_groups()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{21}
   \item \spxentry{get\_selected\_defects()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{21}
   \item \spxentry{get\_selected\_users()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{35}
@@ -173,7 +173,7 @@
   \item \spxentry{get\_threading()}\spxextra{in module oxin.backend.camera\_connection}, \hyperpage{17}
   \item \spxentry{get\_time()}\spxextra{in module oxin.backend.date\_funcs}, \hyperpage{19}
   \item \spxentry{get\_user\_info\_from\_ui()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{35}
-  \item \spxentry{get\_user\_pass()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{50}
+  \item \spxentry{get\_user\_pass()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{49}
   \item \spxentry{get\_user\_pass()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
   \item \spxentry{get\_users\_from\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{35}
   \item \spxentry{get\_value()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{28}
@@ -184,8 +184,8 @@
 
   \lettergroup{I}
   \item \spxentry{image\_processing\_calibration()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
-  \item \spxentry{ImageBlockVariance()}\spxextra{in module oxin.calibrationCal.Variance}, \hyperpage{38}
-  \item \spxentry{ImageDivision()}\spxextra{in module oxin.calibrationCal.Division}, \hyperpage{37}
+  \item \spxentry{ImageBlockVariance()}\spxextra{in module oxin.calibrationCal.Variance}, \hyperpage{37}
+  \item \spxentry{ImageDivision()}\spxextra{in module oxin.calibrationCal.Division}, \hyperpage{36}
   \item \spxentry{ImageEnhancement()}\spxextra{in module oxin.calibrationCal.Preprocessing}, \hyperpage{37}
   \item \spxentry{ImageSmoothness()}\spxextra{in module oxin.calibrationCal.Preprocessing}, \hyperpage{37}
   \item \spxentry{ip\_validation()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{13}
@@ -200,14 +200,14 @@
   \item \spxentry{load\_camera\_params\_from\_db\_to\_UI()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
   \item \spxentry{load\_defect\_groups()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
   \item \spxentry{load\_defects()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
-  \item \spxentry{load\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{22}
+  \item \spxentry{load\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{21}
   \item \spxentry{load\_general\_setting\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
-  \item \spxentry{load\_plc\_ip()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
-  \item \spxentry{load\_plc\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
+  \item \spxentry{load\_plc\_ip()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
+  \item \spxentry{load\_plc\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
   \item \spxentry{load\_plc\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
   \item \spxentry{load\_recent\_images()}\spxextra{in module oxin.calibrationCal.load\_recent\_images}, \hyperpage{37}
-  \item \spxentry{load\_users()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
-  \item \spxentry{login()}\spxextra{oxin.login\_api.API method}, \hyperpage{51}
+  \item \spxentry{load\_users()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{44}
+  \item \spxentry{login()}\spxextra{oxin.login\_api.API method}, \hyperpage{50}
   \item \spxentry{logout\_user()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}, \hyperpage{34}
 
   \indexspace
@@ -222,24 +222,24 @@
     \subitem \spxentry{oxin.backend.camera\_connection}, \hyperpage{17}
     \subitem \spxentry{oxin.backend.camera\_funcs}, \hyperpage{10}
     \subitem \spxentry{oxin.backend.chart\_funcs}, \hyperpage{18}
-    \subitem \spxentry{oxin.backend.date\_funcs}, \hyperpage{19}
+    \subitem \spxentry{oxin.backend.date\_funcs}, \hyperpage{18}
     \subitem \spxentry{oxin.backend.defect\_management\_funcs}, \hyperpage{19}
-    \subitem \spxentry{oxin.backend.logging\_funcs}, \hyperpage{25}
+    \subitem \spxentry{oxin.backend.logging\_funcs}, \hyperpage{24}
     \subitem \spxentry{oxin.backend.mainsetting\_funcs}, \hyperpage{25}
     \subitem \spxentry{oxin.backend.plc\_managment}, \hyperpage{28}
     \subitem \spxentry{oxin.backend.pxvalue\_calibration}, \hyperpage{29}
-    \subitem \spxentry{oxin.backend.storage\_funcs}, \hyperpage{32}
+    \subitem \spxentry{oxin.backend.storage\_funcs}, \hyperpage{31}
     \subitem \spxentry{oxin.backend.user\_login\_logout\_funcs}, \hyperpage{34}
     \subitem \spxentry{oxin.backend.user\_management\_funcs}, \hyperpage{35}
-    \subitem \spxentry{oxin.calibrationCal.Division}, \hyperpage{37}
+    \subitem \spxentry{oxin.calibrationCal.Division}, \hyperpage{36}
     \subitem \spxentry{oxin.calibrationCal.load\_recent\_images}, \hyperpage{37}
     \subitem \spxentry{oxin.calibrationCal.main}, \hyperpage{37}
     \subitem \spxentry{oxin.calibrationCal.Noise}, \hyperpage{37}
     \subitem \spxentry{oxin.calibrationCal.Preprocessing}, \hyperpage{37}
-    \subitem \spxentry{oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{38}
-    \subitem \spxentry{oxin.calibrationCal.Variance}, \hyperpage{38}
+    \subitem \spxentry{oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{37}
+    \subitem \spxentry{oxin.calibrationCal.Variance}, \hyperpage{37}
     \subitem \spxentry{oxin.confirm\_UI}, \hyperpage{40}
-    \subitem \spxentry{oxin.confirm\_window}, \hyperpage{41}
+    \subitem \spxentry{oxin.confirm\_window}, \hyperpage{40}
     \subitem \spxentry{oxin.database}, \hyperpage{41}
     \subitem \spxentry{oxin.database\_utils}, \hyperpage{43}
     \subitem \spxentry{oxin.eror\_window}, \hyperpage{49}
@@ -249,14 +249,14 @@
     \subitem \spxentry{oxin.setting\_api}, \hyperpage{58}
     \subitem \spxentry{oxin.setting\_UI}, \hyperpage{53}
     \subitem \spxentry{oxin.translate\_ui}, \hyperpage{65}
-    \subitem \spxentry{oxin.utils.move\_on\_list}, \hyperpage{39}
+    \subitem \spxentry{oxin.utils.move\_on\_list}, \hyperpage{38}
   \item \spxentry{mouseMoveEvent()}\spxextra{oxin.eror\_window.UI\_eror\_window method}, \hyperpage{49}
   \item \spxentry{mouseMoveEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
   \item \spxentry{mousePressEvent()}\spxextra{oxin.eror\_window.UI\_eror\_window method}, \hyperpage{49}
   \item \spxentry{mousePressEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
   \item \spxentry{mouseReleaseEvent()}\spxextra{oxin.eror\_window.UI\_eror\_window method}, \hyperpage{49}
-  \item \spxentry{mouseReleaseEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
-  \item \spxentry{moveOnList}\spxextra{class in oxin.utils.move\_on\_list}, \hyperpage{39}
+  \item \spxentry{mouseReleaseEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
+  \item \spxentry{moveOnList}\spxextra{class in oxin.utils.move\_on\_list}, \hyperpage{38}
 
   \indexspace
 
@@ -264,14 +264,14 @@
   \item \spxentry{new\_defect\_info\_validation()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{22}
   \item \spxentry{new\_user\_info\_validation()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{35}
   \item \spxentry{next\_image\_precessing()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
-  \item \spxentry{next\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{40}
+  \item \spxentry{next\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
   \item \spxentry{NoiseDetection()}\spxextra{in module oxin.calibrationCal.Noise}, \hyperpage{37}
   \item \spxentry{notification\_manager}\spxextra{class in oxin.notif\_UI}, \hyperpage{52}
 
   \indexspace
 
   \lettergroup{O}
-  \item \spxentry{on\_close\_operations()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
+  \item \spxentry{on\_close\_operations()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
   \item \spxentry{oxin.app\_settings}
     \subitem \spxentry{module}, \hyperpage{40}
   \item \spxentry{oxin.backend.add\_default\_database\_records}
@@ -283,11 +283,11 @@
   \item \spxentry{oxin.backend.chart\_funcs}
     \subitem \spxentry{module}, \hyperpage{18}
   \item \spxentry{oxin.backend.date\_funcs}
-    \subitem \spxentry{module}, \hyperpage{19}
+    \subitem \spxentry{module}, \hyperpage{18}
   \item \spxentry{oxin.backend.defect\_management\_funcs}
     \subitem \spxentry{module}, \hyperpage{19}
   \item \spxentry{oxin.backend.logging\_funcs}
-    \subitem \spxentry{module}, \hyperpage{25}
+    \subitem \spxentry{module}, \hyperpage{24}
   \item \spxentry{oxin.backend.mainsetting\_funcs}
     \subitem \spxentry{module}, \hyperpage{25}
   \item \spxentry{oxin.backend.plc\_managment}
@@ -295,13 +295,13 @@
   \item \spxentry{oxin.backend.pxvalue\_calibration}
     \subitem \spxentry{module}, \hyperpage{29}
   \item \spxentry{oxin.backend.storage\_funcs}
-    \subitem \spxentry{module}, \hyperpage{32}
+    \subitem \spxentry{module}, \hyperpage{31}
   \item \spxentry{oxin.backend.user\_login\_logout\_funcs}
     \subitem \spxentry{module}, \hyperpage{34}
   \item \spxentry{oxin.backend.user\_management\_funcs}
     \subitem \spxentry{module}, \hyperpage{35}
   \item \spxentry{oxin.calibrationCal.Division}
-    \subitem \spxentry{module}, \hyperpage{37}
+    \subitem \spxentry{module}, \hyperpage{36}
   \item \spxentry{oxin.calibrationCal.load\_recent\_images}
     \subitem \spxentry{module}, \hyperpage{37}
   \item \spxentry{oxin.calibrationCal.main}
@@ -311,13 +311,13 @@
   \item \spxentry{oxin.calibrationCal.Preprocessing}
     \subitem \spxentry{module}, \hyperpage{37}
   \item \spxentry{oxin.calibrationCal.SteelSurfaceInspection}
-    \subitem \spxentry{module}, \hyperpage{38}
+    \subitem \spxentry{module}, \hyperpage{37}
   \item \spxentry{oxin.calibrationCal.Variance}
-    \subitem \spxentry{module}, \hyperpage{38}
+    \subitem \spxentry{module}, \hyperpage{37}
   \item \spxentry{oxin.confirm\_UI}
     \subitem \spxentry{module}, \hyperpage{40}
   \item \spxentry{oxin.confirm\_window}
-    \subitem \spxentry{module}, \hyperpage{41}
+    \subitem \spxentry{module}, \hyperpage{40}
   \item \spxentry{oxin.database}
     \subitem \spxentry{module}, \hyperpage{41}
   \item \spxentry{oxin.database\_utils}
@@ -337,20 +337,20 @@
   \item \spxentry{oxin.translate\_ui}
     \subitem \spxentry{module}, \hyperpage{65}
   \item \spxentry{oxin.utils.move\_on\_list}
-    \subitem \spxentry{module}, \hyperpage{39}
+    \subitem \spxentry{module}, \hyperpage{38}
 
   \indexspace
 
   \lettergroup{P}
-  \item \spxentry{prev\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{40}
-  \item \spxentry{previous\_image\_precessing()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
+  \item \spxentry{prev\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}, \hyperpage{39}
+  \item \spxentry{previous\_image\_precessing()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
   \item \spxentry{progressbar()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
 
   \indexspace
 
   \lettergroup{R}
   \item \spxentry{rearange\_active\_notifes()}\spxextra{in module oxin.notif\_UI}, \hyperpage{53}
-  \item \spxentry{refresh\_dashboard\_page()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
+  \item \spxentry{refresh\_dashboard\_page()}\spxextra{oxin.setting\_api.API method}, \hyperpage{61}
   \item \spxentry{refresh\_defects\_table()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
   \item \spxentry{refresh\_storege\_page()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
   \item \spxentry{refresh\_users\_table()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
@@ -359,46 +359,46 @@
   \item \spxentry{remove\_defects()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
   \item \spxentry{remove\_defects\_by\_group\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
   \item \spxentry{remove\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{22}
-  \item \spxentry{remove\_old\_files\_in\_directory()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{33}
+  \item \spxentry{remove\_old\_files\_in\_directory()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{32}
   \item \spxentry{remove\_record()}\spxextra{oxin.database.dataBase method}, \hyperpage{42}
   \item \spxentry{remove\_users()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
   \item \spxentry{remove\_users()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
-  \item \spxentry{remove\_users\_from\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{36}
-  \item \spxentry{report\_last()}\spxextra{oxin.database.dataBase method}, \hyperpage{43}
+  \item \spxentry{remove\_users\_from\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{35}
+  \item \spxentry{report\_last()}\spxextra{oxin.database.dataBase method}, \hyperpage{42}
   \item \spxentry{rotate\_calibration\_image()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{13}
   \item \spxentry{run\_login\_window()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}, \hyperpage{34}
-  \item \spxentry{run\_storage\_check\_timer()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
+  \item \spxentry{run\_storage\_check\_timer()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
 
   \indexspace
 
   \lettergroup{S}
-  \item \spxentry{save\_changed\_calibration\_params()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
+  \item \spxentry{save\_changed\_calibration\_params()}\spxextra{oxin.setting\_api.API method}, \hyperpage{62}
   \item \spxentry{save\_changed\_camera\_params()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
   \item \spxentry{save\_image\_processing\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
   \item \spxentry{save\_plc\_ip()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
   \item \spxentry{save\_plc\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
-  \item \spxentry{search()}\spxextra{oxin.database.dataBase method}, \hyperpage{43}
-  \item \spxentry{search\_camera\_by\_ip()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
-  \item \spxentry{search\_camera\_by\_serial()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
-  \item \spxentry{search\_defect\_by\_color()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
+  \item \spxentry{search()}\spxextra{oxin.database.dataBase method}, \hyperpage{42}
+  \item \spxentry{search\_camera\_by\_ip()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
+  \item \spxentry{search\_camera\_by\_serial()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
+  \item \spxentry{search\_defect\_by\_color()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{45}
   \item \spxentry{search\_defect\_by\_filter()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
   \item \spxentry{search\_defect\_by\_group\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
   \item \spxentry{search\_defect\_by\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
   \item \spxentry{search\_defect\_by\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
-  \item \spxentry{search\_defect\_by\_short\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
-  \item \spxentry{search\_defect\_group\_by\_filter()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
+  \item \spxentry{search\_defect\_by\_short\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
+  \item \spxentry{search\_defect\_group\_by\_filter()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{46}
   \item \spxentry{search\_defect\_group\_by\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
   \item \spxentry{search\_defect\_group\_by\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
   \item \spxentry{search\_user()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
   \item \spxentry{search\_user\_by\_user\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
   \item \spxentry{select\_image\_procesing\_directory()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
-  \item \spxentry{selected\_camera()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
+  \item \spxentry{selected\_camera()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
   \item \spxentry{serialnumber()}\spxextra{oxin.backend.camera\_connection.Collector method}, \hyperpage{17}
-  \item \spxentry{set\_app\_buttons\_enable\_or\_disable()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}, \hyperpage{35}
-  \item \spxentry{set\_appearance\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{27}
-  \item \spxentry{set\_button\_enable\_or\_disable()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
+  \item \spxentry{set\_app\_buttons\_enable\_or\_disable()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}, \hyperpage{34}
+  \item \spxentry{set\_appearance\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{26}
+  \item \spxentry{set\_button\_enable\_or\_disable()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{55}
   \item \spxentry{set\_camera\_calibration\_params\_to\_db()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{13}
-  \item \spxentry{set\_camera\_calibration\_params\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{13}
+  \item \spxentry{set\_camera\_calibration\_params\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{14}
   \item \spxentry{set\_camera\_live\_drive\_parameters\_to\_db()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{33}
   \item \spxentry{set\_camera\_params\_to\_db()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{14}
   \item \spxentry{set\_camera\_params\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{14}
@@ -408,7 +408,7 @@
   \item \spxentry{set\_combo\_boxes()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
   \item \spxentry{set\_current\_user()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}, \hyperpage{25}
   \item \spxentry{set\_default\_image\_proccess()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
-  \item \spxentry{set\_defect\_group\_info\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{23}
+  \item \spxentry{set\_defect\_group\_info\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{22}
   \item \spxentry{set\_defect\_groups\_on\_combo()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{23}
   \item \spxentry{set\_defect\_groups\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{23}
   \item \spxentry{set\_defect\_info\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{23}
@@ -416,45 +416,45 @@
   \item \spxentry{set\_file\_name()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{28}
   \item \spxentry{set\_image\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
   \item \spxentry{set\_image\_proccessing\_parms\_to\_ui()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
-  \item \spxentry{set\_image\_processing\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{48}
+  \item \spxentry{set\_image\_processing\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
   \item \spxentry{set\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
-  \item \spxentry{set\_language()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{41}
-  \item \spxentry{set\_login\_message()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{50}
-  \item \spxentry{set\_login\_message()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{57}
+  \item \spxentry{set\_language()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{40}
+  \item \spxentry{set\_login\_message()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{49}
+  \item \spxentry{set\_login\_message()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
   \item \spxentry{set\_mainsetting\_params\_to\_db()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{27}
-  \item \spxentry{set\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{57}
+  \item \spxentry{set\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{56}
   \item \spxentry{set\_plc\_ip\_to\_ui()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
-  \item \spxentry{set\_plc\_value()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
+  \item \spxentry{set\_plc\_value()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
   \item \spxentry{set\_size()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{57}
   \item \spxentry{set\_sliders()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{57}
-  \item \spxentry{set\_text()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{41}
+  \item \spxentry{set\_text()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{40}
   \item \spxentry{set\_text()}\spxextra{oxin.eror\_window.UI\_eror\_window method}, \hyperpage{49}
   \item \spxentry{set\_users\_on\_ui()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{36}
-  \item \spxentry{set\_value()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{29}
+  \item \spxentry{set\_value()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{28}
   \item \spxentry{set\_widjets\_enable\_or\_disable()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{15}
   \item \spxentry{Settings}\spxextra{class in oxin.app\_settings}, \hyperpage{40}
   \item \spxentry{shift\_calibration\_image()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{15}
   \item \spxentry{show\_calibration\_summary()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{15}
-  \item \spxentry{show\_camera\_picture()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
+  \item \spxentry{show\_camera\_picture()}\spxextra{oxin.setting\_api.API method}, \hyperpage{63}
   \item \spxentry{show\_cameras\_summary()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{15}
   \item \spxentry{show\_defects\_summary\_info()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{24}
   \item \spxentry{show\_mesagges()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{57}
   \item \spxentry{show\_related\_defects()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
   \item \spxentry{show\_storage\_status()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{33}
   \item \spxentry{show\_users\_summary\_info()}\spxextra{in module oxin.backend.user\_management\_funcs}, \hyperpage{36}
-  \item \spxentry{show\_value()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{58}
+  \item \spxentry{show\_value()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{57}
   \item \spxentry{showPassword()}\spxextra{oxin.login\_UI.UI\_main\_window method}, \hyperpage{50}
   \item \spxentry{SmallNoiseRemoval()}\spxextra{in module oxin.calibrationCal.Preprocessing}, \hyperpage{37}
   \item \spxentry{solve\_equation()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{31}
-  \item \spxentry{SSI()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{38}
+  \item \spxentry{SSI()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}, \hyperpage{37}
   \item \spxentry{start\_grabbing()}\spxextra{oxin.backend.camera\_connection.Collector method}, \hyperpage{17}
   \item \spxentry{start\_grabbing\_error\_handling()}\spxextra{oxin.backend.camera\_connection.Collector method}, \hyperpage{17}
   \item \spxentry{staticMetaObject}\spxextra{oxin.confirm\_UI.UI\_main\_window attribute}, \hyperpage{40}
-  \item \spxentry{staticMetaObject}\spxextra{oxin.confirm\_window.UI\_confirm\_window attribute}, \hyperpage{41}
+  \item \spxentry{staticMetaObject}\spxextra{oxin.confirm\_window.UI\_confirm\_window attribute}, \hyperpage{40}
   \item \spxentry{staticMetaObject}\spxextra{oxin.eror\_window.UI\_eror\_window attribute}, \hyperpage{49}
   \item \spxentry{staticMetaObject}\spxextra{oxin.login\_UI.UI\_main\_window attribute}, \hyperpage{50}
   \item \spxentry{staticMetaObject}\spxextra{oxin.notif\_UI.UI\_main\_window attribute}, \hyperpage{51}
-  \item \spxentry{staticMetaObject}\spxextra{oxin.setting\_UI.UI\_main\_window attribute}, \hyperpage{58}
+  \item \spxentry{staticMetaObject}\spxextra{oxin.setting\_UI.UI\_main\_window attribute}, \hyperpage{57}
   \item \spxentry{stop\_grabbing()}\spxextra{oxin.backend.camera\_connection.Collector method}, \hyperpage{17}
 
   \indexspace
@@ -464,7 +464,7 @@
   \item \spxentry{tabledefects\_onHeaderClicked()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
   \item \spxentry{tempreture()}\spxextra{oxin.backend.camera\_connection.Collector method}, \hyperpage{17}
   \item \spxentry{things\_to\_do\_on\_stackwidject\_change()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
-  \item \spxentry{ThresholdCalculator()}\spxextra{in module oxin.calibrationCal.Variance}, \hyperpage{38}
+  \item \spxentry{ThresholdCalculator()}\spxextra{in module oxin.calibrationCal.Variance}, \hyperpage{37}
   \item \spxentry{thrs\_map()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}, \hyperpage{31}
   \item \spxentry{translate\_headers\_list()}\spxextra{oxin.setting\_UI.UI\_main\_window method}, \hyperpage{58}
   \item \spxentry{translate\_ui()}\spxextra{in module oxin.translate\_ui}, \hyperpage{65}
@@ -474,31 +474,31 @@
   \indexspace
 
   \lettergroup{U}
-  \item \spxentry{UI\_confirm\_window}\spxextra{class in oxin.confirm\_window}, \hyperpage{41}
+  \item \spxentry{UI\_confirm\_window}\spxextra{class in oxin.confirm\_window}, \hyperpage{40}
   \item \spxentry{UI\_eror\_window}\spxextra{class in oxin.eror\_window}, \hyperpage{49}
   \item \spxentry{UI\_main\_window}\spxextra{class in oxin.confirm\_UI}, \hyperpage{40}
   \item \spxentry{UI\_main\_window}\spxextra{class in oxin.login\_UI}, \hyperpage{49}
   \item \spxentry{UI\_main\_window}\spxextra{class in oxin.notif\_UI}, \hyperpage{51}
   \item \spxentry{UI\_main\_window}\spxextra{class in oxin.setting\_UI}, \hyperpage{53}
   \item \spxentry{unlock\_move\_flag()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
-  \item \spxentry{update\_available\_camera\_serials\_on\_db()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{15}
-  \item \spxentry{update\_cam\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{48}
+  \item \spxentry{update\_available\_camera\_serials\_on\_db()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{16}
+  \item \spxentry{update\_cam\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{47}
   \item \spxentry{update\_camera\_live\_drive\_combo()}\spxextra{in module oxin.backend.storage\_funcs}, \hyperpage{33}
   \item \spxentry{update\_camera\_live\_storage\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
   \item \spxentry{update\_combo\_color()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{24}
   \item \spxentry{update\_combo\_color()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{27}
   \item \spxentry{update\_combo\_fontsize()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{27}
-  \item \spxentry{update\_combo\_fontstyle()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{28}
-  \item \spxentry{update\_current\_position()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{52}
+  \item \spxentry{update\_combo\_fontstyle()}\spxextra{in module oxin.backend.mainsetting\_funcs}, \hyperpage{27}
+  \item \spxentry{update\_current\_position()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
   \item \spxentry{update\_defect()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{48}
   \item \spxentry{update\_defect\_group()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{48}
   \item \spxentry{update\_defects\_to\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}, \hyperpage{24}
   \item \spxentry{update\_drive\_barchart()}\spxextra{in module oxin.backend.chart\_funcs}, \hyperpage{18}
   \item \spxentry{update\_general\_setting\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{48}
   \item \spxentry{update\_path\_plc()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
-  \item \spxentry{update\_plc\_dashboard\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{65}
+  \item \spxentry{update\_plc\_dashboard\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
   \item \spxentry{update\_plc\_ip()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{48}
-  \item \spxentry{update\_plc\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{49}
+  \item \spxentry{update\_plc\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}, \hyperpage{48}
   \item \spxentry{update\_record()}\spxextra{oxin.database.dataBase method}, \hyperpage{43}
   \item \spxentry{update\_ui\_on\_camera\_connect\_disconnect()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{16}
 
@@ -506,24 +506,24 @@
 
   \lettergroup{V}
   \item \spxentry{validate\_camera\_ip()}\spxextra{in module oxin.backend.camera\_funcs}, \hyperpage{16}
-  \item \spxentry{VarianceCalculator()}\spxextra{in module oxin.calibrationCal.Variance}, \hyperpage{38}
+  \item \spxentry{VarianceCalculator()}\spxextra{in module oxin.calibrationCal.Variance}, \hyperpage{37}
 
   \indexspace
 
   \lettergroup{W}
-  \item \spxentry{win\_appear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{52}
-  \item \spxentry{win\_disappear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{52}
-  \item \spxentry{win\_move\_down()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{52}
+  \item \spxentry{win\_appear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
+  \item \spxentry{win\_disappear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
+  \item \spxentry{win\_move\_down()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{51}
   \item \spxentry{win\_move\_down\_run\_timer()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{52}
   \item \spxentry{win\_move\_top()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{52}
   \item \spxentry{win\_startpoint()}\spxextra{oxin.notif\_UI.UI\_main\_window method}, \hyperpage{52}
-  \item \spxentry{write()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{29}
-  \item \spxentry{write\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{65}
+  \item \spxentry{write()}\spxextra{oxin.backend.plc\_managment.management method}, \hyperpage{28}
+  \item \spxentry{write\_parms()}\spxextra{oxin.setting\_api.API method}, \hyperpage{64}
 
   \indexspace
 
   \lettergroup{Y}
-  \item \spxentry{yes()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{41}
+  \item \spxentry{yes()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}, \hyperpage{40}
 
   \indexspace
 

@@ -7,46 +7,46 @@
 \indexentry{assign\_existing\_serials\_to\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{assign\_existing\_serials\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{10}
 \indexentry{connect\_disconnect\_camera() (in module oxin.backend.camera\_funcs)@\spxentry{connect\_disconnect\_camera()}\spxextra{in module oxin.backend.camera\_funcs}}{11}
 \indexentry{convert\_cv2\_to\_qt\_image() (in module oxin.backend.camera\_funcs)@\spxentry{convert\_cv2\_to\_qt\_image()}\spxextra{in module oxin.backend.camera\_funcs}}{11}
-\indexentry{draw\_grid() (in module oxin.backend.camera\_funcs)@\spxentry{draw\_grid()}\spxextra{in module oxin.backend.camera\_funcs}}{11}
-\indexentry{get\_available\_cameras\_list\_serial\_numbers() (in module oxin.backend.camera\_funcs)@\spxentry{get\_available\_cameras\_list\_serial\_numbers()}\spxextra{in module oxin.backend.camera\_funcs}}{11}
+\indexentry{draw\_grid() (in module oxin.backend.camera\_funcs)@\spxentry{draw\_grid()}\spxextra{in module oxin.backend.camera\_funcs}}{12}
+\indexentry{get\_available\_cameras\_list\_serial\_numbers() (in module oxin.backend.camera\_funcs)@\spxentry{get\_available\_cameras\_list\_serial\_numbers()}\spxextra{in module oxin.backend.camera\_funcs}}{12}
 \indexentry{get\_camera\_calibration\_params\_from\_db() (in module oxin.backend.camera\_funcs)@\spxentry{get\_camera\_calibration\_params\_from\_db()}\spxextra{in module oxin.backend.camera\_funcs}}{12}
 \indexentry{get\_camera\_calibration\_params\_from\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{get\_camera\_calibration\_params\_from\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{12}
 \indexentry{get\_camera\_checkbox\_values() (in module oxin.backend.camera\_funcs)@\spxentry{get\_camera\_checkbox\_values()}\spxextra{in module oxin.backend.camera\_funcs}}{12}
 \indexentry{get\_camera\_id() (in module oxin.backend.camera\_funcs)@\spxentry{get\_camera\_id()}\spxextra{in module oxin.backend.camera\_funcs}}{12}
-\indexentry{get\_camera\_params\_from\_db() (in module oxin.backend.camera\_funcs)@\spxentry{get\_camera\_params\_from\_db()}\spxextra{in module oxin.backend.camera\_funcs}}{12}
+\indexentry{get\_camera\_params\_from\_db() (in module oxin.backend.camera\_funcs)@\spxentry{get\_camera\_params\_from\_db()}\spxextra{in module oxin.backend.camera\_funcs}}{13}
 \indexentry{get\_camera\_params\_from\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{get\_camera\_params\_from\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{13}
 \indexentry{get\_picture\_from\_camera() (in module oxin.backend.camera\_funcs)@\spxentry{get\_picture\_from\_camera()}\spxextra{in module oxin.backend.camera\_funcs}}{13}
 \indexentry{ip\_validation() (in module oxin.backend.camera\_funcs)@\spxentry{ip\_validation()}\spxextra{in module oxin.backend.camera\_funcs}}{13}
 \indexentry{rotate\_calibration\_image() (in module oxin.backend.camera\_funcs)@\spxentry{rotate\_calibration\_image()}\spxextra{in module oxin.backend.camera\_funcs}}{13}
 \indexentry{set\_camera\_calibration\_params\_to\_db() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_calibration\_params\_to\_db()}\spxextra{in module oxin.backend.camera\_funcs}}{13}
-\indexentry{set\_camera\_calibration\_params\_to\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_calibration\_params\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{13}
+\indexentry{set\_camera\_calibration\_params\_to\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_calibration\_params\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{14}
 \indexentry{set\_camera\_params\_to\_db() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_params\_to\_db()}\spxextra{in module oxin.backend.camera\_funcs}}{14}
 \indexentry{set\_camera\_params\_to\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_params\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{14}
-\indexentry{set\_camera\_picture\_to\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_picture\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{14}
+\indexentry{set\_camera\_picture\_to\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_picture\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{15}
 \indexentry{set\_camera\_serial\_to\_ui() (in module oxin.backend.camera\_funcs)@\spxentry{set\_camera\_serial\_to\_ui()}\spxextra{in module oxin.backend.camera\_funcs}}{15}
 \indexentry{set\_widjets\_enable\_or\_disable() (in module oxin.backend.camera\_funcs)@\spxentry{set\_widjets\_enable\_or\_disable()}\spxextra{in module oxin.backend.camera\_funcs}}{15}
 \indexentry{shift\_calibration\_image() (in module oxin.backend.camera\_funcs)@\spxentry{shift\_calibration\_image()}\spxextra{in module oxin.backend.camera\_funcs}}{15}
-\indexentry{show\_calibration\_summary() (in module oxin.backend.camera\_funcs)@\spxentry{show\_calibration\_summary()}\spxextra{in module oxin.backend.camera\_funcs}}{15}
-\indexentry{show\_cameras\_summary() (in module oxin.backend.camera\_funcs)@\spxentry{show\_cameras\_summary()}\spxextra{in module oxin.backend.camera\_funcs}}{15}
-\indexentry{update\_available\_camera\_serials\_on\_db() (in module oxin.backend.camera\_funcs)@\spxentry{update\_available\_camera\_serials\_on\_db()}\spxextra{in module oxin.backend.camera\_funcs}}{15}
+\indexentry{show\_calibration\_summary() (in module oxin.backend.camera\_funcs)@\spxentry{show\_calibration\_summary()}\spxextra{in module oxin.backend.camera\_funcs}}{16}
+\indexentry{show\_cameras\_summary() (in module oxin.backend.camera\_funcs)@\spxentry{show\_cameras\_summary()}\spxextra{in module oxin.backend.camera\_funcs}}{16}
+\indexentry{update\_available\_camera\_serials\_on\_db() (in module oxin.backend.camera\_funcs)@\spxentry{update\_available\_camera\_serials\_on\_db()}\spxextra{in module oxin.backend.camera\_funcs}}{16}
 \indexentry{update\_ui\_on\_camera\_connect\_disconnect() (in module oxin.backend.camera\_funcs)@\spxentry{update\_ui\_on\_camera\_connect\_disconnect()}\spxextra{in module oxin.backend.camera\_funcs}}{16}
-\indexentry{validate\_camera\_ip() (in module oxin.backend.camera\_funcs)@\spxentry{validate\_camera\_ip()}\spxextra{in module oxin.backend.camera\_funcs}}{16}
-\indexentry{zoom\_in\_calibration\_image() (in module oxin.backend.camera\_funcs)@\spxentry{zoom\_in\_calibration\_image()}\spxextra{in module oxin.backend.camera\_funcs}}{16}
+\indexentry{validate\_camera\_ip() (in module oxin.backend.camera\_funcs)@\spxentry{validate\_camera\_ip()}\spxextra{in module oxin.backend.camera\_funcs}}{17}
+\indexentry{zoom\_in\_calibration\_image() (in module oxin.backend.camera\_funcs)@\spxentry{zoom\_in\_calibration\_image()}\spxextra{in module oxin.backend.camera\_funcs}}{17}
 \indexentry{zoom\_out\_calibration\_image() (in module oxin.backend.camera\_funcs)@\spxentry{zoom\_out\_calibration\_image()}\spxextra{in module oxin.backend.camera\_funcs}}{17}
-\indexentry{module@\spxentry{module}!oxin.backend.camera\_connection@\spxentry{oxin.backend.camera\_connection}}{17}
-\indexentry{oxin.backend.camera\_connection@\spxentry{oxin.backend.camera\_connection}!module@\spxentry{module}}{17}
-\indexentry{Collector (class in oxin.backend.camera\_connection)@\spxentry{Collector}\spxextra{class in oxin.backend.camera\_connection}}{17}
-\indexentry{eror\_window() (oxin.backend.camera\_connection.Collector method)@\spxentry{eror\_window()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{getPictures() (oxin.backend.camera\_connection.Collector method)@\spxentry{getPictures()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{get\_cam() (oxin.backend.camera\_connection.Collector method)@\spxentry{get\_cam()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{listDevices() (oxin.backend.camera\_connection.Collector method)@\spxentry{listDevices()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{serialnumber() (oxin.backend.camera\_connection.Collector method)@\spxentry{serialnumber()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{start\_grabbing() (oxin.backend.camera\_connection.Collector method)@\spxentry{start\_grabbing()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{start\_grabbing\_error\_handling() (oxin.backend.camera\_connection.Collector method)@\spxentry{start\_grabbing\_error\_handling()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{stop\_grabbing() (oxin.backend.camera\_connection.Collector method)@\spxentry{stop\_grabbing()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{tempreture() (oxin.backend.camera\_connection.Collector method)@\spxentry{tempreture()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{trigg\_exec() (oxin.backend.camera\_connection.Collector method)@\spxentry{trigg\_exec()}\spxextra{oxin.backend.camera\_connection.Collector method}}{17}
-\indexentry{get\_threading() (in module oxin.backend.camera\_connection)@\spxentry{get\_threading()}\spxextra{in module oxin.backend.camera\_connection}}{17}
+\indexentry{module@\spxentry{module}!oxin.backend.camera\_connection@\spxentry{oxin.backend.camera\_connection}}{18}
+\indexentry{oxin.backend.camera\_connection@\spxentry{oxin.backend.camera\_connection}!module@\spxentry{module}}{18}
+\indexentry{Collector (class in oxin.backend.camera\_connection)@\spxentry{Collector}\spxextra{class in oxin.backend.camera\_connection}}{18}
+\indexentry{eror\_window() (oxin.backend.camera\_connection.Collector method)@\spxentry{eror\_window()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{getPictures() (oxin.backend.camera\_connection.Collector method)@\spxentry{getPictures()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{get\_cam() (oxin.backend.camera\_connection.Collector method)@\spxentry{get\_cam()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{listDevices() (oxin.backend.camera\_connection.Collector method)@\spxentry{listDevices()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{serialnumber() (oxin.backend.camera\_connection.Collector method)@\spxentry{serialnumber()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{start\_grabbing() (oxin.backend.camera\_connection.Collector method)@\spxentry{start\_grabbing()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{start\_grabbing\_error\_handling() (oxin.backend.camera\_connection.Collector method)@\spxentry{start\_grabbing\_error\_handling()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{stop\_grabbing() (oxin.backend.camera\_connection.Collector method)@\spxentry{stop\_grabbing()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{tempreture() (oxin.backend.camera\_connection.Collector method)@\spxentry{tempreture()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{trigg\_exec() (oxin.backend.camera\_connection.Collector method)@\spxentry{trigg\_exec()}\spxextra{oxin.backend.camera\_connection.Collector method}}{18}
+\indexentry{get\_threading() (in module oxin.backend.camera\_connection)@\spxentry{get\_threading()}\spxextra{in module oxin.backend.camera\_connection}}{18}
 \indexentry{module@\spxentry{module}!oxin.backend.chart\_funcs@\spxentry{oxin.backend.chart\_funcs}}{18}
 \indexentry{oxin.backend.chart\_funcs@\spxentry{oxin.backend.chart\_funcs}!module@\spxentry{module}}{18}
 \indexentry{create\_drive\_barchart\_on\_ui() (in module oxin.backend.chart\_funcs)@\spxentry{create\_drive\_barchart\_on\_ui()}\spxextra{in module oxin.backend.chart\_funcs}}{18}
@@ -55,207 +55,207 @@
 \indexentry{oxin.backend.date\_funcs@\spxentry{oxin.backend.date\_funcs}!module@\spxentry{module}}{19}
 \indexentry{get\_date() (in module oxin.backend.date\_funcs)@\spxentry{get\_date()}\spxextra{in module oxin.backend.date\_funcs}}{19}
 \indexentry{get\_datetime() (in module oxin.backend.date\_funcs)@\spxentry{get\_datetime()}\spxextra{in module oxin.backend.date\_funcs}}{19}
-\indexentry{get\_time() (in module oxin.backend.date\_funcs)@\spxentry{get\_time()}\spxextra{in module oxin.backend.date\_funcs}}{19}
-\indexentry{module@\spxentry{module}!oxin.backend.defect\_management\_funcs@\spxentry{oxin.backend.defect\_management\_funcs}}{19}
-\indexentry{oxin.backend.defect\_management\_funcs@\spxentry{oxin.backend.defect\_management\_funcs}!module@\spxentry{module}}{19}
-\indexentry{add\_new\_defect\_to\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{add\_new\_defect\_to\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{19}
-\indexentry{assign\_existing\_defect\_colors\_to\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{assign\_existing\_defect\_colors\_to\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{19}
+\indexentry{get\_time() (in module oxin.backend.date\_funcs)@\spxentry{get\_time()}\spxextra{in module oxin.backend.date\_funcs}}{20}
+\indexentry{module@\spxentry{module}!oxin.backend.defect\_management\_funcs@\spxentry{oxin.backend.defect\_management\_funcs}}{20}
+\indexentry{oxin.backend.defect\_management\_funcs@\spxentry{oxin.backend.defect\_management\_funcs}!module@\spxentry{module}}{20}
+\indexentry{add\_new\_defect\_to\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{add\_new\_defect\_to\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{20}
+\indexentry{assign\_existing\_defect\_colors\_to\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{assign\_existing\_defect\_colors\_to\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{20}
 \indexentry{change\_defect\_group\_id\_to\_name() (in module oxin.backend.defect\_management\_funcs)@\spxentry{change\_defect\_group\_id\_to\_name()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{20}
-\indexentry{generate\_defect\_colors() (in module oxin.backend.defect\_management\_funcs)@\spxentry{generate\_defect\_colors()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{20}
-\indexentry{get\_defect\_info\_from\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_defect\_info\_from\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{20}
+\indexentry{generate\_defect\_colors() (in module oxin.backend.defect\_management\_funcs)@\spxentry{generate\_defect\_colors()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{21}
+\indexentry{get\_defect\_info\_from\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_defect\_info\_from\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{21}
 \indexentry{get\_defects\_from\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{21}
-\indexentry{get\_filtered\_defects\_from\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_filtered\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{21}
-\indexentry{get\_selected\_defect\_groups() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_selected\_defect\_groups()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{21}
-\indexentry{get\_selected\_defects() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_selected\_defects()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{21}
+\indexentry{get\_filtered\_defects\_from\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_filtered\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{22}
+\indexentry{get\_selected\_defect\_groups() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_selected\_defect\_groups()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{22}
+\indexentry{get\_selected\_defects() (in module oxin.backend.defect\_management\_funcs)@\spxentry{get\_selected\_defects()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{22}
 \indexentry{load\_defects\_from\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{load\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{22}
-\indexentry{new\_defect\_info\_validation() (in module oxin.backend.defect\_management\_funcs)@\spxentry{new\_defect\_info\_validation()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{22}
-\indexentry{remove\_defects\_from\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{remove\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{22}
-\indexentry{set\_defect\_group\_info\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_group\_info\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{23}
-\indexentry{set\_defect\_groups\_on\_combo() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_groups\_on\_combo()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{23}
-\indexentry{set\_defect\_groups\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_groups\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{23}
-\indexentry{set\_defect\_info\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_info\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{23}
-\indexentry{set\_defects\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defects\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{23}
-\indexentry{show\_defects\_summary\_info() (in module oxin.backend.defect\_management\_funcs)@\spxentry{show\_defects\_summary\_info()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
-\indexentry{update\_combo\_color() (in module oxin.backend.defect\_management\_funcs)@\spxentry{update\_combo\_color()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
-\indexentry{update\_defects\_to\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{update\_defects\_to\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
-\indexentry{module@\spxentry{module}!oxin.backend.logging\_funcs@\spxentry{oxin.backend.logging\_funcs}}{25}
-\indexentry{oxin.backend.logging\_funcs@\spxentry{oxin.backend.logging\_funcs}!module@\spxentry{module}}{25}
-\indexentry{app\_logger (class in oxin.backend.logging\_funcs)@\spxentry{app\_logger}\spxextra{class in oxin.backend.logging\_funcs}}{25}
-\indexentry{create\_dailyfolder() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{create\_dailyfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{25}
-\indexentry{create\_mainfolder() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{create\_mainfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{25}
-\indexentry{create\_new\_log() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{create\_new\_log()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{25}
-\indexentry{set\_current\_user() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{set\_current\_user()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{25}
-\indexentry{module@\spxentry{module}!oxin.backend.mainsetting\_funcs@\spxentry{oxin.backend.mainsetting\_funcs}}{25}
-\indexentry{oxin.backend.mainsetting\_funcs@\spxentry{oxin.backend.mainsetting\_funcs}!module@\spxentry{module}}{25}
-\indexentry{apply\_appearance\_params\_to\_program() (in module oxin.backend.mainsetting\_funcs)@\spxentry{apply\_appearance\_params\_to\_program()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{25}
-\indexentry{assign\_appearance\_existing\_params\_to\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{assign\_appearance\_existing\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{26}
-\indexentry{get\_appearance\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_appearance\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{26}
-\indexentry{get\_calibration\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_calibration\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{26}
-\indexentry{get\_defects\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_defects\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{26}
-\indexentry{get\_image\_procesing\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_image\_procesing\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{26}
-\indexentry{get\_mainsetting\_params\_from\_db() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_mainsetting\_params\_from\_db()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{26}
-\indexentry{get\_multitasking\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_multitasking\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
-\indexentry{set\_appearance\_params\_to\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{set\_appearance\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
-\indexentry{set\_mainsetting\_params\_to\_db() (in module oxin.backend.mainsetting\_funcs)@\spxentry{set\_mainsetting\_params\_to\_db()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
-\indexentry{update\_combo\_color() (in module oxin.backend.mainsetting\_funcs)@\spxentry{update\_combo\_color()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
-\indexentry{update\_combo\_fontsize() (in module oxin.backend.mainsetting\_funcs)@\spxentry{update\_combo\_fontsize()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
-\indexentry{update\_combo\_fontstyle() (in module oxin.backend.mainsetting\_funcs)@\spxentry{update\_combo\_fontstyle()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{28}
-\indexentry{module@\spxentry{module}!oxin.backend.plc\_managment@\spxentry{oxin.backend.plc\_managment}}{28}
-\indexentry{oxin.backend.plc\_managment@\spxentry{oxin.backend.plc\_managment}!module@\spxentry{module}}{28}
-\indexentry{management (class in oxin.backend.plc\_managment)@\spxentry{management}\spxextra{class in oxin.backend.plc\_managment}}{28}
-\indexentry{connection() (oxin.backend.plc\_managment.management method)@\spxentry{connection()}\spxextra{oxin.backend.plc\_managment.management method}}{28}
-\indexentry{disconnect() (oxin.backend.plc\_managment.management method)@\spxentry{disconnect()}\spxextra{oxin.backend.plc\_managment.management method}}{28}
-\indexentry{get\_value() (oxin.backend.plc\_managment.management method)@\spxentry{get\_value()}\spxextra{oxin.backend.plc\_managment.management method}}{28}
-\indexentry{set\_file\_name() (oxin.backend.plc\_managment.management method)@\spxentry{set\_file\_name()}\spxextra{oxin.backend.plc\_managment.management method}}{28}
-\indexentry{set\_value() (oxin.backend.plc\_managment.management method)@\spxentry{set\_value()}\spxextra{oxin.backend.plc\_managment.management method}}{29}
-\indexentry{write() (oxin.backend.plc\_managment.management method)@\spxentry{write()}\spxextra{oxin.backend.plc\_managment.management method}}{29}
-\indexentry{module@\spxentry{module}!oxin.backend.pxvalue\_calibration@\spxentry{oxin.backend.pxvalue\_calibration}}{29}
-\indexentry{oxin.backend.pxvalue\_calibration@\spxentry{oxin.backend.pxvalue\_calibration}!module@\spxentry{module}}{29}
-\indexentry{apply\_pxvalue\_calibration() (in module oxin.backend.pxvalue\_calibration)@\spxentry{apply\_pxvalue\_calibration()}\spxextra{in module oxin.backend.pxvalue\_calibration}}{29}
-\indexentry{draw\_contour() (in module oxin.backend.pxvalue\_calibration)@\spxentry{draw\_contour()}\spxextra{in module oxin.backend.pxvalue\_calibration}}{29}
-\indexentry{draw\_rect() (in module oxin.backend.pxvalue\_calibration)@\spxentry{draw\_rect()}\spxextra{in module oxin.backend.pxvalue\_calibration}}{29}
-\indexentry{extract\_info (class in oxin.backend.pxvalue\_calibration)@\spxentry{extract\_info}\spxextra{class in oxin.backend.pxvalue\_calibration}}{30}
-\indexentry{draw\_rects() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{draw\_rects()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{30}
-\indexentry{filter\_acc() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{filter\_acc()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{30}
-\indexentry{filter\_contours\_by\_accuracy() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{filter\_contours\_by\_accuracy()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{30}
-\indexentry{filter\_contours\_by\_area() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{filter\_contours\_by\_area()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
-\indexentry{final\_decision() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{final\_decision()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
-\indexentry{find\_contours() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{find\_contours()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
-\indexentry{solve\_equation() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{solve\_equation()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
-\indexentry{thrs\_map() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{thrs\_map()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
-\indexentry{module@\spxentry{module}!oxin.backend.storage\_funcs@\spxentry{oxin.backend.storage\_funcs}}{32}
-\indexentry{oxin.backend.storage\_funcs@\spxentry{oxin.backend.storage\_funcs}!module@\spxentry{module}}{32}
-\indexentry{get\_available\_drives() (in module oxin.backend.storage\_funcs)@\spxentry{get\_available\_drives()}\spxextra{in module oxin.backend.storage\_funcs}}{32}
-\indexentry{get\_camera\_live\_drive\_parameters\_from\_db() (in module oxin.backend.storage\_funcs)@\spxentry{get\_camera\_live\_drive\_parameters\_from\_db()}\spxextra{in module oxin.backend.storage\_funcs}}{32}
-\indexentry{get\_camera\_live\_drive\_parameters\_from\_ui() (in module oxin.backend.storage\_funcs)@\spxentry{get\_camera\_live\_drive\_parameters\_from\_ui()}\spxextra{in module oxin.backend.storage\_funcs}}{32}
-\indexentry{get\_drivename() (in module oxin.backend.storage\_funcs)@\spxentry{get\_drivename()}\spxextra{in module oxin.backend.storage\_funcs}}{32}
-\indexentry{get\_files\_in\_path() (in module oxin.backend.storage\_funcs)@\spxentry{get\_files\_in\_path()}\spxextra{in module oxin.backend.storage\_funcs}}{32}
-\indexentry{get\_storage\_status() (in module oxin.backend.storage\_funcs)@\spxentry{get\_storage\_status()}\spxextra{in module oxin.backend.storage\_funcs}}{32}
+\indexentry{new\_defect\_info\_validation() (in module oxin.backend.defect\_management\_funcs)@\spxentry{new\_defect\_info\_validation()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{23}
+\indexentry{remove\_defects\_from\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{remove\_defects\_from\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{23}
+\indexentry{set\_defect\_group\_info\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_group\_info\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
+\indexentry{set\_defect\_groups\_on\_combo() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_groups\_on\_combo()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
+\indexentry{set\_defect\_groups\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_groups\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
+\indexentry{set\_defect\_info\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defect\_info\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
+\indexentry{set\_defects\_on\_ui() (in module oxin.backend.defect\_management\_funcs)@\spxentry{set\_defects\_on\_ui()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{24}
+\indexentry{show\_defects\_summary\_info() (in module oxin.backend.defect\_management\_funcs)@\spxentry{show\_defects\_summary\_info()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{25}
+\indexentry{update\_combo\_color() (in module oxin.backend.defect\_management\_funcs)@\spxentry{update\_combo\_color()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{25}
+\indexentry{update\_defects\_to\_db() (in module oxin.backend.defect\_management\_funcs)@\spxentry{update\_defects\_to\_db()}\spxextra{in module oxin.backend.defect\_management\_funcs}}{25}
+\indexentry{module@\spxentry{module}!oxin.backend.logging\_funcs@\spxentry{oxin.backend.logging\_funcs}}{26}
+\indexentry{oxin.backend.logging\_funcs@\spxentry{oxin.backend.logging\_funcs}!module@\spxentry{module}}{26}
+\indexentry{app\_logger (class in oxin.backend.logging\_funcs)@\spxentry{app\_logger}\spxextra{class in oxin.backend.logging\_funcs}}{26}
+\indexentry{create\_dailyfolder() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{create\_dailyfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{26}
+\indexentry{create\_mainfolder() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{create\_mainfolder()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{26}
+\indexentry{create\_new\_log() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{create\_new\_log()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{26}
+\indexentry{set\_current\_user() (oxin.backend.logging\_funcs.app\_logger method)@\spxentry{set\_current\_user()}\spxextra{oxin.backend.logging\_funcs.app\_logger method}}{26}
+\indexentry{module@\spxentry{module}!oxin.backend.mainsetting\_funcs@\spxentry{oxin.backend.mainsetting\_funcs}}{26}
+\indexentry{oxin.backend.mainsetting\_funcs@\spxentry{oxin.backend.mainsetting\_funcs}!module@\spxentry{module}}{26}
+\indexentry{apply\_appearance\_params\_to\_program() (in module oxin.backend.mainsetting\_funcs)@\spxentry{apply\_appearance\_params\_to\_program()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{26}
+\indexentry{assign\_appearance\_existing\_params\_to\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{assign\_appearance\_existing\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
+\indexentry{get\_appearance\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_appearance\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
+\indexentry{get\_calibration\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_calibration\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
+\indexentry{get\_defects\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_defects\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
+\indexentry{get\_image\_procesing\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_image\_procesing\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
+\indexentry{get\_mainsetting\_params\_from\_db() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_mainsetting\_params\_from\_db()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{27}
+\indexentry{get\_multitasking\_params\_from\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{get\_multitasking\_params\_from\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{28}
+\indexentry{set\_appearance\_params\_to\_ui() (in module oxin.backend.mainsetting\_funcs)@\spxentry{set\_appearance\_params\_to\_ui()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{28}
+\indexentry{set\_mainsetting\_params\_to\_db() (in module oxin.backend.mainsetting\_funcs)@\spxentry{set\_mainsetting\_params\_to\_db()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{28}
+\indexentry{update\_combo\_color() (in module oxin.backend.mainsetting\_funcs)@\spxentry{update\_combo\_color()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{28}
+\indexentry{update\_combo\_fontsize() (in module oxin.backend.mainsetting\_funcs)@\spxentry{update\_combo\_fontsize()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{29}
+\indexentry{update\_combo\_fontstyle() (in module oxin.backend.mainsetting\_funcs)@\spxentry{update\_combo\_fontstyle()}\spxextra{in module oxin.backend.mainsetting\_funcs}}{29}
+\indexentry{module@\spxentry{module}!oxin.backend.plc\_managment@\spxentry{oxin.backend.plc\_managment}}{29}
+\indexentry{oxin.backend.plc\_managment@\spxentry{oxin.backend.plc\_managment}!module@\spxentry{module}}{29}
+\indexentry{management (class in oxin.backend.plc\_managment)@\spxentry{management}\spxextra{class in oxin.backend.plc\_managment}}{29}
+\indexentry{connection() (oxin.backend.plc\_managment.management method)@\spxentry{connection()}\spxextra{oxin.backend.plc\_managment.management method}}{29}
+\indexentry{disconnect() (oxin.backend.plc\_managment.management method)@\spxentry{disconnect()}\spxextra{oxin.backend.plc\_managment.management method}}{29}
+\indexentry{get\_value() (oxin.backend.plc\_managment.management method)@\spxentry{get\_value()}\spxextra{oxin.backend.plc\_managment.management method}}{29}
+\indexentry{set\_file\_name() (oxin.backend.plc\_managment.management method)@\spxentry{set\_file\_name()}\spxextra{oxin.backend.plc\_managment.management method}}{30}
+\indexentry{set\_value() (oxin.backend.plc\_managment.management method)@\spxentry{set\_value()}\spxextra{oxin.backend.plc\_managment.management method}}{30}
+\indexentry{write() (oxin.backend.plc\_managment.management method)@\spxentry{write()}\spxextra{oxin.backend.plc\_managment.management method}}{30}
+\indexentry{module@\spxentry{module}!oxin.backend.pxvalue\_calibration@\spxentry{oxin.backend.pxvalue\_calibration}}{30}
+\indexentry{oxin.backend.pxvalue\_calibration@\spxentry{oxin.backend.pxvalue\_calibration}!module@\spxentry{module}}{30}
+\indexentry{apply\_pxvalue\_calibration() (in module oxin.backend.pxvalue\_calibration)@\spxentry{apply\_pxvalue\_calibration()}\spxextra{in module oxin.backend.pxvalue\_calibration}}{30}
+\indexentry{draw\_contour() (in module oxin.backend.pxvalue\_calibration)@\spxentry{draw\_contour()}\spxextra{in module oxin.backend.pxvalue\_calibration}}{30}
+\indexentry{draw\_rect() (in module oxin.backend.pxvalue\_calibration)@\spxentry{draw\_rect()}\spxextra{in module oxin.backend.pxvalue\_calibration}}{31}
+\indexentry{extract\_info (class in oxin.backend.pxvalue\_calibration)@\spxentry{extract\_info}\spxextra{class in oxin.backend.pxvalue\_calibration}}{31}
+\indexentry{draw\_rects() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{draw\_rects()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
+\indexentry{filter\_acc() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{filter\_acc()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
+\indexentry{filter\_contours\_by\_accuracy() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{filter\_contours\_by\_accuracy()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{31}
+\indexentry{filter\_contours\_by\_area() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{filter\_contours\_by\_area()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{32}
+\indexentry{final\_decision() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{final\_decision()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{32}
+\indexentry{find\_contours() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{find\_contours()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{32}
+\indexentry{solve\_equation() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{solve\_equation()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{32}
+\indexentry{thrs\_map() (oxin.backend.pxvalue\_calibration.extract\_info method)@\spxentry{thrs\_map()}\spxextra{oxin.backend.pxvalue\_calibration.extract\_info method}}{32}
+\indexentry{module@\spxentry{module}!oxin.backend.storage\_funcs@\spxentry{oxin.backend.storage\_funcs}}{33}
+\indexentry{oxin.backend.storage\_funcs@\spxentry{oxin.backend.storage\_funcs}!module@\spxentry{module}}{33}
+\indexentry{get\_available\_drives() (in module oxin.backend.storage\_funcs)@\spxentry{get\_available\_drives()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
+\indexentry{get\_camera\_live\_drive\_parameters\_from\_db() (in module oxin.backend.storage\_funcs)@\spxentry{get\_camera\_live\_drive\_parameters\_from\_db()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
+\indexentry{get\_camera\_live\_drive\_parameters\_from\_ui() (in module oxin.backend.storage\_funcs)@\spxentry{get\_camera\_live\_drive\_parameters\_from\_ui()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
+\indexentry{get\_drivename() (in module oxin.backend.storage\_funcs)@\spxentry{get\_drivename()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
+\indexentry{get\_files\_in\_path() (in module oxin.backend.storage\_funcs)@\spxentry{get\_files\_in\_path()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
+\indexentry{get\_storage\_status() (in module oxin.backend.storage\_funcs)@\spxentry{get\_storage\_status()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
 \indexentry{remove\_old\_files\_in\_directory() (in module oxin.backend.storage\_funcs)@\spxentry{remove\_old\_files\_in\_directory()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
-\indexentry{set\_camera\_live\_drive\_parameters\_to\_db() (in module oxin.backend.storage\_funcs)@\spxentry{set\_camera\_live\_drive\_parameters\_to\_db()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
-\indexentry{show\_storage\_status() (in module oxin.backend.storage\_funcs)@\spxentry{show\_storage\_status()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
-\indexentry{update\_camera\_live\_drive\_combo() (in module oxin.backend.storage\_funcs)@\spxentry{update\_camera\_live\_drive\_combo()}\spxextra{in module oxin.backend.storage\_funcs}}{33}
-\indexentry{module@\spxentry{module}!oxin.backend.user\_login\_logout\_funcs@\spxentry{oxin.backend.user\_login\_logout\_funcs}}{34}
-\indexentry{oxin.backend.user\_login\_logout\_funcs@\spxentry{oxin.backend.user\_login\_logout\_funcs}!module@\spxentry{module}}{34}
-\indexentry{authenticate\_user() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{authenticate\_user()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{34}
-\indexentry{logout\_user() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{logout\_user()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{34}
-\indexentry{run\_login\_window() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{run\_login\_window()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{34}
-\indexentry{set\_app\_buttons\_enable\_or\_disable() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{set\_app\_buttons\_enable\_or\_disable()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{35}
-\indexentry{module@\spxentry{module}!oxin.backend.user\_management\_funcs@\spxentry{oxin.backend.user\_management\_funcs}}{35}
-\indexentry{oxin.backend.user\_management\_funcs@\spxentry{oxin.backend.user\_management\_funcs}!module@\spxentry{module}}{35}
-\indexentry{add\_new\_user\_to\_db() (in module oxin.backend.user\_management\_funcs)@\spxentry{add\_new\_user\_to\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}}{35}
-\indexentry{get\_selected\_users() (in module oxin.backend.user\_management\_funcs)@\spxentry{get\_selected\_users()}\spxextra{in module oxin.backend.user\_management\_funcs}}{35}
-\indexentry{get\_user\_info\_from\_ui() (in module oxin.backend.user\_management\_funcs)@\spxentry{get\_user\_info\_from\_ui()}\spxextra{in module oxin.backend.user\_management\_funcs}}{35}
-\indexentry{get\_users\_from\_db() (in module oxin.backend.user\_management\_funcs)@\spxentry{get\_users\_from\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}}{35}
-\indexentry{new\_user\_info\_validation() (in module oxin.backend.user\_management\_funcs)@\spxentry{new\_user\_info\_validation()}\spxextra{in module oxin.backend.user\_management\_funcs}}{35}
-\indexentry{remove\_users\_from\_db() (in module oxin.backend.user\_management\_funcs)@\spxentry{remove\_users\_from\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
-\indexentry{set\_users\_on\_ui() (in module oxin.backend.user\_management\_funcs)@\spxentry{set\_users\_on\_ui()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
-\indexentry{show\_users\_summary\_info() (in module oxin.backend.user\_management\_funcs)@\spxentry{show\_users\_summary\_info()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
-\indexentry{module@\spxentry{module}!oxin.calibrationCal.Division@\spxentry{oxin.calibrationCal.Division}}{37}
-\indexentry{oxin.calibrationCal.Division@\spxentry{oxin.calibrationCal.Division}!module@\spxentry{module}}{37}
-\indexentry{ImageDivision() (in module oxin.calibrationCal.Division)@\spxentry{ImageDivision()}\spxextra{in module oxin.calibrationCal.Division}}{37}
-\indexentry{module@\spxentry{module}!oxin.calibrationCal.load\_recent\_images@\spxentry{oxin.calibrationCal.load\_recent\_images}}{37}
-\indexentry{oxin.calibrationCal.load\_recent\_images@\spxentry{oxin.calibrationCal.load\_recent\_images}!module@\spxentry{module}}{37}
-\indexentry{load\_recent\_images() (in module oxin.calibrationCal.load\_recent\_images)@\spxentry{load\_recent\_images()}\spxextra{in module oxin.calibrationCal.load\_recent\_images}}{37}
-\indexentry{module@\spxentry{module}!oxin.calibrationCal.main@\spxentry{oxin.calibrationCal.main}}{37}
-\indexentry{oxin.calibrationCal.main@\spxentry{oxin.calibrationCal.main}!module@\spxentry{module}}{37}
-\indexentry{module@\spxentry{module}!oxin.calibrationCal.Noise@\spxentry{oxin.calibrationCal.Noise}}{37}
-\indexentry{oxin.calibrationCal.Noise@\spxentry{oxin.calibrationCal.Noise}!module@\spxentry{module}}{37}
-\indexentry{NoiseDetection() (in module oxin.calibrationCal.Noise)@\spxentry{NoiseDetection()}\spxextra{in module oxin.calibrationCal.Noise}}{37}
-\indexentry{module@\spxentry{module}!oxin.calibrationCal.Preprocessing@\spxentry{oxin.calibrationCal.Preprocessing}}{37}
-\indexentry{oxin.calibrationCal.Preprocessing@\spxentry{oxin.calibrationCal.Preprocessing}!module@\spxentry{module}}{37}
-\indexentry{EdgeDetection() (in module oxin.calibrationCal.Preprocessing)@\spxentry{EdgeDetection()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{37}
-\indexentry{ImageEnhancement() (in module oxin.calibrationCal.Preprocessing)@\spxentry{ImageEnhancement()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{37}
-\indexentry{ImageSmoothness() (in module oxin.calibrationCal.Preprocessing)@\spxentry{ImageSmoothness()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{37}
-\indexentry{SmallNoiseRemoval() (in module oxin.calibrationCal.Preprocessing)@\spxentry{SmallNoiseRemoval()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{37}
-\indexentry{module@\spxentry{module}!oxin.calibrationCal.SteelSurfaceInspection@\spxentry{oxin.calibrationCal.SteelSurfaceInspection}}{38}
-\indexentry{oxin.calibrationCal.SteelSurfaceInspection@\spxentry{oxin.calibrationCal.SteelSurfaceInspection}!module@\spxentry{module}}{38}
-\indexentry{CreateHeatmap() (in module oxin.calibrationCal.SteelSurfaceInspection)@\spxentry{CreateHeatmap()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}}{38}
-\indexentry{FindDefectiveBlocks() (in module oxin.calibrationCal.SteelSurfaceInspection)@\spxentry{FindDefectiveBlocks()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}}{38}
-\indexentry{SSI() (in module oxin.calibrationCal.SteelSurfaceInspection)@\spxentry{SSI()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}}{38}
-\indexentry{module@\spxentry{module}!oxin.calibrationCal.Variance@\spxentry{oxin.calibrationCal.Variance}}{38}
-\indexentry{oxin.calibrationCal.Variance@\spxentry{oxin.calibrationCal.Variance}!module@\spxentry{module}}{38}
-\indexentry{ImageBlockVariance() (in module oxin.calibrationCal.Variance)@\spxentry{ImageBlockVariance()}\spxextra{in module oxin.calibrationCal.Variance}}{38}
-\indexentry{ThresholdCalculator() (in module oxin.calibrationCal.Variance)@\spxentry{ThresholdCalculator()}\spxextra{in module oxin.calibrationCal.Variance}}{38}
-\indexentry{VarianceCalculator() (in module oxin.calibrationCal.Variance)@\spxentry{VarianceCalculator()}\spxextra{in module oxin.calibrationCal.Variance}}{38}
-\indexentry{module@\spxentry{module}!oxin.utils.move\_on\_list@\spxentry{oxin.utils.move\_on\_list}}{39}
-\indexentry{oxin.utils.move\_on\_list@\spxentry{oxin.utils.move\_on\_list}!module@\spxentry{module}}{39}
-\indexentry{moveOnList (class in oxin.utils.move\_on\_list)@\spxentry{moveOnList}\spxextra{class in oxin.utils.move\_on\_list}}{39}
-\indexentry{add() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{add()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{39}
-\indexentry{build\_next\_func() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{build\_next\_func()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{39}
-\indexentry{build\_prev\_func() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{build\_prev\_func()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{39}
-\indexentry{check() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{check()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{39}
-\indexentry{get\_count() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{get\_count()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{39}
-\indexentry{get\_current() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{get\_current()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{39}
+\indexentry{set\_camera\_live\_drive\_parameters\_to\_db() (in module oxin.backend.storage\_funcs)@\spxentry{set\_camera\_live\_drive\_parameters\_to\_db()}\spxextra{in module oxin.backend.storage\_funcs}}{34}
+\indexentry{show\_storage\_status() (in module oxin.backend.storage\_funcs)@\spxentry{show\_storage\_status()}\spxextra{in module oxin.backend.storage\_funcs}}{34}
+\indexentry{update\_camera\_live\_drive\_combo() (in module oxin.backend.storage\_funcs)@\spxentry{update\_camera\_live\_drive\_combo()}\spxextra{in module oxin.backend.storage\_funcs}}{34}
+\indexentry{module@\spxentry{module}!oxin.backend.user\_login\_logout\_funcs@\spxentry{oxin.backend.user\_login\_logout\_funcs}}{35}
+\indexentry{oxin.backend.user\_login\_logout\_funcs@\spxentry{oxin.backend.user\_login\_logout\_funcs}!module@\spxentry{module}}{35}
+\indexentry{authenticate\_user() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{authenticate\_user()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{35}
+\indexentry{logout\_user() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{logout\_user()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{35}
+\indexentry{run\_login\_window() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{run\_login\_window()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{35}
+\indexentry{set\_app\_buttons\_enable\_or\_disable() (in module oxin.backend.user\_login\_logout\_funcs)@\spxentry{set\_app\_buttons\_enable\_or\_disable()}\spxextra{in module oxin.backend.user\_login\_logout\_funcs}}{36}
+\indexentry{module@\spxentry{module}!oxin.backend.user\_management\_funcs@\spxentry{oxin.backend.user\_management\_funcs}}{36}
+\indexentry{oxin.backend.user\_management\_funcs@\spxentry{oxin.backend.user\_management\_funcs}!module@\spxentry{module}}{36}
+\indexentry{add\_new\_user\_to\_db() (in module oxin.backend.user\_management\_funcs)@\spxentry{add\_new\_user\_to\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
+\indexentry{get\_selected\_users() (in module oxin.backend.user\_management\_funcs)@\spxentry{get\_selected\_users()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
+\indexentry{get\_user\_info\_from\_ui() (in module oxin.backend.user\_management\_funcs)@\spxentry{get\_user\_info\_from\_ui()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
+\indexentry{get\_users\_from\_db() (in module oxin.backend.user\_management\_funcs)@\spxentry{get\_users\_from\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
+\indexentry{new\_user\_info\_validation() (in module oxin.backend.user\_management\_funcs)@\spxentry{new\_user\_info\_validation()}\spxextra{in module oxin.backend.user\_management\_funcs}}{36}
+\indexentry{remove\_users\_from\_db() (in module oxin.backend.user\_management\_funcs)@\spxentry{remove\_users\_from\_db()}\spxextra{in module oxin.backend.user\_management\_funcs}}{37}
+\indexentry{set\_users\_on\_ui() (in module oxin.backend.user\_management\_funcs)@\spxentry{set\_users\_on\_ui()}\spxextra{in module oxin.backend.user\_management\_funcs}}{37}
+\indexentry{show\_users\_summary\_info() (in module oxin.backend.user\_management\_funcs)@\spxentry{show\_users\_summary\_info()}\spxextra{in module oxin.backend.user\_management\_funcs}}{37}
+\indexentry{module@\spxentry{module}!oxin.calibrationCal.Division@\spxentry{oxin.calibrationCal.Division}}{38}
+\indexentry{oxin.calibrationCal.Division@\spxentry{oxin.calibrationCal.Division}!module@\spxentry{module}}{38}
+\indexentry{ImageDivision() (in module oxin.calibrationCal.Division)@\spxentry{ImageDivision()}\spxextra{in module oxin.calibrationCal.Division}}{38}
+\indexentry{module@\spxentry{module}!oxin.calibrationCal.load\_recent\_images@\spxentry{oxin.calibrationCal.load\_recent\_images}}{38}
+\indexentry{oxin.calibrationCal.load\_recent\_images@\spxentry{oxin.calibrationCal.load\_recent\_images}!module@\spxentry{module}}{38}
+\indexentry{load\_recent\_images() (in module oxin.calibrationCal.load\_recent\_images)@\spxentry{load\_recent\_images()}\spxextra{in module oxin.calibrationCal.load\_recent\_images}}{38}
+\indexentry{module@\spxentry{module}!oxin.calibrationCal.main@\spxentry{oxin.calibrationCal.main}}{38}
+\indexentry{oxin.calibrationCal.main@\spxentry{oxin.calibrationCal.main}!module@\spxentry{module}}{38}
+\indexentry{module@\spxentry{module}!oxin.calibrationCal.Noise@\spxentry{oxin.calibrationCal.Noise}}{38}
+\indexentry{oxin.calibrationCal.Noise@\spxentry{oxin.calibrationCal.Noise}!module@\spxentry{module}}{38}
+\indexentry{NoiseDetection() (in module oxin.calibrationCal.Noise)@\spxentry{NoiseDetection()}\spxextra{in module oxin.calibrationCal.Noise}}{38}
+\indexentry{module@\spxentry{module}!oxin.calibrationCal.Preprocessing@\spxentry{oxin.calibrationCal.Preprocessing}}{38}
+\indexentry{oxin.calibrationCal.Preprocessing@\spxentry{oxin.calibrationCal.Preprocessing}!module@\spxentry{module}}{38}
+\indexentry{EdgeDetection() (in module oxin.calibrationCal.Preprocessing)@\spxentry{EdgeDetection()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{38}
+\indexentry{ImageEnhancement() (in module oxin.calibrationCal.Preprocessing)@\spxentry{ImageEnhancement()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{38}
+\indexentry{ImageSmoothness() (in module oxin.calibrationCal.Preprocessing)@\spxentry{ImageSmoothness()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{38}
+\indexentry{SmallNoiseRemoval() (in module oxin.calibrationCal.Preprocessing)@\spxentry{SmallNoiseRemoval()}\spxextra{in module oxin.calibrationCal.Preprocessing}}{38}
+\indexentry{module@\spxentry{module}!oxin.calibrationCal.SteelSurfaceInspection@\spxentry{oxin.calibrationCal.SteelSurfaceInspection}}{39}
+\indexentry{oxin.calibrationCal.SteelSurfaceInspection@\spxentry{oxin.calibrationCal.SteelSurfaceInspection}!module@\spxentry{module}}{39}
+\indexentry{CreateHeatmap() (in module oxin.calibrationCal.SteelSurfaceInspection)@\spxentry{CreateHeatmap()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}}{39}
+\indexentry{FindDefectiveBlocks() (in module oxin.calibrationCal.SteelSurfaceInspection)@\spxentry{FindDefectiveBlocks()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}}{39}
+\indexentry{SSI() (in module oxin.calibrationCal.SteelSurfaceInspection)@\spxentry{SSI()}\spxextra{in module oxin.calibrationCal.SteelSurfaceInspection}}{39}
+\indexentry{module@\spxentry{module}!oxin.calibrationCal.Variance@\spxentry{oxin.calibrationCal.Variance}}{39}
+\indexentry{oxin.calibrationCal.Variance@\spxentry{oxin.calibrationCal.Variance}!module@\spxentry{module}}{39}
+\indexentry{ImageBlockVariance() (in module oxin.calibrationCal.Variance)@\spxentry{ImageBlockVariance()}\spxextra{in module oxin.calibrationCal.Variance}}{39}
+\indexentry{ThresholdCalculator() (in module oxin.calibrationCal.Variance)@\spxentry{ThresholdCalculator()}\spxextra{in module oxin.calibrationCal.Variance}}{39}
+\indexentry{VarianceCalculator() (in module oxin.calibrationCal.Variance)@\spxentry{VarianceCalculator()}\spxextra{in module oxin.calibrationCal.Variance}}{39}
+\indexentry{module@\spxentry{module}!oxin.utils.move\_on\_list@\spxentry{oxin.utils.move\_on\_list}}{40}
+\indexentry{oxin.utils.move\_on\_list@\spxentry{oxin.utils.move\_on\_list}!module@\spxentry{module}}{40}
+\indexentry{moveOnList (class in oxin.utils.move\_on\_list)@\spxentry{moveOnList}\spxextra{class in oxin.utils.move\_on\_list}}{40}
+\indexentry{add() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{add()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
+\indexentry{build\_next\_func() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{build\_next\_func()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
+\indexentry{build\_prev\_func() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{build\_prev\_func()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
+\indexentry{check() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{check()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
+\indexentry{get\_count() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{get\_count()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
+\indexentry{get\_current() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{get\_current()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
 \indexentry{get\_list() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{get\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
-\indexentry{next\_on\_list() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{next\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
-\indexentry{prev\_on\_list() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{prev\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{40}
-\indexentry{module@\spxentry{module}!oxin.app\_settings@\spxentry{oxin.app\_settings}}{40}
-\indexentry{oxin.app\_settings@\spxentry{oxin.app\_settings}!module@\spxentry{module}}{40}
-\indexentry{Settings (class in oxin.app\_settings)@\spxentry{Settings}\spxextra{class in oxin.app\_settings}}{40}
-\indexentry{module@\spxentry{module}!oxin.confirm\_UI@\spxentry{oxin.confirm\_UI}}{40}
-\indexentry{oxin.confirm\_UI@\spxentry{oxin.confirm\_UI}!module@\spxentry{module}}{40}
-\indexentry{UI\_main\_window (class in oxin.confirm\_UI)@\spxentry{UI\_main\_window}\spxextra{class in oxin.confirm\_UI}}{40}
-\indexentry{activate\_() (oxin.confirm\_UI.UI\_main\_window method)@\spxentry{activate\_()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}}{40}
-\indexentry{buttonClick() (oxin.confirm\_UI.UI\_main\_window method)@\spxentry{buttonClick()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}}{40}
-\indexentry{close\_win() (oxin.confirm\_UI.UI\_main\_window method)@\spxentry{close\_win()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}}{40}
-\indexentry{staticMetaObject (oxin.confirm\_UI.UI\_main\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.confirm\_UI.UI\_main\_window attribute}}{40}
-\indexentry{module@\spxentry{module}!oxin.confirm\_window@\spxentry{oxin.confirm\_window}}{41}
-\indexentry{oxin.confirm\_window@\spxentry{oxin.confirm\_window}!module@\spxentry{module}}{41}
-\indexentry{UI\_confirm\_window (class in oxin.confirm\_window)@\spxentry{UI\_confirm\_window}\spxextra{class in oxin.confirm\_window}}{41}
-\indexentry{activate\_() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{activate\_()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{41}
-\indexentry{close\_win() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{close\_win()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{41}
-\indexentry{set\_language() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{set\_language()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{41}
-\indexentry{set\_text() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{set\_text()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{41}
-\indexentry{staticMetaObject (oxin.confirm\_window.UI\_confirm\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.confirm\_window.UI\_confirm\_window attribute}}{41}
-\indexentry{yes() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{yes()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{41}
-\indexentry{module@\spxentry{module}!oxin.database@\spxentry{oxin.database}}{41}
-\indexentry{oxin.database@\spxentry{oxin.database}!module@\spxentry{module}}{41}
-\indexentry{dataBase (class in oxin.database)@\spxentry{dataBase}\spxextra{class in oxin.database}}{41}
-\indexentry{add\_record() (oxin.database.dataBase method)@\spxentry{add\_record()}\spxextra{oxin.database.dataBase method}}{41}
-\indexentry{check\_connection() (oxin.database.dataBase method)@\spxentry{check\_connection()}\spxextra{oxin.database.dataBase method}}{41}
-\indexentry{connect() (oxin.database.dataBase method)@\spxentry{connect()}\spxextra{oxin.database.dataBase method}}{41}
-\indexentry{delete() (oxin.database.dataBase method)@\spxentry{delete()}\spxextra{oxin.database.dataBase method}}{42}
-\indexentry{execute\_quary() (oxin.database.dataBase method)@\spxentry{execute\_quary()}\spxextra{oxin.database.dataBase method}}{42}
-\indexentry{get\_all\_content() (oxin.database.dataBase method)@\spxentry{get\_all\_content()}\spxextra{oxin.database.dataBase method}}{42}
-\indexentry{get\_col\_name() (oxin.database.dataBase method)@\spxentry{get\_col\_name()}\spxextra{oxin.database.dataBase method}}{42}
-\indexentry{get\_log() (oxin.database.dataBase method)@\spxentry{get\_log()}\spxextra{oxin.database.dataBase method}}{42}
-\indexentry{remove\_record() (oxin.database.dataBase method)@\spxentry{remove\_record()}\spxextra{oxin.database.dataBase method}}{42}
+\indexentry{next\_on\_list() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{next\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{41}
+\indexentry{prev\_on\_list() (oxin.utils.move\_on\_list.moveOnList method)@\spxentry{prev\_on\_list()}\spxextra{oxin.utils.move\_on\_list.moveOnList method}}{41}
+\indexentry{module@\spxentry{module}!oxin.app\_settings@\spxentry{oxin.app\_settings}}{41}
+\indexentry{oxin.app\_settings@\spxentry{oxin.app\_settings}!module@\spxentry{module}}{41}
+\indexentry{Settings (class in oxin.app\_settings)@\spxentry{Settings}\spxextra{class in oxin.app\_settings}}{41}
+\indexentry{module@\spxentry{module}!oxin.confirm\_UI@\spxentry{oxin.confirm\_UI}}{41}
+\indexentry{oxin.confirm\_UI@\spxentry{oxin.confirm\_UI}!module@\spxentry{module}}{41}
+\indexentry{UI\_main\_window (class in oxin.confirm\_UI)@\spxentry{UI\_main\_window}\spxextra{class in oxin.confirm\_UI}}{41}
+\indexentry{activate\_() (oxin.confirm\_UI.UI\_main\_window method)@\spxentry{activate\_()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}}{41}
+\indexentry{buttonClick() (oxin.confirm\_UI.UI\_main\_window method)@\spxentry{buttonClick()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}}{41}
+\indexentry{close\_win() (oxin.confirm\_UI.UI\_main\_window method)@\spxentry{close\_win()}\spxextra{oxin.confirm\_UI.UI\_main\_window method}}{41}
+\indexentry{staticMetaObject (oxin.confirm\_UI.UI\_main\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.confirm\_UI.UI\_main\_window attribute}}{41}
+\indexentry{module@\spxentry{module}!oxin.confirm\_window@\spxentry{oxin.confirm\_window}}{42}
+\indexentry{oxin.confirm\_window@\spxentry{oxin.confirm\_window}!module@\spxentry{module}}{42}
+\indexentry{UI\_confirm\_window (class in oxin.confirm\_window)@\spxentry{UI\_confirm\_window}\spxextra{class in oxin.confirm\_window}}{42}
+\indexentry{activate\_() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{activate\_()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{42}
+\indexentry{close\_win() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{close\_win()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{42}
+\indexentry{set\_language() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{set\_language()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{42}
+\indexentry{set\_text() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{set\_text()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{42}
+\indexentry{staticMetaObject (oxin.confirm\_window.UI\_confirm\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.confirm\_window.UI\_confirm\_window attribute}}{42}
+\indexentry{yes() (oxin.confirm\_window.UI\_confirm\_window method)@\spxentry{yes()}\spxextra{oxin.confirm\_window.UI\_confirm\_window method}}{42}
+\indexentry{module@\spxentry{module}!oxin.database@\spxentry{oxin.database}}{42}
+\indexentry{oxin.database@\spxentry{oxin.database}!module@\spxentry{module}}{42}
+\indexentry{dataBase (class in oxin.database)@\spxentry{dataBase}\spxextra{class in oxin.database}}{42}
+\indexentry{add\_record() (oxin.database.dataBase method)@\spxentry{add\_record()}\spxextra{oxin.database.dataBase method}}{42}
+\indexentry{check\_connection() (oxin.database.dataBase method)@\spxentry{check\_connection()}\spxextra{oxin.database.dataBase method}}{42}
+\indexentry{connect() (oxin.database.dataBase method)@\spxentry{connect()}\spxextra{oxin.database.dataBase method}}{42}
+\indexentry{delete() (oxin.database.dataBase method)@\spxentry{delete()}\spxextra{oxin.database.dataBase method}}{43}
+\indexentry{execute\_quary() (oxin.database.dataBase method)@\spxentry{execute\_quary()}\spxextra{oxin.database.dataBase method}}{43}
+\indexentry{get\_all\_content() (oxin.database.dataBase method)@\spxentry{get\_all\_content()}\spxextra{oxin.database.dataBase method}}{43}
+\indexentry{get\_col\_name() (oxin.database.dataBase method)@\spxentry{get\_col\_name()}\spxextra{oxin.database.dataBase method}}{43}
+\indexentry{get\_log() (oxin.database.dataBase method)@\spxentry{get\_log()}\spxextra{oxin.database.dataBase method}}{43}
+\indexentry{remove\_record() (oxin.database.dataBase method)@\spxentry{remove\_record()}\spxextra{oxin.database.dataBase method}}{43}
 \indexentry{report\_last() (oxin.database.dataBase method)@\spxentry{report\_last()}\spxextra{oxin.database.dataBase method}}{43}
 \indexentry{search() (oxin.database.dataBase method)@\spxentry{search()}\spxextra{oxin.database.dataBase method}}{43}
-\indexentry{update\_record() (oxin.database.dataBase method)@\spxentry{update\_record()}\spxextra{oxin.database.dataBase method}}{43}
-\indexentry{module@\spxentry{module}!oxin.database\_utils@\spxentry{oxin.database\_utils}}{43}
-\indexentry{oxin.database\_utils@\spxentry{oxin.database\_utils}!module@\spxentry{module}}{43}
-\indexentry{dataBaseUtils (class in oxin.database\_utils)@\spxentry{dataBaseUtils}\spxextra{class in oxin.database\_utils}}{43}
-\indexentry{add\_defect() (oxin.database\_utils.dataBaseUtils method)@\spxentry{add\_defect()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{43}
+\indexentry{update\_record() (oxin.database.dataBase method)@\spxentry{update\_record()}\spxextra{oxin.database.dataBase method}}{44}
+\indexentry{module@\spxentry{module}!oxin.database\_utils@\spxentry{oxin.database\_utils}}{44}
+\indexentry{oxin.database\_utils@\spxentry{oxin.database\_utils}!module@\spxentry{module}}{44}
+\indexentry{dataBaseUtils (class in oxin.database\_utils)@\spxentry{dataBaseUtils}\spxextra{class in oxin.database\_utils}}{44}
+\indexentry{add\_defect() (oxin.database\_utils.dataBaseUtils method)@\spxentry{add\_defect()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
 \indexentry{add\_defect\_group() (oxin.database\_utils.dataBaseUtils method)@\spxentry{add\_defect\_group()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
 \indexentry{add\_user() (oxin.database\_utils.dataBaseUtils method)@\spxentry{add\_user()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
-\indexentry{get\_dataset\_path() (oxin.database\_utils.dataBaseUtils method)@\spxentry{get\_dataset\_path()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
-\indexentry{get\_image\_processing\_parms() (oxin.database\_utils.dataBaseUtils method)@\spxentry{get\_image\_processing\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
-\indexentry{load\_cam\_params() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_cam\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
-\indexentry{load\_defect\_groups() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_defect\_groups()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
-\indexentry{load\_defects() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_defects()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
-\indexentry{load\_general\_setting\_params() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_general\_setting\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{44}
+\indexentry{get\_dataset\_path() (oxin.database\_utils.dataBaseUtils method)@\spxentry{get\_dataset\_path()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
+\indexentry{get\_image\_processing\_parms() (oxin.database\_utils.dataBaseUtils method)@\spxentry{get\_image\_processing\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
+\indexentry{load\_cam\_params() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_cam\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
+\indexentry{load\_defect\_groups() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_defect\_groups()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
+\indexentry{load\_defects() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_defects()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
+\indexentry{load\_general\_setting\_params() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_general\_setting\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
 \indexentry{load\_plc\_ip() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_plc\_ip()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
 \indexentry{load\_plc\_parms() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_plc\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
 \indexentry{load\_users() (oxin.database\_utils.dataBaseUtils method)@\spxentry{load\_users()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
 \indexentry{remove\_defect\_groups() (oxin.database\_utils.dataBaseUtils method)@\spxentry{remove\_defect\_groups()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
-\indexentry{remove\_defects() (oxin.database\_utils.dataBaseUtils method)@\spxentry{remove\_defects()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
-\indexentry{remove\_defects\_by\_group\_id() (oxin.database\_utils.dataBaseUtils method)@\spxentry{remove\_defects\_by\_group\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
-\indexentry{remove\_users() (oxin.database\_utils.dataBaseUtils method)@\spxentry{remove\_users()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{45}
+\indexentry{remove\_defects() (oxin.database\_utils.dataBaseUtils method)@\spxentry{remove\_defects()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
+\indexentry{remove\_defects\_by\_group\_id() (oxin.database\_utils.dataBaseUtils method)@\spxentry{remove\_defects\_by\_group\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
+\indexentry{remove\_users() (oxin.database\_utils.dataBaseUtils method)@\spxentry{remove\_users()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
 \indexentry{search\_camera\_by\_ip() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_camera\_by\_ip()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
 \indexentry{search\_camera\_by\_serial() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_camera\_by\_serial()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
 \indexentry{search\_defect\_by\_color() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_color()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
 \indexentry{search\_defect\_by\_filter() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_filter()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
-\indexentry{search\_defect\_by\_group\_id() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_group\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
-\indexentry{search\_defect\_by\_id() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
-\indexentry{search\_defect\_by\_name() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{46}
+\indexentry{search\_defect\_by\_group\_id() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_group\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
+\indexentry{search\_defect\_by\_id() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
+\indexentry{search\_defect\_by\_name() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
 \indexentry{search\_defect\_by\_short\_name() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_by\_short\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
 \indexentry{search\_defect\_group\_by\_filter() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_group\_by\_filter()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
 \indexentry{search\_defect\_group\_by\_id() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_group\_by\_id()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
 \indexentry{search\_defect\_group\_by\_name() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_defect\_group\_by\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
 \indexentry{search\_user() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_user()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
-\indexentry{search\_user\_by\_user\_name() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_user\_by\_user\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{47}
+\indexentry{search\_user\_by\_user\_name() (oxin.database\_utils.dataBaseUtils method)@\spxentry{search\_user\_by\_user\_name()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{48}
 \indexentry{set\_image\_processing\_parms() (oxin.database\_utils.dataBaseUtils method)@\spxentry{set\_image\_processing\_parms()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{48}
 \indexentry{update\_cam\_params() (oxin.database\_utils.dataBaseUtils method)@\spxentry{update\_cam\_params()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{48}
 \indexentry{update\_defect() (oxin.database\_utils.dataBaseUtils method)@\spxentry{update\_defect()}\spxextra{oxin.database\_utils.dataBaseUtils method}}{48}
@@ -279,15 +279,15 @@
 \indexentry{activate\_() (oxin.login\_UI.UI\_main\_window method)@\spxentry{activate\_()}\spxextra{oxin.login\_UI.UI\_main\_window method}}{49}
 \indexentry{buttonClick() (oxin.login\_UI.UI\_main\_window method)@\spxentry{buttonClick()}\spxextra{oxin.login\_UI.UI\_main\_window method}}{49}
 \indexentry{close\_win() (oxin.login\_UI.UI\_main\_window method)@\spxentry{close\_win()}\spxextra{oxin.login\_UI.UI\_main\_window method}}{49}
-\indexentry{get\_user\_pass() (oxin.login\_UI.UI\_main\_window method)@\spxentry{get\_user\_pass()}\spxextra{oxin.login\_UI.UI\_main\_window method}}{50}
+\indexentry{get\_user\_pass() (oxin.login\_UI.UI\_main\_window method)@\spxentry{get\_user\_pass()}\spxextra{oxin.login\_UI.UI\_main\_window method}}{49}
 \indexentry{set\_login\_message() (oxin.login\_UI.UI\_main\_window method)@\spxentry{set\_login\_message()}\spxextra{oxin.login\_UI.UI\_main\_window method}}{50}
 \indexentry{showPassword() (oxin.login\_UI.UI\_main\_window method)@\spxentry{showPassword()}\spxextra{oxin.login\_UI.UI\_main\_window method}}{50}
 \indexentry{staticMetaObject (oxin.login\_UI.UI\_main\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.login\_UI.UI\_main\_window attribute}}{50}
 \indexentry{module@\spxentry{module}!oxin.login\_api@\spxentry{oxin.login\_api}}{50}
 \indexentry{oxin.login\_api@\spxentry{oxin.login\_api}!module@\spxentry{module}}{50}
 \indexentry{API (class in oxin.login\_api)@\spxentry{API}\spxextra{class in oxin.login\_api}}{50}
-\indexentry{button\_connector() (oxin.login\_api.API method)@\spxentry{button\_connector()}\spxextra{oxin.login\_api.API method}}{51}
-\indexentry{login() (oxin.login\_api.API method)@\spxentry{login()}\spxextra{oxin.login\_api.API method}}{51}
+\indexentry{button\_connector() (oxin.login\_api.API method)@\spxentry{button\_connector()}\spxextra{oxin.login\_api.API method}}{50}
+\indexentry{login() (oxin.login\_api.API method)@\spxentry{login()}\spxextra{oxin.login\_api.API method}}{50}
 \indexentry{module@\spxentry{module}!oxin.notif\_UI@\spxentry{oxin.notif\_UI}}{51}
 \indexentry{oxin.notif\_UI@\spxentry{oxin.notif\_UI}!module@\spxentry{module}}{51}
 \indexentry{UI\_main\_window (class in oxin.notif\_UI)@\spxentry{UI\_main\_window}\spxextra{class in oxin.notif\_UI}}{51}
@@ -299,16 +299,16 @@
 \indexentry{progressbar() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{progressbar()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{51}
 \indexentry{staticMetaObject (oxin.notif\_UI.UI\_main\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.notif\_UI.UI\_main\_window attribute}}{51}
 \indexentry{unlock\_move\_flag() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{unlock\_move\_flag()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{51}
-\indexentry{update\_current\_position() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{update\_current\_position()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{52}
-\indexentry{win\_appear() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_appear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{52}
-\indexentry{win\_disappear() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_disappear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{52}
+\indexentry{update\_current\_position() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{update\_current\_position()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{51}
+\indexentry{win\_appear() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_appear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{51}
+\indexentry{win\_disappear() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_disappear()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{51}
 \indexentry{win\_move\_down() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_move\_down()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{52}
 \indexentry{win\_move\_down\_run\_timer() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_move\_down\_run\_timer()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{52}
 \indexentry{win\_move\_top() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_move\_top()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{52}
 \indexentry{win\_startpoint() (oxin.notif\_UI.UI\_main\_window method)@\spxentry{win\_startpoint()}\spxextra{oxin.notif\_UI.UI\_main\_window method}}{52}
 \indexentry{notification\_manager (class in oxin.notif\_UI)@\spxentry{notification\_manager}\spxextra{class in oxin.notif\_UI}}{52}
 \indexentry{check\_active\_notifs() (oxin.notif\_UI.notification\_manager method)@\spxentry{check\_active\_notifs()}\spxextra{oxin.notif\_UI.notification\_manager method}}{52}
-\indexentry{create\_new\_notif() (oxin.notif\_UI.notification\_manager method)@\spxentry{create\_new\_notif()}\spxextra{oxin.notif\_UI.notification\_manager method}}{53}
+\indexentry{create\_new\_notif() (oxin.notif\_UI.notification\_manager method)@\spxentry{create\_new\_notif()}\spxextra{oxin.notif\_UI.notification\_manager method}}{52}
 \indexentry{rearange\_active\_notifes() (in module oxin.notif\_UI)@\spxentry{rearange\_active\_notifes()}\spxextra{in module oxin.notif\_UI}}{53}
 \indexentry{module@\spxentry{module}!oxin.setting\_UI@\spxentry{oxin.setting\_UI}}{53}
 \indexentry{oxin.setting\_UI@\spxentry{oxin.setting\_UI}!module@\spxentry{module}}{53}
@@ -317,16 +317,16 @@
 \indexentry{animation\_move() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{animation\_move()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{53}
 \indexentry{buttonClick() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{buttonClick()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{53}
 \indexentry{change\_camera\_btn\_icon() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{change\_camera\_btn\_icon()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{53}
-\indexentry{check\_box\_state() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{check\_box\_state()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
+\indexentry{check\_box\_state() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{check\_box\_state()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{53}
 \indexentry{clear\_line\_edits() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{clear\_line\_edits()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
 \indexentry{close\_app\_force() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{close\_app\_force()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
 \indexentry{close\_win() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{close\_win()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
 \indexentry{combo\_image\_preccess() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{combo\_image\_preccess()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
 \indexentry{disable\_camera\_settings() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{disable\_camera\_settings()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
 \indexentry{get\_image\_proccessing\_parms() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_image\_proccessing\_parms()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
-\indexentry{get\_label() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
-\indexentry{get\_plc\_ip() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
-\indexentry{get\_plc\_parms() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_plc\_parms()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
+\indexentry{get\_label() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
+\indexentry{get\_plc\_ip() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
+\indexentry{get\_plc\_parms() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_plc\_parms()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{54}
 \indexentry{get\_user\_pass() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_user\_pass()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
 \indexentry{get\_width\_guage\_parms() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{get\_width\_guage\_parms()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
 \indexentry{leftmenu() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{leftmenu()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
@@ -334,76 +334,76 @@
 \indexentry{minimize\_win() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{minimize\_win()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
 \indexentry{mouseMoveEvent() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{mouseMoveEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
 \indexentry{mousePressEvent() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{mousePressEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
-\indexentry{mouseReleaseEvent() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{mouseReleaseEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
-\indexentry{selected\_camera() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{selected\_camera()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
-\indexentry{set\_button\_enable\_or\_disable() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_button\_enable\_or\_disable()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
-\indexentry{set\_checkboxes() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_checkboxes()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
+\indexentry{mouseReleaseEvent() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{mouseReleaseEvent()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
+\indexentry{selected\_camera() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{selected\_camera()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
+\indexentry{set\_button\_enable\_or\_disable() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_button\_enable\_or\_disable()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
+\indexentry{set\_checkboxes() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_checkboxes()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{55}
 \indexentry{set\_combo\_boxes() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_combo\_boxes()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
 \indexentry{set\_default\_image\_proccess() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_default\_image\_proccess()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
 \indexentry{set\_image\_label() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_image\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
 \indexentry{set\_image\_proccessing\_parms\_to\_ui() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_image\_proccessing\_parms\_to\_ui()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
 \indexentry{set\_label() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_label()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
-\indexentry{set\_login\_message() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_login\_message()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
-\indexentry{set\_plc\_ip() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
-\indexentry{set\_size() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_size()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
+\indexentry{set\_login\_message() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_login\_message()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
+\indexentry{set\_plc\_ip() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_plc\_ip()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
+\indexentry{set\_size() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_size()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{56}
 \indexentry{set\_sliders() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{set\_sliders()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
 \indexentry{show\_mesagges() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{show\_mesagges()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
-\indexentry{show\_value() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{show\_value()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{58}
-\indexentry{staticMetaObject (oxin.setting\_UI.UI\_main\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.setting\_UI.UI\_main\_window attribute}}{58}
-\indexentry{translate\_headers\_list() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{translate\_headers\_list()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{58}
-\indexentry{translate\_ui() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{translate\_ui()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{58}
+\indexentry{show\_value() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{show\_value()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
+\indexentry{staticMetaObject (oxin.setting\_UI.UI\_main\_window attribute)@\spxentry{staticMetaObject}\spxextra{oxin.setting\_UI.UI\_main\_window attribute}}{57}
+\indexentry{translate\_headers\_list() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{translate\_headers\_list()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
+\indexentry{translate\_ui() (oxin.setting\_UI.UI\_main\_window method)@\spxentry{translate\_ui()}\spxextra{oxin.setting\_UI.UI\_main\_window method}}{57}
 \indexentry{module@\spxentry{module}!oxin.setting\_api@\spxentry{oxin.setting\_api}}{58}
 \indexentry{oxin.setting\_api@\spxentry{oxin.setting\_api}!module@\spxentry{module}}{58}
 \indexentry{API (class in oxin.setting\_api)@\spxentry{API}\spxextra{class in oxin.setting\_api}}{58}
 \indexentry{add\_defect() (oxin.setting\_api.API method)@\spxentry{add\_defect()}\spxextra{oxin.setting\_api.API method}}{58}
-\indexentry{add\_defect\_group() (oxin.setting\_api.API method)@\spxentry{add\_defect\_group()}\spxextra{oxin.setting\_api.API method}}{59}
-\indexentry{add\_user() (oxin.setting\_api.API method)@\spxentry{add\_user()}\spxextra{oxin.setting\_api.API method}}{59}
-\indexentry{apply\_calibration\_on\_image() (oxin.setting\_api.API method)@\spxentry{apply\_calibration\_on\_image()}\spxextra{oxin.setting\_api.API method}}{59}
-\indexentry{apply\_changed\_appearance\_params() (oxin.setting\_api.API method)@\spxentry{apply\_changed\_appearance\_params()}\spxextra{oxin.setting\_api.API method}}{59}
+\indexentry{add\_defect\_group() (oxin.setting\_api.API method)@\spxentry{add\_defect\_group()}\spxextra{oxin.setting\_api.API method}}{58}
+\indexentry{add\_user() (oxin.setting\_api.API method)@\spxentry{add\_user()}\spxextra{oxin.setting\_api.API method}}{58}
+\indexentry{apply\_calibration\_on\_image() (oxin.setting\_api.API method)@\spxentry{apply\_calibration\_on\_image()}\spxextra{oxin.setting\_api.API method}}{58}
+\indexentry{apply\_changed\_appearance\_params() (oxin.setting\_api.API method)@\spxentry{apply\_changed\_appearance\_params()}\spxextra{oxin.setting\_api.API method}}{58}
 \indexentry{button\_connector() (oxin.setting\_api.API method)@\spxentry{button\_connector()}\spxextra{oxin.setting\_api.API method}}{59}
 \indexentry{check\_all\_plc\_parms() (oxin.setting\_api.API method)@\spxentry{check\_all\_plc\_parms()}\spxextra{oxin.setting\_api.API method}}{59}
 \indexentry{check\_plc\_parms() (oxin.setting\_api.API method)@\spxentry{check\_plc\_parms()}\spxextra{oxin.setting\_api.API method}}{59}
-\indexentry{check\_storage\_status() (oxin.setting\_api.API method)@\spxentry{check\_storage\_status()}\spxextra{oxin.setting\_api.API method}}{60}
-\indexentry{confirm\_yes() (oxin.setting\_api.API method)@\spxentry{confirm\_yes()}\spxextra{oxin.setting\_api.API method}}{60}
-\indexentry{connect\_dissconnect\_to\_camera() (oxin.setting\_api.API method)@\spxentry{connect\_dissconnect\_to\_camera()}\spxextra{oxin.setting\_api.API method}}{60}
-\indexentry{connect\_plc() (oxin.setting\_api.API method)@\spxentry{connect\_plc()}\spxextra{oxin.setting\_api.API method}}{60}
-\indexentry{control\_list\_image() (oxin.setting\_api.API method)@\spxentry{control\_list\_image()}\spxextra{oxin.setting\_api.API method}}{60}
-\indexentry{disconnect\_camera\_on\_ui\_change() (oxin.setting\_api.API method)@\spxentry{disconnect\_camera\_on\_ui\_change()}\spxextra{oxin.setting\_api.API method}}{60}
+\indexentry{check\_storage\_status() (oxin.setting\_api.API method)@\spxentry{check\_storage\_status()}\spxextra{oxin.setting\_api.API method}}{59}
+\indexentry{confirm\_yes() (oxin.setting\_api.API method)@\spxentry{confirm\_yes()}\spxextra{oxin.setting\_api.API method}}{59}
+\indexentry{connect\_dissconnect\_to\_camera() (oxin.setting\_api.API method)@\spxentry{connect\_dissconnect\_to\_camera()}\spxextra{oxin.setting\_api.API method}}{59}
+\indexentry{connect\_plc() (oxin.setting\_api.API method)@\spxentry{connect\_plc()}\spxextra{oxin.setting\_api.API method}}{59}
+\indexentry{control\_list\_image() (oxin.setting\_api.API method)@\spxentry{control\_list\_image()}\spxextra{oxin.setting\_api.API method}}{59}
+\indexentry{disconnect\_camera\_on\_ui\_change() (oxin.setting\_api.API method)@\spxentry{disconnect\_camera\_on\_ui\_change()}\spxextra{oxin.setting\_api.API method}}{59}
 \indexentry{disconnect\_plc() (oxin.setting\_api.API method)@\spxentry{disconnect\_plc()}\spxextra{oxin.setting\_api.API method}}{60}
 \indexentry{edit\_defects() (oxin.setting\_api.API method)@\spxentry{edit\_defects()}\spxextra{oxin.setting\_api.API method}}{60}
-\indexentry{filter\_defects() (oxin.setting\_api.API method)@\spxentry{filter\_defects()}\spxextra{oxin.setting\_api.API method}}{61}
-\indexentry{force\_clear\_camera\_live\_storage() (oxin.setting\_api.API method)@\spxentry{force\_clear\_camera\_live\_storage()}\spxextra{oxin.setting\_api.API method}}{61}
-\indexentry{image\_processing\_calibration() (oxin.setting\_api.API method)@\spxentry{image\_processing\_calibration()}\spxextra{oxin.setting\_api.API method}}{61}
-\indexentry{load\_appearance\_params\_on\_start() (oxin.setting\_api.API method)@\spxentry{load\_appearance\_params\_on\_start()}\spxextra{oxin.setting\_api.API method}}{61}
-\indexentry{load\_camera\_params\_from\_db\_to\_UI() (oxin.setting\_api.API method)@\spxentry{load\_camera\_params\_from\_db\_to\_UI()}\spxextra{oxin.setting\_api.API method}}{61}
+\indexentry{filter\_defects() (oxin.setting\_api.API method)@\spxentry{filter\_defects()}\spxextra{oxin.setting\_api.API method}}{60}
+\indexentry{force\_clear\_camera\_live\_storage() (oxin.setting\_api.API method)@\spxentry{force\_clear\_camera\_live\_storage()}\spxextra{oxin.setting\_api.API method}}{60}
+\indexentry{image\_processing\_calibration() (oxin.setting\_api.API method)@\spxentry{image\_processing\_calibration()}\spxextra{oxin.setting\_api.API method}}{60}
+\indexentry{load\_appearance\_params\_on\_start() (oxin.setting\_api.API method)@\spxentry{load\_appearance\_params\_on\_start()}\spxextra{oxin.setting\_api.API method}}{60}
+\indexentry{load\_camera\_params\_from\_db\_to\_UI() (oxin.setting\_api.API method)@\spxentry{load\_camera\_params\_from\_db\_to\_UI()}\spxextra{oxin.setting\_api.API method}}{60}
 \indexentry{load\_plc\_parms() (oxin.setting\_api.API method)@\spxentry{load\_plc\_parms()}\spxextra{oxin.setting\_api.API method}}{61}
 \indexentry{next\_image\_precessing() (oxin.setting\_api.API method)@\spxentry{next\_image\_precessing()}\spxextra{oxin.setting\_api.API method}}{61}
-\indexentry{on\_close\_operations() (oxin.setting\_api.API method)@\spxentry{on\_close\_operations()}\spxextra{oxin.setting\_api.API method}}{62}
-\indexentry{previous\_image\_precessing() (oxin.setting\_api.API method)@\spxentry{previous\_image\_precessing()}\spxextra{oxin.setting\_api.API method}}{62}
-\indexentry{refresh\_dashboard\_page() (oxin.setting\_api.API method)@\spxentry{refresh\_dashboard\_page()}\spxextra{oxin.setting\_api.API method}}{62}
-\indexentry{refresh\_defects\_table() (oxin.setting\_api.API method)@\spxentry{refresh\_defects\_table()}\spxextra{oxin.setting\_api.API method}}{62}
-\indexentry{refresh\_storege\_page() (oxin.setting\_api.API method)@\spxentry{refresh\_storege\_page()}\spxextra{oxin.setting\_api.API method}}{62}
-\indexentry{refresh\_users\_table() (oxin.setting\_api.API method)@\spxentry{refresh\_users\_table()}\spxextra{oxin.setting\_api.API method}}{62}
-\indexentry{remove\_defects() (oxin.setting\_api.API method)@\spxentry{remove\_defects()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{on\_close\_operations() (oxin.setting\_api.API method)@\spxentry{on\_close\_operations()}\spxextra{oxin.setting\_api.API method}}{61}
+\indexentry{previous\_image\_precessing() (oxin.setting\_api.API method)@\spxentry{previous\_image\_precessing()}\spxextra{oxin.setting\_api.API method}}{61}
+\indexentry{refresh\_dashboard\_page() (oxin.setting\_api.API method)@\spxentry{refresh\_dashboard\_page()}\spxextra{oxin.setting\_api.API method}}{61}
+\indexentry{refresh\_defects\_table() (oxin.setting\_api.API method)@\spxentry{refresh\_defects\_table()}\spxextra{oxin.setting\_api.API method}}{61}
+\indexentry{refresh\_storege\_page() (oxin.setting\_api.API method)@\spxentry{refresh\_storege\_page()}\spxextra{oxin.setting\_api.API method}}{61}
+\indexentry{refresh\_users\_table() (oxin.setting\_api.API method)@\spxentry{refresh\_users\_table()}\spxextra{oxin.setting\_api.API method}}{61}
+\indexentry{remove\_defects() (oxin.setting\_api.API method)@\spxentry{remove\_defects()}\spxextra{oxin.setting\_api.API method}}{61}
 \indexentry{remove\_users() (oxin.setting\_api.API method)@\spxentry{remove\_users()}\spxextra{oxin.setting\_api.API method}}{62}
-\indexentry{run\_storage\_check\_timer() (oxin.setting\_api.API method)@\spxentry{run\_storage\_check\_timer()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{save\_changed\_calibration\_params() (oxin.setting\_api.API method)@\spxentry{save\_changed\_calibration\_params()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{save\_changed\_camera\_params() (oxin.setting\_api.API method)@\spxentry{save\_changed\_camera\_params()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{save\_image\_processing\_parms() (oxin.setting\_api.API method)@\spxentry{save\_image\_processing\_parms()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{save\_plc\_ip() (oxin.setting\_api.API method)@\spxentry{save\_plc\_ip()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{save\_plc\_parms() (oxin.setting\_api.API method)@\spxentry{save\_plc\_parms()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{select\_image\_procesing\_directory() (oxin.setting\_api.API method)@\spxentry{select\_image\_procesing\_directory()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{set\_plc\_ip\_to\_ui() (oxin.setting\_api.API method)@\spxentry{set\_plc\_ip\_to\_ui()}\spxextra{oxin.setting\_api.API method}}{63}
-\indexentry{set\_plc\_value() (oxin.setting\_api.API method)@\spxentry{set\_plc\_value()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{show\_camera\_picture() (oxin.setting\_api.API method)@\spxentry{show\_camera\_picture()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{show\_related\_defects() (oxin.setting\_api.API method)@\spxentry{show\_related\_defects()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{tabledefectgroups\_onHeaderClicked() (oxin.setting\_api.API method)@\spxentry{tabledefectgroups\_onHeaderClicked()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{tabledefects\_onHeaderClicked() (oxin.setting\_api.API method)@\spxentry{tabledefects\_onHeaderClicked()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{things\_to\_do\_on\_stackwidject\_change() (oxin.setting\_api.API method)@\spxentry{things\_to\_do\_on\_stackwidject\_change()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{update\_camera\_live\_storage\_parms() (oxin.setting\_api.API method)@\spxentry{update\_camera\_live\_storage\_parms()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{update\_path\_plc() (oxin.setting\_api.API method)@\spxentry{update\_path\_plc()}\spxextra{oxin.setting\_api.API method}}{64}
-\indexentry{update\_plc\_dashboard\_parms() (oxin.setting\_api.API method)@\spxentry{update\_plc\_dashboard\_parms()}\spxextra{oxin.setting\_api.API method}}{65}
-\indexentry{write\_parms() (oxin.setting\_api.API method)@\spxentry{write\_parms()}\spxextra{oxin.setting\_api.API method}}{65}
-\indexentry{module@\spxentry{module}!oxin.translate\_ui@\spxentry{oxin.translate\_ui}}{65}
-\indexentry{oxin.translate\_ui@\spxentry{oxin.translate\_ui}!module@\spxentry{module}}{65}
-\indexentry{translate\_ui() (in module oxin.translate\_ui)@\spxentry{translate\_ui()}\spxextra{in module oxin.translate\_ui}}{65}
+\indexentry{run\_storage\_check\_timer() (oxin.setting\_api.API method)@\spxentry{run\_storage\_check\_timer()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{save\_changed\_calibration\_params() (oxin.setting\_api.API method)@\spxentry{save\_changed\_calibration\_params()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{save\_changed\_camera\_params() (oxin.setting\_api.API method)@\spxentry{save\_changed\_camera\_params()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{save\_image\_processing\_parms() (oxin.setting\_api.API method)@\spxentry{save\_image\_processing\_parms()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{save\_plc\_ip() (oxin.setting\_api.API method)@\spxentry{save\_plc\_ip()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{save\_plc\_parms() (oxin.setting\_api.API method)@\spxentry{save\_plc\_parms()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{select\_image\_procesing\_directory() (oxin.setting\_api.API method)@\spxentry{select\_image\_procesing\_directory()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{set\_plc\_ip\_to\_ui() (oxin.setting\_api.API method)@\spxentry{set\_plc\_ip\_to\_ui()}\spxextra{oxin.setting\_api.API method}}{62}
+\indexentry{set\_plc\_value() (oxin.setting\_api.API method)@\spxentry{set\_plc\_value()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{show\_camera\_picture() (oxin.setting\_api.API method)@\spxentry{show\_camera\_picture()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{show\_related\_defects() (oxin.setting\_api.API method)@\spxentry{show\_related\_defects()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{tabledefectgroups\_onHeaderClicked() (oxin.setting\_api.API method)@\spxentry{tabledefectgroups\_onHeaderClicked()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{tabledefects\_onHeaderClicked() (oxin.setting\_api.API method)@\spxentry{tabledefects\_onHeaderClicked()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{things\_to\_do\_on\_stackwidject\_change() (oxin.setting\_api.API method)@\spxentry{things\_to\_do\_on\_stackwidject\_change()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{update\_camera\_live\_storage\_parms() (oxin.setting\_api.API method)@\spxentry{update\_camera\_live\_storage\_parms()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{update\_path\_plc() (oxin.setting\_api.API method)@\spxentry{update\_path\_plc()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{update\_plc\_dashboard\_parms() (oxin.setting\_api.API method)@\spxentry{update\_plc\_dashboard\_parms()}\spxextra{oxin.setting\_api.API method}}{63}
+\indexentry{write\_parms() (oxin.setting\_api.API method)@\spxentry{write\_parms()}\spxextra{oxin.setting\_api.API method}}{64}
+\indexentry{module@\spxentry{module}!oxin.translate\_ui@\spxentry{oxin.translate\_ui}}{64}
+\indexentry{oxin.translate\_ui@\spxentry{oxin.translate\_ui}!module@\spxentry{module}}{64}
+\indexentry{translate\_ui() (in module oxin.translate\_ui)@\spxentry{translate\_ui()}\spxextra{in module oxin.translate\_ui}}{64}

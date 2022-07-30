@@ -13,7 +13,7 @@ Welcome to Saba's documentation!
 Contetns:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
    
    Electrical
    Mechanics
@@ -26,4 +26,3 @@ Indices and tables
 
 * :ref:`genindex`
 * :ref:`modindex`
-* :ref:`search`

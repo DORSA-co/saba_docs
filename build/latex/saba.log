@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7.25) (preloaded format=xelatex 2022.7.26)  27 JUL 2022 11:52
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 22.7.25) (preloaded format=xelatex 2022.7.26)  30 JUL 2022 11:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1163,133 +1163,104 @@ Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
 
 Writing index file saba.idx
 (saba.aux
-LaTeX Info: Redefining \rmfamily on input line 17.
-LaTeX Info: Redefining \sffamily on input line 17.
-LaTeX Info: Redefining \ttfamily on input line 17.
-
-Package fontspec Info: Font family 'DejaVuSans(1)' created for font 'DejaVu
-(fontspec)             Sans' with options [Script=Arabic].
-(fontspec)              
-(fontspec)              This font family consists of the following NFSS
-(fontspec)             series/shapes:
-(fontspec)              
-(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu
-(fontspec)             Sans/OT:script=arab;language=dflt;"
-(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
-(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu
-(fontspec)             Sans/B/OT:script=arab;language=dflt;"
-(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
-(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu
-(fontspec)             Sans/I/OT:script=arab;language=dflt;"
-(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
-(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu
-(fontspec)             Sans/BI/OT:script=arab;language=dflt;"
-(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
-
-LaTeX Info: Redefining \rmfamily on input line 45.
-LaTeX Info: Redefining \sffamily on input line 45.
-LaTeX Info: Redefining \ttfamily on input line 45.
-LaTeX Info: Redefining \rmfamily on input line 60.
-LaTeX Info: Redefining \sffamily on input line 60.
-LaTeX Info: Redefining \ttfamily on input line 60.
-LaTeX Info: Redefining \rmfamily on input line 99.
-LaTeX Info: Redefining \sffamily on input line 99.
-LaTeX Info: Redefining \ttfamily on input line 99.
+LaTeX Info: Redefining \rmfamily on input line 16.
+LaTeX Info: Redefining \sffamily on input line 16.
+LaTeX Info: Redefining \ttfamily on input line 16.
 )
 \openout1 = `saba.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 72.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 73.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 7
-2.
+3.
 
 (C:\Users\reza\AppData\Local\Programs\MiKTeX\tex/latex/base\ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
-LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 73.
+LaTeX Font Info:    ... okay on input line 73.
 
 Package fontspec Info: Adjusting the maths setup (use [no-math] to avoid
 (fontspec)             this).
 
 \symlegacymaths=\mathgroup6
 LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
-(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 72.
-LaTeX Font Info:    Redeclaring math accent \acute on input line 72.
-LaTeX Font Info:    Redeclaring math accent \grave on input line 72.
-LaTeX Font Info:    Redeclaring math accent \ddot on input line 72.
-LaTeX Font Info:    Redeclaring math accent \tilde on input line 72.
-LaTeX Font Info:    Redeclaring math accent \bar on input line 72.
-LaTeX Font Info:    Redeclaring math accent \breve on input line 72.
-LaTeX Font Info:    Redeclaring math accent \check on input line 72.
-LaTeX Font Info:    Redeclaring math accent \hat on input line 72.
-LaTeX Font Info:    Redeclaring math accent \dot on input line 72.
-LaTeX Font Info:    Redeclaring math accent \mathring on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Delta on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Theta on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Xi on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Pi on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Phi on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Psi on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \Omega on input line 72.
-LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 72.
-LaTeX Font Info:    Redeclaring symbol font `operators' on input line 72.
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 73.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 73.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 73.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 73.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 73.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 73.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 73.
+LaTeX Font Info:    Redeclaring math accent \check on input line 73.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 73.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 73.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 73.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 73.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 73.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 72.
+(Font)              `operators' in the math version `normal' on input line 73.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmr/m/n --> TU/DejaVuSans(0)/m/n on input line 72.
+(Font)                  OT1/cmr/m/n --> TU/DejaVuSans(0)/m/n on input line 73.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 72.
+(Font)              `operators' in the math version `bold' on input line 73.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmr/bx/n --> TU/DejaVuSans(0)/m/n on input line 72.
+(Font)                  OT1/cmr/bx/n --> TU/DejaVuSans(0)/m/n on input line 73.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  TU/DejaVuSans(0)/m/n --> TU/DejaVuSans(0)/m/n on input 
-line 72.
+line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/cmr/m/it --> TU/DejaVuSans(0)/m/it on input line 72
+(Font)                  OT1/cmr/m/it --> TU/DejaVuSans(0)/m/it on input line 73
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/cmr/bx/n --> TU/DejaVuSans(0)/b/n on input line 72.
+(Font)                  OT1/cmr/bx/n --> TU/DejaVuSans(0)/b/n on input line 73.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/cmss/m/n --> TU/DejaVuSans(0)/m/n on input line 72.
+(Font)                  OT1/cmss/m/n --> TU/DejaVuSans(0)/m/n on input line 73.
 
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/m/n on input line
- 72.
+ 73.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
 (Font)                  TU/DejaVuSans(0)/m/n --> TU/DejaVuSans(0)/b/n on input 
-line 72.
+line 73.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> TU/DejaVuSans(0)/b/it on input line 7
-2.
+3.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/cmss/bx/n --> TU/DejaVuSans(0)/b/n on input line 72
+(Font)                  OT1/cmss/bx/n --> TU/DejaVuSans(0)/b/n on input line 73
 .
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> TU/DejaVuSansMono(0)/b/n on input line
- 72.
+ 73.
 The property list \__xpg_alias contains the pairs (without outer braces):
 >  {latex/target}  =>  {latex}
 >  {english/target}  =>  {english}
@@ -1329,7 +1300,7 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {farsi/target}  =>  {persian}.
 
 
-Package polyglossia Warning: Patchingbiditablefailed! on input line 72.
+Package polyglossia Warning: Patchingbiditablefailed! on input line 73.
 
 
 ! Package bidi Error: Oops! you have loaded package xcolor after bidi package. 
@@ -1340,7 +1311,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1352,7 +1323,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1364,7 +1335,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1376,7 +1347,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1388,7 +1359,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1400,7 +1371,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1412,7 +1383,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1424,7 +1395,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1436,7 +1407,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1448,7 +1419,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1460,7 +1431,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1472,7 +1443,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1484,7 +1455,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 
@@ -1496,7 +1467,7 @@ See the bidi package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.72 \begin{document}
+l.73 \begin{document}
                      
 ? 
 \c@literalblock=\count385
@@ -1534,22 +1505,22 @@ l.72 \begin{document}
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 72.
+Package hyperref Info: Link coloring ON on input line 73.
 (saba.out) (saba.out)
 \@outlinefile=\write5
 \openout5 = `saba.out'.
 
-LaTeX Info: Redefining \rmfamily on input line 72.
-LaTeX Info: Redefining \sffamily on input line 72.
-LaTeX Info: Redefining \ttfamily on input line 72.
-Package hyperref Info: Option `pageanchor' set `false' on input line 75.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 75.
+LaTeX Info: Redefining \rmfamily on input line 73.
+LaTeX Info: Redefining \sffamily on input line 73.
+LaTeX Info: Redefining \ttfamily on input line 73.
+Package hyperref Info: Option `pageanchor' set `false' on input line 76.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 76.
 
 
 (C:\Users\reza\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 75.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 76.
 
 
 (C:\Users\reza\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
@@ -1564,64 +1535,76 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Info: Redefining \rmfamily on input line 1.
 LaTeX Info: Redefining \sffamily on input line 1.
 LaTeX Info: Redefining \ttfamily on input line 1.
-LaTeX Info: Redefining \rmfamily on input line 8.
-LaTeX Info: Redefining \sffamily on input line 8.
-LaTeX Info: Redefining \ttfamily on input line 8.
-LaTeX Info: Redefining \rmfamily on input line 13.
-LaTeX Info: Redefining \sffamily on input line 13.
-LaTeX Info: Redefining \ttfamily on input line 13.
-LaTeX Info: Redefining \rmfamily on input line 24.
-LaTeX Info: Redefining \sffamily on input line 24.
-LaTeX Info: Redefining \ttfamily on input line 24.
-)
+ [1
+
+])
 \tf@toc=\write6
 \openout6 = `saba.toc'.
 
+ [2]
+File: dorsa.png Graphic file (type bmp)
+<dorsa.png>
  [1
 
 ] [2
 
 ]
-File: dorsa.png Graphic file (type bmp)
-<dorsa.png>
- [1] [2
-
-]
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for OT1+pzc on input line 9
-0.
+1.
 (C:\Users\reza\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1pzc.fd
 File: ot1pzc.fd 2020/03/25 font definitions for OT1/pzc.
 )
 LaTeX Font Info:    Font shape `OT1/pzc/m/n' in size <76> not available
-(Font)              Font shape `OT1/pzc/m/it' tried instead on input line 90.
+(Font)              Font shape `OT1/pzc/m/it' tried instead on input line 91.
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 90--90
+Overfull \hbox (10.0pt too wide) in paragraph at lines 91--91
 [][][][][][][][][][][] 
  []
 
 [3]
-LaTeX Info: Redefining \rmfamily on input line 225.
-LaTeX Info: Redefining \sffamily on input line 225.
-LaTeX Info: Redefining \ttfamily on input line 225.
-LaTeX Info: Redefining \rmfamily on input line 238.
-LaTeX Info: Redefining \sffamily on input line 238.
-LaTeX Info: Redefining \ttfamily on input line 238.
-LaTeX Info: Redefining \rmfamily on input line 249.
-LaTeX Info: Redefining \sffamily on input line 249.
-LaTeX Info: Redefining \ttfamily on input line 249.
-LaTeX Info: Redefining \rmfamily on input line 260.
-LaTeX Info: Redefining \sffamily on input line 260.
-LaTeX Info: Redefining \ttfamily on input line 260.
-LaTeX Info: Redefining \rmfamily on input line 271.
-LaTeX Info: Redefining \sffamily on input line 271.
-LaTeX Info: Redefining \ttfamily on input line 271.
- [4] [5] [6
+
+Package fontspec Info: Font family 'DejaVuSans(1)' created for font 'DejaVu
+(fontspec)             Sans' with options [Script=Arabic].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/OT:script=arab;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/B/OT:script=arab;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/I/OT:script=arab;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"DejaVu
+(fontspec)             Sans/BI/OT:script=arab;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.: 
+
+LaTeX Info: Redefining \rmfamily on input line 228.
+LaTeX Info: Redefining \sffamily on input line 228.
+LaTeX Info: Redefining \ttfamily on input line 228.
+LaTeX Info: Redefining \rmfamily on input line 239.
+LaTeX Info: Redefining \sffamily on input line 239.
+LaTeX Info: Redefining \ttfamily on input line 239.
+LaTeX Info: Redefining \rmfamily on input line 251.
+LaTeX Info: Redefining \sffamily on input line 251.
+LaTeX Info: Redefining \ttfamily on input line 251.
+LaTeX Info: Redefining \rmfamily on input line 262.
+LaTeX Info: Redefining \sffamily on input line 262.
+LaTeX Info: Redefining \ttfamily on input line 262.
+ [4]
+LaTeX Info: Redefining \rmfamily on input line 272.
+LaTeX Info: Redefining \sffamily on input line 272.
+LaTeX Info: Redefining \ttfamily on input line 272.
+ [5] [6
 
 ]
 Chapter 2.
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 280--280
+Overfull \hbox (10.0pt too wide) in paragraph at lines 281--281
 [][][][][][][][][][][] 
  []
 
@@ -1630,85 +1613,442 @@ Overfull \hbox (10.0pt too wide) in paragraph at lines 280--280
 ]
 Chapter 3.
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 285--285
+Overfull \hbox (10.0pt too wide) in paragraph at lines 286--286
 [][][][][][][][][][][] 
  []
 
-LaTeX Info: Redefining \rmfamily on input line 311.
-LaTeX Info: Redefining \sffamily on input line 311.
-LaTeX Info: Redefining \ttfamily on input line 311.
-LaTeX Info: Redefining \rmfamily on input line 331.
-LaTeX Info: Redefining \sffamily on input line 331.
-LaTeX Info: Redefining \ttfamily on input line 331.
+LaTeX Info: Redefining \rmfamily on input line 313.
+LaTeX Info: Redefining \sffamily on input line 313.
+LaTeX Info: Redefining \ttfamily on input line 313.
+LaTeX Info: Redefining \rmfamily on input line 333.
+LaTeX Info: Redefining \sffamily on input line 333.
+LaTeX Info: Redefining \ttfamily on input line 333.
 [9]
-LaTeX Info: Redefining \rmfamily on input line 344.
-LaTeX Info: Redefining \sffamily on input line 344.
-LaTeX Info: Redefining \ttfamily on input line 344.
- [10] [11] [12]
-Overfull \hbox (26.5194pt too wide) in paragraph at lines 822--822
-[]\TU/DejaVuSans(0)/m/it/10 era_calibration_params\TU/DejaVuSansMono(0)/m/n/10 
-)|[] 
- []
+LaTeX Info: Redefining \rmfamily on input line 346.
+LaTeX Info: Redefining \sffamily on input line 346.
+LaTeX Info: Redefining \ttfamily on input line 346.
 
-
-Overfull \hbox (26.5194pt too wide) in paragraph at lines 855--855
-[]\TU/DejaVuSans(0)/m/it/10 era_calibration_params\TU/DejaVuSansMono(0)/m/n/10 
-)|[] 
- []
-
-[13] [14] [15] [16] [17] [18]
-Overfull \hbox (2.28111pt too wide) in paragraph at lines 1623--1623
+Overfull \hbox (4.11705pt too wide) in paragraph at lines 364--364
 [][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
  []
 
 
-Overfull \hbox (5.86021pt too wide) in paragraph at lines 1623--1623
+Overfull \hbox (13.09654pt too wide) in paragraph at lines 364--364
+[]\TU/DejaVuSans(0)/m/it/10 api_obj\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (37.55455pt too wide) in paragraph at lines 394--394
+[]\TU/DejaVuSans(0)/m/it/10 era_calibration_params\TU/DejaVuSans(0)/m/n/10 ,[] 
+
+ []
+
+[10]
+Overfull \hbox (37.94518pt too wide) in paragraph at lines 470--470
+[]\TU/DejaVuSans(0)/m/it/10 rent_cam_connection=None\TU/DejaVuSans(0)/m/n/10 ,[
+] 
+ []
+
+[11]
+Overfull \hbox (1.67564pt too wide) in paragraph at lines 592--592
+[][]\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (2.13951pt too wide) in paragraph at lines 592--592
+[]\TU/DejaVuSans(0)/m/it/10 era_id\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (0.93834pt too wide) in paragraph at lines 621--621
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[12]
+Overfull \hbox (76.5194pt too wide) in paragraph at lines 824--824
+[]\TU/DejaVuSans(0)/m/it/10 era_calibration_params\TU/DejaVuSansMono(0)/m/n/10 
+)|[] 
+ []
+
+[13]
+Overfull \hbox (76.5194pt too wide) in paragraph at lines 857--857
+[]\TU/DejaVuSans(0)/m/it/10 era_calibration_params\TU/DejaVuSansMono(0)/m/n/10 
+)|[] 
+ []
+
+[14] [15]
+Overfull \hbox (1.67564pt too wide) in paragraph at lines 1140--1140
+[][]\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (30.3524pt too wide) in paragraph at lines 1140--1140
+[]\TU/DejaVuSans(0)/m/it/10 able_serials\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (4.11705pt too wide) in paragraph at lines 1171--1171
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (10.25475pt too wide) in paragraph at lines 1171--1171
+[]\TU/DejaVuSans(0)/m/it/10 api_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (26.97838pt too wide) in paragraph at lines 1171--1171
+[]\TU/DejaVuSans(0)/m/it/10 nect=True\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (31.15318pt too wide) in paragraph at lines 1171--1171
+[]\TU/DejaVuSans(0)/m/it/10 tion=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[16] [17]
+Overfull \hbox (11.98814pt too wide) in paragraph at lines 1300--1300
+[]\TU/DejaVuSans(0)/m/it/10 frame_transmission_delay=0\TU/DejaVuSans(0)/m/n/10 
+,[] 
+ []
+
+[18]
+LaTeX Info: Redefining \rmfamily on input line 1493.
+LaTeX Info: Redefining \sffamily on input line 1493.
+LaTeX Info: Redefining \ttfamily on input line 1493.
+ [19]
+Overfull \hbox (13.62877pt too wide) in paragraph at lines 1589--1589
+[]\TU/DejaVuSans(0)/m/it/10 new_defect_info\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (23.20885pt too wide) in paragraph at lines 1589--1589
+[]\TU/DejaVuSans(0)/m/it/10 fect_group=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (52.28111pt too wide) in paragraph at lines 1622--1622
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (55.86021pt too wide) in paragraph at lines 1622--1622
 []\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
  []
 
 
-Overfull \hbox (36.25084pt too wide) in paragraph at lines 1623--1623
+Overfull \hbox (38.75084pt too wide) in paragraph at lines 1622--1622
+[]\TU/DejaVuSans(0)/m/it/10 cur-[] 
+ []
+
+
+Overfull \hbox (86.25084pt too wide) in paragraph at lines 1622--1622
 []\TU/DejaVuSans(0)/m/it/10 rent='None'\TU/DejaVuSansMono(0)/m/n/10 )|[] 
  []
 
-[19]
-Overfull \hbox (4.76158pt too wide) in paragraph at lines 1657--1657
+
+Overfull \hbox (25.75768pt too wide) in paragraph at lines 1656--1656
+[][]\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (5.74791pt too wide) in paragraph at lines 1656--1656
+[]\TU/DejaVuSans(0)/m/it/10 de-[] 
+ []
+
+
+Overfull \hbox (36.80748pt too wide) in paragraph at lines 1656--1656
+[]\TU/DejaVuSans(0)/m/it/10 fects_list\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (3.51158pt too wide) in paragraph at lines 1656--1656
+[]\TU/DejaVuSans(0)/m/it/10 re-[] 
+ []
+
+
+Overfull \hbox (54.76158pt too wide) in paragraph at lines 1656--1656
 []\TU/DejaVuSans(0)/m/it/10 verse=False\TU/DejaVuSans(0)/m/n/10 ,[] 
  []
 
+
+Overfull \hbox (7.57408pt too wide) in paragraph at lines 1656--1656
+[]\TU/DejaVuSans(0)/m/it/10 sin-[] 
+ []
+
+
+Overfull \hbox (45.33775pt too wide) in paragraph at lines 1656--1656
+[]\TU/DejaVuSans(0)/m/it/10 gle=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
 [20]
-Overfull \hbox (26.58287pt too wide) in paragraph at lines 1778--1778
+Overfull \hbox (38.42857pt too wide) in paragraph at lines 1711--1711
+[]\TU/DejaVuSans(0)/m/it/10 fect_group=False\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (24.32701pt too wide) in paragraph at lines 1711--1711
+[]\TU/DejaVuSans(0)/m/it/10 is_filter=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (22.3983pt too wide) in paragraph at lines 1749--1749
+[]\TU/DejaVuSans(0)/m/it/10 fect_groups=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+
+ []
+
+
+Overfull \hbox (13.71666pt too wide) in paragraph at lines 1777--1777
+[][]\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (37.62779pt too wide) in paragraph at lines 1777--1777
+[]\TU/DejaVuSans(0)/m/it/10 ter_params\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (76.58287pt too wide) in paragraph at lines 1777--1777
 []\TU/DejaVuSans(0)/m/it/10 fect_groups=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
 
  []
 
 [21]
-Overfull \hbox (9.3319pt too wide) in paragraph at lines 1913--1913
-[]\TU/DejaVuSans(0)/m/it/10 fect_group=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+Overfull \hbox (50.13756pt too wide) in paragraph at lines 1816--1816
+[]\TU/DejaVuSans(0)/m/it/10 fect_groups_list\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (20.36705pt too wide) in paragraph at lines 1874--1874
+[]\TU/DejaVuSans(0)/m/it/10 fect_group=False\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (37.33482pt too wide) in paragraph at lines 1874--1874
+[]\TU/DejaVuSans(0)/m/it/10 fect_group_id=False\TU/DejaVuSansMono(0)/m/n/10 )|[
+] 
  []
 
 [22]
-Overfull \hbox (4.70787pt too wide) in paragraph at lines 1996--1996
+Overfull \hbox (1.67564pt too wide) in paragraph at lines 1912--1912
+[]\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (11.58287pt too wide) in paragraph at lines 1912--1912
+[]\TU/DejaVuSans(0)/m/it/10 fect_info\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (39.79088pt too wide) in paragraph at lines 1912--1912
+[]\TU/DejaVuSans(0)/m/it/10 on_edit=False\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (59.3319pt too wide) in paragraph at lines 1912--1912
+[]\TU/DejaVuSans(0)/m/it/10 fect_group=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (32.40807pt too wide) in paragraph at lines 1957--1957
+[]\TU/DejaVuSans(0)/m/it/10 fect_group=False\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (49.37584pt too wide) in paragraph at lines 1957--1957
+[]\TU/DejaVuSans(0)/m/it/10 fect_group_id=False\TU/DejaVuSansMono(0)/m/n/10 )|[
+] 
+ []
+
+[23]
+Overfull \hbox (4.11705pt too wide) in paragraph at lines 1995--1995
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (54.70787pt too wide) in paragraph at lines 1995--1995
 []\TU/DejaVuSans(0)/m/it/10 fect_group_info\TU/DejaVuSansMono(0)/m/n/10 )|[] 
  []
 
-[23] [24] [25] [26]
-Overfull \hbox (34.15611pt too wide) in paragraph at lines 2571--2571
+
+Overfull \hbox (50.13756pt too wide) in paragraph at lines 2024--2024
+[]\TU/DejaVuSans(0)/m/it/10 fect_groups_list\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (32.07603pt too wide) in paragraph at lines 2046--2046
+[]\TU/DejaVuSans(0)/m/it/10 fect_groups_list\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (44.0731pt too wide) in paragraph at lines 2101--2101
+[]\TU/DejaVuSans(0)/m/it/10 fect_group_name='None'\TU/DejaVuSansMono(0)/m/n/10 
+)|[] 
+ []
+
+[24]
+Overfull \hbox (23.20885pt too wide) in paragraph at lines 2185--2185
+[]\TU/DejaVuSans(0)/m/it/10 fect_group=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[25]
+Overfull \hbox (10.02037pt too wide) in paragraph at lines 2223--2223
+[]\TU/DejaVuSans(0)/m/it/10 log_mainfolderpath='./app_logs'\TU/DejaVuSans(0)/m/
+n/10 ,[] 
+ []
+
+
+Overfull \hbox (10.13756pt too wide) in paragraph at lines 2333--2333
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (35.45006pt too wide) in paragraph at lines 2333--2333
+[]\TU/DejaVuSans(0)/m/it/10 firm_ui_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (46.17271pt too wide) in paragraph at lines 2333--2333
+[]\TU/DejaVuSans(0)/m/it/10 gin_ui_object\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (3.39928pt too wide) in paragraph at lines 2333--2333
+[]\TU/DejaVuSans(0)/m/it/10 pear-[] 
+ []
+
+
+Overfull \hbox (50.40123pt too wide) in paragraph at lines 2333--2333
+[]\TU/DejaVuSans(0)/m/it/10 ance_params\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[26]
+Overfull \hbox (43.0819pt too wide) in paragraph at lines 2374--2374
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (12.97935pt too wide) in paragraph at lines 2462--2462
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (13.45787pt too wide) in paragraph at lines 2484--2484
+[]\TU/DejaVuSans(0)/m/it/10 mode='all'\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 2501--2505
+[]\TU/DejaVuSans(0)/m/n/10 depending on mode ‘all’: all_params, multitasking pa
+rams[]
+ []
+
+
+Overfull \hbox (5.41588pt too wide) in paragraph at lines 2537--2537
+[]\TU/DejaVuSans(0)/m/it/10 ance_params\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (39.65904pt too wide) in paragraph at lines 2537--2537
+[]\TU/DejaVuSans(0)/m/it/10 task_params=None\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (11.43639pt too wide) in paragraph at lines 2570--2570
+[]\TU/DejaVuSans(0)/m/it/10 ance_params\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (84.15611pt too wide) in paragraph at lines 2570--2570
 []\TU/DejaVuSans(0)/m/it/10 is_multitask_params=False\TU/DejaVuSansMono(0)/m/n/
 10 )|[] 
  []
 
-[27] [28] [29] [30] [31] [32] [33] [34]
-Overfull \hbox (15.44029pt too wide) in paragraph at lines 3590--3590
+[28] [29] [30] [31] [32]
+Overfull \hbox (28.59947pt too wide) in paragraph at lines 3218--3218
+[][]\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+
+Overfull \hbox (25.02037pt too wide) in paragraph at lines 3240--3240
+[][]\TU/DejaVuSans(0)/m/it/10 ui_obj\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[33]
+Overfull \hbox (13.71666pt too wide) in paragraph at lines 3384--3384
+[][]\TU/DejaVuSans(0)/m/it/10 db_obj\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (37.89146pt too wide) in paragraph at lines 3384--3384
+[]\TU/DejaVuSans(0)/m/it/10 drive_infos\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[34]
+LaTeX Info: Redefining \rmfamily on input line 3471.
+LaTeX Info: Redefining \sffamily on input line 3471.
+LaTeX Info: Redefining \ttfamily on input line 3471.
+ [35]
+Overfull \hbox (44.44908pt too wide) in paragraph at lines 3586--3586
+[][]\TU/DejaVuSans(0)/m/it/10 names\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (23.79967pt too wide) in paragraph at lines 3586--3586
+[]\TU/DejaVuSans(0)/m/it/10 en-[] 
+ []
+
+
+Overfull \hbox (65.44029pt too wide) in paragraph at lines 3586--3586
 []\TU/DejaVuSans(0)/m/it/10 able=True\TU/DejaVuSansMono(0)/m/n/10 )|[] 
  []
 
-[35] [36] [37]
-Overfull \hbox (4.15123pt too wide) in paragraph at lines 3968--3968
+
+Overfull \hbox (31.39244pt too wide) in paragraph at lines 3718--3718
+[]\TU/DejaVuSans(0)/m/it/10 fault_user=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[36] [37]
+LaTeX Info: Redefining \rmfamily on input line 3849.
+LaTeX Info: Redefining \sffamily on input line 3849.
+LaTeX Info: Redefining \ttfamily on input line 3849.
+
+Overfull \hbox (2.03697pt too wide) in paragraph at lines 3881--3881
+[]\TU/DejaVuSans(0)/m/it/10 age_count=3\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+[38]
+Overfull \hbox (54.15123pt too wide) in paragraph at lines 3964--3964
 []\TU/DejaVuSans(0)/m/it/10 block_size='small'\TU/DejaVuSans(0)/m/n/10 ,[] 
  []
 
-[38] [39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
+
+Overfull \hbox (11.80748pt too wide) in paragraph at lines 3964--3964
+[]\TU/DejaVuSans(0)/m/it/10 fect_th=0\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (19.31236pt too wide) in paragraph at lines 3964--3964
+[]\TU/DejaVuSans(0)/m/it/10 noise_th=7\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (19.62486pt too wide) in paragraph at lines 3964--3964
+[]\TU/DejaVuSans(0)/m/it/10 noise=True\TU/DejaVuSans(0)/m/n/10 ,[] 
+ []
+
+
+Overfull \hbox (44.71275pt too wide) in paragraph at lines 3964--3964
+[]\TU/DejaVuSans(0)/m/it/10 heatmap=False\TU/DejaVuSansMono(0)/m/n/10 )|[] 
+ []
+
+LaTeX Info: Redefining \rmfamily on input line 4021.
+LaTeX Info: Redefining \sffamily on input line 4021.
+LaTeX Info: Redefining \ttfamily on input line 4021.
+LaTeX Info: Redefining \rmfamily on input line 4034.
+LaTeX Info: Redefining \sffamily on input line 4034.
+LaTeX Info: Redefining \ttfamily on input line 4034.
+[39] [40] [41] [42] [43] [44] [45] [46] [47] [48]
 Missing character: There is no خ in font DejaVu Sans Oblique/OT:script=latn;lan
 guage=dflt;!
 Missing character: There is no ط in font DejaVu Sans Oblique/OT:script=latn;lan
@@ -1727,180 +2067,62 @@ Missing character: There is no ت in font DejaVu Sans Oblique/OT:script=latn;lan
 guage=dflt;!
 Missing character: There is no م in font DejaVu Sans Oblique/OT:script=latn;lan
 guage=dflt;!
-[49] [50] [51] [52] [53] [54]
-Underfull \hbox (badness 10000) in paragraph at lines 6566--6570
-[]\TU/DejaVuSans(0)/m/n/10 thermometer_max_plc, cooler_uptime_plc, system_opera
-ting_plc,[]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 6566--6570
-[]\TU/DejaVuSans(0)/m/n/10 air_valve_plc, camera_limit_plc’:[camera_limit_path,
- -1, -1], cam-[]
- []
-
-[55] [56] [57] [58] [59] [60] [61] [62] [63] [64] [65] [66
-
+[49] [50] [51] [52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 6562--6566
+[]\TU/DejaVuSans(0)/m/n/10 dict: {limitswitch_top_plc, limitswitch_bottom_plc,[
 ]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6562--6566
+[]\TU/DejaVuSans(0)/m/n/10 thermometer_min_plc, thermometer_max_plc,[]
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6562--6566
+[]\TU/DejaVuSans(0)/m/n/10 cooler_uptime_plc, system_operating_plc, air_valve_p
+lc, cam-[]
+ []
+
+[54] [55] [56] [57] [58] [59] [60] [61] [62] [63] [64]
 Chapter 4.
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 8139--8139
+Overfull \hbox (60.0pt too wide) in paragraph at lines 8135--8135
 [][][][][][][][][][][] 
  []
 
-[67] [68
+
+Overfull \hbox (50.0pt too wide) in paragraph at lines 8135--8135
+[][][][][][][][][] 
+ []
+
+[65
+
+] [66
 
 ]
 Chapter 5.
 
-Overfull \hbox (10.0pt too wide) in paragraph at lines 8142--8142
+Overfull \hbox (60.0pt too wide) in paragraph at lines 8138--8138
 [][][][][][][][][][][] 
  []
 
-[69] [70
 
-]
-Overfull \hbox (32.64203pt too wide) in paragraph at lines 8164--8165
-[][]\TU/DejaVuSansMono(0)/m/n/10 oxin.backend.add_default_database_records\TU/D
-ejaVuSans(0)/m/n/10 ,[]
+Overfull \hbox (50.0pt too wide) in paragraph at lines 8138--8138
+[][][][][][][][][] 
  []
 
+[67] [68
 
-Overfull \hbox (2.53949pt too wide) in paragraph at lines 8169--8170
-[][]\TU/DejaVuSansMono(0)/m/n/10 oxin.backend.defect_management_funcs\TU/DejaVu
-Sans(0)/m/n/10 ,[]
- []
+] [69
 
 
-Overfull \hbox (2.53949pt too wide) in paragraph at lines 8175--8176
-[][]\TU/DejaVuSansMono(0)/m/n/10 oxin.backend.user_login_logout_funcs\TU/DejaVu
-Sans(0)/m/n/10 ,[]
- []
+] (saba.ind [70
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 8176--8177
-[][]\TU/DejaVuSansMono(0)/m/n/10 oxin.backend.user_management_funcs\TU/DejaVuSa
-ns(0)/m/n/10 ,[]
- []
+] [71
 
-
-Overfull \hbox (14.5805pt too wide) in paragraph at lines 8178--8179
-[][]\TU/DejaVuSansMono(0)/m/n/10 oxin.calibrationCal.load_recent_images\TU/Deja
-VuSans(0)/m/n/10 ,[]
- []
-
-
-Overfull \hbox (38.66254pt too wide) in paragraph at lines 8182--8183
-[][]\TU/DejaVuSansMono(0)/m/n/10 oxin.calibrationCal.SteelSurfaceInspection\TU/
-DejaVuSans(0)/m/n/10 ,[]
- []
-
-[71
-
-] (saba.ind [72
-
-
-] [73
-
-]
-Overfull \hbox (2.33344pt too wide) in paragraph at lines 81--82
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.plc_managment.
-management[] 
- []
-
-
-Overfull \hbox (6.71234pt too wide) in paragraph at lines 85--86
-[]\TU/DejaVuSans(0)/m/it/8 oxin.backend.add_default_database_records\TU/DejaVuS
-ans(0)/m/n/8 ),[] 
- []
-
-
-Overfull \hbox (2.33344pt too wide) in paragraph at lines 99--100
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.plc_managment.
-management[] 
- []
-
-
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 105--106
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 119--120
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 120--121
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 121--122
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 123--124
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 124--125
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-[74]
-Overfull \hbox (2.33344pt too wide) in paragraph at lines 179--180
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.plc_managment.
-management[] 
- []
-
-[75]
-Overfull \hbox (2.63812pt too wide) in paragraph at lines 221--222
-[][]| \TU/DejaVuSansMono(0)/m/n/8 oxin.backend.add_default_database_records\TU/
-DejaVuSans(0)/m/n/8 ,[] 
- []
-
-
-Overfull \hbox (7.45453pt too wide) in paragraph at lines 239--240
-[][]| \TU/DejaVuSansMono(0)/m/n/8 oxin.calibrationCal.SteelSurfaceInspection\TU
-/DejaVuSans(0)/m/n/8 ,[] 
- []
-
-[76] [77]
-Overfull \hbox (2.33344pt too wide) in paragraph at lines 416--417
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.plc_managment.
-management[] 
- []
-
-
-Overfull \hbox (2.33344pt too wide) in paragraph at lines 433--434
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.plc_managment.
-management[] 
- []
-
-
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 448--449
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-[78]
-Overfull \hbox (9.90375pt too wide) in paragraph at lines 468--469
-[]\TU/DejaVuSans(0)/m/n/8 (\TU/DejaVuSans(0)/m/it/8 oxin.backend.pxvalue_calibr
-ation.extract_info[] 
- []
-
-[79] [80
-
-])
+] [72] [73] [74])
 The property list \polyglossia@langsetup contains the pairs (without outer
 braces):
 >  {latex/script}  =>  {latin}
@@ -1991,48 +2213,78 @@ The property list \__xpg_alias contains the pairs (without outer braces):
 >  {persian/target}  =>  {persian}
 >  {fa/target}  =>  {persian}
 >  {farsi/target}  =>  {persian}.
- (saba.aux
+
+
+! LaTeX Error: \begin{quote} on input line 308 ended by \end{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8192 \end{document}
+                     
+? 
+(saba.aux
 LaTeX Info: Redefining \rmfamily on input line 17.
 LaTeX Info: Redefining \sffamily on input line 17.
 LaTeX Info: Redefining \ttfamily on input line 17.
-LaTeX Info: Redefining \rmfamily on input line 45.
-LaTeX Info: Redefining \sffamily on input line 45.
-LaTeX Info: Redefining \ttfamily on input line 45.
+LaTeX Info: Redefining \rmfamily on input line 46.
+LaTeX Info: Redefining \sffamily on input line 46.
+LaTeX Info: Redefining \ttfamily on input line 46.
 LaTeX Info: Redefining \rmfamily on input line 60.
 LaTeX Info: Redefining \sffamily on input line 60.
 LaTeX Info: Redefining \ttfamily on input line 60.
-LaTeX Info: Redefining \rmfamily on input line 73.
-LaTeX Info: Redefining \sffamily on input line 73.
-LaTeX Info: Redefining \ttfamily on input line 73.
-LaTeX Info: Redefining \rmfamily on input line 87.
-LaTeX Info: Redefining \sffamily on input line 87.
-LaTeX Info: Redefining \ttfamily on input line 87.
-LaTeX Info: Redefining \rmfamily on input line 99.
-LaTeX Info: Redefining \sffamily on input line 99.
-LaTeX Info: Redefining \ttfamily on input line 99.
-LaTeX Info: Redefining \rmfamily on input line 135.
-LaTeX Info: Redefining \sffamily on input line 135.
-LaTeX Info: Redefining \ttfamily on input line 135.
-LaTeX Info: Redefining \rmfamily on input line 152.
-LaTeX Info: Redefining \sffamily on input line 152.
-LaTeX Info: Redefining \ttfamily on input line 152.
-LaTeX Info: Redefining \rmfamily on input line 169.
-LaTeX Info: Redefining \sffamily on input line 169.
-LaTeX Info: Redefining \ttfamily on input line 169.
+LaTeX Info: Redefining \rmfamily on input line 74.
+LaTeX Info: Redefining \sffamily on input line 74.
+LaTeX Info: Redefining \ttfamily on input line 74.
+LaTeX Info: Redefining \rmfamily on input line 88.
+LaTeX Info: Redefining \sffamily on input line 88.
+LaTeX Info: Redefining \ttfamily on input line 88.
+LaTeX Info: Redefining \rmfamily on input line 101.
+LaTeX Info: Redefining \sffamily on input line 101.
+LaTeX Info: Redefining \ttfamily on input line 101.
+LaTeX Info: Redefining \rmfamily on input line 137.
+LaTeX Info: Redefining \sffamily on input line 137.
+LaTeX Info: Redefining \ttfamily on input line 137.
+LaTeX Info: Redefining \rmfamily on input line 154.
+LaTeX Info: Redefining \sffamily on input line 154.
+LaTeX Info: Redefining \ttfamily on input line 154.
+LaTeX Info: Redefining \rmfamily on input line 171.
+LaTeX Info: Redefining \sffamily on input line 171.
+LaTeX Info: Redefining \ttfamily on input line 171.
+LaTeX Info: Redefining \rmfamily on input line 249.
+LaTeX Info: Redefining \sffamily on input line 249.
+LaTeX Info: Redefining \ttfamily on input line 249.
+LaTeX Info: Redefining \rmfamily on input line 362.
+LaTeX Info: Redefining \sffamily on input line 362.
+LaTeX Info: Redefining \ttfamily on input line 362.
+LaTeX Info: Redefining \rmfamily on input line 399.
+LaTeX Info: Redefining \sffamily on input line 399.
+LaTeX Info: Redefining \ttfamily on input line 399.
+LaTeX Info: Redefining \rmfamily on input line 457.
+LaTeX Info: Redefining \sffamily on input line 457.
+LaTeX Info: Redefining \ttfamily on input line 457.
+LaTeX Info: Redefining \rmfamily on input line 474.
+LaTeX Info: Redefining \sffamily on input line 474.
+LaTeX Info: Redefining \ttfamily on input line 474.
 )
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 Package rerunfilecheck Info: File `saba.out' has not changed.
-(rerunfilecheck)             Checksum: ECFEADC6A857C4848084AA0187F3776E;9933.
- ) 
-Here is how much of TeX's memory you used:
- 20136 strings out of 410617
- 418792 string characters out of 2815380
- 819434 words of memory out of 3000000
- 40795 multiletter control sequences out of 15000+600000
- 475405 words of font info for 110 fonts, out of 8000000 for 9000
- 1349 hyphenation exceptions out of 8191
- 89i,12n,101p,1287b,731s stack positions out of 10000i,1000n,20000p,200000b,80000s
+(rerunfilecheck)             Checksum: BF4371AFB51D13D350E1E03E9E03155B;9974.
+ )
+(\end occurred inside a group at level 1)
 
-Output written on saba.pdf (84 pages).
+### semi simple group (level 1) entered at line 308 (\begingroup)
+### bottom level 
+Here is how much of TeX's memory you used:
+ 20129 strings out of 410617
+ 418574 string characters out of 2815380
+ 831741 words of memory out of 3000000
+ 40791 multiletter control sequences out of 15000+600000
+ 475381 words of font info for 107 fonts, out of 8000000 for 9000
+ 1349 hyphenation exceptions out of 8191
+ 89i,12n,101p,1287b,1035s stack positions out of 10000i,1000n,20000p,200000b,80000s
+
+Output written on saba.pdf (78 pages).
